@@ -1,6 +1,6 @@
 /* $Id: style.css,v 1.188 2014-12-03 15:11:45 dom Exp $ */
 /* sigh */
-@import url("style-complex.css");
+@import url("wbs-style-complex.css");
 
 .message {
 color:red;
