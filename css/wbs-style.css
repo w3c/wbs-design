@@ -379,7 +379,7 @@ span.qaireTools {
 }
 
 .warning:before {
-  content:url("icons/warning");
+  content:url("../icons/warning.png");
 }
 
 h2 {
