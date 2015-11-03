@@ -1,0 +1,495 @@
+/* $Id: style.css,v 1.188 2014-12-03 15:11:45 dom Exp $ */
+/* sigh */
+@import url("style-complex.css");
+
+.message {
+color:red;
+background:white;
+}
+
+blockquote {
+  margin-left:3em;
+}
+
+blockquote.member {
+  background-color:#DDD;
+}
+
+form div, p.comment {
+  margin-left:2em;
+}
+
+
+blockquote.debug {
+color:red; display: none;
+}
+
+div.question, form ul, tr.even  {
+  background:#eee; 
+  color: black;
+}
+
+div.question, form ul {
+  border:1px solid #aaa;
+  padding:5px;
+  margin-bottom:2%;
+  color: black;
+}
+
+form ul li.optional, form ul li.optional * {
+  background:#f5f5f5;
+  color: black;
+}
+
+div.question a:link, form ul a:link {
+  color:navy;
+  background:#eee;
+}
+
+div.question table.eval th a:link {
+  background: #005a9c;
+  color: #bfe;
+}
+
+div.question table.eval th a:visited {
+   background: #005a9c;
+   color: #cbf;
+}
+
+form ul {
+  list-style:none;
+}
+
+form ul li {
+  padding-top:4px;
+  padding-bottom:2px;
+  padding-left:3%;
+  border-top:1px solid #ccc;
+}
+
+form ul li:first-child {
+  border-top:none;
+}
+
+form ul ul {
+ border: none;
+}
+
+form ul ul li {
+  border-top:none;
+}
+
+div.question h3, div.question legend {
+  white-space:normal;
+  display:block;
+  font-size:1.3em;
+  background:#005a9c;
+  color:#fff;
+  padding:5px;
+  margin:0;
+  border-top:1px solid black;
+  border-bottom:1px solid black;
+}
+
+table.columns th, table.columns td {
+  border-right:1px solid black;
+  margin:0;
+}
+
+table.columns th {
+  border-bottom:2px dashed black;
+}
+
+table.columns tr {
+  margin:0;
+  padding:0;
+}
+
+table.summary {
+  border:1px solid black ;
+}
+
+table.summary td, table.summary th {
+  border-left: 1px dashed black;
+}
+
+table.summary td {
+  text-align:right;
+}
+
+table.summary.annotated td {
+  text-align:left;
+}
+
+
+table.summary thead tr th {
+  border-bottom: 2px solid black;
+}
+
+table.results td, table.results th {
+  background-color:#eee;
+  color:black;
+vertical-align: top;
+}
+
+table.results td.chosen {
+  background-color:#efe;
+  color:black;
+}
+
+table.results td.meta {
+  background-color:#fff;
+  color:black;
+}
+
+h1 {
+  border-bottom:thick black solid;
+}
+
+h1 a:link, h1 a:visited {
+  text-decoration:none;
+}
+
+
+/*
+textarea {
+  width:50em;
+  max-width:90%;
+  height:8em;
+  margin-left:2em;
+}*/
+
+textarea.comment {
+ height:6em;
+}
+
+table th[scope=row] {
+  text-align:left;
+}
+
+table.eval td {
+  text-align:center;
+}
+
+table.eval th.input {
+  width:10%;
+}
+
+table.eval th, table.eval td /* label */ {
+  border:thin solid black;
+}
+
+/* table.eval td label {
+  width:100%;
+  display:block;
+} */
+
+ul.edit dt {
+  margin-left:0.6em;
+  
+}
+
+ul.edit label {
+  font-weight:bold;
+}
+
+ul.edit li.optional label, ul.edit label input, ul.edit label textarea {
+  font-weight:normal;
+}
+
+ul.edit dt:before {
+  content:url('/QA/2003/02/right');
+}
+
+.doc {
+  border-left:thick solid black;
+  padding-top:0.2em;
+  padding-bottom:0.2em;
+  padding-left:0.5em;
+  background-color:white;
+  color:#005a9c;
+}
+
+
+
+/* ******************  body  *************** */
+
+html {
+ padding:0;
+}
+
+body {
+   margin:0;
+   padding:1em;
+   background: #fff;
+   color: #000;
+}
+
+html, body, h2, h3, h4, div, p, ul, li, input, legend {
+	font-family: "Trebuchet ms", "Gill sans", sans-serif;
+}
+
+/* ******************  header  *************** */
+
+#Logo {
+   text-align: center;
+   margin: 0;
+   padding: 0;
+   margin-bottom: 0.3em;
+/*	margin-right: 210px; */
+}
+
+#Header {
+	background: #fff;
+   color: #777;
+   font-family: Times, "Times New Roman", serif;
+   font-style: italic;
+   font-weight: bold;
+   font-size: 1.8em;
+}
+
+/* ******************  news  *************** */
+
+.item h3
+{
+	background: #fff;
+	color: #900;
+	margin-top: 0.4em;
+}
+.item h3:before
+{
+	content: url(/Icons/right.gif);
+}
+
+.date {
+   font-style: italic;
+}
+
+.description {
+   background: #fff;
+   color: #000;
+}
+
+
+/* ******************  misc *************** */
+
+.small, .archive, .disclaimer {
+   font-size: small;
+   margin:0.5em 17em 2em 2em;   
+}
+
+hr { margin: 0 17em 0 2em;
+	width:60% }
+
+
+a img { color: #fff; }         /* hide the border in Netscape 4 */
+@media all {                   /* hide from Netscape 4 */
+   a img { color: inherit;     /* undo the rule above */
+   border: none;               /* hide from Netscape 4 */
+   }
+}
+
+@media print{
+  abbr, acronym  {
+    border-style:none;
+  }
+  abbr:after, acronym:after {
+    content:" [" attr(title) "] ";
+    font-variant:small-caps;
+  }
+ 	   table.results {
+ 	     table-layout:fixed;
+ 	     width:100%;
+ 	   }
+ 	 
+ 	   table.results thead th {
+ 	     width:5em;
+ 	   }
+ 	 
+ 	   table.results thead th.meta {
+ 	     width:20em;
+ 	   }
+ 	 }
+
+dt { font-weight: bold }
+
+div.task {
+  width:50em;
+  margin:0;
+  margin-top:-1px;
+  padding:0;
+  border:thin dotted gray;
+}
+
+div.task h2 {
+  margin-top:0;
+  margin-right:0;
+}
+
+div.task form {
+ border-bottom:none;
+}
+
+hr {
+  clear:both;
+  margin-top:1em;
+}
+
+ul.questionnaireList {
+  list-style:none;
+}
+
+ul.questionnaireList li {
+  clear:left;
+
+}
+
+span.qaire {
+  display:block;
+  width:40em;
+  float:left;
+  padding-bottom:0.3em;
+}
+
+span.qaire.votable {
+ margin-left:-1em;
+}
+
+span.qaireTools {
+  display:block;
+}
+
+.votable:before {
+  content:"\0bb";
+}
+
+.votable a {
+  font-weight:bold;
+}
+
+.info, .warning {
+ background:white;
+ border:thin solid #005a9c;
+ padding:0.5em;
+ max-width:50em;
+}
+
+.info:before {
+  content:url("icons/info");
+}
+
+.warning:before {
+  content:url("icons/warning");
+}
+
+h2 {
+ clear:left;
+}
+
+
+
+tr.odd  { 
+   background-color:#c2cdde; 
+   color: black
+}
+
+tr.odd th a:link, tr.odd th a:visited {
+   color: #005a9c;
+   background-color:#c2cdde; 
+}
+
+tr.even th a:visited {
+   color: #005a9c;
+   background-color: #eee;
+}
+
+tr.odd:hover, tr.odd:focus {
+  background-color:#a2adbe;
+}
+
+ tr.even:hover, tr.even:focus {
+  background-color:#ccc;
+}
+
+
+ul.compare li label {
+  display:block;
+  float:left;
+  width:50%;
+}
+
+ul.compare li {
+  clear: left;
+  margin-bottom:.5em;
+}
+
+ul.multicompare li .topic, ul.multicompare li label {
+        display:block;
+        float:left;
+        width:15em;
+}
+
+ul.multicompare li {
+  clear: left;
+  height:4em;
+  margin-bottom:.5em;
+}
+
+ul.multicompare li select {
+  margin-bottom:1.75em;
+}
+
+ul.multicompare li label {
+  margin-top: .5em;
+}
+
+.commentblock { clear: left } 
+
+div.ms_importance_satis table tr td, 
+div.ms_importance_satis table tr th 
+  {
+  border-bottom: thin #005a9c solid;
+  }
+
+div.ms_importance_satis table tr th 
+  {
+  text-align: left;
+  }
+
+strong.ownanswer {
+ font-style: italic;
+}
+
+span.required {
+ color:red;
+}
+
+ul.alternative {
+  border: thin #777 solid;
+  -webkit-border-radius:2em;
+  -moz-border-radius:2em;
+  padding:1em;
+  list-style:none;
+}
+
+ul.alternative, ul.alternative ul { background:white;}
+
+ul.alternative li.main {
+margin-left: 5em; border: 1px solid #CCC; border-radius: 10px; padding: 1em; margin-bottom: .5em; margin-right: 10%;
+}
+
+ul.alternative li.main strong {
+font-size: 200%; color: #636; font-weight: normal;
+}
+
+form.login { border-bottom:none;}
+form.login ul li { border-top:none;}
+
+ul.alternative a:link, ul.alternative a:visited { background-color: inherit;}
+
+input.irreversible {
+  background-color:#faa;	
+}
+
+/* Add a clear, just in case the items in a .multi contain floating images */
+div.multi li {clear: left}

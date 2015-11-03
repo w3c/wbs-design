@@ -1,0 +1,79 @@
+/* Copyright 1997-2005 W3C (MIT, ERCIM, Keio). All Rights Reserved.
+   The following software licensing rules apply:
+   http://www.w3.org/Consortium/Legal/copyright-software */
+
+/* $Id: member.css,v 2.13 2007/06/20 19:08:13 timbl Exp $ */
+
+/* This style sheet defines the basic style for member-only W3C pages.
+   E.g., to signal member pages, a backgrouund color can be set here 
+   Member-specific style sheets should import this. 
+*/
+
+@import url(base.css);    /* relative URI to work in file space */
+
+html, body {
+  color: black;
+  background-color: #e2edfe; /* changed from #e2fafe */
+  /* background:  fixed top right no-repeat url(/Icons/w3cmember.gif)
+       #e2fafe;  */
+}
+
+
+/* Note that string like 'axs' can't be squatted by ARIA 2007/6 */
+.axs  { color: white; background-color: black }
+
+
+.confidential {
+   padding: 0.1em 0.5em;
+   background: #005a9c;
+   color: #fff;
+   text-transform: uppercase;
+   text-align: center;
+   font-weight: bold;
+   letter-spacing: 1em;
+}
+
+/* ... */
+
+/*Karl's test*/
+img
+{
+	padding: 0;
+	margin: 0;
+	vertical-align: bottom;
+}
+html
+{
+	margin: 0 0 0 2em ;
+background-color: #e2edfe;}
+
+body#member {
+	background-color: white;
+	margin:0;
+	padding: 0;}
+
+body#member #header {
+/*	border-color: black;
+	border-width: 1px;
+	border-style: none none solid none;*/
+	background-color: #efefef;
+	padding: 0;
+	margin: 0;}
+body#member #content {	
+	padding: 0 1em;
+	background-color: white;
+}
+body#member #footer
+{
+	padding:  1em;
+	background-color: #BDD3DC;
+	border-color: black transparent transparent transparent;
+	border-width: 1px;
+	border-style: solid none none none;
+}
+body#member #footer hr
+{
+	display: none;
+	padding: 0 1em;
+	background-color: #BDD3DC;
+}

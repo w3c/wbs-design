@@ -1,0 +1,91 @@
+#Menu {
+  float:right;
+  width:14em;
+  min-height:6em;
+  margin:0.5em;
+  padding:0.2em;
+ background: #eec;
+  border:thin solid black;
+   color: #000;
+	line-height:1.5em;
+
+}
+
+#Menu .navhead a {
+   display : inline;
+   background: inherit;
+}
+
+#Menu .navhead a:hover {background-color:white;}
+
+#Menu .navhead a:before {content:"";}
+
+h2 {
+  background:#005a9c;
+   color: #fff;
+   border: none;
+   width: 100%;
+   font-weight: bold;
+   font-size: 1.3em;
+   text-indent: 0.5em;
+   margin-top: 0.5em;
+   padding: 0.1em;
+}
+
+p.toolbox {
+  float:left;
+}
+
+/* ******************  menu  *************** */
+
+.dot    { display : none }
+
+#Menu p {
+	padding:0;
+	}
+
+#Menu a {
+	display : block;
+   background: #eec;
+ 	text-decoration:none;
+	font-size: 1em;
+	}
+#Menu a:hover {background-color:white;}
+#Menu a:before {content:url('../icons/right.png');}
+#Menu hr {display:none;}
+
+#Menu .navhead {
+   background: #aa7;
+   color: #fff;
+   border: none;
+   width: 100%;
+   font-weight: bold;
+   text-indent: 0.5em;
+   margin-top: 0.5em;
+   padding: 0.2em;
+}
+
+
+
+/* ******************  print  *************** */
+
+@media print {
+
+body {
+	font-size: 12pt;
+}
+#Menu 
+	{ 
+		display: none 
+	}
+	
+#Content {
+	margin:0 10px 10px 10px;
+	padding:0;
+	}
+}
+
+
+form {
+  border-bottom:thin black solid;
+}
