@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>WBS: Web-Based Straw-poll and balloting system - Web-Based Straw-poll and Balloting System</title>
+<link rel="stylesheet" type="text/css" href="../css/wbs-style.css" title="default" />
+<link rel="alternate" type="application/atom+xml" href="https://www.w3.org/2002/09/wbs/myQuestionnaires.atom"
+title="ATOM feed of my Questionnaires" />
+<link rel="stylesheet" type="text/css" href="../css/member.css" />
+<link rel="stylesheet" type="text/css" href="../css/meeting.css" />
+<link rel="start" href="https://www.w3.org/2002/09/wbs/" title="WBS Home page" />
+<link rel="bookmark" href="" title="My questionnaires" />
+<link rel="bookmark" href="" title="List of open questionnaires" />
+</head>
+<body>
+<div class="head"><a href="https://www.w3.org/">
+<img src="../icons/w3c_home.png" alt="W3C" height="48" width="72" /></a>
+<a href="https://www.w3.org/Member/">
+<img alt="Member Site" src="../icons/member-site.png" height="48" width="128" /></a>
+<a href="https://www.w3.org/2002/09/wbs/">WBS Home</a></div>
+<h1>WBS: Web-Based Straw-poll and balloting system</h1>
+<div id="Menu">
+<p><span class="navhead">Nearby:</span><a accesskey="h" href="">WBS Home</a><span class="dot">·</span><a href="" title="Current questionnaires for all the groups">Current
+  questionnaires</a><span class="dot">·</span><a accesskey="m" href="" title="List of questionnaires
+  you are supposed to answer"><em>My</em> questionnaires</a><span class="dot">·</span><a href=""><abbr title="Working Group">WG</abbr> Management
+  (<abbr title="Implementation of the Patent Policy">IPP</abbr>)</a></p>
+</div>
+<div id="Content"><div class="task"><h2><img src="../icons/create.png" alt="New" /><label for="wgid_create">Create a questionnaire...</label></h2>
+
+<form action="redirect" method="get">
+<p><input name="action" value="factory" type="hidden" />
+for the<br /> <select name="wgid" id="wgid_create">
+
+<optgroup label="Groups to which you have special-write access">
+<option selected="selected" value="999999">Test Group</option>
+<option value="13280">Advisory Committee</option>
+<option value="10109">Systems</option>
+<option value="10112">W3C/ERCIM</option>
+<option value="10111">W3C/Keio</option>
+<option value="10114">W3C/MIT</option>
+<option value="10001">Zakim on Web Community Group</option>
+<option value="1"></option>
+<option value="1">the Public</option>
+</optgroup>
+</select><input value="Go!" type="submit" />
+</p>
+</form>
+</div>
+<div class="task">
+<h2><img src="../icons/stock_edit.png" alt="edit" /><label for="edit_qaire"> Edit...</label></h2>
+<form action="redirect">
+<p><input name="action" value="handler" type="hidden" />
+<select name="qaire" id="edit_qaire">
+<option disabled="disabled">Open questionnaires you're allowed to edit</option>
+<option selected="selected" value="999999_tpac">Test of the TP Registration questionnaire</option>
+ <option value="999999_wbs-types-test">WBS question types</option>
+ <option value="999999_test-reminder">Test RFE for WBS</option>
+ <option value="109_Test-wbs-rfe">Test for WBS RFE</option>
+ <option value="1_photo">W3C Photo Request Form</option>
+ <option value="10002_Qs">Question Formats</option>
+</select><input value="Go!" type="submit" /></p>
+</form>
+</div>
+<div class="task">
+<h2><img src="../icons/list.png" alt="list" /> List...</h2>
+<ul>
+<li><a href="https://www.w3.org/2002/09/wbs/">My Questionnaires</a></li>
+<li><form action="redirect"><p><label for="wgid_list">On-going questionnaires for the</label>: <select name="wgid" id="wgid_list">
+ <option selected="selected" value="999999_wbs-types-test">WBS question types</option>
+ <option value="999999_test-reminder">Test RFE for WBS</option>
+ <option value="109_Test-wbs-rfe">Test for WBS RFE</option>
+ <option value="1_photo">W3C Photo Request Form</option>
+ <option value="10002_Qs">Question Formats</option>
+ <option value="109">Systems</option>
+ <option value="1">Public</option>
+</select><input value="Go!" type="submit" /></p>
+</form>
+</li>
+
+<li><form action="redirect"><p><label for="closed_wgid_list">Closed
+questionnaires for the</label>: <select name="wgid"
+  id="closed_wgid_list">
+<option selected="selected" value="999999">Test Group</option>
+<option value="13280">Advisory Committee</option>
+<option value="10109">Systems</option>
+<option value="10112">W3C/ERCIM</option>
+<option value="10111">W3C/Keio</option>
+<option value="10114">W3C/MIT</option>
+<option value="10001">Zakim on Web Community Group</option>
+<option value="1"></option>
+<option value="1">the Public</option>
+</select><input name="action" value="closed" type="hidden" />
+<input value="Go!" type="submit" /></p>
+</form>
+</li>
+
+<li><a href="https://www.w3.org/2002/09/wbs/">all the on-going questionnaires</a></li>
+
+</ul>
+</div>
+<!--
+ -->
+</div>
+<hr  />
+<address>Maintained by Laurent Carcone, from a development by <a href="https://">Dominique Hazaël-Massieux</a> (<a href="mailto:">dom</a>) on an <a href="https:">original design</a> by <a href="">Michael Sperberg-McQueen</a> <em>$Id: $</em>. Please send bug reports and request for enhancements to <a href="mailto:">laurent</a> with <a href="">system</a> copied (if your mail client supports it, <a href="mailto:">send mail</a> directly to the right persons)</address>
+
+</body>
+ </html>
