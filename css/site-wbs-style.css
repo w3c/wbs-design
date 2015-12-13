@@ -13,11 +13,6 @@ blockquote.member {
   background-color:#DDD;
 }
 
-form div, p.comment {
-  margin-left:2em;
-}
-
-
 blockquote.debug {
 color:red; display: none;
 }
@@ -140,10 +135,6 @@ table.results td.meta {
   color:black;
 }
 
-h1 {
-  border-bottom:thick black solid;
-}
-
 h1 a:link, h1 a:visited {
   text-decoration:none;
 }
@@ -218,13 +209,7 @@ html {
 
 body {
    margin:0;
-   padding:1em;
-   background: #fff;
    color: #000;
-}
-
-html, body, h2, h3, h4, div, p, ul, li, input, legend {
-	font-family: "Trebuchet ms", "Gill sans", sans-serif;
 }
 
 /* ******************  header  *************** */
