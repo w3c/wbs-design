@@ -2,7 +2,7 @@
 
 .message, .warning {
   margin-top: 0;
-  margin-bottom: 2%;
+  margin-bottom: 1%;
   border: 0.5em 2em;
   padding: 5px;
 }
@@ -24,12 +24,41 @@ color:red; display: none;
 }
 
 div.question, form ul, tr.even  {
+  //background:#f7f7f7; 
+  background:#fcfcfc; 
+  color: black;
+  margin-bottom:30px;
+  margin-top:10px;
+}
+
+div.question {
+  border:1px solid #aaa;
+  padding-bottom:5px;
   color: black;
 }
 
-div.question, #w3c_content_body form ul {
-  padding:5px;
+div.question h2  {
+  background:#b3cdf3; 
+  color: #111;
+  font-size:1.3em;
+  padding:8px;
+  margin-bottom:8px;
+}
+
+div.question ul {
+  background:#fff; 
   color: black;
+  border:1px solid #aaa;
+  padding:5px;
+  width:75%;
+}
+
+div.question input {
+  margin-right:5px;
+}
+
+div.question ul, div.question select {
+  margin-left: 20px;
 }
 
 form ul li.optional, #w3c_content_body form ul li.optional * {
@@ -45,6 +74,14 @@ div.question table.eval th a:link {
 div.question table.eval th a:visited {
    background: #005a9c;
    color: #cbf;
+}
+
+div.content, div.widget {
+  margin-left: 1em;
+}
+
+div.content p {
+  font-size:1.05em;
 }
 
 #w3c_content_body form ul {
@@ -69,16 +106,19 @@ div.question table.eval th a:visited {
   border-top:none;
 }
 
-div.question h3, div.question legend {
+div.question h3 {
   white-space:normal;
   display:block;
   font-size:1.3em;
-  background:#005a9c;
   color:#fff;
   padding:5px;
   margin:0;
   border-top:1px solid black;
   border-bottom:1px solid black;
+}
+
+div.question legend {
+  display:inline; 
 }
 
 table.columns th, table.columns td {
@@ -494,12 +534,4 @@ a.edit {
 a.edit:hover, a.edit:active, a.edit:focus {
   opacity: 1;
   border-bottom: none;
-}
-
-div.content, div.widget {
-  margin-left: 4em;
-}
-
-p {
-  padding-top: 0;
 }
