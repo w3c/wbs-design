@@ -118,7 +118,13 @@ div.question h3 {
 }
 
 div.question legend {
-  display:inline; 
+  //display:inline; 
+  background:#b3cdf3; 
+  color: #111;
+  font-size:1.4em;
+  padding:8px;
+  margin-bottom:8px;
+  width:100%;
 }
 
 table.columns th, table.columns td {
@@ -396,24 +402,17 @@ span.qaireTools {
   vertical-align: middle;
 }
 
-h2 a.edit img {
-  vertical-align: baseline;
+a.edit img {
+  vertical-align: -3px;
+  height: 1em;
 }
 
 .warning img, .info img {
   height: 2em;
 }
 
-h2 a.edit img {
-  height: 1em;
-}
-
 .info:before {
   content:url("icons/info.png");
-}
-
-h2 {
- clear:left;
 }
 
 tr.odd  { 
