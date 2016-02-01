@@ -23,7 +23,7 @@ blockquote.debug {
 color:red; display: none;
 }
 
-div.question, form ul, tr.even  {
+div.question, tr.even  {
   background:#fafafa; 
   color: black;
   margin-bottom:30px;
@@ -94,6 +94,8 @@ input, textarea, select {
 
 #w3c_content_body form ul {
   list-style:none;
+  margin-bottom:30px;
+  margin-top:10px;
 }
 
 #w3c_content_body form ul li {
@@ -173,7 +175,7 @@ table.summary thead tr th {
 table.results td, table.results th {
   background-color:#eee;
   color:black;
-vertical-align: top;
+  vertical-align: top;
 }
 
 table.results td.chosen {
