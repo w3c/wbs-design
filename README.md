@@ -10,4 +10,5 @@ It contains the snapshots of some html pages of the application and the external
 * [Current WBS Home Page](https://w3c.github.io/wbs-design/html/index.html)
 * [All question types with current design](https://w3c.github.io/wbs-design/html/qtypes.html)
 * [All question types with W3C site design](https://w3c.github.io/wbs-design/html/qtypes-site.html)
-* [Test wysiwyg editor (using jquety plugin 'wysiwyg'](https://w3c.github.io/wbs-design/html/wbs-wysiwyg.html)
+* [Home Page using jquery 'select2' plugin](https://w3c.github.io/wbs-design/html/index-site-select2.html)
+* [Test wysiwyg editor (using jquery plugin 'wysiwyg')](https://w3c.github.io/wbs-design/html/wbs-wysiwyg.html)
