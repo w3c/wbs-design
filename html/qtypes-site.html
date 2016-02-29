@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN'    'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'>
+<!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml' lang='en' xml:lang='en'>
 <head>
 <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
@@ -10,7 +10,7 @@
 <!-- css test-->
   <link rel="stylesheet" type="text/css" href="../css/minimum.css" />
   <link rel="stylesheet" type="text/css" href="../css/advanced.css" media="print, screen and (min-width: 481px)" />
-  <link rel="stylesheet" type="text/css" href="../css/minimum.css" media="handheld, only screen and (max-device-width: 480px)" />
+  <link rel="stylesheet" type="text/css" href="../css/minimum.css" media="only screen and (max-width: 480px)" />
   <link rel="stylesheet" type="text/css" href="../css/site-wbs-style.css" title="default" />
 <!--  -->
 
@@ -113,7 +113,7 @@ Answers received after that time may not be counted.
 
 <div class='question required' id='wbsq1'>
 <fieldset>
-<legend>1. Simple text question<a class="edit" href="q/q1/" title='Edit text of question &quot;Simple text question&quot;'><img src="../icons/stock_edit.png" alt="Edit"></img></a></legend>
+<legend>1. Simple text question<a class="edit" href="q/q1/" title='Edit text of question &quot;Simple text question&quot;'><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
 <div class='content'><p>Simple text question.</p>
 </div><div class='widget text'>
 <p class="rationaleblock"><label for='xq1:rationale'>Rationale</label>: <br />
@@ -407,7 +407,7 @@ live with it), where 1  is the most preferred, 2 the next best and so on... You 
 <input type='hidden' name='tp:format' value='0' /><input type='hidden' name='tp:dim' value='2' /><p><label title='Not Attending that day'><input type='radio' name='tp:d1[]' value='na'  /> Not attending that day</label></p>
 <p><label title='Attending as observer'><input type='radio' name='tp:d1[]' value='obs'  /> Attending as an
 observer only (check at least one of the appropriate requests below  in the 'Observer request' column)</label></p>
-<p>Attending as a  participant in the selected group below:</p><table border='1' summary='Registration options for the meeting during one day'>
+<p>Attending as a  participant in the selected group below:</p><table>
 <thead><tr><th scope='col'>Group meeting</th><th scope='col'>Attending as a participant in this group</th><th scope='col'>Confidentiality</th><th scope='col'>Observer request</th></tr></thead>
 <tbody><tr><th scope='row'></th>
 <td><label><input  title='Attending  as a Group participant' type='radio' name='tp:d1[]' value='' /></label></td>
@@ -539,8 +539,7 @@ Please send bug reports and request for enhancements to <a
 href="mailto:lcarcone@w3.org">lcarcone@w3.org</a> with <a
 href="mailto:w3t-sys@w3.org">w3t-sys@w3.org</a> copied (if your mail
 client supports it, <a
-href="mailto:lcarcone@w3.org(Laurent%20Carcone),w3t-sys@w3.org(Systems
-Team)?subject=WBS%20bug%20report%20">send mail</a> directly to the
+href="mailto:lcarcone@w3.org,w3t-sys@w3.org?subject=WBS%20bug%20report%20">send mail</a> directly to the
 right persons).<br />
 <em>$Id: wbs-lc.html,v 1.3 2015/08/26 08:51:36 carcone Exp $</em>.
 </address>
@@ -549,7 +548,6 @@ right persons).<br />
 </div> <!-- /end #w3c_content_body -->
 </div> <!-- /end #w3c_mainCol -->
 </div> <!-- end #w3c_main -->
-</div> <!-- /end #w3c_container -->
 
 <!-- Generated from data/footer.php, ../../smarty/{footer-block.tpl} -->
   <!-- -->
@@ -595,21 +593,16 @@ right persons).<br />
                   </li></ul>
             </div>
             <p class="copyright">Copyright © 2016 W3C <sup>®</sup> (<a href="http://www.csail.mit.edu/">
-                  <acronym title="Massachusetts Institute of Technology">MIT</acronym>
+                  <abbr title="Massachusetts Institute of Technology">MIT</abbr>
                </a>, <a href="http://www.ercim.org/">
-                  <acronym title="European Research Consortium for Informatics and Mathematics"> ERCIM</acronym>
+                  <abbr title="European Research Consortium for Informatics and Mathematics"> ERCIM</abbr>
                </a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>) <a href="/Consortium/Legal/ipr-notice">Usage policies apply</a>.</p>
          </div>
       </div><!-- /end #footer -->
 
       <div id="w3c_scripts">
       <script type="text/javascript"
-      src="//www.w3.org/2008/site/js/main" xml:space="preserve">
-	<![CDATA[
-//
-<!-- -->
-//
-]]></script>
+      src="//www.w3.org/2008/site/js/main"></script>
       </div>
 
 </body>
