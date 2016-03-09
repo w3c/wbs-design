@@ -37,6 +37,14 @@ div.question {
   margin-right: 10px;
 }
 
+div.question .overlarge {
+  overflow-x: auto;
+}
+
+.overlarge table {
+  table-layout: fixed;
+}
+
 div.question h2  {
   background:#b3cdf3;
   color: #111;
