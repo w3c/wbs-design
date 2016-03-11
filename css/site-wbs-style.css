@@ -38,6 +38,7 @@ div.question {
 }
 
 div.question .overlarge {
+  width: 100vw;
   overflow-x: auto;
 }
 
