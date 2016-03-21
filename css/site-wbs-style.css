@@ -34,6 +34,7 @@ div.question {
   border:1px solid #aaa;
   padding-bottom:5px;
   color: black;
+  margin-right: 10px;
 }
 
 div.question h2  {
@@ -132,9 +133,14 @@ div.question legend {
   background:#b3cdf3; 
   color: #111;
   font-size:1.4em;
-  padding:8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   margin-bottom:8px;
   width:100%;
+}
+
+div.question legend span.qtitle {
+  padding-left: 8px;
 }
 
 table.columns th, table.columns td {
