@@ -113,7 +113,7 @@ Answers received after that time may not be counted.
 
 <div class='question required' id='wbsq1'>
 <fieldset>
-<legend>1. Simple text question<a class="edit" href="q/q1/" title='Edit text of question &quot;Simple text question&quot;'><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
+<legend><span class="qtitle">1. Simple text question</span><a class="edit" href="q/q1/" title='Edit text of question &quot;Simple text question&quot;'><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
 <div class='content'><p>Simple text question.</p>
 </div><div class='widget text'>
 <p class="rationaleblock"><label for='xq1:rationale'>Rationale</label>: <br />
@@ -126,7 +126,7 @@ Answers received after that time may not be counted.
 
 <div class='question optional' id='wbsq2'>
 <fieldset>
-<legend>2. Single selection required Yes/No<a class="edit" href="q/q2/" title="Edit text of question &quot;Single selection required Yes/No&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
+<legend><span class="qtitle">2. Single selection required Yes/No</span><a class="edit" href="q/q2/" title="Edit text of question &quot;Single selection required Yes/No&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
 <div class='content'><p>Single selection required Yes/No.</p>
 </div><div class='widget yn'>
 <!--<p>Please indicate which option matches your choice:</p>-->
@@ -144,7 +144,7 @@ Answers received after that time may not be counted.
 
 <div class='question optional' id='wbsq3'>
 <fieldset>
-<legend>3. Single selection required Yes/No/Concur/Abstain<a class="edit" href="q/q3/" title="Edit text of question &quot;Single selection required Yes/No/Concur/Abstain&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
+<legend><span class="qtitle">3. Single selection required Yes/No/Concur/Abstain</span><a class="edit" href="q/q3/" title="Edit text of question &quot;Single selection required Yes/No/Concur/Abstain&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
 <div class='content'><p>Single selection required Yes/No/Concur/Abstain.</p>
 </div><div class='widget ync'>
 <!--<p>Please indicate which option matches your choice:</p>-->
@@ -163,13 +163,13 @@ Answers received after that time may not be counted.
 </div>
 
 <div class='question optional' id='wbsq4'><fieldset>
-<legend>4. Select one among many (drop-down list)<a class="edit" href="q/q4/" title="Edit text of question &quot;Select one among many (drop-down list)&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
+<legend><span class="qtitle">4. Select one among many (drop-down list)</span><a class="edit" href="q/q4/" title="Edit text of question &quot;Select one among many (drop-down list)&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
 <div class='content'><p>Select one among many .</p>
 </div><div class='widget select'>
 <p><!-- Please indicate which option matches your choice --><!--:--></p>
 <input type='hidden' name='q4:format' value='0' /><input type='hidden' name='q4:dim' value='1' /><select name='q4:d1[]'><option value='c1' >choice1</option>
-<option value='c2' >choice2</option>
-<option value='c3' >choice3</option>
+<option value='c2' >choice 2</option>
+<option value='c3' >choice 3</option>
 </select>
 <p class="rationaleblock"><label for='xq4:rationale'>Rationale</label>: <br />
 <textarea id ='xq4:rationale' name='q4:rationale' class='rationale' cols='70' rows='6'></textarea></p>
@@ -180,14 +180,17 @@ Answers received after that time may not be counted.
 </div>
 
 <div class='question optional' id='wbsq5'><fieldset>
-<legend>5. Select one among many (radio buttons)<a class="edit" href="q/q5/" title="Edit text of question &quot;Select one among many (radio buttons)&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
+<legend><span class="qtitle">5. Select one among many (radio buttons)</span><a class="edit" href="q/q5/" title="Edit text of question &quot;Select one among many (radio buttons)&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
 <div class='content'><p>Select one among many (radio buttons).</p>
 </div><div class='widget radioSelect'>
 <!--<p>Please indicate which option matches your choice:</p>-->
 <input type='hidden' name='q5:format' value='0' /><input type='hidden' name='q5:dim' value='1' /><ul>
-<li><label for='xq5:d1_c1_'><input type='radio' name='q5:d1[]' value='c1' id='xq5:d1_c1_'/>choice1</label></li>
-<li><label for='xq5:d1_c2_'><input type='radio' name='q5:d1[]' value='c2' id='xq5:d1_c2_'/>choice2</label></li>
-<li><label for='xq5:d1_c3_'><input type='radio' name='q5:d1[]' value='c3' id='xq5:d1_c3_'/>choice3</label></li>
+<li><label for='xq5:d1_c1_'><input type='radio' name='q5:d1[]'
+  value='c1' id='xq5:d1_c1_'/>choice 1</label></li>
+<li><label for='xq5:d1_c2_'><input type='radio' name='q5:d1[]'
+  value='c2' id='xq5:d1_c2_'/>choice 2</label></li>
+<li><label for='xq5:d1_c3_'><input type='radio' name='q5:d1[]'
+  value='c3' id='xq5:d1_c3_'/>choice 3</label></li>
 </ul>
 <p class="rationaleblock"><label for='xq5:rationale'>Rationale</label>: <br />
 <textarea id ='xq5:rationale' name='q5:rationale' class='rationale' cols='70' rows='6'></textarea></p>
@@ -198,7 +201,7 @@ Answers received after that time may not be counted.
 </div>
 
 <div class='question required' id='wbsq6'><fieldset>
-<legend>6. Open comments<a class="edit" href="q/q6/" title="Edit text of question &quot;Open comments&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
+<legend><span class="qtitle">6. Open comments</span><a class="edit" href="q/q6/" title="Edit text of question &quot;Open comments&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
 <div class='content'><p>Open comments.</p>
 </div><div class='widget open'>
 <p class="rationaleblock"><label for='xq6:rationale'>Rationale</label>: <br />
@@ -210,7 +213,7 @@ Answers received after that time may not be counted.
 </div>
 
 <div class='question optional' id='wbsq7'><fieldset>
-<legend>7. Text entries<a class="edit" href="q/q7/" title="Edit text of question &quot;Text entries&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
+<legend><span class="qtitle">7. Text entries</span><a class="edit" href="q/q7/" title="Edit text of question &quot;Text entries&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
 <div class='content'><p>Text entries.</p>
 </div><div class='widget texts'>
 <input type='hidden' name='q7:format' value='2' /><input type='hidden' name='q7:dim' value='1' /><p class="rationaleblock"><label for='xq7:rationale'>Rationale</label>: <br />
@@ -222,14 +225,17 @@ Answers received after that time may not be counted.
 </div>
 
 <div class='question optional' id='wbsq8'><fieldset>
-<legend>8. Select multiple items (checkboxes)<a class="edit" href="q/q8/" title="Edit text of question &quot;Select multiple items (checkboxes)&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
+<legend><span class="qtitle">8. Select multiple items (checkboxes)</span><a class="edit" href="q/q8/" title="Edit text of question &quot;Select multiple items (checkboxes)&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
 <div class='content'><p>Select multiple items (checkboxes).</p>
 </div><div class='widget multi'>
 <!--<p>Please indicate which options match your choice:</p>-->
 <input type='hidden' name='q8:format' value='0' /><input type='hidden' name='q8:dim' value='1' /><ul>
-<li><label for='xq8:d1_c1_'><input id='xq8:d1_c1_' type='checkbox' name='q8:d1[]' value='c1' />choice1</label></li>
-<li><label for='xq8:d1_c2_'><input id='xq8:d1_c2_' type='checkbox' name='q8:d1[]' value='c2' />choice2</label></li>
-<li><label for='xq8:d1_c3_'><input id='xq8:d1_c3_' type='checkbox' name='q8:d1[]' value='c3' />choice3</label></li>
+<li><label for='xq8:d1_c1_'><input id='xq8:d1_c1_' type='checkbox'
+name='q8:d1[]' value='c1' />choice 1</label></li>
+<li><label for='xq8:d1_c2_'><input id='xq8:d1_c2_' type='checkbox'
+name='q8:d1[]' value='c2' />choice 2</label></li>
+<li><label for='xq8:d1_c3_'><input id='xq8:d1_c3_' type='checkbox'
+name='q8:d1[]' value='c3' />choice 3</label></li>
 </ul>
 <p class="rationaleblock"><label for='xq8:rationale'>Rationale</label>: <br />
 <textarea id ='xq8:rationale' name='q8:rationale' class='rationale' cols='70' rows='6'></textarea></p>
@@ -240,7 +246,7 @@ Answers received after that time may not be counted.
 </div>
 
 <div class='question optional' id='wbsq9'><fieldset>
-<legend>9. Survey type<a class="edit" href="q/q9/" title="Edit text of question &quot;Survey type&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
+<legend><span class="qtitle">9. Survey type</span><a class="edit" href="q/q9/" title="Edit text of question &quot;Survey type&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
 <div class='content'><p>Survey type.</p>
 </div>
 <div class="widget evaluation">
@@ -258,13 +264,13 @@ Answers received after that time may not be counted.
 </div>
 
 <div class='question optional' id='wbsq10'><fieldset>
-<legend>10. Straw-poll<a class="edit" href="q/q10/" title="Edit text of question &quot;Straw-poll&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
+<legend><span class="qtitle">10. Straw-poll</span><a class="edit" href="q/q10/" title="Edit text of question &quot;Straw-poll&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
 <div class='content'><p>Straw-poll.</p>
 </div><div class='widget choices2'>
 <input type='hidden' name='q10:format' value='1' /><input type='hidden' name='q10:dim' value='4' /><ul class='compare'>
-<li><label for='xq10:c1'>choice1</label>: <select name='q10:c1' id='xq10:c1'><option value='2'>Yes</option><option value='3'>Yes and prefer</option><option value='1'>Yes, but prefer not</option><option value='0'>No</option></select></li>
-<li><label for='xq10:c2'>choice2</label>: <select name='q10:c2' id='xq10:c2'><option value='2'>Yes</option><option value='3'>Yes and prefer</option><option value='1'>Yes, but prefer not</option><option value='0'>No</option></select></li>
-<li><label for='xq10:c3'>choice3</label>: <select name='q10:c3' id='xq10:c3'><option value='2'>Yes</option><option value='3'>Yes and prefer</option><option value='1'>Yes, but prefer not</option><option value='0'>No</option></select></li>
+<li><label for='xq10:c1'>choice 1</label>: <select name='q10:c1' id='xq10:c1'><option value='2'>Yes</option><option value='3'>Yes and prefer</option><option value='1'>Yes, but prefer not</option><option value='0'>No</option></select></li>
+<li><label for='xq10:c2'>choice 2</label>: <select name='q10:c2' id='xq10:c2'><option value='2'>Yes</option><option value='3'>Yes and prefer</option><option value='1'>Yes, but prefer not</option><option value='0'>No</option></select></li>
+<li><label for='xq10:c3'>choice 3</label>: <select name='q10:c3' id='xq10:c3'><option value='2'>Yes</option><option value='3'>Yes and prefer</option><option value='1'>Yes, but prefer not</option><option value='0'>No</option></select></li>
 </ul>
 <p class="rationaleblock"><label for='xq10:rationale'>Rationale</label>: <br />
 <textarea id ='xq10:rationale' name='q10:rationale' class='rationale' cols='70' rows='6'></textarea></p>
@@ -275,13 +281,15 @@ Answers received after that time may not be counted.
 </div>
 
 <div class='question optional' id='wbsq11'><fieldset>
-<legend>11. Rank-ordering<a class="edit" href="q/q11/" title="Edit text of question &quot;Rank-ordering&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
+<legend><span class="qtitle">11. Rank-ordering</span><a class="edit" href="q/q11/" title="Edit text of question &quot;Rank-ordering&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
 <div class='content'><p>Rank-ordering.</p>
 </div><div class='widget ranklist'>
 <p>Please select the rank-order (1 to 3) for the options
 you think are acceptable (i.e.  you can
 live with it), where 1  is the most preferred, 2 the next best and so on... You also have a <q>don’t mind</q> and a <q>don’t want</q> option.</p>
-<input type='hidden' name='q11:format' value='1' /><input type='hidden' name='q11:dim' value='5' /><table>
+<input type='hidden' name='q11:format' value='1' /><input
+  type='hidden' name='q11:dim' value='5' />
+<table class="records_list data tMargin">
 <thead>
 <tr><th>Rank</th><th>Choice</th></tr>
 </thead>
@@ -292,7 +300,7 @@ live with it), where 1  is the most preferred, 2 the next best and so on... You 
 <option value='3'>2</option>
 <option value='4'>3</option>
 </select></td>
-<td>choix 1</td>
+<td>choice 1</td>
 </tr>
 <tr>
 <td><label for='xq11:c2'></label><select id='xq11:c2' name='q11:c2'>
@@ -300,7 +308,7 @@ live with it), where 1  is the most preferred, 2 the next best and so on... You 
 <option value='3'>2</option>
 <option value='4'>3</option>
 </select></td>
-<td>choix2</td>
+<td>choice 2</td>
 </tr>
 <tr>
 <td><label for='xq11:c3'></label><select id='xq11:c3' name='q11:c3'>
@@ -308,7 +316,7 @@ live with it), where 1  is the most preferred, 2 the next best and so on... You 
 <option value='3'>2</option>
 <option value='4'>3</option>
 </select></td>
-<td>choix3</td>
+<td>choice 3</td>
 </tr>
 </tbody>
 </table>
@@ -321,23 +329,25 @@ live with it), where 1  is the most preferred, 2 the next best and so on... You 
 </div>
 
 <div class='question optional' id='wbsq12'><fieldset>
-<legend>12.  Pick a time for a teleconf<a class="edit" href="q/q12/" title="Edit text of question &quot;Pick a time for a teleconf&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
+<legend><span class="qtitle">12. Pick a time for a teleconf</span><a class="edit" href="q/q12/" title="Edit text of question &quot;Pick a time for a teleconf&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
 <div class='content'><p>Pick a time for a teleconf.</p>
 </div><div class='widget scheduling'>
-<input name="q12:format" value="1" type="hidden"><input name="q12:dim" value="4" type="hidden"><table>
-<thead><tr><th scope="col">Hour</th><th scope="col">Monday</th></tr></thead><tbody><tr><th scope="row"><a rel="nofollow" href="http://www.timeanddate.com/worldclock/fixedtime.html?hour=0&amp;min=0&amp;sec=0&amp;p1=1440"> 0 UTC</a></th><td><select name="q12:Monday0"><option value="0" title="I Cannot on Monday at  0 UTC">Cannot</option>
+<input name="q12:format" value="1" type="hidden"><input name="q12:dim"
+  value="4" type="hidden">
+<table class="records_list data tMargin">
+<thead><tr><th scope="col">Hour</th><th scope="col">Monday</th></tr></thead><tbody><tr><td><a rel="nofollow" href="http://www.timeanddate.com/worldclock/fixedtime.html?hour=0&amp;min=0&amp;sec=0&amp;p1=1440"> 0 UTC</a></td><td><select name="q12:Monday0"><option value="0" title="I Cannot on Monday at  0 UTC">Cannot</option>
 <option value="1" title="I Can but prefer not on Monday at  0 UTC">Can but prefer not</option>
 <option value="2" title="I Can on Monday at  0 UTC">Can</option>
 <option value="3" title="I Can and prefer on Monday at  0 UTC">Can and prefer</option>
 </select></td>
 </tr>
-<tr><th scope="row"><a rel="nofollow" href="http://www.timeanddate.com/worldclock/fixedtime.html?hour=1&amp;min=0&amp;sec=0&amp;p1=1440"> 1 UTC</a></th><td><select name="q12:Monday1"><option value="0" title="I Cannot on Monday at  1 UTC">Cannot</option>
+<tr><td><a rel="nofollow" href="http://www.timeanddate.com/worldclock/fixedtime.html?hour=1&amp;min=0&amp;sec=0&amp;p1=1440"> 1 UTC</a></td><td><select name="q12:Monday1"><option value="0" title="I Cannot on Monday at  1 UTC">Cannot</option>
 <option value="1" title="I Can but prefer not on Monday at  1 UTC">Can but prefer not</option>
 <option value="2" title="I Can on Monday at  1 UTC">Can</option>
 <option value="3" title="I Can and prefer on Monday at  1 UTC">Can and prefer</option>
 </select></td>
 </tr>
-<tr><th scope="row"><a rel="nofollow" href="http://www.timeanddate.com/worldclock/fixedtime.html?hour=2&amp;min=0&amp;sec=0&amp;p1=1440"> 2 UTC</a></th><td><select name="q12:Monday2"><option value="0" title="I Cannot on Monday at  2 UTC">Cannot</option>
+<tr><td><a rel="nofollow" href="http://www.timeanddate.com/worldclock/fixedtime.html?hour=2&amp;min=0&amp;sec=0&amp;p1=1440"> 2 UTC</a></td><td><select name="q12:Monday2"><option value="0" title="I Cannot on Monday at  2 UTC">Cannot</option>
 <option value="1" title="I Can but prefer not on Monday at  2 UTC">Can but prefer not</option>
 <option value="2" title="I Can on Monday at  2 UTC">Can</option>
 <option value="3" title="I Can and prefer on Monday at  2 UTC">Can and prefer</option>
@@ -353,7 +363,7 @@ live with it), where 1  is the most preferred, 2 the next best and so on... You 
 </div>
 
 <div class='question optional' id='wbsq13'><fieldset>
-<legend>13. Cumulative vote<a class="edit" href="q/q13/" title="Edit text of question &quot;Cumulative vote&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
+<legend><span class="qtitle">13. Cumulative vote</span><a class="edit" href="q/q13/" title="Edit text of question &quot;Cumulative vote&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
 <div class='content'><p>Select a % for each choice</p>
 </div><div class='widget cumulative'>
 <input name="q13:format" value="1" type="hidden"><input name="q13:dim" value="101" type="hidden"><ul class="compare">
@@ -371,13 +381,13 @@ live with it), where 1  is the most preferred, 2 the next best and so on... You 
 </div>
 
 <div class='question optional' id='wbsq14'><fieldset>
-<legend>14.  Importance survey<a class="edit" href="q/q14/" title="Edit text of question &quot;Importance survey&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
+<legend><span class="qtitle">14. Importance survey</span><a class="edit" href="q/q14/" title="Edit text of question &quot;Importance survey&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
 <div class='content'><p>Importance survey.</p>
 </div><div class='widget ms_importance'>
 <input type='hidden' name='q14:format' value='1' /><input type='hidden' name='q14:dim' value='9' /><ul class='compare'>
-<li><label for='xq14:c1'>Importance of choice1</label>: <select name='q14:c1' id='xq14:c1'><option value='0'>1 + (lowest)</option><option value='1'>2 ++</option><option value='2'>3 +++</option><option value='3'>4 ++++</option><option value='4'>5 +++++</option><option value='5'>6 ++++++</option><option value='6'>7  +++++++ (highest)</option><option value='7'>Not applicable</option><option value='8' selected='selected'>No opinion</option></select></li>
-<li><label for='xq14:c2'>Importance of choice2</label>: <select name='q14:c2' id='xq14:c2'><option value='0'>1 + (lowest)</option><option value='1'>2 ++</option><option value='2'>3 +++</option><option value='3'>4 ++++</option><option value='4'>5 +++++</option><option value='5'>6 ++++++</option><option value='6'>7  +++++++ (highest)</option><option value='7'>Not applicable</option><option value='8' selected='selected'>No opinion</option></select></li>
-<li><label for='xq14:c3'>Importance of choice3</label>: <select name='q14:c3' id='xq14:c3'><option value='0'>1 + (lowest)</option><option value='1'>2 ++</option><option value='2'>3 +++</option><option value='3'>4 ++++</option><option value='4'>5 +++++</option><option value='5'>6 ++++++</option><option value='6'>7  +++++++ (highest)</option><option value='7'>Not applicable</option><option value='8' selected='selected'>No opinion</option></select></li>
+<li><label for='xq14:c1'>Importance of choice 1</label>: <select name='q14:c1' id='xq14:c1'><option value='0'>1 + (lowest)</option><option value='1'>2 ++</option><option value='2'>3 +++</option><option value='3'>4 ++++</option><option value='4'>5 +++++</option><option value='5'>6 ++++++</option><option value='6'>7  +++++++ (highest)</option><option value='7'>Not applicable</option><option value='8' selected='selected'>No opinion</option></select></li>
+<li><label for='xq14:c2'>Importance of choice 2</label>: <select name='q14:c2' id='xq14:c2'><option value='0'>1 + (lowest)</option><option value='1'>2 ++</option><option value='2'>3 +++</option><option value='3'>4 ++++</option><option value='4'>5 +++++</option><option value='5'>6 ++++++</option><option value='6'>7  +++++++ (highest)</option><option value='7'>Not applicable</option><option value='8' selected='selected'>No opinion</option></select></li>
+<li><label for='xq14:c3'>Importance of choice 3</label>: <select name='q14:c3' id='xq14:c3'><option value='0'>1 + (lowest)</option><option value='1'>2 ++</option><option value='2'>3 +++</option><option value='3'>4 ++++</option><option value='4'>5 +++++</option><option value='5'>6 ++++++</option><option value='6'>7  +++++++ (highest)</option><option value='7'>Not applicable</option><option value='8' selected='selected'>No opinion</option></select></li>
 </ul>
 <p class="rationaleblock"><label for='xq14:rationale'>Rationale</label>: <br />
 <textarea id ='xq14:rationale' name='q14:rationale' class='rationale' cols='70' rows='6'></textarea></p>
@@ -388,11 +398,95 @@ live with it), where 1  is the most preferred, 2 the next best and so on... You 
 </div>
 
 <div class='question optional' id='wbsq15'><fieldset>
-<legend>15.  Importance and Satisfaction survey<a class="edit" href="q/q15/" title="Edit text of question &quot;Cumulative vote&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
+<legend><span class="qtitle">15. Importance and Satisfaction survey</span><a class="edit" href="q/q15/" title="Edit text of question &quot;Cumulative vote&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
 <div class='content'><p>Importance and Satisfaction survey.</p>
 </div><div class='widget ms_importance_satis'>
-<input type='hidden' name='q15:format' value='1' /><input type='hidden' name='q15:dim' value='19' /><table><thead><tr><th scope='col'>Rated item</th><th scope='col'>Importance</th><th scope='col'>Satisfaction</th></tr></thead><tbody>
-<tr class='even'><th scope='row'>choice1</th><td><label for='xq15:c1'><select  title='Importance of choice1' name='q15:c1[]' id='xq15:c1'><option value='0'>1 + (lowest)</option><option value='1'>2 ++</option><option value='2'>3 +++</option><option value='3'>4 ++++</option><option value='4'>5 +++++</option><option value='5'>6 ++++++</option><option value='6'>7  +++++++ (highest)</option><option value='7'>Not applicable</option><option value='8' selected='selected'>No opinion</option></select></label></td><td><label><select title='Satisfaction on choice1' name='q15:c1[]'><option value='9'>1 + (lowest)</option><option value='10'>2 ++</option><option value='11'>3 +++</option><option value='12'>4 ++++</option><option value='13'>5 +++++</option><option value='14'>6 ++++++</option><option value='15'>7  +++++++ (highest)</option><option value='16'>Didn&#039;t know</option><option value='17'>Not applicable</option><option value='18' selected='selected'>No opinion</option></select></label></td></tr><tr class='odd'><th scope='row'>choice2</th><td><label for='xq15:c2'><select  title='Importance of choice2' name='q15:c2[]' id='xq15:c2'><option value='0'>1 + (lowest)</option><option value='1'>2 ++</option><option value='2'>3 +++</option><option value='3'>4 ++++</option><option value='4'>5 +++++</option><option value='5'>6 ++++++</option><option value='6'>7  +++++++ (highest)</option><option value='7'>Not applicable</option><option value='8' selected='selected'>No opinion</option></select></label></td><td><label><select title='Satisfaction on choice2' name='q15:c2[]'><option value='9'>1 + (lowest)</option><option value='10'>2 ++</option><option value='11'>3 +++</option><option value='12'>4 ++++</option><option value='13'>5 +++++</option><option value='14'>6 ++++++</option><option value='15'>7  +++++++ (highest)</option><option value='16'>Didn&#039;t know</option><option value='17'>Not applicable</option><option value='18' selected='selected'>No opinion</option></select></label></td></tr><tr class='even'><th scope='row'>choice3</th><td><label for='xq15:c3'><select  title='Importance of choice3' name='q15:c3[]' id='xq15:c3'><option value='0'>1 + (lowest)</option><option value='1'>2 ++</option><option value='2'>3 +++</option><option value='3'>4 ++++</option><option value='4'>5 +++++</option><option value='5'>6 ++++++</option><option value='6'>7  +++++++ (highest)</option><option value='7'>Not applicable</option><option value='8' selected='selected'>No opinion</option></select></label></td><td><label><select title='Satisfaction on choice3' name='q15:c3[]'><option value='9'>1 + (lowest)</option><option value='10'>2 ++</option><option value='11'>3 +++</option><option value='12'>4 ++++</option><option value='13'>5 +++++</option><option value='14'>6 ++++++</option><option value='15'>7  +++++++ (highest)</option><option value='16'>Didn&#039;t know</option><option value='17'>Not applicable</option><option value='18' selected='selected'>No opinion</option></select></label></td></tr></tbody></table>
+<input type='hidden' name='q15:format' value='1' /><input
+  type='hidden' name='q15:dim' value='19' />
+<table class="records_list data tMargin"><thead><tr><th scope='col'>Rated item</th><th scope='col'>Importance</th><th scope='col'>Satisfaction</th></tr></thead><tbody>
+<tr class='even'><th scope='row'>choice 1</th><td><label
+  for='xq15:c1'><select  title='Importance of choice1' name='q15:c1[]'
+    id='xq15:c1'><option value='0'>1 + (lowest)</option><option
+      value='1'>2 ++</option><option value='2'>3 +++</option><option
+	value='3'>4 ++++</option><option value='4'>5
+	  +++++</option><option value='5'>6 ++++++</option><option
+	    value='6'>7  +++++++ (highest)</option><option
+	      value='7'>Not applicable</option><option value='8'
+		selected='selected'>No
+		opinion</option></select></label></td><td><label><select
+		  title='Satisfaction on choice1'
+		  name='q15:c1[]'><option value='9'>1 +
+		    (lowest)</option><option value='10'>2
+		      ++</option><option value='11'>3
+			+++</option><option value='12'>4
+			  ++++</option><option value='13'>5
+			    +++++</option><option value='14'>6
+			      ++++++</option><option value='15'>7
+				+++++++ (highest)</option><option
+				  value='16'>Didn&#039;t
+				  know</option><option value='17'>Not
+				    applicable</option><option
+				      value='18'
+				      selected='selected'>No
+				      opinion</option></select></label></td></tr><tr
+					class='odd'><th
+					  scope='row'>choice
+					  2</th><td><label
+					    for='xq15:c2'><select
+					      title='Importance of
+					      choice2' name='q15:c2[]'
+					      id='xq15:c2'><option
+						value='0'>1 +
+						(lowest)</option><option
+						  value='1'>2
+						  ++</option><option
+						    value='2'>3
+						    +++</option><option
+						      value='3'>4
+						      ++++</option><option
+							value='4'>5
+							+++++</option><option
+							  value='5'>6
+							  ++++++</option><option
+							    value='6'>7
+							    +++++++
+							    (highest)</option><option
+							      value='7'>Not
+							      applicable</option><option
+								value='8'
+								selected='selected'>No
+								opinion</option></select></label></td><td><label><select
+								  title='Satisfaction
+								  on
+								  choice2'
+								  name='q15:c2[]'><option
+								    value='9'>1
+								    +
+								    (lowest)</option><option
+								      value='10'>2
+								      ++</option><option
+									value='11'>3
+									+++</option><option
+									  value='12'>4
+									  ++++</option><option
+									    value='13'>5
+									    +++++</option><option
+									      value='14'>6
+									      ++++++</option><option
+										value='15'>7
+										+++++++
+										(highest)</option><option
+										  value='16'>Didn&#039;t
+										  know</option><option
+										    value='17'>Not
+										    applicable</option><option
+										      value='18'
+										      selected='selected'>No
+										      opinion</option></select></label></td></tr><tr
+											class='even'><th
+											  scope='row'>choice
+											  3</th><td><label
+											    for='xq15:c3'><select  title='Importance of choice3' name='q15:c3[]' id='xq15:c3'><option value='0'>1 + (lowest)</option><option value='1'>2 ++</option><option value='2'>3 +++</option><option value='3'>4 ++++</option><option value='4'>5 +++++</option><option value='5'>6 ++++++</option><option value='6'>7  +++++++ (highest)</option><option value='7'>Not applicable</option><option value='8' selected='selected'>No opinion</option></select></label></td><td><label><select title='Satisfaction on choice3' name='q15:c3[]'><option value='9'>1 + (lowest)</option><option value='10'>2 ++</option><option value='11'>3 +++</option><option value='12'>4 ++++</option><option value='13'>5 +++++</option><option value='14'>6 ++++++</option><option value='15'>7  +++++++ (highest)</option><option value='16'>Didn&#039;t know</option><option value='17'>Not applicable</option><option value='18' selected='selected'>No opinion</option></select></label></td></tr></tbody></table>
 <p class="rationaleblock"><label for='xq15:rationale'>Rationale</label>: <br />
 <textarea id ='xq15:rationale' name='q15:rationale' class='rationale' cols='70' rows='6'></textarea></p>
 <p class="commentblock"><label for='xq15:comment'>Comments:</label> <br />
@@ -402,81 +496,83 @@ live with it), where 1  is the most preferred, 2 the next best and so on... You 
 </div>
 
 <div class='question required' id='wbstp'><fieldset>
-<legend>16. Monday, 11 November Group Meetings<a class="edit" href="q/q16/" title="Edit text of question &quot;Monday, 11 November Group Meetings&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
+<legend><span class="qtitle">16. Technical Plenary widget</span><a class="edit" href="q/q16/" title="Edit text of question &quot;Monday, 11 November Group Meetings&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
 <div class='content'>For Group meetings on Monday, 11 November:</div><div class='widget tp_wg'>
 <input type='hidden' name='tp:format' value='0' /><input type='hidden' name='tp:dim' value='2' /><p><label title='Not Attending that day'><input type='radio' name='tp:d1[]' value='na'  /> Not attending that day</label></p>
 <p><label title='Attending as observer'><input type='radio' name='tp:d1[]' value='obs'  /> Attending as an
 observer only (check at least one of the appropriate requests below  in the 'Observer request' column)</label></p>
-<p>Attending as a  participant in the selected group below:</p><table>
+<p>Attending as a  participant in the selected group below:</p>
+<table class="records_list data tMargin">
 <thead><tr><th scope='col'>Group meeting</th><th scope='col'>Attending as a participant in this group</th><th scope='col'>Confidentiality</th><th scope='col'>Observer request</th></tr></thead>
 <tbody><tr><th scope='row'></th>
-<td><label><input  title='Attending  as a Group participant' type='radio' name='tp:d1[]' value='' /></label></td>
-<td><strong>Member confidential</strong></td>
-<td><label><input  title='Requesting observer status for  meeting' type='checkbox' name='tp:d2[]' value='' /></label></td></tr>
+<td><label><input  title='Attending  as a Group participant'
+  type='radio' name='tp:d1[]' value='' /></label></td>
+<td>Not Member confidential</td>
+<td><label><input  title='Requesting observer status for  meeting' type='checkbox' name='tp:d2[]' value='' /> (with Chair's agreement)</label></td></tr>
 <tr><th scope='row'>Browser Testing and Tools</th>
 <td><label><input  title='Attending Browser Testing and Tools as a Group participant' type='radio' name='tp:d1[]' value='BTT' /></label></td>
-<td><strong>Member confidential</strong></td>
-<td><label><input  title='Requesting observer status for Browser Testing and Tools meeting' type='checkbox' name='tp:d2[]' value='BTT' /></label></td></tr>
+<td>Not Member confidential</td>
+<td><label><input  title='Requesting observer status for Browser Testing and Tools meeting' type='checkbox' name='tp:d2[]' value='BTT' /> (with Chair's agreement)</label></td></tr>
 <tr><th scope='row'>Chinese Web Accessibility CG (Mon afternoon only)</th>
 <td><label><input  title='Attending Chinese Web Accessibility CG (Mon afternoon only) as a Group participant' type='radio' name='tp:d1[]' value='CWACG' /></label></td>
-<td><strong>Member confidential</strong></td>
-<td><label><input  title='Requesting observer status for Chinese Web Accessibility CG (Mon afternoon only) meeting' type='checkbox' name='tp:d2[]' value='CWACG' /></label></td></tr>
+<td>Not Member confidential</td>
+<td><label><input  title='Requesting observer status for Chinese Web Accessibility CG (Mon afternoon only) meeting' type='checkbox' name='tp:d2[]' value='CWACG' /> (with Chair's agreement)</label></td></tr>
 <tr><th scope='row'>CSS (Cascading Style Sheets)</th>
 <td><label><input  title='Attending CSS (Cascading Style Sheets) as a Group participant' type='radio' name='tp:d1[]' value='CSS' /></label></td>
-<td><strong>Member confidential</strong></td>
-<td><label><input  title='Requesting observer status for CSS (Cascading Style Sheets) meeting' type='checkbox' name='tp:d2[]' value='CSS' /></label></td></tr>
+<td>Not Member confidential</td>
+<td><label><input  title='Requesting observer status for CSS (Cascading Style Sheets) meeting' type='checkbox' name='tp:d2[]' value='CSS' /> (with Chair's agreement)</label></td></tr>
 <tr><th scope='row'>Digital Publishing</th>
 <td><label><input  title='Attending Digital Publishing as a Group participant' type='radio' name='tp:d1[]' value='DP' /></label></td>
-<td><strong>Member confidential</strong></td>
-<td><label><input  title='Requesting observer status for Digital Publishing meeting' type='checkbox' name='tp:d2[]' value='DP' /></label></td></tr>
-<tr><th scope='row'>Education and Outreach CANCELED</th>
+<td>Not Member confidential</td>
+<td><label><input  title='Requesting observer status for Digital Publishing meeting' type='checkbox' name='tp:d2[]' value='DP' /> (with Chair's agreement)</label></td></tr>
+<tr><th scope='row'>Education and Outreach</th>
 <td><label><input  title='Attending Education and Outreach CANCELED as a Group participant' type='radio' name='tp:d1[]' value='EO' /></label></td>
-<td><strong>Member confidential</strong></td>
-<td><label><input  title='Requesting observer status for Education and Outreach CANCELED meeting' type='checkbox' name='tp:d2[]' value='EO' /></label></td></tr>
+<td>Not Member confidential</td>
+<td><label><input  title='Requesting observer status for Education and Outreach CANCELED meeting' type='checkbox' name='tp:d2[]' value='EO' /> (with Chair's agreement)</label></td></tr>
 <tr><th scope='row'>Efficient XML Interchange</th>
 <td><label><input  title='Attending Efficient XML Interchange as a Group participant' type='radio' name='tp:d1[]' value='EXI' /></label></td>
-<td><strong>Member confidential</strong></td>
-<td><label><input  title='Requesting observer status for Efficient XML Interchange meeting' type='checkbox' name='tp:d2[]' value='EXI' /></label></td></tr>
-<tr><th scope='row'>I18N (Internationalization) CANCELED</th>
+<td>Not Member confidential</td>
+<td><label><input  title='Requesting observer status for Efficient XML Interchange meeting' type='checkbox' name='tp:d2[]' value='EXI' /> (with Chair's agreement)</label></td></tr>
+<tr><th scope='row'>I18N (Internationalization)</th>
 <td><label><input  title='Attending I18N (Internationalization) CANCELED as a Group participant' type='radio' name='tp:d1[]' value='I18N' /></label></td>
-<td><strong>Member confidential</strong></td>
-<td><label><input  title='Requesting observer status for I18N (Internationalization) CANCELED meeting' type='checkbox' name='tp:d2[]' value='I18N' /></label></td></tr>
+<td>Not Member confidential</td>
+<td><label><input  title='Requesting observer status for I18N (Internationalization) CANCELED meeting' type='checkbox' name='tp:d2[]' value='I18N' /> (with Chair's agreement)</label></td></tr>
 <tr><th scope='row'>Protocols and Formats</th>
 <td><label><input  title='Attending Protocols and Formats as a Group participant' type='radio' name='tp:d1[]' value='PF' /></label></td>
-<td><strong>Member confidential</strong></td>
-<td><label><input  title='Requesting observer status for Protocols and Formats meeting' type='checkbox' name='tp:d2[]' value='PF' /></label></td></tr>
+<td>Not Member confidential</td>
+<td><label><input  title='Requesting observer status for Protocols and Formats meeting' type='checkbox' name='tp:d2[]' value='PF' /> (with Chair's agreement)</label></td></tr>
 <tr><th scope='row'>Systems Applications</th>
 <td><label><input  title='Attending Systems Applications as a Group participant' type='radio' name='tp:d1[]' value='c17' /></label></td>
-<td><strong>Member confidential</strong></td>
-<td><label><input  title='Requesting observer status for Systems Applications meeting' type='checkbox' name='tp:d2[]' value='c17' /></label></td></tr>
+<td>Not Member confidential</td>
+<td><label><input  title='Requesting observer status for Systems Applications meeting' type='checkbox' name='tp:d2[]' value='c17' /> (with Chair's agreement)</label></td></tr>
 <tr><th scope='row'>TAG</th>
 <td><label><input  title='Attending TAG as a Group participant' type='radio' name='tp:d1[]' value='TAG' /></label></td>
 <td><strong>Member confidential</strong></td>
 <td><label><input  title='Requesting observer status for TAG meeting' type='checkbox' name='tp:d2[]' value='TAG' /></label></td></tr>
 <tr><th scope='row'>Timed Text</th>
 <td><label><input  title='Attending Timed Text as a Group participant' type='radio' name='tp:d1[]' value='TT' /></label></td>
-<td><strong>Member confidential</strong></td>
-<td><label><input  title='Requesting observer status for Timed Text meeting' type='checkbox' name='tp:d2[]' value='TT' /></label></td></tr>
+<td>Not Member confidential</td>
+<td><label><input  title='Requesting observer status for Timed Text meeting' type='checkbox' name='tp:d2[]' value='TT' /> (with Chair's agreement)</label></td></tr>
 <tr><th scope='row'>User Agent Accessibility</th>
 <td><label><input  title='Attending User Agent Accessibility as a Group participant' type='radio' name='tp:d1[]' value='UA' /></label></td>
-<td><strong>Member confidential</strong></td>
+<td>Not Member confidential</td>
 <td><label><input  title='Requesting observer status for User Agent Accessibility meeting' type='checkbox' name='tp:d2[]' value='UA' /></label></td></tr>
 <tr><th scope='row'>Web and Broadcasting BG</th>
 <td><label><input  title='Attending Web and Broadcasting BG as a Group participant' type='radio' name='tp:d1[]' value='WebB' /></label></td>
-<td><strong>Member confidential</strong></td>
-<td><label><input  title='Requesting observer status for Web and Broadcasting BG meeting' type='checkbox' name='tp:d2[]' value='WebB' /></label></td></tr>
+<td>Not Member confidential</td>
+<td><label><input  title='Requesting observer status for Web and Broadcasting BG meeting' type='checkbox' name='tp:d2[]' value='WebB' /> (with Chair's agreement)</label></td></tr>
 <tr><th scope='row'>Web Applications</th>
 <td><label><input  title='Attending Web Applications as a Group participant' type='radio' name='tp:d1[]' value='WebApp' /></label></td>
-<td><strong>Member confidential</strong></td>
-<td><label><input  title='Requesting observer status for Web Applications meeting' type='checkbox' name='tp:d2[]' value='WebApp' /></label></td></tr>
+<td>Not Member confidential</td>
+<td><label><input  title='Requesting observer status for Web Applications meeting' type='checkbox' name='tp:d2[]' value='WebApp' /> (with Chair's agreement)</label></td></tr>
 <tr><th scope='row'>Web Real-Time Communications</th>
 <td><label><input  title='Attending Web Real-Time Communications as a Group participant' type='radio' name='tp:d1[]' value='WebRT' /></label></td>
-<td><strong>Member confidential</strong></td>
-<td><label><input  title='Requesting observer status for Web Real-Time Communications meeting' type='checkbox' name='tp:d2[]' value='WebRT' /></label></td></tr>
+<td>Not Member confidential</td>
+<td><label><input  title='Requesting observer status for Web Real-Time Communications meeting' type='checkbox' name='tp:d2[]' value='WebRT' /> (with Chair's agreement)</label></td></tr>
 <tr><th scope='row'>XML Query</th>
 <td><label><input  title='Attending XML Query as a Group participant' type='radio' name='tp:d1[]' value='XMLQ' /></label></td>
-<td><strong>Member confidential</strong></td>
-<td><label><input  title='Requesting observer status for XML Query meeting' type='checkbox' name='tp:d2[]' value='XMLQ' /></label></td></tr>
+<td>Not Member confidential</td>
+<td><label><input  title='Requesting observer status for XML Query meeting' type='checkbox' name='tp:d2[]' value='XMLQ' /> (with Chair's agreement)</label></td></tr>
 <tr><th scope='row'>Other (Please specify below)</th>
 <td></td><td></td><td><label><input  title='Attending a meeting not listed here or something not matching one of the above choices' type='checkbox' name='tp:d2[]' value='other' /></label> (explain below)</td></tr>
 </tbody></table><p class="commentblock"><label for='xtp:comment'></label> <br />
@@ -490,7 +586,7 @@ observer only (check at least one of the appropriate requests below  in the 'Obs
     This employees list question will not work with this questionnaire
     because the questionnaire is for individuals rather than organizations.</p>
 <div class='question optional' id='wbsq17'><fieldset>
-<legend>17. Employees list<a class="edit" href="q/q17/" title="Edit text of question &quot;Employees list&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
+<legend><span class="qtitle">17. Employees list</span><a class="edit" href="q/q17/" title="Edit text of question &quot;Employees list&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
 <div class='content'><p>Full statement of question.</p>
 </div><div class='widget employees'>
 <input type='hidden' name='q16:format' value='0' /><input type='hidden' name='q16:dim' value='3' /><select name='q16:d1[]'><option  value='0' >Nobody</option>
@@ -529,20 +625,10 @@ Answers received after that time may not be counted.
 <p>See also <a href='access'>who can do what</a> with this questionnaire.</p>
 
   <hr /><br />
-<div><!-- #footer -->
-<address>Maintained by Laurent Carcone, from a development by <a
-href="/People/Dom/">Dominique Haza&euml;l-Massieux</a> (<a
-href="mailto:dom@w3.org">dom@w3.org</a>) on an <a href="/2000/11/msm/">original design</a> by <a
-href="/People/cmsmcq/">Michael Sperberg-McQueen.</a>
-Please send bug reports and request for enhancements to <a
-href="mailto:lcarcone@w3.org">lcarcone@w3.org</a> with <a
-href="mailto:w3t-sys@w3.org">w3t-sys@w3.org</a> copied (if your mail
-client supports it, <a
-href="mailto:lcarcone@w3.org,w3t-sys@w3.org?subject=WBS%20bug%20report%20">send mail</a> directly to the
-right persons).<br />
-<em>$Id: wbs-lc.html,v 1.3 2015/08/26 08:51:36 carcone Exp $</em>.
-</address>
-</div><!-- /end #footer -->
+
+<div class="maintainer">
+Maintained by Laurent Carcone, from a development by <a href="//www.w3.org">Dominique Hazaël-Massieux</a> (<a href="mailto:">dom</a>) on an <a href="//www.w3.org:">original design</a> by <a href="">Michael Sperberg-McQueen</a> <em>$Id: $</em>. Please send bug reports and request for enhancements to <a href="mailto:">laurent</a> with <a href="">system</a> copied (if your mail client supports it, <a href="mailto:">send mail</a> directly to the right persons)
+</div>
 
 </div> <!-- /end #w3c_content_body -->
 </div> <!-- /end #w3c_mainCol -->
