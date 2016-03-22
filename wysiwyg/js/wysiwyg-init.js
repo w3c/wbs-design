@@ -1,6 +1,6 @@
 $(document).ready(function() {
     // Featured editor
-    $('#xq1\\:comment').each( function(index, element)
+    $('#wysywig\\:comment').each( function(index, element)
     {
 	//alert('index ' + index);
         $(element).wysiwyg({
