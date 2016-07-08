@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml' lang='en' xml:lang='en'>
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+<meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+<title>Redesign - Edit the questionnaire WBS question types - new design - Web-Based Straw-poll and Balloting System</title>
+<link rel='stylesheet' href='/2008/site/css/minimum' type='text/css' media='handheld, all' />
+<style type='text/css' media='print, screen and (min-width: 481px)' xml:space='preserve'> @import url('/2008/site/css/advanced');</style>
+<link href='/2008/site/css/minimum' rel='stylesheet' type='text/css' media='handheld, only screen and (max-device-width: 480px)' />
+<link rel='stylesheet' href='/2008/site/css/print' type='text/css' media='print' />
+<link rel='stylesheet' type='text/css' href='/2002/09/wbs/design-style.css' title='default' />
+<link rel='shortcut icon' href='/2008/site/images/favicon.ico' type='image/x-icon' />
+<link rel='alternate' type='application/atom+xml' href='/2002/09/wbs/myQuestionnaires.atom' title='ATOM feed of my Questionnaires' />
+
+<script type='text/javascript' src='/2007/08/datepicker/js/datepicker.js'></script>
+<link href='/2007/08/datepicker/css/datepicker.css' rel='stylesheet' type='text/css' />
+<script type='text/javascript' src='/2002/09/wbs/reminder.js'></script>
+<link href='/2002/09/wbs/reminder.css' rel='stylesheet' type='text/css' />
+<link rel='start' href='/2002/09/wbs/' title='WBS Home page' />
+<link rel='bookmark' href='/2002/09/wbs/myQuestionnaires' title='My questionnaires' />
+<link rel='bookmark' href='/2002/09/wbs/showq' title='List of open questionnaires' />
+</head>
+
+<body id="www-w3-org" class="w3c_member">
+
+<div id="w3c_container">
+  <div id="w3c_mast"> <!-- #w3c_mast / Page top header -->
+   <h1 class="logo"><a tabindex="2" accesskey="1" href="http://www.w3.org/"><img src="../images/logo-w3c-mobile-lg.png" width="90" height="53" alt="W3C" /></a>
+   <span class="alt-logo">W3C</span>
+   </h1>
+   <div id="w3c_nav">
+    <form action="http://www.w3.org/Help/search" method="get" enctype="application/x-www-form-urlencoded">
+       <!-- w3c_sec_nav is populated through js -->
+       <div class="w3c_sec_nav"><!-- --></div>
+       <ul class="main_nav"> <!-- Main navigation menu -->
+       <li class="first-item"><a href="/standards/">Standards</a></li>
+       <li><a href="/participate/">Participate</a></li>
+       <li><a href="/Consortium/membership">Membership</a></li>
+       <li class="last-item"><a href="/Consortium/">About W3C</a></li>
+       <li class="search-item">
+       <div id="search-form">
+       <input tabindex="3" class="text" name="q" value="" title="Search" />
+       <button id="search-submit" name="search-submit" type="submit"><img class="submit" src="//www.w3.org/2008/site/images/search-button" alt="Search" width="21" height="17" /></button>
+       </div> <!-- /end #w3c_nav -->
+       </li>
+       </ul>
+     </form>
+   </div>
+  </div> <!-- /end #w3c_mast -->
+
+  <div id="w3c_main">
+
+  <div id="w3c_logo_shadow" class="w3c_leftCol">
+    <img height="32" alt="" src="//www.w3.org/2008/site/images/logo-shadow" />
+  </div> <!-- /end #w3c_logo_shadow -->
+
+  <div class="w3c_leftCol">
+      <h2 class="offscreen">Site Navigation</h2>
+
+<h3 class='category'><span class='ribbon'>This Questionnaire</span></h3>
+<ul class='theme'>
+<li><a accesskey='t' href='/2002/09/wbs/99999/wbs-types-test/'>Answer</a></li>
+<li><a accesskey='r' href='/2002/09/wbs/99999/wbs-types-test/results'>Results</a></li>
+<li><a accesskey='e' href='/2002/09/wbs/99999/wbs-types-test/handler' title='Edit this questionnaire'>Edit</a></li>
+<li><a href='/2002/09/wbs/99999/wbs-types-test/q/' title='Add a question to this questionnaire'>Add a question</a></li>
+<li><a href='/2002/09/wbs/99999/wbs-types-test/handler#questions' title='Edit an existing question of this questionnaire'>Edit a question</a></li>
+<li><a href='/2002/09/wbs/99999/wbs-types-test/impersonate' title='Impersonate a user for this questionnaires'>Impersonate</a></li>
+</ul>
+<h3 class='category'><span class='ribbon'>This Group</span></h3>
+<ul class='theme'>
+<li><a accesskey='g' href='/2002/09/wbs/99999/' title='Current questionnaires for this group'>Current questionnaires</a></li>
+<li><a href='/2002/09/wbs/99999/factory' title='Create a questionnaire for this group'>Create a new questionnaire</a></li>
+</ul>
+<h3 class='category'><span class='ribbon'>Nearby</span></h3>
+<ul class='theme'>
+<li><a accesskey='h' href='/2002/09/wbs/' title='WBS Home'>WBS Home</a></li>
+<li><a href='/2002/09/wbs/showq' title='Current questionnaires for all the groups'>Current questionnaires</a></li>
+<li><a accesskey='m' href='/2002/09/wbs/myQuestionnaires' title='List of questionnaires you are supposed to answer'>My questionnaires</a></li>
+<li><a href='/2004/01/pp-impl/' title='Working Group management system and Call for Participation'><abbr title='Working Group'>WG</abbr> Management (<abbr title='Implementation of the Patent Policy'>IPP</abbr>) </a></li>
+<a href='/2000/09/dbwg/details?group=99999'>Group details</a>
+</ul>
+</div> <!-- /end #w3c_left_col -->
+
+  <div class="w3c_mainCol">
+
+    <div id="w3c_crumbs">
+    <div id="w3c_crumbs_frame">
+        <ul class="bct"> <!-- .bct / Breadcrumbs -->
+          <li class="skip"><a tabindex="1" accesskey="2" title="Skip to content (e.g., when browsing via audio)" href="#w3c_content_body">Skip</a></li>
+          <li><a href="/">W3C</a> <span class="cr">»</span> </li>
+          <li><a href="/2002/09/wbs/">WBS Home</a></li>
+       </ul>
+   </div>
+   </div>
+   <h1 class="title">Edit the questionnaire WBS question types - new design</h1>
+   <div id="w3c_content_body">
+
+   <div id="Content">
+
+<p class="doc">You can tweak the settings of the current questionnaire with the form below, or <a href="q/">add a new question</a>, or edit <a href="#questions">one of the existing questions</a>.</p>
+<form method="post" action="handler">
+<ul class='edit'>
+<li>
+Questionnaire identifier: <code>wbs-types-test</code><input name="wgid" type="hidden" value="99999" />
+<input name="qairedupd" type="hidden" value="2016-07-07 11:38:16" /> <span class='required'>(*)</span>
+</li><li><label>Questionnaire’s starting date:
+<input id="startdate" name="startdate" type="date" required="required" size="10" class="w8em format-y-m-d divider-dash highlight-days-67  no-transparency"
+value="2014-11-21" /></label> (starts at 0:00 Eastern time)
+</li><li><label>Questionnaire's closing date:
+<input required="required" name="closedate" type="date" size="10" id="closedate" class="w8em format-y-m-d divider-dash highlight-days-67  no-transparency"
+value="2016-12-31" /></label> (ends at midnight Eastern time)
+</li>
+
+<li>
+<label>Enable reminder:
+<input id="reminderoption" name="reminderoption" title="reminder date option"
+type="checkbox"  checked='checked' /></label>
+<span class="elem_hide" id="reminderalert"> <em>This option is not
+available for questionnaires open for less than 7 days</em></span>
+<div class="elem_inline" id="remindervalue">
+<ul>
+<li><label>Reminder date:
+<input id="reminderdate" name="reminderdate" type="date" size="10" class="w8em format-y-m-d divider-dash
+highlight-days-67 no-transparency" value="2014-12-10" />
+</label></li>
+<li><label>Reminder mailing list:
+<input id="remindelist" name="reminderlist" type="email" maxlength="255" value="laurent@w3.org" />
+</label><span> (enter one email address, if empty an email will be sent to each non-responder participant of the Test Group)</span></li>
+</ul>
+</div>
+</li>
+
+<li><label>Title of the questionnaire<br />
+<input name="shortdesc" required="required" type="text" size="80" 
+value="WBS question types - new design" /> 
+</label></li>
+
+<li><label>Who is allowed to see the results? <select name="resultsACL">
+<option value="group" selected='selected'>only the participants of the Test Group</option>
+<option value="team">only the Team</option>
+<option value="memberOrTeam">The Team, but responders can choose to make their responses Member-visible</option>
+<option value="member">anybody with Member access</option>
+<option value="public">anybody</option>
+</select></label>
+<span class='message'>Before changing this, ensure that changing the visibility of
+	 currently <a href='results'>received answers</a> is acceptable to the responders.</span></li>
+<li class='optional'><label><input type="checkbox" name="allowNonW3CUsers"  checked='checked' /> Allow to answer the questionnaire without a W3C account</label></li>
+<li class='optional'><label>Send all the responses to the following email address(es): <input type="email" multiple="multiple" name="emailNotif" maxlength="255" value=""/></label> (optional, comma-separated list for several addresses)</li>
+<li  class='optional'><label>E-mail address(es) to which the responders can choose to copy his/her responses (e.g. w3c-archive@w3.org): <input multiple="multiple" type="email" name="params[emailCC]" maxlength="255" value=""/></label>  (optional, comma-separated list for several addresses)</li> 
+
+<li>Order of the existing questions. Use input area to change order.<ol>
+<li><label>Simple text question <input type='text' size='3' maxlength='3' name='seqno:q1' value='10' /></label></li><li><label>Single selection required Yes/No <input type='text' size='3' maxlength='3' name='seqno:q2' value='20' /></label></li><li><label>Single selection required Yes/No/Concur/Abstain <input type='text' size='3' maxlength='3' name='seqno:q3' value='30' /></label></li><li><label>Select one among many (drop-down list) <input type='text' size='3' maxlength='3' name='seqno:q4' value='40' /></label></li><li><label>Select one among many (radio buttons) <input type='text' size='3' maxlength='3' name='seqno:q5' value='50' /></label></li><li><label>Open comments <input type='text' size='3' maxlength='3' name='seqno:q6' value='60' /></label></li><li><label>Text entries <input type='text' size='3' maxlength='3' name='seqno:q7' value='70' /></label></li><li><label>Select multiple items (checkboxes) <input type='text' size='3' maxlength='3' name='seqno:q8' value='80' /></label></li><li><label>Survey type <input type='text' size='3' maxlength='3' name='seqno:q9' value='90' /></label></li><li><label>Straw-poll <input type='text' size='3' maxlength='3' name='seqno:q10' value='100' /></label></li><li><label>Rank-ordering <input type='text' size='3' maxlength='3' name='seqno:q11' value='110' /></label></li><li><label> Pick a time for a teleconf <input type='text' size='3' maxlength='3' name='seqno:q12' value='120' /></label></li><li><label>Cumulative vote <input type='text' size='3' maxlength='3' name='seqno:q13' value='130' /></label></li><li><label> Importance survey <input type='text' size='3' maxlength='3' name='seqno:q14' value='140' /></label></li><li><label> Importance and Satisfaction survey <input type='text' size='3' maxlength='3' name='seqno:q15' value='150' /></label></li><li><label>Monday, 27 October All Group Meetings Attendance  <input type='text' size='3' maxlength='3' name='seqno:tpac' value='160' /></label></li></ol></li>
+</ul>
+<p>
+<input type='submit' name='action' value='Update questionnaire data' /></p>
+</form>
+
+
+<h2><a name="questions" id="questions">Add/Edit questions</a></h2>
+<ul>
+<li><a href="q/">Add a question to this questionnaire</a></li>
+<li><a href='q/q1/'>Edit question "Simple text question"</a></li><li><a href='q/q2/'>Edit question "Single selection required Yes/No"</a></li><li><a href='q/q3/'>Edit question "Single selection required Yes/No/Concur/Abstain"</a></li><li><a href='q/q4/'>Edit question "Select one among many (drop-down list)"</a></li><li><a href='q/q5/'>Edit question "Select one among many (radio buttons)"</a></li><li><a href='q/q6/'>Edit question "Open comments"</a></li><li><a href='q/q7/'>Edit question "Text entries"</a></li><li><a href='q/q8/'>Edit question "Select multiple items (checkboxes)"</a></li><li><a href='q/q9/'>Edit question "Survey type"</a></li><li><a href='q/q10/'>Edit question "Straw-poll"</a></li><li><a href='q/q11/'>Edit question "Rank-ordering"</a></li><li><a href='q/q12/'>Edit question " Pick a time for a teleconf"</a></li><li><a href='q/q13/'>Edit question "Cumulative vote"</a></li><li><a href='q/q14/'>Edit question " Importance survey"</a></li><li><a href='q/q15/'>Edit question " Importance and Satisfaction survey"</a></li><li><a href='q/tpac/'>Edit question "Monday, 27 October All Group Meetings Attendance "</a></li></ul>
+
+<p>
+<a href="/2002/09/wbs/showwb">WBS home</a> /
+<a href="/2002/09/wbs/showq">Questionnaires</a> 
+/ <a href='../'>WG questionnaires</a>
+/ <a href='./'>Answer this questionnaire</a>
+/ <a href='results'>Show results</a>
+</p>
+
+<script type='text/javascript' src='/2002/09/wbs/reminderEvents.js'></script>
+
+</div> <!-- /end #Content -->
+
+<div class="maintainer">
+Redesign - Maintained by Laurent Carcone, from a development by <a href="/People/Dom/">Dominique Haza&euml;l-Massieux</a> (<a href="mailto:dom@w3.org">dom@w3.org</a>) on an <a href="/2000/11/msm/">original design</a> by <a href="/People/cmsmcq/">Michael Sperberg-McQueen</a> <em>$Id: addqaire.php3,v 1.241 2015/09/01 08:13:03 carcone Exp $</em>. Please send bug reports and request for enhancements to <a href="mailto:lcarcone@w3.org">lcarcone@w3.org</a> with <a href="mailto:w3t-sys@w3.org">w3t-sys@w3.org</a> copied (if your mail client supports it, <a href="mailto:lcarcone@w3.org(Laurent%20Carcone),w3t-sys@w3.org(Systems Team)?subject=WBS%20bug%20report%20">send mail</a> directly to the right persons)
+</div>
+
+</div> <!-- /end #w3c_content_body -->
+</div> <!-- /end #w3c_mainCol -->
+</div> <!-- end #w3c_main -->
+</div> <!-- /end #w3c_container -->
+
+
+<!-- Generated from data/footer.php, ../../smarty/{footer-block.tpl} -->
+<div id="w3c_footer">
+<div id="w3c_footer-inner">
+<h2 class="offscreen">Footer Navigation</h2>
+<div class="w3c_footer-nav">
+<h3>Navigation</h3>
+<ul class="footer_top_nav">
+<li><a href="/">Home</a></li>
+<li><a href="/standards/">Standards</a></li>
+<li><a href="/participate/">Participate</a></li>
+<li><a href="/Consortium/membership">Membership</a></li>
+<li class="last-item"><a href="/Consortium/">About W3C</a></li>
+</ul>
+</div>
+<div class="w3c_footer-nav">
+<h3>Contact W3C</h3>
+<ul class="footer_bottom_nav">
+<li><a href="/Consortium/contact">Contact</a></li>
+<li><a accesskey="0" href="/Help/">Help and FAQ</a></li>
+<li><a href="/Consortium/sponsor/">Sponsor / Donate</a></li>
+<li><a href="/Consortium/siteindex">Site Map</a></li>
+<li>
+<address id="w3c_signature"><a href="http://lists.w3.org/Archives/Public/site-comments/">Feedback</a></address>
+</li>
+</ul>
+</div>
+<div class="w3c_footer-nav">
+<h3>W3C Updates</h3>
+<ul class="footer_follow_nav">
+<li><a href="http://twitter.com/W3C" title="Follow W3C on Twitter"><img src="/2008/site/images/Twitter_bird_logo_2012.svg" alt="Twitter" class="social-icon" height="40" /></a></li>
+</ul>
+</div>
+<!-- #footer address / page signature -->
+<p class="copyright">Copyright &#xA9; 2016 W3C <sup>&#xAE;</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>,
+<a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>) <a href="/Consortium/Legal/ipr-notice">Usage policies apply</a>.</p>
+</div>
+</div>
+<!-- /end #footer -->
+<!-- Generated from data/scripts.php, ../../smarty/{scripts.tpl} -->
+<div id="w3c_scripts"><script type="text/javascript" src="/2008/site/js/main">
+//<![CDATA[
+<!-- -->
+//]]>
+</script>
+</div>
+
+</body>
+</html>
