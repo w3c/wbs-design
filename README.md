@@ -16,4 +16,6 @@ It contains the snapshots of some html pages of the application and the external
 * [All question types form add-question with W3C site template](https://w3c.github.io/wbs-design/html/qtypes-site-add-question.html)
 * [All question types form edit-question with W3C site template](https://w3c.github.io/wbs-design/html/qtypes-site-edit-question.html)
 * [All question types form impersonate with W3C site template](https://w3c.github.io/wbs-design/html/qtypes-site-impersonate.html)
+* [Form creation with W3C site template](https://w3c.github.io/wbs-design/html/qtypes-site-create.html)
+* [Forms available with W3C site template](https://w3c.github.io/wbs-design/html/qtypes-site-current.html)
 * [Test wysiwyg editor (using jquery plugin 'wysiwyg')](https://w3c.github.io/wbs-design/html/wbs-wysiwyg.html)
