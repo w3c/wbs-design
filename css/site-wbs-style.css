@@ -38,7 +38,6 @@ div.question {
 }
 
 div.question .overlarge {
-  width: 100vw;
   overflow-x: auto;
 }
 
@@ -55,23 +54,19 @@ div.question h2  {
 }
 
 div.question ul {
-  background:#fff;
   color: black;
-  border:1px solid #aaa;
   padding:5px;
-  width:75%;
 }
 
 div.question input {
   margin-right:5px;
 }
 
-div.question ul, div.question select , div.question table {
-  margin-left: 20px;
-}
-
-div.question table {
-  margin-top: 20px;
+div.question table,
+div.question table.tMargin {
+  width: 100%;
+  margin: 0 0 .5em 0 !important;
+  padding: 0;
   border-collapse: initial;
 }
 
@@ -90,28 +85,31 @@ div.question table.eval th a:visited {
    color: #cbf;
 }
 
-div.content, div.widget {
-  margin-left: 1em;
+div.content,
+div.widget {
+  margin: 0 2em .5em 2em;
 }
 
-div.content p {
+div.content p,
+div.widget p {
+  margin-bottom: .5em;
+  padding: 0;
   font-size:1.05em;
+  line-height: 100%;
 }
 
 input, textarea, select {
+  margin-bottom: .5em;
   font-size: 0.90em;
 }
 
 #w3c_content_body form ul {
   list-style:none;
-  margin-bottom:30px;
-  margin-top:10px;
+  margin: 0 0 .5em 0;
 }
 
 #w3c_content_body form ul li {
-  padding-top:4px;
-  padding-bottom:2px;
-  padding-left:3%;
+  padding: 0;
 }
 
 #w3c_content_body form ul li:first-child {
@@ -475,12 +473,14 @@ tr.odd:hover, tr.odd:focus {
 ul.compare li label {
   display:block;
   float:left;
-  width:50%;
 }
 
 ul.compare li {
   clear: left;
-  margin-bottom:.5em;
+}
+
+ul.compare li select {
+  margin-left: 2em;
 }
 
 ul.multicompare li .topic, ul.multicompare li label {
@@ -505,15 +505,10 @@ ul.multicompare li label {
 
 .commentblock { clear: left }
 
-div.ms_importance_satis table tr td,
-div.ms_importance_satis table tr th
-  {
-  border-bottom: thin #005a9c solid;
-  }
-
 div.ms_importance_satis table tr th
   {
   text-align: left;
+  overflow: hidden;
   }
 
 strong.ownanswer {
@@ -566,4 +561,33 @@ a.edit {
 a.edit:hover, a.edit:active, a.edit:focus {
   opacity: 1;
   border-bottom: none;
+}
+
+p.rationaleblock,
+p.commentblock {
+  margin-bottom: .5em;
+  padding: 0;
+}
+
+q {
+  font-style: italic;
+}
+
+.data tbody tr:nth-child(odd) {
+  background-color: #f5f5ff;
+}
+
+.data tbody tr:nth-child(even) {
+  background-color: #fffff5;
+}
+
+.data th,
+.data td {
+  border: none;
+  padding: .4em 1em;
+  overflow: hidden;
+}
+
+.data select {
+  margin: 0;
 }
