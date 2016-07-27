@@ -85,6 +85,7 @@ div.question table.eval th a:visited {
    color: #cbf;
 }
 
+div.results,
 div.content,
 div.widget {
   margin: 0 2em .5em 2em;
@@ -93,14 +94,30 @@ div.widget {
 div.content p,
 div.widget p {
   margin-bottom: .5em;
-  padding: 0;
+  padding: 0px;
   font-size:1.05em;
   line-height: 100%;
+}
+
+div.results p {
+  margin-bottom: .5em;
+  padding: 0 0 0 0;
+  font-size:1.05em;
+  line-height: 100%;
+}
+
+div.results h4 {
+  padding: 10px 0 0 0;
 }
 
 input, textarea, select {
   margin-bottom: .5em;
   font-size: 0.90em;
+}
+
+ol li {
+  list-style-type: decimal;
+  margin-left: 20px;
 }
 
 #w3c_content_body form ul {
@@ -128,11 +145,12 @@ div.question h3 {
   white-space:normal;
   display:block;
   font-size:1.3em;
-  color:#fff;
-  padding:5px;
+  background:#b3cdf3; 
+  color:#111;
+  padding:8px;
   margin:0;
-  border-top:1px solid black;
-  border-bottom:1px solid black;
+  // border-top:1px solid black;
+  // border-bottom:1px solid black;
 }
 
 div.question legend {
@@ -165,15 +183,24 @@ table.columns tr {
 }
 
 table.summary {
-  border:1px solid black ;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
-table.summary td, table.summary th {
-  border-left: 1px dashed black;
+table.summary th {
+  background-color: #f1f1f1;
+  padding: 3px 5px 3px 5px;
 }
 
 table.summary td {
-  text-align:right;
+  padding: 3px 5px 3px 5px;
+}
+table.summary td, table.summary th {
+  // border-left: 1px dashed black;
+}
+
+table.summary td {
+  text-align:left;
 }
 
 table.summary.annotated td {
@@ -182,23 +209,39 @@ table.summary.annotated td {
 
 
 table.summary thead tr th {
-  border-bottom: 2px solid black;
+   // border-bottom: 2px solid black;
+}
+
+div.results .data tbody tr:nth-child(odd),
+div.summary .data tbody tr:nth-child(odd) {
+  background-color: #f5f5ff;
+}
+
+div.results .data tbody tr:nth-child(even),
+div.summary .data tbody tr:nth-child(odd) {
+  background-color: #fffff5;
+}
+
+table.results {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+table.results thead {
+  background-color: #f1f1f1;
 }
 
 table.results td, table.results th {
-  background-color:#eee;
   color:black;
   vertical-align: top;
 }
 
-table.results td.chosen {
-  background-color:#efe;
+table.results td.chosen, table.results td.meta {
   color:black;
 }
 
-table.results td.meta {
-  background-color:#fff;
-  color:black;
+table.results td, table.results th, table.results td.chosen, table.results td.meta {
+  // padding: 2px 50px 2px 5px;
 }
 
 h1 a:link, h1 a:visited {
@@ -354,19 +397,19 @@ a img { color: #fff; }         /* hide the border in Netscape 4 */
     content:" [" attr(title) "] ";
     font-variant:small-caps;
   }
- 	   table.results {
- 	     table-layout:fixed;
- 	     width:100%;
- 	   }
+  table.results {
+    table-layout:fixed;
+    width:100%;
+  }
 
- 	   table.results thead th {
- 	     width:5em;
- 	   }
+  table.results thead th {
+     width:5em;
+  }
 
- 	   table.results thead th.meta {
- 	     width:20em;
- 	   }
- 	 }
+  table.results thead th.meta {
+    width:20em;
+  }
+}
 
 dt { font-weight: bold }
 
@@ -573,16 +616,16 @@ q {
   font-style: italic;
 }
 
-.data tbody tr:nth-child(odd) {
+div.widget .data tbody tr:nth-child(odd) {
   background-color: #f5f5ff;
 }
 
-.data tbody tr:nth-child(even) {
+div.widget .data tbody tr:nth-child(even) {
   background-color: #fffff5;
 }
 
-.data th,
-.data td {
+div.widget .data th,
+div.widget .data td {
   border: none;
   padding: .4em 1em;
   overflow: hidden;
