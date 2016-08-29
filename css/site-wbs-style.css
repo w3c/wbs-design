@@ -629,7 +629,9 @@ div.summary .data tbody tr:nth-child(even) {
 }
 
 div.widget .data th,
-div.widget .data td {
+div.widget .data td,
+div.results .data th,
+div.results .data td {
   border: none;
   padding: .4em 1em;
   overflow: hidden;
