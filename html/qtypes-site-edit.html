@@ -99,7 +99,8 @@
 
 <p class="doc">You can tweak the settings of the current questionnaire with the form below, or <a href="q/">add a new question</a>, or edit <a href="#questions">one of the existing questions</a>.</p>
 <form method="post" action="handler">
-<ul class='edit'>
+<h3>Questionnaire</h3>
+<ul class='edit mandatory'>
 <li>
 Questionnaire identifier: <code>wbs-types-test</code><input name="wgid" type="hidden" value="99999" />
 <input name="qairedupd" type="hidden" value="2016-07-07 11:38:16" /> <span class='required'>(*)</span>
@@ -111,6 +112,24 @@ value="2014-11-21" /></label> (starts at 0:00 Eastern time)
 value="2016-12-31" /></label> (ends at midnight Eastern time)
 </li>
 
+<li><label>Title of the questionnaire<br />
+<input name="shortdesc" required="required" type="text" size="80" 
+value="WBS question types - new design" /> 
+</label></li>
+
+<li><label>Who is allowed to see the results? <select name="resultsACL">
+<option value="group" selected='selected'>only the participants of the Test Group</option>
+<option value="team">only the Team</option>
+<option value="memberOrTeam">The Team, but responders can choose to make their responses Member-visible</option>
+<option value="member">anybody with Member access</option>
+<option value="public">anybody</option>
+</select></label>
+<span class='message'>Before changing this, ensure that changing the visibility of
+	 currently <a href='results'>received answers</a> is acceptable to the responders.</span></li>
+</ul>
+
+<h3>Options</h3>
+<ul class='edit optional'>
 <li>
 <label>Enable reminder:
 <input id="reminderoption" name="reminderoption" title="reminder date option"
@@ -129,26 +148,12 @@ highlight-days-67 no-transparency" value="2014-12-10" />
 </ul>
 </div>
 </li>
-
-<li><label>Title of the questionnaire<br />
-<input name="shortdesc" required="required" type="text" size="80" 
-value="WBS question types - new design" /> 
-</label></li>
-
-<li><label>Who is allowed to see the results? <select name="resultsACL">
-<option value="group" selected='selected'>only the participants of the Test Group</option>
-<option value="team">only the Team</option>
-<option value="memberOrTeam">The Team, but responders can choose to make their responses Member-visible</option>
-<option value="member">anybody with Member access</option>
-<option value="public">anybody</option>
-</select></label>
-<span class='message'>Before changing this, ensure that changing the visibility of
-	 currently <a href='results'>received answers</a> is acceptable to the responders.</span></li>
 <li class='optional'><label><input type="checkbox" name="allowNonW3CUsers"  checked='checked' /> Allow to answer the questionnaire without a W3C account</label></li>
 <li class='optional'><label>Send all the responses to the following email address(es): <input type="email" multiple="multiple" name="emailNotif" maxlength="255" value=""/></label> (optional, comma-separated list for several addresses)</li>
 <li  class='optional'><label>E-mail address(es) to which the responders can choose to copy his/her responses (e.g. w3c-archive@w3.org): <input multiple="multiple" type="email" name="params[emailCC]" maxlength="255" value=""/></label>  (optional, comma-separated list for several addresses)</li> 
-
-<li>Order of the existing questions. Use input area to change order.<ol>
+</ul>
+<h3>Order of the existing questions. Use input area to change order</h3>
+<ul class='edit order'>
 <li><label>Simple text question <input type='text' size='3' maxlength='3' name='seqno:q1' value='10' /></label></li><li><label>Single selection required Yes/No <input type='text' size='3' maxlength='3' name='seqno:q2' value='20' /></label></li><li><label>Single selection required Yes/No/Concur/Abstain <input type='text' size='3' maxlength='3' name='seqno:q3' value='30' /></label></li><li><label>Select one among many (drop-down list) <input type='text' size='3' maxlength='3' name='seqno:q4' value='40' /></label></li><li><label>Select one among many (radio buttons) <input type='text' size='3' maxlength='3' name='seqno:q5' value='50' /></label></li><li><label>Open comments <input type='text' size='3' maxlength='3' name='seqno:q6' value='60' /></label></li><li><label>Text entries <input type='text' size='3' maxlength='3' name='seqno:q7' value='70' /></label></li><li><label>Select multiple items (checkboxes) <input type='text' size='3' maxlength='3' name='seqno:q8' value='80' /></label></li><li><label>Survey type <input type='text' size='3' maxlength='3' name='seqno:q9' value='90' /></label></li><li><label>Straw-poll <input type='text' size='3' maxlength='3' name='seqno:q10' value='100' /></label></li><li><label>Rank-ordering <input type='text' size='3' maxlength='3' name='seqno:q11' value='110' /></label></li><li><label> Pick a time for a teleconf <input type='text' size='3' maxlength='3' name='seqno:q12' value='120' /></label></li><li><label>Cumulative vote <input type='text' size='3' maxlength='3' name='seqno:q13' value='130' /></label></li><li><label> Importance survey <input type='text' size='3' maxlength='3' name='seqno:q14' value='140' /></label></li><li><label> Importance and Satisfaction survey <input type='text' size='3' maxlength='3' name='seqno:q15' value='150' /></label></li><li><label>Monday, 27 October All Group Meetings Attendance  <input type='text' size='3' maxlength='3' name='seqno:tpac' value='160' /></label></li></ol></li>
 </ul>
 <p>
@@ -156,8 +161,8 @@ value="WBS question types - new design" />
 </form>
 
 
-<h2><a name="questions" id="questions">Add/Edit questions</a></h2>
-<ul>
+<h3><a name="questions" id="questions">Add/Edit questions</a></h3>
+<ul class='edit questions'>
 <li><a href="q/">Add a question to this questionnaire</a></li>
 <li><a href='q/q1/'>Edit question "Simple text question"</a></li><li><a href='q/q2/'>Edit question "Single selection required Yes/No"</a></li><li><a href='q/q3/'>Edit question "Single selection required Yes/No/Concur/Abstain"</a></li><li><a href='q/q4/'>Edit question "Select one among many (drop-down list)"</a></li><li><a href='q/q5/'>Edit question "Select one among many (radio buttons)"</a></li><li><a href='q/q6/'>Edit question "Open comments"</a></li><li><a href='q/q7/'>Edit question "Text entries"</a></li><li><a href='q/q8/'>Edit question "Select multiple items (checkboxes)"</a></li><li><a href='q/q9/'>Edit question "Survey type"</a></li><li><a href='q/q10/'>Edit question "Straw-poll"</a></li><li><a href='q/q11/'>Edit question "Rank-ordering"</a></li><li><a href='q/q12/'>Edit question " Pick a time for a teleconf"</a></li><li><a href='q/q13/'>Edit question "Cumulative vote"</a></li><li><a href='q/q14/'>Edit question " Importance survey"</a></li><li><a href='q/q15/'>Edit question " Importance and Satisfaction survey"</a></li><li><a href='q/tpac/'>Edit question "Monday, 27 October All Group Meetings Attendance "</a></li></ul>
 
