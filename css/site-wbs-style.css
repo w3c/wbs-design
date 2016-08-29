@@ -85,6 +85,7 @@ div.question table.eval th a:visited {
    color: #cbf;
 }
 
+div.results,
 div.content,
 div.widget {
   margin: 0 2em .5em 2em;
@@ -98,9 +99,29 @@ div.widget p {
   line-height: 100%;
 }
 
+div.results p {
+  margin-bottom: .5em;
+  padding: 0;
+  font-size:1.05em;
+  line-height: 100%;
+}
+
+div.results h4 {
+  padding: 20px 0 0 0;
+}
+
+div.results h4+p {
+  padding: 5px 0 0 0;
+}
+
 input, textarea, select {
   margin-bottom: .5em;
   font-size: 0.90em;
+}
+
+ol li {
+  list-style-type: decimal;
+  margin-left: 20px;
 }
 
 #w3c_content_body form ul {
@@ -128,15 +149,13 @@ div.question h3 {
   white-space:normal;
   display:block;
   font-size:1.3em;
-  color:#fff;
-  padding:5px;
-  margin:0;
-  border-top:1px solid black;
-  border-bottom:1px solid black;
+  background:#b3cdf3;
+  color:#111;
+  padding:8px;
+  margin: 0 0 8px 0;
 }
 
 div.question legend {
-  //display:inline;
   background:#b3cdf3;
   color: #111;
   font-size:1.4em;
@@ -164,40 +183,45 @@ table.columns tr {
   padding:0;
 }
 
-table.summary {
-  border:1px solid black ;
+table.summary,
+table.results {
+  border-width: 1px 0;
+  border-style: solid;
+  border-color: black;
+}
+
+table.summary thead,
+table.results thead {
+  background-color: #c2cdde;
 }
 
 table.summary td, table.summary th {
-  border-left: 1px dashed black;
-}
+  color:black;
+  vertical-align: top;}
 
 table.summary td {
-  text-align:right;
+  text-align:left;
 }
 
 table.summary.annotated td {
   text-align:left;
 }
 
+table.results {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
 
-table.summary thead tr th {
-  border-bottom: 2px solid black;
+table.results thead {
+  background-color: #c2cdde;
 }
 
 table.results td, table.results th {
-  background-color:#eee;
   color:black;
   vertical-align: top;
 }
 
-table.results td.chosen {
-  background-color:#efe;
-  color:black;
-}
-
-table.results td.meta {
-  background-color:#fff;
+table.results td.chosen, table.results td.meta {
   color:black;
 }
 
@@ -354,19 +378,19 @@ a img { color: #fff; }         /* hide the border in Netscape 4 */
     content:" [" attr(title) "] ";
     font-variant:small-caps;
   }
- 	   table.results {
- 	     table-layout:fixed;
- 	     width:100%;
- 	   }
+  table.results {
+    table-layout:fixed;
+    width:100%;
+  }
 
- 	   table.results thead th {
- 	     width:5em;
- 	   }
+  table.results thead th {
+     width:5em;
+  }
 
- 	   table.results thead th.meta {
- 	     width:20em;
- 	   }
- 	 }
+  table.results thead th.meta {
+    width:20em;
+  }
+}
 
 dt { font-weight: bold }
 
@@ -573,17 +597,22 @@ q {
   font-style: italic;
 }
 
-.data tbody tr:nth-child(odd) {
+div.widget .data tbody tr:nth-child(odd),
+div.results .data tbody tr:nth-child(odd),
+div.summary .data tbody tr:nth-child(odd) {
   background-color: #f5f5ff;
 }
 
-.data tbody tr:nth-child(even) {
+div.widget .data tbody tr:nth-child(even),
+div.results .data tbody tr:nth-child(even),
+div.summary .data tbody tr:nth-child(even) {
   background-color: #fffff5;
 }
 
-.data th,
-.data td {
-  border: none;
+div.widget .data th,
+div.widget .data td,
+div.results .data th,
+div.results .data td {
   padding: .4em 1em;
   overflow: hidden;
 }
