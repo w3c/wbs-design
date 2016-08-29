@@ -186,6 +186,15 @@ table.columns tr {
   padding:0;
 }
 
+table.summary {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+table.summary thead {
+  background-color: #c2cdde;
+}
+
 table.summary td {
   //padding: 3px 5px 3px 5px;
 }
@@ -206,6 +215,15 @@ table.summary thead tr th {
    // border-bottom: 2px solid black;
 }
 
+table.results {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+table.results thead {
+  background-color: #c2cdde;
+}
+
 table.results td, table.results th {
   color:black;
   vertical-align: top;
@@ -217,6 +235,13 @@ table.results td.chosen, table.results td.meta {
 
 table.results td, table.results th, table.results td.chosen, table.results td.meta {
   // padding: 2px 50px 2px 5px;
+}
+
+div.results .data tbody tr:nth-child(even):hover,
+div.results .data tbody tr:nth-child(even):focus,
+div.results .data tbody tr:nth-child(odd):hover,
+div.results .data tbody tr:nth-child(odd):focus {
+  background-color: #d2ddee;
 }
 
 h1 a:link, h1 a:visited {
@@ -604,9 +629,7 @@ div.summary .data tbody tr:nth-child(even) {
 }
 
 div.widget .data th,
-div.widget .data td,
-div.results .data th,
-div.results .data td {
+div.widget .data td {
   border: none;
   padding: .4em 1em;
   overflow: hidden;
