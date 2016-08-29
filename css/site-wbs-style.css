@@ -11,6 +11,10 @@ p.message, p.warning {
   background-color: #ffffc0;
 }
 
+span.message, span.warning {
+  color: #ee0000;
+}
+
 blockquote {
   margin-left:3em;
 }

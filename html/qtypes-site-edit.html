@@ -117,13 +117,13 @@ value="2016-12-31" /></label> (ends at midnight Eastern time)
 value="WBS question types - new design" /> 
 </label></li>
 
-<li><label>Who is allowed to see the results? <select name="resultsACL">
+<li><label>Who is allowed to see the results? </label><select name="resultsACL">
 <option value="group" selected='selected'>only the participants of the Test Group</option>
 <option value="team">only the Team</option>
 <option value="memberOrTeam">The Team, but responders can choose to make their responses Member-visible</option>
 <option value="member">anybody with Member access</option>
 <option value="public">anybody</option>
-</select></label>
+</select>
 <span class='message'>Before changing this, ensure that changing the visibility of
 	 currently <a href='results'>received answers</a> is acceptable to the responders.</span></li>
 </ul>
@@ -131,26 +131,26 @@ value="WBS question types - new design" />
 <h3>Options</h3>
 <ul class='edit optional'>
 <li>
-<label>Enable reminder:
+<label>
 <input id="reminderoption" name="reminderoption" title="reminder date option"
-type="checkbox"  checked='checked' /></label>
+type="checkbox"  checked='checked' /> Enable reminder:</label>
 <span class="elem_hide" id="reminderalert"> <em>This option is not
 available for questionnaires open for less than 7 days</em></span>
 <div class="elem_inline" id="remindervalue">
 <ul>
-<li><label>Reminder date:
+<li class='optional'><label>Reminder date:
 <input id="reminderdate" name="reminderdate" type="date" size="10" class="w8em format-y-m-d divider-dash
 highlight-days-67 no-transparency" value="2014-12-10" />
 </label></li>
-<li><label>Reminder mailing list:
+<li class='optional'><label>Reminder mailing list:
 <input id="remindelist" name="reminderlist" type="email" maxlength="255" value="laurent@w3.org" />
 </label><span> (enter one email address, if empty an email will be sent to each non-responder participant of the Test Group)</span></li>
 </ul>
 </div>
 </li>
-<li class='optional'><label><input type="checkbox" name="allowNonW3CUsers"  checked='checked' /> Allow to answer the questionnaire without a W3C account</label></li>
-<li class='optional'><label>Send all the responses to the following email address(es): <input type="email" multiple="multiple" name="emailNotif" maxlength="255" value=""/></label> (optional, comma-separated list for several addresses)</li>
-<li  class='optional'><label>E-mail address(es) to which the responders can choose to copy his/her responses (e.g. w3c-archive@w3.org): <input multiple="multiple" type="email" name="params[emailCC]" maxlength="255" value=""/></label>  (optional, comma-separated list for several addresses)</li> 
+<li><label><input type="checkbox" name="allowNonW3CUsers"  checked='checked' /> Allow to answer the questionnaire without a W3C account</label></li>
+<li><label>Send all the responses to the following email address(es): <input type="email" multiple="multiple" name="emailNotif" maxlength="255" value=""/></label> (optional, comma-separated list for several addresses)</li>
+<li><label>E-mail address(es) to which the responders can choose to copy his/her responses (e.g. w3c-archive@w3.org): <input multiple="multiple" type="email" name="params[emailCC]" maxlength="255" value=""/></label>  (optional, comma-separated list for several addresses)</li> 
 </ul>
 <h3>Order of the existing questions. Use input area to change order</h3>
 <ul class='edit order'>
