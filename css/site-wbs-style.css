@@ -153,12 +153,9 @@ div.question h3 {
   color:#111;
   padding:8px;
   margin: 0 0 8px 0;
-  // border-top:1px solid black;
-  // border-bottom:1px solid black;
 }
 
 div.question legend {
-  //display:inline;
   background:#b3cdf3;
   color: #111;
   font-size:1.4em;
@@ -186,17 +183,16 @@ table.columns tr {
   padding:0;
 }
 
-table.summary {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+table.summary,
+table.results {
+  border-width: 1px 0;
+  border-style: solid;
+  border-color: black;
 }
 
-table.summary thead {
+table.summary thead,
+table.results thead {
   background-color: #c2cdde;
-}
-
-table.summary td {
-  //padding: 3px 5px 3px 5px;
 }
 
 table.summary td, table.summary th {
@@ -209,10 +205,6 @@ table.summary td {
 
 table.summary.annotated td {
   text-align:left;
-}
-
-table.summary thead tr th {
-   // border-bottom: 2px solid black;
 }
 
 table.results {
@@ -231,17 +223,6 @@ table.results td, table.results th {
 
 table.results td.chosen, table.results td.meta {
   color:black;
-}
-
-table.results td, table.results th, table.results td.chosen, table.results td.meta {
-  // padding: 2px 50px 2px 5px;
-}
-
-div.results .data tbody tr:nth-child(even):hover,
-div.results .data tbody tr:nth-child(even):focus,
-div.results .data tbody tr:nth-child(odd):hover,
-div.results .data tbody tr:nth-child(odd):focus {
-  background-color: #d2ddee;
 }
 
 h1 a:link, h1 a:visited {
@@ -632,7 +613,6 @@ div.widget .data th,
 div.widget .data td,
 div.results .data th,
 div.results .data td {
-  border: none;
   padding: .4em 1em;
   overflow: hidden;
 }
