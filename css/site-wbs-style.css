@@ -271,9 +271,25 @@ table.eval th, table.eval td /* label */ {
   display:block;
 } */
 
-ul.edit dt {
-  margin-left:0.6em;
 
+ul.edit dl dd {
+  background: #f4f4f4 none repeat scroll 0 0;
+  color: black;
+}
+
+ul.edit dl {
+   padding: 0;
+   margin: 10px 0px 0px 0px;
+}
+
+ul.edit dl dl {
+  padding-top: 10px;
+   margin: 0;
+}
+
+ul.edit > li > dl > dt {
+  background: #e4e4e4 none repeat scroll 0 0;
+  line-height: 250%;
 }
 
 ul.edit label {
@@ -284,17 +300,14 @@ ul.edit li.optional label, ul.edit label input, ul.edit label textarea {
   font-weight:normal;
 }
 
-ul.edit dt:before {
-  content:url('/QA/2003/02/right');
-}
-
 .doc {
-  border-left:thick solid black;
+  border-left: solid black;
+  margin-top:1.5em;
   padding-top:0.2em;
   padding-bottom:0.2em;
   padding-left:0.5em;
-  background-color:white;
-  color:#005a9c;
+  background-color:#f2f7fb;
+  color:#004a7c;
 }
 
 
