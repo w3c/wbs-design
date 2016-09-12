@@ -439,6 +439,28 @@ hr {
   margin-top:1em;
 }
 
+h2.questionnaireList {
+  font-size:1.6em;
+  margin-top: 20px;
+  margin-bottom:8px;
+  margin-right:20%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.questionnaireList img {
+  vertical-align: -3px;
+  height: 1.7em;
+}
+
+.questionnaireList a.icon {
+  border: none; 
+}
+
+.questionnaireList a {
+  // border: none; 
+}
+
 ul.questionnaireList {
   list-style:none;
 }
@@ -456,7 +478,7 @@ span.qaire {
 }
 
 span.qaire.votable {
- margin-left:-1em;
+ // margin-left:-1em;
 }
 
 span.qaireTools {
@@ -464,7 +486,7 @@ span.qaireTools {
 }
 
 .votable:before {
-  content:"\0bb";
+ // content:"\0bb";
 }
 
 .votable a {
