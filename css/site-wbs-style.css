@@ -457,9 +457,6 @@ h2.questionnaireList {
   border: none; 
 }
 
-.questionnaireList a {
-  // border: none; 
-}
 
 ul.questionnaireList {
   list-style:none;
