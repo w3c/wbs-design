@@ -417,6 +417,25 @@ a img { color: #fff; }         /* hide the border in Netscape 4 */
 
 dt { font-weight: bold }
 
+div.create {
+  background: #fafafa none repeat scroll 0 0;
+  color: black;
+  border: 1px solid #aaa;
+  margin: 10px 10px 10px 0;
+  padding-bottom: 5px;
+}
+
+div.create ul, div.create form {
+  margin: 5px 10px 5px 0;
+  padding-top: 5px;
+}
+
+div.create p {
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+
+
 div.task {
   width:50em;
   margin:0;
