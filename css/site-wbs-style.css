@@ -74,6 +74,7 @@ div.question table.tMargin {
   border-collapse: initial;
 }
 
+div.choices,
 form ul.mandatory,
 form ul.optional,
 form ul.order,
@@ -81,7 +82,7 @@ ul.questions {
   background: #fafafa none repeat scroll 0 0;
   color: black;
   border: 1px solid #aaa;
-  margin: 10px 10px 5px 0;
+  margin: 10px 10px 5px 0 !important;
   padding-top: 10px;
 }
 
@@ -153,6 +154,10 @@ ol li {
 
 #w3c_content_body form ul ul li {
   border-top:none;
+}
+
+#w3c_content_body form p {
+  padding-left: 0px;
 }
 
 div.question h3 {
@@ -235,6 +240,11 @@ table.results td.chosen, table.results td.meta {
   color:black;
 }
 
+table#choices {
+  color:yellow;
+  //background-color: #c2cdde;
+}
+
 h1 a:link, h1 a:visited {
   text-decoration:none;
 }
@@ -302,14 +312,14 @@ ul.edit li.optional label, ul.edit label input, ul.edit label textarea {
 
 .doc {
   border-left: solid black;
-  margin-top:1.5em;
-  padding-top:0.2em;
-  padding-bottom:0.2em;
-  padding-left:0.5em;
+  margin-top:20px;
+  margin-right:10px;
+  padding-top:5px;
+  padding-bottom:5px;
+  padding-left:0.5em !important;
   background-color:#f2f7fb;
   color:#004a7c;
 }
-
 
 
 /* ******************  body  *************** */
