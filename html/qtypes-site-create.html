@@ -87,10 +87,11 @@
 
    <div id="Content">
 
- <p>Use this form to create a new questionnaire  for the  <strong>Test Group</strong> - by default, only participants to this group will be allowed to answer it.</p>
+ <p class='doc'>Use this form to create a new questionnaire  for the  <strong>Test Group</strong> - by default, only participants to this group will be allowed to answer it.</p>
 
 
-<div class="task"><h2><img src='/2002/09/wbs/icons/create.png' alt='New' />Create a questionnaire from a template</h2>
+<h3>Create a questionnaire from a template</h3>
+<div class="create">
 <ul>
 <li><a href="registrationFactory">F2F meeting registration</a></li>
 <li><a href="teleconfFactory">Teleconference scheduling</a></li>
@@ -98,9 +99,10 @@
 <li><a href='prCFRFactory'>Call For Review for Proposed Recommendations</a></li>
 <li><a href='apCFRFactory'>Call For Review for Working Group or Interest Group Charters</a></li>
 </ul>
-    <p>(send more templates suggestions to <a href='mailto:w3t-sys@w3.org?Subject=WBS%20Templates%20suggestions'>w3t-sys@w3.org</a>.</p>
+    <p>(send more templates suggestions to <a href='mailto:w3t-sys@w3.org?Subject=WBS%20Templates%20suggestions'>w3t-sys@w3.org</a>).</p>
 </div>
-<div class="task"><h2><img src='/2002/09/wbs/icons/copy.png' alt='Copy' />Copy an existing questionnaire</h2>
+<h3>Copy an existing questionnaire</h3>
+<div class="create">
 <form action="factory" method="post">
 <ul>
 <li><label class='required' title="(any number and letters OK, up to 40 characters, must be unique among the group's questionnaires)"><strong>Identifier for the new questionnaire</strong>: <input maxlength="40" size="15" name="qaireno" type="text" required="required"
@@ -118,8 +120,8 @@ OR URI of the questionnaire you want to copy: <input name="uri" type="uri" value
 
 </form>
 </div>
-<div class="task">
-<h2><img src='/2002/09/wbs/icons/create.png' alt='New' />Create a questionnaire from scratch</h2>
+<h3>Create a questionnaire from scratch</h3>
+<div class="create">
 <form method="post" action="factory">
 <ul class='edit'>
 <li>
@@ -181,7 +183,7 @@ value="" />
 <p>
 <input type='submit' name='action' value='Create a new questionnaire' /></p>
 </form>
-
+</div>
 
 
 <p>
