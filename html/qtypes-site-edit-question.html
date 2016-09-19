@@ -118,8 +118,10 @@ value="Select multiple items (checkboxes)" /></label></li>
 
 <li class='optional'>
 You can optionally add to your question<ul>
-<li><label><input type="checkbox" name="allowComment" checked='checked' />a Comment field </label>(<label>labeled <input type='text' name='commentLabel' value='Comments' /></label>)</li>
-<li><label><input type="checkbox" name="allowRationale" checked='checked' />a Rationale field </label> (for questions where answers can be justified)</li>
+<li><label><input type="checkbox" name="allowComment"
+  checked='checked' /> a Comment field </label>(<label>labeled <input type='text' name='commentLabel' value='Comments' /></label>)</li>
+<li><label><input type="checkbox" name="allowRationale"
+  checked='checked' /> a Rationale field </label> (for questions where answers can be justified)</li>
 </ul></li>
 </ul>
 <p><input type="submit" value="submit" /></p>
@@ -134,7 +136,7 @@ You can optionally add to your question<ul>
 </thead><tbody>
 <tr><td>
 <label title='Identifier for choice number 1'><input name="choiceid[1]" type="text" 
-  maxlength="16" size="4"
+  maxlength="16" size="10"
   value="c1" /></label>
 <input name="choicedadd[1]" type="hidden" 
   value="0000-00-00 00:00:00" />
@@ -142,12 +144,12 @@ You can optionally add to your question<ul>
 <textarea  name="choicegloss[1]" rows="3" cols="70">
 choice1</textarea>
 </td><td>
-<label title='Index of position in the question'><input name="choicepos[1]" type='text' value='10' /></label>
+<label title='Index of position in the question'><input name="choicepos[1]" type='text' maxlength="8" size="8" value='10' /></label>
 </td>
 </tr>
 <tr><td>
 <label title='Identifier for choice number 2'><input name="choiceid[2]" type="text" 
-  maxlength="16" size="4"
+  maxlength="16" size="10"
   value="c2" /></label>
 <input name="choicedadd[2]" type="hidden" 
   value="0000-00-00 00:00:00" />
@@ -155,12 +157,12 @@ choice1</textarea>
 <textarea  name="choicegloss[2]" rows="3" cols="70">
 choice2</textarea>
 </td><td>
-<label title='Index of position in the question'><input name="choicepos[2]" type='text' value='20' /></label>
+<label title='Index of position in the question'><input name="choicepos[2]" type='text' maxlength="8" size="8" value='20' /></label>
 </td>
 </tr>
 <tr><td>
 <label title='Identifier for choice number 3'><input name="choiceid[3]" type="text" 
-  maxlength="16" size="4"
+  maxlength="16" size="10"
   value="c3" /></label>
 <input name="choicedadd[3]" type="hidden" 
   value="0000-00-00 00:00:00" />
@@ -168,12 +170,12 @@ choice2</textarea>
 <textarea  name="choicegloss[3]" rows="3" cols="70">
 choice3</textarea>
 </td><td>
-<label title='Index of position in the question'><input name="choicepos[3]" type='text' value='30' /></label>
+<label title='Index of position in the question'><input name="choicepos[3]" type='text' maxlength="8" size="8" value='30' /></label>
 </td>
 </tr>
 <tr><td>
 <label title='Identifier for choice number 4'><input name="choiceid[4]" type="text" 
-  maxlength="16" size="4"
+  maxlength="16" size="10"
   value="c4" /></label>
 <input name="choicedadd[4]" type="hidden" 
   value="" />
@@ -181,12 +183,12 @@ choice3</textarea>
 <textarea  name="choicegloss[4]" rows="3" cols="70">
 </textarea>
 </td><td>
-<label title='Index of position in the question'><input name="choicepos[4]" type='text' value='40' /></label>
+<label title='Index of position in the question'><input name="choicepos[4]" type='text' maxlength="8" size="8" value='40' /></label>
 </td>
 </tr>
 <tr><td>
 <label title='Identifier for choice number 5'><input name="choiceid[5]" type="text" 
-  maxlength="16" size="4"
+  maxlength="16" size="10"
   value="c5" /></label>
 <input name="choicedadd[5]" type="hidden" 
   value="" />
@@ -194,12 +196,12 @@ choice3</textarea>
 <textarea  name="choicegloss[5]" rows="3" cols="70">
 </textarea>
 </td><td>
-<label title='Index of position in the question'><input name="choicepos[5]" type='text' value='50' /></label>
+<label title='Index of position in the question'><input name="choicepos[5]" type='text' maxlength="8" size="8" value='50' /></label>
 </td>
 </tr>
 <tr><td>
 <label title='Identifier for choice number 6'><input name="choiceid[6]" type="text" 
-  maxlength="16" size="4"
+  maxlength="16" size="10"
   value="c6" /></label>
 <input name="choicedadd[6]" type="hidden" 
   value="" />
@@ -207,7 +209,7 @@ choice3</textarea>
 <textarea  name="choicegloss[6]" rows="3" cols="70">
 </textarea>
 </td><td>
-<label title='Index of position in the question'><input name="choicepos[6]" type='text' value='60' /></label>
+<label title='Index of position in the question'><input name="choicepos[6]" type='text' maxlength="8" size="8" value='60' /></label>
 </td>
 </tr>
 </tbody>
@@ -218,8 +220,10 @@ choice3</textarea>
 <p><input type="submit" value="submit" /></p>
 </form>
 <form action="/2002/09/wbs/99999/wbs-types-test/q/" method="post">
+<div class="choices">
 <p>You can also decide to delete completely this question. Note that <strong>this is not reversible</strong>.</p>
 <p><label><input type="checkbox" name="confirm" /> I confirm I want to delete this question</label></p>
+</div>
 <p><input type='hidden' name='qno' value='q8' /><input type="submit" name="action" value="Delete" class='irreversible' /></p>
 </form>
 </div> <!-- /end #Content -->

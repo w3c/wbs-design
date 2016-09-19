@@ -84,6 +84,7 @@ ul.questions {
   border: 1px solid #aaa;
   margin: 10px 10px 5px 0 !important;
   padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 div.question table.eval th a:link {
@@ -94,6 +95,11 @@ div.question table.eval th a:link {
 div.question table.eval th a:visited {
    background: #005a9c;
    color: #cbf;
+}
+
+div.choices p {
+  margin-left: 20px;
+  margin-top: -10px;
 }
 
 div.results,
@@ -212,7 +218,8 @@ table.results thead {
 
 table.summary td, table.summary th {
   color:black;
-  vertical-align: top;}
+  vertical-align: top;
+}
 
 table.summary td {
   text-align:left;
@@ -240,9 +247,21 @@ table.results td.chosen, table.results td.meta {
   color:black;
 }
 
-table#choices {
-  color:yellow;
-  //background-color: #c2cdde;
+table#choices th {
+  color:black;
+  font-weight:bold;
+  padding-left:10px;
+  padding-bottom:15px;
+}
+
+table#choices td label,
+table#choices td textarea {
+  margin-left:10px;
+  width:initial;
+}
+
+table#choices tr:hover {
+  background-color:#c2cdde;
 }
 
 h1 a:link, h1 a:visited {
@@ -379,8 +398,8 @@ body {
 .maintainer {
   font-size: small;
   background-color: #f5f5f5;
-  margin: 30px 20px -10px 20px;
-  padding: 5px 5px 5px 3px;
+  margin: 30px 10px -10px 10px;
+  padding: 5px 5px 5px 5px;
   text-align: justify;
 }
 
