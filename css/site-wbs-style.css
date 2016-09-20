@@ -136,6 +136,10 @@ input, textarea, select {
   font-size: 0.90em;
 }
 
+input[type=number]{
+    width: 60px;
+}
+
 ol li {
   list-style-type: decimal;
   margin-left: 20px;
