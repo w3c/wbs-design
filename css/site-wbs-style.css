@@ -639,12 +639,6 @@ ul.account li.main {
   margin: 10px 10px 15px 0px;
 }
 
-ul.account li.main:hover {
-  background: #f3f3f3;
-  color: #777;
-  margin: 10px 10px 15px 0px;
-}
-
 ul.account li.main p {
   margin: 0 0 0 10px;
   padding: 15px 0 0 10px;
