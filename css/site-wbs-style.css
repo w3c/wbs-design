@@ -629,6 +629,31 @@ span.required {
  color:red;
 }
 
+ul.account {
+  list-style: none;
+}
+
+ul.account li.main {
+  background: #eee;
+  color: #000;
+  margin: 10px 10px 15px 0px;
+}
+
+ul.account li.main p {
+  margin: 0 0 0 10px;
+  padding: 15px 0 0 10px;
+}
+
+ul.account li.main p strong {
+  font-size: 110%;
+}
+
+ul.account > li {
+  color: #000;
+  margin-top: 15px;
+  padding-left: 90px;
+}
+
 ul.alternative {
   border: thin #777 solid;
   -webkit-border-radius:2em;
