@@ -102,6 +102,10 @@ div.choices p {
   margin-top: -10px;
 }
 
+div.scroll {
+  overflow: auto;
+}
+
 div.results,
 div.content,
 div.widget {
