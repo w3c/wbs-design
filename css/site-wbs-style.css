@@ -103,7 +103,24 @@ div.choices p {
 }
 
 div.scroll {
-  overflow: auto;
+   overflow-x: scroll;
+}
+
+div.scroll tr th:first-child, div.scroll tr td:first-child {
+   width: 55px;
+   min-width: 55px;
+}
+
+div.scroll tr td:first-child {
+   position: absolute;
+}
+
+div.scroll tr.odd td:first-child {
+   background-color: #f5f5ff;
+}
+
+div.scroll tr.even td:first-child {
+   background-color: #fffff5;
 }
 
 div.results,
@@ -735,3 +752,8 @@ div.results .data td {
 .data select {
   margin: 0;
 }
+
+.data {
+  position: static;
+}
+
