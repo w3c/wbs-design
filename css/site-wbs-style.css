@@ -111,10 +111,6 @@ div.scroll tr th:first-child, div.scroll tr td:first-child {
    min-width: 55px;
 }
 
-div.scroll tr td:first-child {
-   // position: absolute;
-}
-
 div.scroll tr.odd td:first-child {
    background-color: #f5f5ff;
 }
