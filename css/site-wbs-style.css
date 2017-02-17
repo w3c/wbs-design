@@ -523,7 +523,7 @@ h2.questionnaireList {
 }
 
 .questionnaireList a.icon {
-  border: none; 
+  border: none;
 }
 
 
@@ -600,6 +600,7 @@ tr.odd:hover, tr.odd:focus {
 ul.compare li label {
   display:block;
   float:left;
+  width: 50%;
 }
 
 ul.compare li {
@@ -752,4 +753,3 @@ div.results .data td {
 .data {
   position: static;
 }
-
