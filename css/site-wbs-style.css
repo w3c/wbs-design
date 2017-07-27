@@ -753,3 +753,12 @@ div.results .data td {
 .data {
   position: static;
 }
+
+#leftCol_menu a:hover {
+  background-color: inherit;
+} 
+
+#leftCol_menu {
+  position: fixed; left: 10px; top: 115px;
+}
+
