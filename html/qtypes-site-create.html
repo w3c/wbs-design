@@ -125,9 +125,9 @@ OR URI of the questionnaire you want to copy: <input name="uri" type="uri" value
 <form method="post" action="factory">
 <ul class='edit'>
 <li>
- 
+
 <label>Questionnaire identifier: <input required="required" maxlength="40" size="15" name="qaireno" type="text"
-value=""/></label> (any number and letters OK, up to 40 characters, must be unique among the group's questionnaires) 
+value=""/></label> (any number and letters OK, up to 40 characters, must be unique among the group's questionnaires)
 <input name="wgid" type="hidden" value="99999" />
 <input name="qairedupd" type="hidden" value="" /> <span class='required'>(*)</span>
 </li><li><label>Questionnaire’s starting date:
@@ -158,8 +158,8 @@ highlight-days-67 no-transparency" value="" />
 </li>
 
 <li><label>Title of the questionnaire<br />
-<input name="shortdesc" required="required" type="text" size="80" 
-value="" /> 
+<input name="shortdesc" required="required" type="text" size="80"
+value="" />
 </label></li>
 <li><label>The responses are collected  <select name="voterBehalf">
 <option value="individual">for each individual (meeting registrations, surveys, ...)</option>
@@ -177,7 +177,7 @@ value="" />
 </li>
 <li class='optional'><label><input type="checkbox" name="allowNonW3CUsers"  /> Allow to answer the questionnaire without a W3C account</label></li>
 <li class='optional'><label>Send all the responses to the following email address(es): <input type="email" multiple="multiple" name="emailNotif" maxlength="255" value=""/></label> (optional, comma-separated list for several addresses)</li>
-<li  class='optional'><label>E-mail address(es) to which the responders can choose to copy his/her responses (e.g. w3c-archive@w3.org): <input multiple="multiple" type="email" name="params[emailCC]" maxlength="255" value=""/></label>  (optional, comma-separated list for several addresses)</li> 
+<li  class='optional'><label>E-mail address(es) to which the responders can choose to copy his/her responses (e.g. w3c-archive@w3.org): <input multiple="multiple" type="email" name="params[emailCC]" maxlength="255" value=""/></label>  (optional, comma-separated list for several addresses)</li>
 
 </ul>
 <p>
@@ -188,7 +188,7 @@ value="" />
 
 <p>
 <a href="/2002/09/wbs/showwb">WBS home</a> /
-<a href="/2002/09/wbs/showq">Questionnaires</a> 
+<a href="/2002/09/wbs/showq">Questionnaires</a>
 / <a href='./'>WG questionnaires</a>
 / <a href='/'>Answer this questionnaire</a>
 / <a href='/results'>Show results</a>
@@ -199,7 +199,11 @@ value="" />
 </div> <!-- /end #Content -->
 
 <div class="maintainer">
-Redesign - Maintained by Laurent Carcone, from a development by <a href="/People/Dom/">Dominique Haza&euml;l-Massieux</a> (<a href="mailto:dom@w3.org">dom@w3.org</a>) on an <a href="/2000/11/msm/">original design</a> by <a href="/People/cmsmcq/">Michael Sperberg-McQueen</a> <em>$Id: addqaire.php3,v 1.241 2015/09/01 08:13:03 carcone Exp $</em>. Please send bug reports and request for enhancements to <a href="mailto:lcarcone@w3.org">lcarcone@w3.org</a> with <a href="mailto:w3t-sys@w3.org">w3t-sys@w3.org</a> copied (if your mail client supports it, <a href="mailto:lcarcone@w3.org(Laurent%20Carcone),w3t-sys@w3.org(Systems Team)?subject=WBS%20bug%20report%20">send mail</a> directly to the right persons)
+  Report issues
+  <a href="https://github.com/w3c/wbs-design/issues/new?title=Bug%20/%20Feature%20request:%20[SHORT%20DESCRIPTION]&body=[DETAILED%20EXPLANATION]&labels=user-feedback">on
+    GitHub project <code>w3c/wbs-design</code></a> (preferred) or
+    <a href="mailto:sysreq@w3.org?subject=WBS%20[bug%20/%20feature%20request]:%20[SHORT%20DESCRIPTION]&body=[DETAILED%20EXPLANATION]%0A%0A">by
+      mail to <code>sysreq</code></a>.
 </div>
 
 </div> <!-- /end #w3c_content_body -->
