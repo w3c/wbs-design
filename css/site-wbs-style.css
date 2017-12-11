@@ -98,7 +98,7 @@ div.question table.eval th a:visited {
 }
 
 div.choices p {
-  margin-left: 20px;
+  margin-left: 0;
   margin-top: -10px;
 }
 
@@ -181,10 +181,6 @@ ol li {
 
 #w3c_content_body form ul ul li {
   border-top:none;
-}
-
-#w3c_content_body form p {
-  padding-left: 0px;
 }
 
 div.question h3 {
@@ -270,14 +266,13 @@ table.results td.chosen, table.results td.meta {
 
 table#choices th {
   color:black;
+  padding: 20px 20px 20px;
   font-weight:bold;
-  padding-left:10px;
-  padding-bottom:15px;
 }
 
 table#choices td label,
 table#choices td textarea {
-  margin-left:10px;
+  margin-left:20px;
   width:initial;
 }
 
@@ -346,17 +341,18 @@ ul.edit label {
   font-weight:bold;
 }
 
+ul.edit p {
+  padding: 15px 0 5px;
+}
+
 ul.edit li.optional label, ul.edit label input, ul.edit label textarea {
   font-weight:normal;
 }
 
 .doc {
-  border-left: solid black;
   margin-top:20px;
   margin-right:10px;
-  padding-top:5px;
-  padding-bottom:5px;
-  padding-left:0.5em !important;
+  padding:20px 5px 20px;
   background-color:#f2f7fb;
   color:#004a7c;
 }
@@ -485,6 +481,14 @@ div.create p {
   padding-bottom: 0px;
 }
 
+div.create form p {
+  padding-left: 20px;
+  padding-top: 15px;
+}
+
+div.create form input, div.choices input, ul.edit input {
+  padding: 3px 3px 3px;
+}
 
 div.task {
   width:50em;
@@ -754,6 +758,9 @@ div.results .data td {
   position: static;
 }
 
+.notice {
+  font-weight: bold;
+}
 #leftCol_menu a:hover {
   background-color: inherit;
 } 
