@@ -543,6 +543,19 @@ ul.questionnaireList img.create {
   height: 2.1em;
 }
 
+span.toc a {
+  margin-left:5px;
+  margin-right:5px;
+  padding:2px 3px 2px;
+  background-color:#f2f7fb;
+  color:#004a7c;
+}
+
+li.toc {
+  height: 1.9em;
+}
+
+
 span.qaire {
   display:block;
   width:40em;
