@@ -537,7 +537,10 @@ ul.questionnaireList {
 
 ul.questionnaireList li {
   clear:left;
+}
 
+ul.questionnaireList img.create {
+  height: 2.1em;
 }
 
 span.qaire {
