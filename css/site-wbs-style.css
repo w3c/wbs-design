@@ -1,5 +1,3 @@
-@import url("site-wbs-style-complex.css");
-
 .message, .warning {
   margin-top: 0;
   margin-bottom: 1%;
@@ -78,6 +76,7 @@ div.choices,
 form ul.mandatory,
 form ul.optional,
 form ul.order,
+form ol.order,
 ul.questions {
   background: #fafafa none repeat scroll 0 0;
   color: black;
@@ -104,6 +103,11 @@ div.choices p {
 
 div.scroll {
    overflow-x: scroll;
+}
+
+div.scrolly {
+   overflow-y: auto;
+   height: 500px;
 }
 
 div.scroll tr th:first-child, div.scroll tr td:first-child {
@@ -317,35 +321,36 @@ table.eval th, table.eval td /* label */ {
 } */
 
 
-ul.edit dl dd {
+ul.edit dl dd, ol.edit dl dd {
   background: #f4f4f4 none repeat scroll 0 0;
   color: black;
 }
 
-ul.edit dl {
+ul.edit dl, ol.edit dl {
    padding: 0;
    margin: 10px 0px 0px 0px;
 }
 
-ul.edit dl dl {
+ul.edit dl dl, ol.edit dl dl {
   padding-top: 10px;
    margin: 0;
 }
 
-ul.edit > li > dl > dt {
+ul.edit > li > dl > dt, uo.edit > li > dl > dt {
   background: #e4e4e4 none repeat scroll 0 0;
   line-height: 250%;
 }
 
-ul.edit label {
+ul.edit label, ol.edit label {
   font-weight:bold;
 }
 
-ul.edit p {
+ul.edit p, ol.edit p {
   padding: 15px 0 5px;
 }
 
-ul.edit li.optional label, ul.edit label input, ul.edit label textarea {
+ul.edit li.optional label, ul.edit label input, ul.edit label textarea,
+ol.edit li.optional label, ol.edit label input, ol.edit label textarea {
   font-weight:normal;
 }
 
@@ -530,7 +535,6 @@ h2.questionnaireList {
   border: none;
 }
 
-
 ul.questionnaireList {
   list-style:none;
 }
@@ -555,8 +559,7 @@ li.toc {
   height: 1.9em;
 }
 
-
-span.qaire {
+span.qaire, span.listsurvey {
   display:block;
   width:40em;
   float:left;
@@ -723,7 +726,7 @@ input.irreversible {
 div.multi li {clear: left}
 
 a.edit {
-  opacity: 0.25;
+  opacity: 0.70;
 }
 
 a.edit {
@@ -777,6 +780,13 @@ div.results .data td {
 .notice {
   font-weight: bold;
 }
+
+div.w3c_leftCol h3.category span.ribbon {
+  color: #17445f;
+  font-weight: bold;
+  border: 0;
+} 
+
 #leftCol_menu a:hover {
   background-color: inherit;
 } 
@@ -785,3 +795,6 @@ div.results .data td {
   position: fixed; left: 10px; top: 115px;
 }
 
+.w3c_leftCol2 {
+    width:4%;
+}
