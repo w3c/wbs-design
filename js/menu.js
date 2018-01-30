@@ -15,7 +15,7 @@ function switch_menu() {
     var left_col_logo = document.getElementById('w3c_logo_shadow');
     left_col_logo.style.width="4%";
     collapse.style.display="none";
-    img.setAttribute("src", "../icons/menu2.png");
+    img.setAttribute("src", "../icons/menu.png");
     img.setAttribute("title", "Show Menu");
   } else {
     var left_col = document.getElementById('w3c_leftCol');

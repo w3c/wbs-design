@@ -800,3 +800,7 @@ div.w3c_leftCol h3.category span.ribbon {
 .w3c_leftCol2 {
     width:4%;
 }
+
+div.no_js{
+  display:none;
+}
