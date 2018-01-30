@@ -787,12 +787,14 @@ div.w3c_leftCol h3.category span.ribbon {
   border: 0;
 } 
 
-#leftCol_menu a:hover {
-  background-color: inherit;
-} 
-
 #leftCol_menu {
-  position: fixed; left: 10px; top: 115px;
+    width: 45px;
+    margin-left: -6px;
+    padding-left: 0px;
+}
+
+#w3c_leftCol.fixedMenu {
+    position: fixed; top: 10px;
 }
 
 .w3c_leftCol2 {

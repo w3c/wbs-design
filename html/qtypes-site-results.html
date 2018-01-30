@@ -16,6 +16,7 @@ design - Web-Based Straw-poll and Balloting System</title>
 <link rel='alternate' type='application/atom+xml' href='/2002/09/wbs/myQuestionnaires.atom' title='ATOM feed of my Questionnaires' />
 <script src='/2002/09/wbs/autolinker-dom.js'></script><script src='/2002/09/wbs/addLinks.js'></script>
 <script src='../js/menu.js'></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <link rel='start' href='/2002/09/wbs/' title='WBS Home page' />
 <link rel='bookmark' href='/2002/09/wbs/myQuestionnaires' title='My questionnaires' />
 <link rel='bookmark' href='/2002/09/wbs/showq' title='List of open questionnaires' />
@@ -54,12 +55,13 @@ design - Web-Based Straw-poll and Balloting System</title>
     <img height="32" alt=""
     src="//www.w3.org/2008/site/images/logo-shadow" />
   </div> <!-- /end #w3c_logo_shadow -->
-  <div class="w3c_leftCol" id="leftCol_menu"><span><a href="javascript:;" onclick="switch_menu()"><img width="28px" title='Hide menu'
-    id="leftCol_img" src="../icons/close.png" /></a></span></div>
 
   <div id="w3c_leftCol" class="w3c_leftCol">
   <h2 class="offscreen">Site Navigation</h2>
 
+<h3 id="leftCol_menu" class='category'><a href="javascript:;" onclick="switch_menu()"><span class='ribbon'><img width="16px" title='Hide menu'
+    id="leftCol_icon" src="../icons/close2.png" /></span></a></h3>
+<div id="collapse">
 <h3 class='category'><span class='ribbon'>This Questionnaire</span></h3>
 <ul class='theme'>
 <li><a accesskey='t' href='/2002/09/wbs/99999/wbs-types-test/'>Answer</a></li>
@@ -82,6 +84,7 @@ design - Web-Based Straw-poll and Balloting System</title>
 <li><a href='/2004/01/pp-impl/' title='Working Group management system and Call for Participation'><abbr title='Working Group'>WG</abbr> Management (<abbr title='Implementation of the Patent Policy'>IPP</abbr>) </a></li>
 <a href='/2000/09/dbwg/details?group=99999'>Group details</a>
 </ul>
+</div>
 </div> <!-- /end #w3c_left_col -->
 
   <div class="w3c_mainCol">
@@ -1530,6 +1533,24 @@ design - Web-Based Straw-poll and Balloting System</title>
 <!-- -->
 //]]>
 </script>
+
+<script type="text/javascript">
+// listen for scroll
+var positionElementInPage = $('#leftCol_menu').offset().top;
+  positionElementInPage -= 10;
+  $(window).scroll(
+  function() {
+        if ($(window).scrollTop() >= positionElementInPage) {
+          // fixed
+	  $('#w3c_leftCol').addClass("fixedMenu");
+	} else {
+	  // relative
+	  $('#w3c_leftCol').removeClass("fixedMenu");
+	}
+     }
+);
+</script>
+  
 </div>
 
 </body>
