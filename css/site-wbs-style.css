@@ -785,7 +785,11 @@ div.w3c_leftCol h3.category span.ribbon {
   color: #17445f;
   font-weight: bold;
   border: 0;
-} 
+}
+
+h3.category {
+    background:#e7e6e6 url('../icons/category-bg-fold.png') no-repeat bottom right;
+}
 
 #leftCol_menu {
     width: 45px;
