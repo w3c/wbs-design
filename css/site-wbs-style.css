@@ -785,12 +785,13 @@ div.w3c_leftCol h3.category span.ribbon {
   color: #17445f;
   font-weight: bold;
   border: 0;
-} 
+}
 
 #leftCol_menu {
     width: 45px;
     margin-left: -6px;
     padding-left: 0px;
+    background: none;
 }
 
 #w3c_leftCol.fixedMenu {
