@@ -59,10 +59,12 @@ design - Web-Based Straw-poll and Balloting System</title>
   <div id="w3c_leftCol" class="w3c_leftCol">
   <h2 class="offscreen">Site Navigation</h2>
 
-<noscript><div class="no_js"></noscript>
-<h3 id="leftCol_menu" class='category'><a href="javascript:;" onclick="switch_menu()"><span class='ribbon'><img width="16px" title='Hide menu'
- id="leftCol_icon" src="../icons/close2.png" /></span></a></h3>
-<noscript></div></noscript>
+<h3 id="leftCol_menu" class="category" style="display: none;">
+  <a href="#" onclick="switch_menu(event)">
+    <span class="ribbon"><img width="16px" title="Hide menu" id="leftCol_icon" src="../icons/close2.png" /></span>
+  </a>
+</h3>
+
 <div id="collapse">
 <h3 class='category'><span class='ribbon'>This Questionnaire</span></h3>
 <ul class='theme'>
@@ -1537,22 +1539,26 @@ design - Web-Based Straw-poll and Balloting System</title>
 </script>
 
 <script type="text/javascript">
-// listen for scroll
-var positionElementInPage = $('#leftCol_menu').offset().top;
+var collapseIcon = $('#leftCol_menu');
+if (collapseIcon && collapseIcon[0]) {
+  collapseIcon[0].style.display = 'block';
+  // listen for scroll
+  var positionElementInPage = collapseIcon.offset().top;
   positionElementInPage -= 10;
   $(window).scroll(
-  function() {
-        if ($(window).scrollTop() >= positionElementInPage) {
-          // fixed
-	  $('#w3c_leftCol').addClass("fixedMenu");
-	} else {
-	  // relative
-	  $('#w3c_leftCol').removeClass("fixedMenu");
-	}
-     }
-);
+    function() {
+      if ($(window).scrollTop() >= positionElementInPage) {
+        // fixed
+        $('#w3c_leftCol').addClass("fixedMenu");
+      } else {
+        // relative
+        $('#w3c_leftCol').removeClass("fixedMenu");
+      }
+    }
+  );
+}
 </script>
-  
+
 </div>
 
 </body>

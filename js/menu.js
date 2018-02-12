@@ -1,10 +1,12 @@
 function localFilename(url) {
   var x = url.lastIndexOf("/");
   url = url.slice(x + 1);
-  return url; 
+  return url;
 }
 
-function switch_menu() {
+function switch_menu(event) {
+  if (event.preventDefault)
+    event.preventDefault();
   var img = document.getElementById('leftCol_icon');
   var imgName = img.getAttribute("src");
   imgName = localFilename(imgName);
