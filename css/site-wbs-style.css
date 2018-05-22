@@ -67,7 +67,7 @@ div.question input {
 div.question table,
 div.question table.tMargin {
   width: 100%;
-  margin: 0 0 .5em 0 !important;
+  // margin: 0 0 .5em 0 !important;
   padding: 0;
   border-collapse: initial;
 }
