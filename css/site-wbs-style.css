@@ -14,7 +14,7 @@ span.message, span.warning {
 }
 
 blockquote {
-  margin-left:3em;
+  margin-left: 0em;
 }
 
 blockquote.member {
@@ -135,6 +135,12 @@ div.widget p {
   padding: 0;
   font-size:1.05em;
   line-height: 100%;
+}
+
+div.content ol, div.content blockquote,
+div.widget ol, div.widget blockquote {
+  margin-bottom: .5em;
+  padding-top: 0;
 }
 
 div.results p {
