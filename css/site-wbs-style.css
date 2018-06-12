@@ -791,16 +791,36 @@ div.w3c_leftCol h3.category span.ribbon {
   color: #17445f;
   font-weight: bold;
   border: 0;
-} 
-
-#leftCol_menu a:hover {
-  background-color: inherit;
-} 
+}
 
 #leftCol_menu {
-  position: fixed; left: 10px; top: 115px;
+    background-color: white;
+    font-size: 1.1em;
+    margin-top: 20px;
+    padding: 8px 0 15px 10px; 
+    border-top: 1px solid #7e7e7e;
+    position: fixed;
+    bottom: 0px;
+}
+
+#leftCol_menu.expand {
+    width: 19%;
+}
+
+#leftCol_menu.collapse {
+    width: 3%;
+}
+
+#collapse_txt {
+    color: #5e5e5e;
+    padding-left: 8px;
+}
+
+#w3c_leftCol.fixedMenu {
+    position: fixed; top: 10px;
 }
 
 .w3c_leftCol2 {
     width:4%;
 }
+
