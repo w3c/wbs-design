@@ -55,7 +55,7 @@ div.question h2  {
   margin-bottom:8px;
 }
 
-div.question ul {
+div.widget ul {
   color: black;
   padding:5px;
 }
@@ -169,6 +169,16 @@ input[type=number]{
 
 ol li {
   list-style-type: decimal;
+  margin-left: 20px;
+}
+
+div.content > p > ul, div.content > ul {
+    padding-top: 0px;
+    margin-bottom: .5em;
+}
+
+div.content > p > ul > li, div.content > ul > li {
+  list-style-type: disc;
   margin-left: 20px;
 }
 
