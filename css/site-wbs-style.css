@@ -55,11 +55,6 @@ div.question h2  {
   margin-bottom:8px;
 }
 
-div.question ul {
-  color: black;
-  padding:5px;
-}
-
 div.question input {
   margin-right:5px;
 }
@@ -170,6 +165,21 @@ input[type=number]{
 ol li {
   list-style-type: decimal;
   margin-left: 20px;
+}
+
+div.content ul {
+    padding-top: 0px;
+    margin-bottom: .5em;
+}
+
+div.content ul li {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+div.widget ul {
+  color: black;
+  padding:5px;
 }
 
 #w3c_content_body form ul {
