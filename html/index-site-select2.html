@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -29,9 +29,10 @@ title="ATOM feed of my Questionnaires" />
    <span class="alt-logo">W3C</span>
    </h1>
    <div id="w3c_nav">
-    <form action="http://www.w3.org/Help/search" method="get" enctype="application/x-www-form-urlencoded">
+   <nav aria-label="Main">
+    <form action="https://www.w3.org/Help/search" method="get" enctype="application/x-www-form-urlencoded">
        <!-- w3c_sec_nav is populated through js -->
-       <div class="w3c_sec_nav"><!-- --></div>
+       <div class="w3c_sec_nav"><nav aria-label="Secondary"><!-- --></nav></div>
        <ul class="main_nav"> <!-- Main navigation menu -->
        <li class="first-item"><a href="/standards/">Standards</a></li>
        <li><a href="/participate/">Participate</a></li>
@@ -40,12 +41,13 @@ title="ATOM feed of my Questionnaires" />
        <li class="search-item">
        <div id="search-form">
        <input tabindex="3" class="text" name="q" value="" title="Search" />
-       <button id="search-submit" name="search-submit" type="submit"><img class="submit" src="//www.w3.org/2008/site/images/search-button" alt="Search" width="21" height="17" /></button>
-       </div> <!-- /end #w3c_nav -->
+       <button id="search-submit" name="search-submit" type="submit"><img class="submit" src="https://www.w3.org/2008/site/images/search-button" alt="Search" width="21" height="17" /></button>
+       </div>
        </li>
        </ul>
      </form>
-   </div>
+   </nav>
+   </div> <!-- /end #w3c_nav -->
   </div> <!-- /end #w3c_mast -->
 
   <div id="w3c_main">
@@ -57,7 +59,8 @@ title="ATOM feed of my Questionnaires" />
   <div class="w3c_leftCol">
       <h2 class="offscreen">Site Navigation</h2>
 
-     <h3 class="category"><span class="ribbon">Nearby</span></h3>
+    <h3 class="category"><span class="ribbon">Nearby</span></h3>
+    <nav aria-label="Nearby">
      <ul class="theme">
       <li><a href="/2002/09/wbs/" title='WBS Home'>WBS Home</a></li>
       <li><a href="/2002/09/wbs/showq" title='Current questionnaires for all the groups'>Current questionnaires</a></li>
@@ -67,7 +70,8 @@ title="ATOM feed of my Questionnaires" />
      system and Call for Participation'><abbr title='Working Group'>WG</abbr> Management
   (<abbr title='Implementation of the Patent Policy'>IPP</abbr>) </a></li>
      </ul>
- </div> <!-- /end #w3c_left_col -->
+   </nav>
+   </div> <!-- /end #w3c_left_col -->
 
   <div class="w3c_mainCol">
 
@@ -1010,6 +1014,7 @@ questionnaires for the</label>:
          <div id="w3c_footer-inner">
             <h2 class="offscreen">Footer Navigation</h2>
             <div class="w3c_footer-nav">
+            <nav aria-label="Footer">
                <h3>Navigation</h3>
                <ul class="footer_top_nav"><li>
                      <a href="/">Home</a>
@@ -1022,8 +1027,10 @@ questionnaires for the</label>:
                   </li><li class="last-item">
                      <a href="/Consortium/">About W3C</a>
                   </li></ul>
+            </nav>
             </div>
             <div class="w3c_footer-nav">
+            <nav aria-label="Contact">
                <h3>Contact W3C</h3>
                <ul class="footer_bottom_nav"><li>
                      <a href="/Consortium/contact">Contact</a>
@@ -1037,8 +1044,10 @@ questionnaires for the</label>:
                      <address id="w3c_signature">
                         <a href="http://lists.w3.org/Archives/Public/site-comments/">Feedback</a></address>
                   </li></ul>
+            </nav>
             </div>
             <div class="w3c_footer-nav">
+            <nav aria-label="W3C Updates">
                <h3>W3C Updates</h3>
                <ul class="footer_follow_nav">
                <li><a href="http://twitter.com/W3C" title="Follow W3C
@@ -1046,6 +1055,7 @@ questionnaires for the</label>:
   src="//www.w3.org/2008/site/images/Twitter_bird_logo_2012.svg"
   alt="Twitter" class="social-icon" height="40" /></a></li>
                 </ul>
+           </nav>
            </div>
             <p class="copyright">Copyright © 2016 W3C <sup>®</sup> (<a href="http://www.csail.mit.edu/">
                   <acronym title="Massachusetts Institute of Technology">MIT</acronym>
@@ -1054,16 +1064,16 @@ questionnaires for the</label>:
                </a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>) <a href="/Consortium/Legal/ipr-notice">Usage policies apply</a>.</p>
          </div>
       </div><!-- /end #footer -->
-
-      <div id="w3c_scripts">
-      <script type="text/javascript"
-      src="//www.w3.org/2008/site/js/main" xml:space="preserve">
-	<![CDATA[
-//
+      
+<!-- Generated from data/scripts.php, ../../smarty/{scripts.tpl} -->
+<div id="w3c_scripts"><script type="text/javascript" src="https://www.w3.org/2008/site/js/main">
+//<![CDATA[
 <!-- -->
-//
-]]></script>
+//]]>
+</script>
+</div>
 
+<div>
 <script type="text/javascript" src="https://www.w3.org/scripts/jquery/2/jquery.min.js"></script>
 <script type="text/javascript" src="https://www.w3.org/scripts/select2/4.0/js/select2.full.min.js"></script>
 <script type="text/javascript">
@@ -1072,10 +1082,9 @@ $(document).ready(function() {
     placeholder: "Select a Group",
     allowClear: true
 });
-
 });
 </script>
+</div>
 
-      </div>
 </body>
- </html>
+</html>
