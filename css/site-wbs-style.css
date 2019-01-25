@@ -797,6 +797,24 @@ div.results .data td {
   font-weight: bold;
 }
 
+.submit_button {
+    background: #006efc;
+    padding: 8px 20px;
+    font-size: 13px;
+    text-align: center;
+    color: #eee;
+    border: 1px solid #006efc;
+}
+
+.delete_button {
+    background: #fc0033;
+    padding: 8px 20px;
+    font-size: 13px;
+    text-align: center;
+    color: #eee;
+    border: 1px solid #fc0033;
+}
+
 div.w3c_leftCol h3.category span.ribbon {
   color: #17445f;
   font-weight: bold;
