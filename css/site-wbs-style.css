@@ -852,3 +852,17 @@ div.w3c_leftCol h3.category span.ribbon {
     width:4%;
 }
 
+/* ******************  acces page  *************** */
+td.access_no {
+    background-image: url('../icons/check-mark-red.png');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+}
+
+td.access_yes {
+    background-image: url('../icons/check-mark-green.png');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+}
