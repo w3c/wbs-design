@@ -449,8 +449,8 @@ body {
    margin:0.5em 17em 2em 2em;
 }
 
-hr { margin: 0 17em 0 2em;
-	width:60% }
+hr { margin: 0 17em 0 0em;
+     width: 90% }
 
 
 a img { color: #fff; }         /* hide the border in Netscape 4 */
@@ -798,22 +798,44 @@ div.results .data td {
 }
 
 .submit_button {
-    background: #006efc;
+    background: #0654ba;;
     padding: 8px 20px;
     font-size: 13px;
     text-align: center;
     color: #eee;
-    border: 1px solid #006efc;
+    border: 1px solid #0654ba;;
+    border-radius: 5px;
 }
 
 .delete_button {
-    background: #fc0033;
+    margin-bottom: 1px;
+    background: #efefef;
+    border: 1px solid #a7a7a7;
     padding: 8px 20px;
     font-size: 13px;
     text-align: center;
-    color: #eee;
-    border: 1px solid #fc0033;
+    color: #ff0000;
+    border-radius: 5px;
 }
+
+.delete_section {
+    border: 1px solid #ff0000;
+    border-radius: 1px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-right: 10px;
+}
+
+.delete_section_button {
+    float: right;
+    margin-left: 30px;
+}
+
+.delete_section_label {
+    float: left;
+}
+
+.clear { clear: both; }
 
 div.w3c_leftCol h3.category span.ribbon {
   color: #17445f;

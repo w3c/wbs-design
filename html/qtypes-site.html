@@ -647,14 +647,25 @@ observer only (check at least one of the appropriate requests below  in the 'Obs
 Answers received after that time may not be counted.
 </p>
 <p>The <a href='results'>results of this questionnaire</a> are available only to the participants of the group (and the W3C Team)</p>
- <p><label><input type="checkbox" name="wbs:ccme" /> Send a copy of these answers to my email address (laurent@w3.org)</label> (if this isn't your email address, you can <a href="/users/myprofile">update your contact information</a>).</p>
+ <p><label><input type="checkbox" name="wbs:ccme" /> <strong>Send a copy</strong> of these answers to my email address (laurent@w3.org)</label> (if this isn't your email address, you can <a href="/users/myprofile">update your contact information</a>).</p>
 
    <p><input type="submit" class="submit_button" value="Submit your answers" name="action" /></p>
 </form>
 <form method="post" action="./?">
-<p>You may <strong id="delete">completely remove</strong> your response from our records. As this operation is <strong>not reversible</strong>, <label>please confirm your desire to delete your answers by first checking this box: <input type="checkbox" name="confirm" /></label><br/><input type="submit" class="delete_button" name="action" value="Delete my answer entirely" /></p>
+<div class='delete_section'>
+<p class='delete_section_label'>You may <strong id="delete">completely remove</strong> your
+response from our records.<br/>
+As this operation is <strong>not
+reversible</strong>, <label>please confirm your desire to delete
+your answers by first checking <strong>this box</strong>: <input type="checkbox"
+ name="confirm" /></label></p>
+<p class='delete_section_button'><input type="submit"
+class="delete_button" name="action" value="Delete my answer
+entirely" /></p>
+<p class ='clear'></p>
+</div>
 </form>
-<hr />
+
 <p>
 <a href="../../showwb">WBS home</a> /
 <a href="../../showq">Questionnaires</a>
@@ -662,8 +673,6 @@ Answers received after that time may not be counted.
 / <a href='results'>Results</a>
 / <a href='handler'>Edit questionnaire</a>
 </p>
-<p>See also <a href='access'>who can do what</a> with this questionnaire.</p>
-
   <hr /><br />
 
 <div class="maintainer">
