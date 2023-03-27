@@ -1,6 +1,6 @@
 # wbs-design
 
-Petiffy WBS UI
+Prettify WBS UI
 
 The goal of this repository is to collaborate on modernizing the WBS UI.
 It contains the snapshots of some of the HTML pages of the application and its external resources (CSS, JS, icons).
