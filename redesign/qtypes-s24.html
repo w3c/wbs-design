@@ -1,7 +1,7 @@
 <!doctype html>
 <html dir="ltr" lang="en" class="no-js">
 <head>
-    <title>WBS | xx | xx</title>
+    <title>WBS question types</title>
 
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -62,7 +62,7 @@
             })();
         </script>
 
-<!-- css test-->
+<!-- custom css for wbs -->
   <link rel="stylesheet" type="text/css" href="css/design-style.css" title="default" />
 <!--  -->
     
@@ -640,7 +640,7 @@
         <article>    
         <h1 class="title">WBS question types</h1>
 
-        <div class="component component--text">
+        <div>
 
    <div id="w3c_content_body">
 
@@ -659,7 +659,7 @@ Answers received after that time may not be counted.
 <div class='question required' id='wbsq1'>
 <fieldset>
 <legend><span class="qtitle">1. Simple text question</span><a class="edit" href="q/q1/" title='Edit text of question &quot;Simple text question&quot;'><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
-<div class='content'>
+<div class='description'>
 <p>The following flavors were nominated for the best ice cream survey (ol):</p>
 <ol>
   <li><a rel="nofollow" href="https://en.wikipedia.org/wiki/Chocolate_ice_cream">Chocolate</a>*</li>
@@ -694,7 +694,7 @@ statements about AB nominees to learn more about these candidates.</p>
 <div class='question optional' id='wbsq2'>
 <fieldset>
 <legend><span class="qtitle">2. Single selection required Yes/No</span><a class="edit" href="q/q2/" title="Edit text of question &quot;Single selection required Yes/No&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
-<div class='content'><p>The Ice-cream Process Document states:</p>
+<div class='description'><p>The Ice-cream Process Document states:</p>
 
 <blockquote><div>"The ice cream group is elected by the Ice Cream
   Committee, using a <a rel="nofollow"
@@ -723,7 +723,7 @@ statements about AB nominees to learn more about these candidates.</p>
 <div class='question optional' id='wbsq3'>
 <fieldset>
 <legend><span class="qtitle">3. Single selection required Yes/No/Concur/Abstain</span><a class="edit" href="q/q3/" title="Edit text of question &quot;Single selection required Yes/No/Concur/Abstain&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
-<div class='content'><p>Single selection required Yes/No/Concur/Abstain.</p>
+<div class='description'><p>Single selection required Yes/No/Concur/Abstain.</p>
 </div><div class='widget ync'>
 <!--<p>Please indicate which option matches your choice:</p>-->
 <input type='hidden' name='q3:format' value='0' /><input type='hidden' name='q3:dim' value='1' /><ul>
@@ -742,7 +742,7 @@ statements about AB nominees to learn more about these candidates.</p>
 
 <div class='question optional' id='wbsq4'><fieldset>
 <legend><span class="qtitle">4. Select one among many (drop-down list)</span><a class="edit" href="q/q4/" title="Edit text of question &quot;Select one among many (drop-down list)&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
-<div class='content'><p>Select one among many .</p>
+<div class='description'><p>Select one among many .</p>
 </div><div class='widget select'>
 <!-- p>Please indicate which option matches your choice:</p -->
 <input type='hidden' name='q4:format' value='0' /><input type='hidden' name='q4:dim' value='1' /><select name='q4:d1[]'><option value='c1' >choice1</option>
@@ -759,7 +759,7 @@ statements about AB nominees to learn more about these candidates.</p>
 
 <div class='question optional' id='wbsq5'><fieldset>
 <legend><span class="qtitle">5. Select one among many (radio buttons)</span><a class="edit" href="q/q5/" title="Edit text of question &quot;Select one among many (radio buttons)&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
-<div class='content'><p>Select one among many (radio buttons).</p>
+<div class='description'><p>Select one among many (radio buttons).</p>
 </div><div class='widget radioSelect'>
 <!--<p>Please indicate which option matches your choice:</p>-->
 <input type='hidden' name='q5:format' value='0' /><input type='hidden' name='q5:dim' value='1' /><ul>
@@ -780,7 +780,7 @@ statements about AB nominees to learn more about these candidates.</p>
 
 <div class='question required' id='wbsq6'><fieldset>
 <legend><span class="qtitle">6. Open comments</span><a class="edit" href="q/q6/" title="Edit text of question &quot;Open comments&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
-<div class='content'><p>Open comments.</p>
+<div class='description'><p>Open comments.</p>
 </div><div class='widget open'>
 <p class="rationaleblock"><label for='xq6:rationale'>Rationale</label>: <br />
 <textarea id ='xq6:rationale' name='q6:rationale' class='rationale' rows='6'></textarea></p>
@@ -792,7 +792,7 @@ statements about AB nominees to learn more about these candidates.</p>
 
 <div class='question optional' id='wbsq7'><fieldset>
 <legend><span class="qtitle">7. Text entries</span><a class="edit" href="q/q7/" title="Edit text of question &quot;Text entries&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
-<div class='content'><p>Text entries.</p>
+<div class='description'><p>Text entries.</p>
 </div><div class='widget texts'>
 <input type='hidden' name='q7:format' value='2' /><input type='hidden' name='q7:dim' value='1' /><p class="rationaleblock"><label for='xq7:rationale'>Rationale</label>: <br />
 <textarea id ='xq7:rationale' name='q7:rationale' class='rationale' rows='6'></textarea></p>
@@ -804,7 +804,7 @@ statements about AB nominees to learn more about these candidates.</p>
 
 <div class='question optional' id='wbsq8'><fieldset>
 <legend><span class="qtitle">8. Select multiple items (checkboxes)</span><a class="edit" href="q/q8/" title="Edit text of question &quot;Select multiple items (checkboxes)&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
-<div class='content'><p>Select multiple items (checkboxes).</p>
+<div class='description'><p>Select multiple items (checkboxes).</p>
 </div><div class='widget multi'>
 <!--<p>Please indicate which options match your choice:</p>-->
 <input type='hidden' name='q8:format' value='0' /><input type='hidden' name='q8:dim' value='1' /><ul>
@@ -825,7 +825,7 @@ name='q8:d1[]' value='c3' />choice 3</label></li>
 
 <div class='question optional' id='wbsq9'><fieldset>
 <legend><span class="qtitle">9. Survey type</span><a class="edit" href="q/q9/" title="Edit text of question &quot;Survey type&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
-<div class='content'><p>Survey type.</p>
+<div class='description'><p>Survey type.</p>
 </div>
 <div class="widget evaluation">
 <input name="q9:format" value="1" type="hidden"><input name="q9:dim" value="6" type="hidden"><ul class="compare">
@@ -846,7 +846,7 @@ the last one</label> <select name="q9:c3" id="xq9:c3"><option value="0">1 &#x1F6
 
 <div class='question optional' id='wbsq10'><fieldset>
 <legend><span class="qtitle">10. Straw-poll</span><a class="edit" href="q/q10/" title="Edit text of question &quot;Straw-poll&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
-<div class='content'><p>Straw-poll.</p>
+<div class='description'><p>Straw-poll.</p>
 </div><div class='widget choices2'>
 <input type='hidden' name='q10:format' value='1' /><input type='hidden' name='q10:dim' value='4' /><ul class='compare'>
 <li><label for='xq10:c1'>choice 1</label> <select name='q10:c1' id='xq10:c1'><option value='2'>Yes</option><option value='3'>Yes and prefer</option><option value='1'>Yes, but prefer not</option><option value='0'>No</option></select></li>
@@ -863,7 +863,7 @@ the last one</label> <select name="q9:c3" id="xq9:c3"><option value="0">1 &#x1F6
 
 <div class='question optional' id='wbsq11'><fieldset>
 <legend><span class="qtitle">11. Rank-ordering</span><a class="edit" href="q/q11/" title="Edit text of question &quot;Rank-ordering&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
-<div class='content'><p>Rank-ordering.</p>
+<div class='description'><p>Rank-ordering.</p>
 </div><div class='widget ranklist'>
 <p>Please select the rank-order (1 to 3) for the options
 you think are acceptable (i.e.  you can
@@ -912,7 +912,7 @@ live with it), where 1  is the most preferred, 2 the next best and so on... You 
 
 <div class='question optional' id='wbsq12'><fieldset>
 <legend><span class="qtitle">12. Pick a time for a teleconf</span><a class="edit" href="q/q12/" title="Edit text of question &quot;Pick a time for a teleconf&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
-<div class='content'><p>Pick a time for a teleconf.</p>
+<div class='description'><p>Pick a time for a teleconf.</p>
 </div><div class='widget scheduling'>
 <input name="q12:format" value="1" type="hidden"><input name="q12:dim"
   value="4" type="hidden">
@@ -947,7 +947,7 @@ live with it), where 1  is the most preferred, 2 the next best and so on... You 
 
 <div class='question optional' id='wbsq13'><fieldset>
 <legend><span class="qtitle">13. Cumulative vote</span><a class="edit" href="q/q13/" title="Edit text of question &quot;Cumulative vote&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
-<div class='content'><p>Select a % for each choice</p>
+<div class='description'><p>Select a % for each choice</p>
 </div><div class='widget cumulative'>
 <input name="q13:format" value="1" type="hidden"><input name="q13:dim" value="101" type="hidden"><ul class="compare">
 <li><label for="xq13:c1">choice 1</label> <select name="q13:c1" id="xq13:c1"><option style="color: menutext;" value="0">0</option><option style="color: menutext;" value="1">1</option><option style="color: menutext;" value="2">2</option><option style="color: menutext;" value="3">3</option><option style="color: menutext;" value="4">4</option><option style="color: menutext;" value="5">5</option><option style="color: menutext;" value="6">6</option><option style="color: menutext;" value="7">7</option><option style="color: menutext;" value="8">8</option><option style="color: menutext;" value="9">9</option><option style="color: menutext;" value="10">10</option><option style="color: menutext;" value="11">11</option><option style="color: menutext;" value="12">12</option><option style="color: menutext;" value="13">13</option><option style="color: menutext;" value="14">14</option><option style="color: menutext;" value="15">15</option><option style="color: menutext;" value="16">16</option><option style="color: menutext;" value="17">17</option><option style="color: menutext;" value="18">18</option><option style="color: menutext;" value="19">19</option><option style="color: menutext;" value="20">20</option><option style="color: menutext;" value="21">21</option><option style="color: menutext;" value="22">22</option><option style="color: menutext;" value="23">23</option><option style="color: menutext;" value="24">24</option><option style="color: menutext;" value="25">25</option><option style="color: menutext;" value="26">26</option><option style="color: menutext;" value="27">27</option><option style="color: menutext;" value="28">28</option><option style="color: menutext;" value="29">29</option><option style="color: menutext;" value="30">30</option><option style="color: menutext;" value="31">31</option><option style="color: menutext;" value="32">32</option><option style="color: menutext;" value="33">33</option><option style="color: menutext;" value="34">34</option><option style="color: menutext;" value="35">35</option><option style="color: menutext;" value="36">36</option><option style="color: menutext;" value="37">37</option><option style="color: menutext;" value="38">38</option><option style="color: menutext;" value="39">39</option><option style="color: menutext;" value="40">40</option><option style="color: menutext;" value="41">41</option><option style="color: menutext;" value="42">42</option><option style="color: menutext;" value="43">43</option><option style="color: menutext;" value="44">44</option><option style="color: menutext;" value="45">45</option><option style="color: menutext;" value="46">46</option><option style="color: menutext;" value="47">47</option><option style="color: menutext;" value="48">48</option><option style="color: menutext;" value="49">49</option><option style="color: menutext;" value="50">50</option><option style="color: menutext;" value="51">51</option><option style="color: menutext;" value="52">52</option><option style="color: menutext;" value="53">53</option><option style="color: menutext;" value="54">54</option><option style="color: menutext;" value="55">55</option><option style="color: menutext;" value="56">56</option><option style="color: menutext;" value="57">57</option><option style="color: menutext;" value="58">58</option><option style="color: menutext;" value="59">59</option><option style="color: menutext;" value="60">60</option><option style="color: menutext;" value="61">61</option><option style="color: menutext;" value="62">62</option><option style="color: menutext;" value="63">63</option><option style="color: menutext;" value="64">64</option><option style="color: menutext;" value="65">65</option><option style="color: menutext;" value="66">66</option><option style="color: menutext;" value="67">67</option><option style="color: menutext;" value="68">68</option><option style="color: menutext;" value="69">69</option><option style="color: menutext;" value="70">70</option><option style="color: menutext;" value="71">71</option><option style="color: menutext;" value="72">72</option><option style="color: menutext;" value="73">73</option><option style="color: menutext;" value="74">74</option><option style="color: menutext;" value="75">75</option><option style="color: menutext;" value="76">76</option><option style="color: menutext;" value="77">77</option><option style="color: menutext;" value="78">78</option><option style="color: menutext;" value="79">79</option><option style="color: menutext;" value="80">80</option><option style="color: menutext;" value="81">81</option><option style="color: menutext;" value="82">82</option><option style="color: menutext;" value="83">83</option><option style="color: menutext;" value="84">84</option><option style="color: menutext;" value="85">85</option><option style="color: menutext;" value="86">86</option><option style="color: menutext;" value="87">87</option><option style="color: menutext;" value="88">88</option><option style="color: menutext;" value="89">89</option><option style="color: menutext;" value="90">90</option><option style="color: menutext;" value="91">91</option><option style="color: menutext;" value="92">92</option><option style="color: menutext;" value="93">93</option><option style="color: menutext;" value="94">94</option><option style="color: menutext;" value="95">95</option><option style="color: menutext;" value="96">96</option><option style="color: menutext;" value="97">97</option><option style="color: menutext;" value="98">98</option><option style="color: menutext;" value="99">99</option><option style="color: menutext;" value="100">100</option></select></li>
@@ -965,7 +965,7 @@ live with it), where 1  is the most preferred, 2 the next best and so on... You 
 
 <div class='question optional' id='wbsq14'><fieldset>
 <legend><span class="qtitle">14. Importance survey</span><a class="edit" href="q/q14/" title="Edit text of question &quot;Importance survey&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
-<div class='content'><p>Importance survey.</p>
+<div class='description'><p>Importance survey.</p>
 </div><div class='widget ms_importance'>
 <input type='hidden' name='q14:format' value='1' /><input type='hidden' name='q14:dim' value='9' /><ul class='compare'>
 <li><label for='xq14:c1'>Importance of choice 1</label> <select name='q14:c1' id='xq14:c1'><option value='0'>1 + (lowest)</option><option value='1'>2 ++</option><option value='2'>3 +++</option><option value='3'>4 ++++</option><option value='4'>5 +++++</option><option value='5'>6 ++++++</option><option value='6'>7  +++++++ (highest)</option><option value='7'>Not applicable</option><option value='8' selected='selected'>No opinion</option></select></li>
@@ -982,7 +982,7 @@ live with it), where 1  is the most preferred, 2 the next best and so on... You 
 
 <div class='question optional' id='wbsq15'><fieldset>
 <legend><span class="qtitle">15. Importance and Satisfaction survey</span><a class="edit" href="q/q15/" title="Edit text of question &quot;Cumulative vote&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
-<div class='content'><p>Importance and Satisfaction survey.</p>
+<div class='description'><p>Importance and Satisfaction survey.</p>
 </div><div class='widget ms_importance_satis'>
 <input type='hidden' name='q15:format' value='1' /><input
   type='hidden' name='q15:dim' value='19' />
@@ -1081,7 +1081,7 @@ live with it), where 1  is the most preferred, 2 the next best and so on... You 
 
 <div class='question required' id='wbstp'><fieldset>
 <legend><span class="qtitle">16. Technical Plenary widget</span><a class="edit" href="q/q16/" title="Edit text of question &quot;Monday, 11 November Group Meetings&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
-<div class='content'>For Group meetings on Monday, 11 November:</div><div class='widget tp_wg'>
+<div class='description'>For Group meetings on Monday, 11 November:</div><div class='widget tp_wg'>
 <input type='hidden' name='tp:format' value='0' /><input type='hidden' name='tp:dim' value='2' /><p><label title='Not Attending that day'><input type='radio' name='tp:d1[]' value='na'  /> Not attending that day</label></p>
 <p><label title='Attending as observer'><input type='radio' name='tp:d1[]' value='obs'  /> Attending as an
 observer only (check at least one of the appropriate requests below  in the 'Observer request' column)</label></p>
@@ -1172,7 +1172,7 @@ observer only (check at least one of the appropriate requests below  in the 'Obs
     because the questionnaire is for individuals rather than organizations.</p>
 <div class='question optional' id='wbsq17'><fieldset>
 <legend><span class="qtitle">17. Employees list</span><a class="edit" href="q/q17/" title="Edit text of question &quot;Employees list&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
-<div class='content'><p>Full statement of question.</p>
+<div class='description'><p>Full statement of question.</p>
 </div><div class='widget employees'>
 <input type='hidden' name='q16:format' value='0' /><input type='hidden' name='q16:dim' value='3' /><select name='q16:d1[]'><option  value='0' >Nobody</option>
 </select>
@@ -1180,7 +1180,7 @@ observer only (check at least one of the appropriate requests below  in the 'Obs
 </select>
 <select name='q16:d3[]'><option  value='0' >Nobody</option>
 </select>
-<p class="rationaleblock"><label for='xq16:rationale'>Rationale</label>: <br />
+<p class="rationaleblock"><label for='xq16:rationale'>Rationale:</label> <br />
 <textarea id ='xq16:rationale' name='q16:rationale' class='rationale' rows='6'></textarea></p>
 <p class="commentblock"><label for='xq16:comment'>Comments:</label> <br />
 <textarea id='xq16:comment' name='q16:comment' class='comment' rows='3'></textarea></p>
@@ -1218,10 +1218,16 @@ entirely" /></p>
         </article>
                                     <section class="related">
     <div class="related__inner">
-        <h2 class="txt-jupiter">In this section</h2>
+        <h2 class="txt-jupiter">Section 1</h2>
         <ul class="clean-list" role="list">
                                                             <li><a href="">Item1</a></li>
+                                                            <li><a href="">Item2</a></li>
+
+							  </ul>
+	<h2 class="txt-jupiter">Section 2</h2>
+        <ul class="clean-list" role="list">
                                                             <li><a href="">Item1</a></li>
+                                                            <li><a href="">Item2</a></li>
 
                                     </ul>
     </div>
