@@ -20,4 +20,8 @@ It contains the snapshots of some of the HTML pages of the application and its e
 * [Forms available with W3C site template](https://w3c.github.io/wbs-design/html/qtypes-site-current.html)
 * [Test wysiwyg editor (using jquery plugin 'wysiwyg')](https://w3c.github.io/wbs-design/html/wbs-wysiwyg.html)
 
-* [WBS Home Page using S24 template](https://w3c.github.io/wbs-design/redesign/wbs-home.html)
+* [WBS Home Page using S24 template](https://w3c.github.io/wbs-design/html/s24-home.html)
+* [WBS All question types using S24 template](https://w3c.github.io/wbs-design/html/s24-qtypes.html)
+* [WBS All question results types using S24 template](https://w3c.github.io/wbs-design/html/s24-qtypes-results.html)
+
+
