@@ -656,100 +656,158 @@ Answers received after that time may not be counted.
 <form method="post" action="./?">
 <p>You're identified as .</p>
 
-<div class='question required' id='wbsq1'>
+<div class='question l-box' id='wbsq1'>
 <fieldset>
-<legend><span class="qtitle">1. Simple text question</span><a class="edit" href="q/q1/" title='Edit text of question &quot;Simple text question&quot;'><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
+
+<div class="l-cluster l-cluster--vertical-align">
+<div>
+<legend class="txt-mars">1. Simple text question</legend>
+<a class="button button--alt" href="q/q1/" title="Edit text of question &quot;Simple text question&quot;" alt="Edit">Edit</a>
+</div>
+</div>
+
 <div class='description'>
 <p>The following flavors were nominated for the best ice cream survey (ol):</p>
 <ol>
-  <li><a rel="nofollow" href="https://en.wikipedia.org/wiki/Chocolate_ice_cream">Chocolate</a>*</li>
-  <li><a rel="nofollow" href="https://en.wikipedia.org/wiki/Vanilla_ice_cream">Vanilla</a>*</li>
+  <li><a rel="nofollow" href="https://en.wikipedia.org/wiki/Chocolate_ice_cream">Chocolate</a></li>
+  <li><a rel="nofollow" href="https://en.wikipedia.org/wiki/Vanilla_ice_cream">Vanilla</a></li>
   <li><a rel="nofollow" href="https://en.wikipedia.org/wiki/Strawberry_ice_cream">Strawberry</a></li>
-  <li><a rel="nofollow" href="https://en.wikipedia.org/wiki/Butter_Pecan">Butter Pecan</a></li>
-  <li><a rel="nofollow" href="https://en.wikipedia.org/wiki/Cherry_ice_cream">Cherry</a>*</li>
-  <li><a rel="nofollow" href="http://trails.wikia.com/wiki/Apple_Ice_Cream">Apple</a>*</li>
 </ol>
 <p>The following flavors were nominated for the best ice cream survey (ul):</p>
 <ul>
-  <li><a rel="nofollow" href="https://en.wikipedia.org/wiki/Chocolate_ice_cream">Chocolate</a>*</li>
-  <li><a rel="nofollow" href="https://en.wikipedia.org/wiki/Vanilla_ice_cream">Vanilla</a>*</li>
+  <li><a rel="nofollow" href="https://en.wikipedia.org/wiki/Chocolate_ice_cream">Chocolate</a></li>
+  <li><a rel="nofollow" href="https://en.wikipedia.org/wiki/Vanilla_ice_cream">Vanilla</a></li>
   <li><a rel="nofollow" href="https://en.wikipedia.org/wiki/Strawberry_ice_cream">Strawberry</a></li>
-  <li><a rel="nofollow" href="https://en.wikipedia.org/wiki/Butter_Pecan">Butter Pecan</a></li>
-  <li><a rel="nofollow" href="https://en.wikipedia.org/wiki/Cherry_ice_cream">Cherry</a>*</li>
-  <li><a rel="nofollow" href="http://trails.wikia.com/wiki/Apple_Ice_Cream">Apple</a>*</li>
 </ul>
-<p>We thank the nominees, and the persons who nominated them, for their support. An asterisk (*) indicates that the nominee is a current participant. Please refer to the
-statements about AB nominees to learn more about these candidates.</p>
+<p>We thank the nominees, and the persons who nominated them, for their support.</p>
 
   
 </div><div class='widget text'>
-<p class="rationaleblock"><label for='xq1:rationale'>Rationale:</label><br />
-<textarea id ='xq1:rationale' name='q1:rationale' class='rationale' rows='6'></textarea></p>
-<p class="commentblock"><label for='xq1:comment'>Comments:</label> <br />
-<textarea id='xq1:comment' name='q1:comment' class='comment' rows='3'></textarea></p>
+<p class="rationaleblock"><label for='xq1:rationale'>Rationale</label>
+<textarea id ='xq1:rationale' name='q1:rationale'></textarea></p>
+<p class="commentblock"><label for='xq1:comment'>Comments</label>
+<textarea id='xq1:comment' name='q1:comment'></textarea></p>
 </div>
 </fieldset>
 </div>
 
-<div class='question optional' id='wbsq2'>
+<div class='question optional l-box' id='wbsq2'>
 <fieldset>
-<legend><span class="qtitle">2. Single selection required Yes/No</span><a class="edit" href="q/q2/" title="Edit text of question &quot;Single selection required Yes/No&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
-<div class='description'><p>The Ice-cream Process Document states:</p>
 
-<blockquote><div>"The ice cream group is elected by the Ice Cream
-  Committee, using a <a rel="nofollow"
-  href="http://en.wikipedia.org/wiki/Single_transferable_vote"><strong>Single-Transferable
-  Vote (STV)</strong></a> system. [...] Any Call for Nominations
-  specifies the number of available flavors, the deadline for
-  nominations, details about the specific vote tabulation system
-  selected by the Group for the election, and operational information
-  such as how to nominate a candidate flavor."</div></blockquote>
-<p>For this selection we use STV Meeks as the Tabulation system.</p>
+<div class="l-cluster l-cluster--vertical-align">
+<div>
+<legend class="txt-mars">2. Single selection required Yes/No</legend>
+<a class="button button--alt" href="q/q2/" title="Edit text of question &quot; Single selection required Yes/No&quot;" alt="Edit">Edit</a>
+</div>
+</div>
 
-</div><div class='widget yn'>
-<!--<p>Please indicate which option matches your choice:</p>-->
-<input type='hidden' name='q2:format' value='0' /><input type='hidden' name='q2:dim' value='1' /><ul>
-<li><label for='xq2:d1_yes_'><input type='radio' name='q2:d1[]' value='yes' id='xq2:d1_yes_'/>Yes</label></li>
-<li><label for='xq2:d1_no_'><input type='radio' name='q2:d1[]' value='no' id='xq2:d1_no_'/>No</label></li>
-</ul>
-<p class="rationaleblock"><label for='xq2:rationale'>Rationale:</label> <br />
+<div class='description'>
+<p>The Ice-cream Process Document states:</p>
+
+<blockquote><p>For this selection we use STV Meeks as the Tabulation system.</p></blockquote>
+
+</div>
+<div class='widget yn'>
+  <input type='hidden' name='q2:format' value='0' /><input type='hidden' name='q2:dim' value='1' />
+
+<div class="field-hint" id="hint-name-change-no">&nbsp;</div>
+<div class="radio-item">
+	<input type="radio" id="xq2:d1_yes_" name="q2:d1[]" value="yes">
+	<label for="xq2:d1_yes_">
+		<span class="faux-label">Yes</span>
+	</label>
+</div>
+
+<div class="radio-item">
+	<input type="radio" id="xq2:d1_no_" name="q2:d1[]" value="no">
+	<label for="xq2:d1_no_">
+		<span class="faux-label">No</span>
+	</label>
+</div>
+</fieldset>
+<fieldset>
+<p class="rationaleblock"><label for='xq2:rationale'>Rationale</label>
 <textarea id ='xq2:rationale' name='q2:rationale' class='rationale' rows='6'></textarea></p>
-<p class="commentblock"><label for='xq2:comment'>Comments:</label> <br />
+<p class="commentblock"><label for='xq2:comment'>Comments</label>
 <textarea id='xq2:comment' name='q2:comment' class='comment' rows='3'></textarea></p>
-</div>
 </fieldset>
 </div>
 
-<div class='question optional' id='wbsq3'>
+<div class='question optional l-box' id='wbsq3'>
 <fieldset>
-<legend><span class="qtitle">3. Single selection required Yes/No/Concur/Abstain</span><a class="edit" href="q/q3/" title="Edit text of question &quot;Single selection required Yes/No/Concur/Abstain&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
-<div class='description'><p>Single selection required Yes/No/Concur/Abstain.</p>
+<div class="l-cluster l-cluster--vertical-align">
+<div>
+<legend class="txt-mars">3. Single selection required Yes/No/Concur/Abstain</legend>
+<a class="button button--alt" href="q/q3/" title="Edit text of question &quot;Single selection required Yes/No/Concur/Abstai&quot;" alt="Edit">Edit</a>
+</div>
+</div>
+
+<div class='description'>
+<p>Single selection required Yes/No/Concur/Abstain.</p>
 </div><div class='widget ync'>
 <!--<p>Please indicate which option matches your choice:</p>-->
-<input type='hidden' name='q3:format' value='0' /><input type='hidden' name='q3:dim' value='1' /><ul>
-<li><label for='xq3:d1_yes_'><input type='radio' name='q3:d1[]' value='yes' id='xq3:d1_yes_'/>Yes</label></li>
-<li><label for='xq3:d1_no_'><input type='radio' name='q3:d1[]' value='no' id='xq3:d1_no_'/>No</label></li>
-<li><label for='xq3:d1_concur_'><input type='radio' name='q3:d1[]' value='concur' id='xq3:d1_concur_'/>Concur (cast vote with the majority)</label></li>
-<li><label for='xq3:d1_abstain_'><input type='radio' name='q3:d1[]' value='abstain' id='xq3:d1_abstain_'/>Blank vote</label></li>
-</ul>
+<input type='hidden' name='q3:format' value='0' /><input type='hidden' name='q3:dim' value='1' />
+
+
+<div class="radio-item">
+	<input type="radio" id="xq3:d1_yes_" name="q3:d1[]" value="yes">
+	<label for="xq3:d1_yes_">
+		<span class="faux-label">Yes</span>
+	</label>
+</div>
+<div class="radio-item">
+	<input type="radio" id="xq3:d1_no_" name="q3:d1[]" value="no">
+	<label for="xq3:d1_no_">
+		<span class="faux-label">No</span>
+	</label>
+</div>
+<div class="radio-item">
+	<input type="radio" id="xq3:d1_concur_" name="q3:d1[]" value="concur">
+	<label for="xq3:d1_concur_">
+		<span class="faux-label">Concur (cast vote with the majority)</span>
+	</label>
+</div>
+<div class="radio-item">
+	<input type="radio" id="xq3:d1_abstain_" name="q3:d1[]" value="abstain">
+	<label for="xq3:d1_abstain_">
+		<span class="faux-label">Blank vote</span>
+	</label>
 </div>
 </fieldset>
+
 </div>
 
-<div class='question optional' id='wbsq4'><fieldset>
-<legend><span class="qtitle">4. Select one among many (drop-down list)</span><a class="edit" href="q/q4/" title="Edit text of question &quot;Select one among many (drop-down list)&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
-<div class='description'><p>Select one among many .</p>
-</div><div class='widget select'>
+<div class='question optional l-box' id='wbsq4'>
+<fieldset>
+
+<div class="l-cluster l-cluster--vertical-align">
+<div>
+<legend class="txt-mars">4. Select one among many (drop-down list)</legend>
+<a class="button button--alt" href="q/q4/" title="Edit text of question &quot;Select one among many (drop-down list)&quot;" alt="Edit">Edit</a>
+</div>
+</div>
+
+<div class='description'><p>Select one among many.</p>
+</div>
+
+<div class='widget select'>
 <!-- p>Please indicate which option matches your choice:</p -->
-<input type='hidden' name='q4:format' value='0' /><input type='hidden' name='q4:dim' value='1' /><select name='q4:d1[]'><option value='c1' >choice1</option>
-<option value='c2' >choice 2</option>
-<option value='c3' >choice 3</option>
+<input type='hidden' name='q4:format' value='0' /><input type='hidden' name='q4:dim' value='1' />
+
+<label for="q4:d1">
+<span class="field-label"></span>
+</label>
+<select id="q4:d1" name="q4:d1[]">
+<option value="c1">Choice1</option>
+<option value="c2">Choice2</option>
+<option value="c3">Choice3</option>
 </select>
 </div>
+
 </fieldset>
 </div>
 
-<div class='question optional' id='wbsq5'><fieldset>
+<div class='question optional l-box' id='wbsq5'><fieldset>
 <legend><span class="qtitle">5. Select one among many (radio buttons)</span><a class="edit" href="q/q5/" title="Edit text of question &quot;Select one among many (radio buttons)&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
 <div class='description'><p>Select one among many (radio buttons).</p>
 </div><div class='widget radioSelect'>
@@ -766,7 +824,7 @@ statements about AB nominees to learn more about these candidates.</p>
 </fieldset>
 </div>
 
-<div class='question required' id='wbsq6'><fieldset>
+<div class='question required l-box' id='wbsq6'><fieldset>
 <legend><span class="qtitle">6. Open comments</span><a class="edit" href="q/q6/" title="Edit text of question &quot;Open comments&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
 <div class='description'><p>Open comments.</p>
 </div><div class='widget open'>
@@ -774,34 +832,70 @@ statements about AB nominees to learn more about these candidates.</p>
 </fieldset>
 </div>
 
-<div class='question optional' id='wbsq7'><fieldset>
+<div class='question optional l-box' id='wbsq7'>
+<fieldset>
 <legend><span class="qtitle">7. Text entries</span><a class="edit" href="q/q7/" title="Edit text of question &quot;Text entries&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
-<div class='description'><p>Text entries.</p>
-</div><div class='widget texts'>
-  <input type='hidden' name='q7:format' value='2' /><input type='hidden' name='q7:dim' value='1' />
-
+<div class='content'>
+<p>Text entries.</p>
+</div>
+<div class='widget texts'>
+<input type="hidden" name="nominee:format" value="2"><input type="hidden" name="nominee:dim" value="1"><label for="xnominee:1">Name: <input id="xnominee:1" type="text" name="nominee:1" value="" size="70"></label><br>
+<label for="xnominee:2">Affiliation: <input id="xnominee:2" type="text" name="nominee:2" value="" size="70"></label><br>
+<label for="xnominee:3">Email: <input id="xnominee:3" type="text" name="nominee:3" value="" size="70"></label>
 </div>
 </fieldset>
 </div>
 
-<div class='question optional' id='wbsq8'><fieldset>
-<legend><span class="qtitle">8. Select multiple items (checkboxes)</span><a class="edit" href="q/q8/" title="Edit text of question &quot;Select multiple items (checkboxes)&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
-<div class='description'><p>Select multiple items (checkboxes).</p>
-</div><div class='widget multi'>
-<!--<p>Please indicate which options match your choice:</p>-->
-<input type='hidden' name='q8:format' value='0' /><input type='hidden' name='q8:dim' value='1' /><ul>
-<li><label for='xq8:d1_c1_'><input id='xq8:d1_c1_' type='checkbox'
-name='q8:d1[]' value='c1' />choice 1</label></li>
-<li><label for='xq8:d1_c2_'><input id='xq8:d1_c2_' type='checkbox'
-name='q8:d1[]' value='c2' />choice 2</label></li>
-<li><label for='xq8:d1_c3_'><input id='xq8:d1_c3_' type='checkbox'
-name='q8:d1[]' value='c3' />choice 3</label></li>
-</ul>
+<div class='question optional l-box' id='wbsq8'><fieldset>
+
+<div class="l-cluster l-cluster--vertical-align">
+<div>
+<legend class="txt-mars">8. Select multiple items (checkboxes)</legend>
+<a class="button button--alt" href="q/q8/" title="Edit text of question &quot;Select multiple items (checkboxes)&quot;" alt="Edit">Edit</a>
 </div>
+</div>
+  
+<div class='description'>
+<p>Select multiple items (checkboxes).</p>
+</div>
+
+<div class='widget multi'>
+<input type='hidden' name='q8:format' value='0' />
+<input type='hidden' name='q8:dim' value='1' />
+
+<div class="checkbox-item">
+<input type="checkbox" name="q8:d1[]" id="xq8:d1_c1_" appearance="base">
+<label for="xq8:d1_c1_">
+<span class="faux-label">Choice 1</span>
+</label>
+</div>
+
+<div class="checkbox-item">
+<input type="checkbox" name="q8:d1[]" id="xq8:d1_c2_" appearance="base">
+<label for="xq8:d1_c2_">
+<span class="faux-label">Choice 2</span>
+</label>
+</div>
+
+<div class="checkbox-item">
+<input type="checkbox" name="q8:d1[]" id="xq8:d1_c3_" appearance="base">
+<label for="xq8:d1_c3_">
+<span class="faux-label">Choice 3</span>
+</label>
+</div>
+</div>
+
+</fieldset>
+<fieldset>
+<p class="rationaleblock"><label for='xq2:rationale'>Rationale</label>
+<textarea id ='xq2:rationale' name='q2:rationale' class='rationale' rows='6'></textarea></p>
+<p class="commentblock"><label for='xq2:comment'>Comments</label>
+<textarea id='xq2:comment' name='q2:comment' class='comment' rows='3'></textarea></p>
+
 </fieldset>
 </div>
 
-<div class='question optional' id='wbsq9'><fieldset>
+<div class='question optional l-box' id='wbsq9'><fieldset>
 <legend><span class="qtitle">9. Survey type</span><a class="edit" href="q/q9/" title="Edit text of question &quot;Survey type&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
 <div class='description'><p>Survey type.</p>
 </div>
@@ -818,7 +912,7 @@ the last one</label> <select name="q9:c3" id="xq9:c3"><option value="0">1 &#x1F6
 </fieldset>
 </div>
 
-<div class='question optional' id='wbsq10'><fieldset>
+<div class='question optional l-box' id='wbsq10'><fieldset>
 <legend><span class="qtitle">10. Straw-poll</span><a class="edit" href="q/q10/" title="Edit text of question &quot;Straw-poll&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
 <div class='description'><p>Straw-poll.</p>
 </div><div class='widget choices2'>
@@ -831,7 +925,7 @@ the last one</label> <select name="q9:c3" id="xq9:c3"><option value="0">1 &#x1F6
 </fieldset>
 </div>
 
-<div class='question optional' id='wbsq11'><fieldset>
+<div class='question optional l-box' id='wbsq11'><fieldset>
 <legend><span class="qtitle">11. Rank-ordering</span><a class="edit" href="q/q11/" title="Edit text of question &quot;Rank-ordering&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
 <div class='description'><p>Rank-ordering.</p>
 </div><div class='widget ranklist'>
@@ -877,7 +971,7 @@ live with it), where 1  is the most preferred, 2 the next best and so on... You 
 </fieldset>
 </div>
 
-<div class='question optional' id='wbsq12'><fieldset>
+<div class='question optional l-box' id='wbsq12'><fieldset>
 <legend><span class="qtitle">12. Pick a time for a teleconf</span><a class="edit" href="q/q12/" title="Edit text of question &quot;Pick a time for a teleconf&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
 <div class='description'><p>Pick a time for a teleconf.</p>
 </div><div class='widget scheduling'>
@@ -908,7 +1002,7 @@ live with it), where 1  is the most preferred, 2 the next best and so on... You 
 </fieldset>
 </div>
 
-<div class='question optional' id='wbsq13'><fieldset>
+<div class='question optional l-box' id='wbsq13'><fieldset>
 <legend><span class="qtitle">13. Cumulative vote</span><a class="edit" href="q/q13/" title="Edit text of question &quot;Cumulative vote&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
 <div class='description'><p>Select a % for each choice</p>
 </div><div class='widget cumulative'>
@@ -922,7 +1016,7 @@ live with it), where 1  is the most preferred, 2 the next best and so on... You 
 </fieldset>
 </div>
 
-<div class='question optional' id='wbsq14'><fieldset>
+<div class='question optional l-box' id='wbsq14'><fieldset>
 <legend><span class="qtitle">14. Importance survey</span> (<strong>no longer proposed in the UI</strong>) <a class="edit" href="q/q14/" title="Edit text of question &quot;Importance survey&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
 <div class='description'><p>Importance survey.</p>
 </div><div class='widget ms_importance'>
@@ -935,7 +1029,7 @@ live with it), where 1  is the most preferred, 2 the next best and so on... You 
 </fieldset>
 </div>
 
-<div class='question optional' id='wbsq15'><fieldset>
+<div class='question optional l-box' id='wbsq15'><fieldset>
 <legend><span class="qtitle">15. Importance and Satisfaction survey</span> (<strong>no longer proposed in the UI</strong>) <a class="edit" href="q/q15/" title="Edit text of question &quot;Cumulative vote&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
 <div class='description'><p>Importance and Satisfaction survey.</p>
 </div><div class='widget ms_importance_satis'>
@@ -1031,7 +1125,7 @@ live with it), where 1  is the most preferred, 2 the next best and so on... You 
 </fieldset>
 </div>
 
-<div class='question required' id='wbstp'><fieldset>
+<div class='question required l-box' id='wbstp'><fieldset>
 <legend><span class="qtitle">16. Technical Plenary widget </span> (<strong>no longer proposed in the UI</strong>) <a class="edit" href="q/q16/" title="Edit text of question &quot;Monday, 11 November Group Meetings&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
 <div class='description'>For Group meetings on Monday, 11 November:</div><div class='widget tp_wg'>
 <input type='hidden' name='tp:format' value='0' /><input type='hidden' name='tp:dim' value='2' /><p><label title='Not Attending that day'><input type='radio' name='tp:d1[]' value='na'  /> Not attending that day</label></p>
@@ -1117,12 +1211,8 @@ observer only (check at least one of the appropriate requests below  in the 'Obs
 </div>
 </fieldset>
 </div>
-
-<p class='warning'>
-    <img src="../icons/warning.png" alt="Warning" />
-    This employees list question will not work with this questionnaire
-    because the questionnaire is for individuals rather than organizations.</p>
-<div class='question optional' id='wbsq17'><fieldset>
+   
+<div class='question optional l-box' id='wbsq17'><fieldset>
 <legend><span class="qtitle">17. Employees list</span> (<strong>no longer proposed in the UI</strong>) <a class="edit" href="q/q17/" title="Edit text of question &quot;Employees list&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
 <div class='description'><p>Full statement of question.</p>
 </div><div class='widget employees'>
@@ -1148,7 +1238,7 @@ Answers received after that time may not be counted.
 
    <p><input type="submit" class="submit_button" value="Submit your answers" name="action" /></p>
 </form>
-<form method="post" action="./?">
+<form novalidate method="post" action="./?">
 <div class='delete_section'>
 <p class='delete_section_label'>You may <strong id="delete">completely remove</strong> your
 response from our records.<br/>
