@@ -807,41 +807,100 @@ Answers received after that time may not be counted.
 </fieldset>
 </div>
 
-<div class='question optional l-box' id='wbsq5'><fieldset>
-<legend><span class="qtitle">5. Select one among many (radio buttons)</span><a class="edit" href="q/q5/" title="Edit text of question &quot;Select one among many (radio buttons)&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
+<div class='question optional l-box' id='wbsq5'>
+  <fieldset>
+  <div class="l-cluster l-cluster--vertical-align">
+  <div>
+  <legend class="txt-mars">5. Select one among many (radio buttons)</legend>
+  <a class="button button--alt" href="q/q5/" title="Edit text of question &quot;Select one among many (radio buttons&quot;" alt="Edit">Edit</a>
+  </div>
+  </div>
+  
 <div class='description'><p>Select one among many (radio buttons).</p>
-</div><div class='widget radioSelect'>
+</div>
+<div class='widget radioSelect'>
 <!--<p>Please indicate which option matches your choice:</p>-->
-<input type='hidden' name='q5:format' value='0' /><input type='hidden' name='q5:dim' value='1' /><ul>
-<li><label for='xq5:d1_c1_'><input type='radio' name='q5:d1[]'
-  value='c1' id='xq5:d1_c1_'/>choice 1</label></li>
-<li><label for='xq5:d1_c2_'><input type='radio' name='q5:d1[]'
-  value='c2' id='xq5:d1_c2_'/>choice 2</label></li>
-<li><label for='xq5:d1_c3_'><input type='radio' name='q5:d1[]'
-  value='c3' id='xq5:d1_c3_'/>choice 3</label></li>
-</ul>
+<input type='hidden' name='q5:format' value='0' /><input type='hidden' name='q5:dim' value='1' />
+
+<div class="radio-item">
+	<input type="radio" id="xq5:d1_c1_" name="q5:d1[]" value="c1">
+	<label for="xq5:d1_c1_">
+		<span class="faux-label">Choice 1</span>
+	</label>
+</div>
+<div class="radio-item">
+	<input type="radio" id="xq5:d1_c2_" name="q5:d1[]" value="c2">
+	<label for="xq5:d1_c2_">
+		<span class="faux-label">Choice 2</span>
+	</label>
+</div>
+<div class="radio-item">
+	<input type="radio" id="xq5:d1_c3_" name="q5:d1[]" value="c3">
+	<label for="xq5:d1_c3_">
+		<span class="faux-label">Choice 3</span>
+	</label>
+</div>
+
 </div>
 </fieldset>
 </div>
 
 <div class='question required l-box' id='wbsq6'><fieldset>
-<legend><span class="qtitle">6. Open comments</span><a class="edit" href="q/q6/" title="Edit text of question &quot;Open comments&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
-<div class='description'><p>Open comments.</p>
-</div><div class='widget open'>
+  <div class="l-cluster l-cluster--vertical-align">
+  <div>
+  <legend class="txt-mars">6. Open comments</legend>
+  <a class="button button--alt" href="q/q6/" title="Edit text of question &quot;Open comments&quot;" alt="Edit">Edit</a>
+  </div>
+  </div>
+  
+<div class='description'><p>You may add any comments you wish to record, including rationale for dismissals.</p>
+</div>
+<div class='widget open'>
+  
+<p><label for='xq6:comment'></label>
+  <textarea id='xq2:comment' name='q6:comment' class='comment'></textarea></p>
 </div>
 </fieldset>
 </div>
 
 <div class='question optional l-box' id='wbsq7'>
+  <div class="l-cluster l-cluster--vertical-align">
+  <div>
+  <legend class="txt-mars">7. Text entries</legend>
+  <a class="button button--alt" href="q/q7/" title="Edit text of question &quot;Text entries&quot;" alt="Edit">Edit</a>
+  </div>
+  </div>
+  
 <fieldset>
-<legend><span class="qtitle">7. Text entries</span><a class="edit" href="q/q7/" title="Edit text of question &quot;Text entries&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
+
 <div class='content'>
 <p>Text entries.</p>
 </div>
+
 <div class='widget texts'>
-<input type="hidden" name="nominee:format" value="2"><input type="hidden" name="nominee:dim" value="1"><label for="xnominee:1">Name: <input id="xnominee:1" type="text" name="nominee:1" value="" size="70"></label><br>
-<label for="xnominee:2">Affiliation: <input id="xnominee:2" type="text" name="nominee:2" value="" size="70"></label><br>
-<label for="xnominee:3">Email: <input id="xnominee:3" type="text" name="nominee:3" value="" size="70"></label>
+<input type="hidden" name="nominee:format" value="2">
+<input type="hidden" name="nominee:dim" value="1">
+
+<div class="field">
+<label for="xnominee:1">
+<span class="field-label">Name</span>
+</label>
+<input type="text" id="xnominee:1" name="xnominee:1" value="">
+</div>
+<div class="field">
+<label for="xnominee:2">
+<span class="field-label">Affiliation</span>
+</label>
+<input type="text" id="xnominee:2" name="xnominee:2" value="">
+</div>
+
+<div class="field">
+<label for="xnominee:3">
+<span class="field-label">Email</span>
+</label>
+<input type="text" id="xnominee:3" name="xnominee:3" value="">
+</div>
+
 </div>
 </fieldset>
 </div>
@@ -887,10 +946,8 @@ Answers received after that time may not be counted.
 
 </fieldset>
 <fieldset>
-<p class="rationaleblock"><label for='xq2:rationale'>Rationale</label>
-<textarea id ='xq2:rationale' name='q2:rationale' class='rationale' rows='6'></textarea></p>
 <p class="commentblock"><label for='xq2:comment'>Comments</label>
-<textarea id='xq2:comment' name='q2:comment' class='comment' rows='3'></textarea></p>
+<textarea id='xq2:comment' name='q2:comment' class='comment'></textarea></p>
 
 </fieldset>
 </div>
@@ -912,92 +969,152 @@ the last one</label> <select name="q9:c3" id="xq9:c3"><option value="0">1 &#x1F6
 </fieldset>
 </div>
 
-<div class='question optional l-box' id='wbsq10'><fieldset>
-<legend><span class="qtitle">10. Straw-poll</span><a class="edit" href="q/q10/" title="Edit text of question &quot;Straw-poll&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
+<div class='question optional l-box' id='wbsq10'>
+
+<div class="l-cluster l-cluster--vertical-align">
+<div>
+<legend class="txt-mars">10. Straw-poll</legend>
+<a class="button button--alt" href="q/q10/" title="Edit text of question &quot;Straw-poll&quot;" alt="Edit">Edit</a>
+</div>
+</div>
+
+<fieldset>
 <div class='description'><p>Straw-poll.</p>
-</div><div class='widget choices2'>
-<input type='hidden' name='q10:format' value='1' /><input type='hidden' name='q10:dim' value='4' /><ul class='compare'>
-<li><label for='xq10:c1'>choice 1</label> <select name='q10:c1' id='xq10:c1'><option value='2'>Yes</option><option value='3'>Yes and prefer</option><option value='1'>Yes, but prefer not</option><option value='0'>No</option></select></li>
-<li><label for='xq10:c2'>choice 2</label> <select name='q10:c2' id='xq10:c2'><option value='2'>Yes</option><option value='3'>Yes and prefer</option><option value='1'>Yes, but prefer not</option><option value='0'>No</option></select></li>
-<li><label for='xq10:c3'>choice 3</label> <select name='q10:c3' id='xq10:c3'><option value='2'>Yes</option><option value='3'>Yes and prefer</option><option value='1'>Yes, but prefer not</option><option value='0'>No</option></select></li>
-</ul>
-</div>
-</fieldset>
 </div>
 
-<div class='question optional l-box' id='wbsq11'><fieldset>
-<legend><span class="qtitle">11. Rank-ordering</span><a class="edit" href="q/q11/" title="Edit text of question &quot;Rank-ordering&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
-<div class='description'><p>Rank-ordering.</p>
-</div><div class='widget ranklist'>
-<p>Please select the rank-order (1 to 3) for the options
-you think are acceptable (i.e.  you can
-live with it), where 1  is the most preferred, 2 the next best and so on... You also have a <q>don’t mind</q> and a <q>don’t want</q> option.</p>
-<input type='hidden' name='q11:format' value='1' /><input
-  type='hidden' name='q11:dim' value='5' />
-<div class="overlarge">
-<table class="records_list data tMargin">
-<thead>
-<tr><th>Rank</th><th>Choice</th></tr>
-</thead>
-<tbody>
-<tr>
-<td><label for='xq11:c1'></label><select id='xq11:c1' name='q11:c1'>
-<option value='0'>Don’t mind</option><option value='1'>Don’t want</option><option value='2'>1</option>
-<option value='3'>2</option>
-<option value='4'>3</option>
-</select></td>
-<td>choice 1</td>
-</tr>
-<tr>
-<td><label for='xq11:c2'></label><select id='xq11:c2' name='q11:c2'>
-<option value='0'>Don’t mind</option><option value='1'>Don’t want</option><option value='2'>1</option>
-<option value='3'>2</option>
-<option value='4'>3</option>
-</select></td>
-<td>choice 2</td>
-</tr>
-<tr>
-<td><label for='xq11:c3'></label><select id='xq11:c3' name='q11:c3'>
-<option value='0'>Don’t mind</option><option value='1'>Don’t want</option><option value='2'>1</option>
-<option value='3'>2</option>
-<option value='4'>3</option>
-</select></td>
-<td>choice 3</td>
-</tr>
-</tbody>
-</table></div>
+<div class='widget choices2'>
+<input type='hidden' name='q10:format' value='1' />
+<input type='hidden' name='q10:dim' value='4' />
+
+<label for="xq10:c1">
+<span class="field-label">Choice 1</span>
+</label>
+<select id="xq10:c1" name="xq10:c1">
+<option value="2">Yes</option>
+<option value="3">Yes and prefer</option>
+<option value="1">Yes, but prefer not</option>
+<option value="0">No</option>
+</select>
+
+<label for="xq10:c2">
+<span class="field-label">Choice 2</span>
+</label>
+<select id="xq10:c2" name="xq10:c2">
+<option value="2">Yes</option>
+<option value="3">Yes and prefer</option>
+<option value="1">Yes, but prefer not</option>
+<option value="0">No</option>
+</select>
+
+<label for="xq10:c3">
+<span class="field-label">Choice 3</span>
+</label>
+<select id="xq10:c3" name="xq10:c3">
+<option value="2">Yes</option>
+<option value="3">Yes and prefer</option>
+<option value="1">Yes, but prefer not</option>
+<option value="0">No</option>
+</select>
 
 </div>
 </fieldset>
 </div>
 
-<div class='question optional l-box' id='wbsq12'><fieldset>
-<legend><span class="qtitle">12. Pick a time for a teleconf</span><a class="edit" href="q/q12/" title="Edit text of question &quot;Pick a time for a teleconf&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
+<div class='question optional l-box' id='wbsq11'>
+  
+<div class="l-cluster l-cluster--vertical-align">
+<div>
+<legend class="txt-mars">11. Rank-ordering</legend>
+<a class="button button--alt" href="q/q11/" title="Edit text of question &quot;Rank-ordering&quot;" alt="Edit">Edit</a>
+</div>
+</div>
+
+<fieldset>
+<div class='description'><p>Question description.</p></div>
+<div class='widget ranklist'>
+<p>Please select the rank-order (1 to 3) where 1 is the most preferred, 2 the next best and so on...</p>
+<input type='hidden' name='q11:format' value='1' />
+<input type='hidden' name='q11:dim' value='5' />
+
+  <div class="component--fifty-fifty">
+	<div class="component--fifty-fifty__text">
+		<p><label for="xq11:c1">choice AA:</label></p>
+	</div>
+	<div class="component--fifty-fifty__text">
+		<select id="xq11:c1" name="q11:c1">
+<option value="0">Don’t mind</option><option value="1">Don’t want</option><option value="2">Ranked 1</option>
+<option value="3">Ranked 2</option>
+<option value="4">Ranked 3</option>
+</select>
+	</div>
+  </div>
+
+  <div class="component--fifty-fifty">
+	<div class="component--fifty-fifty__text">
+		<p><label for="xq11:c2">choice BB:</label></p>
+	</div>
+	<div class="component--fifty-fifty__text">
+		<select id="xq11:c2" name="q11:c2">
+<option value="0">Don’t mind</option><option value="1">Don’t want</option><option value="2">Ranked 1</option>
+<option value="3">Ranked 2</option>
+<option value="4">Ranked 3</option>
+</select>
+	</div>
+  </div>
+	
+  <div class="component component--fifty-fifty">
+	<div class="component--fifty-fifty__text">
+		<p><label for="xq11:c3">choice CC:</label></p>
+	</div>
+	<div class="component--fifty-fifty__text">
+		<select id="xq11:c3" name="q11:c3">
+<option value="0">Don’t mind</option><option value="1">Don’t want</option><option value="2">Ranked 1</option>
+<option value="3">Ranked 2</option>
+<option value="4">Ranked 3</option>
+</select>
+	</div>
+  </div>
+
+</div>
+</fieldset>
+</div>
+
+<div class='question optional l-box' id='wbsq12'>
+<div class="l-cluster l-cluster--vertical-align">
+<div>
+<legend class="txt-mars">12. Pick a time for a teleconf</legend>
+  <a class="button button--alt" href="q/q12/" title="Edit text of question &quot;Pick a time for a teleconf&quot;" alt="Edit">Edit</a>
+</div>
+</div>
+<fieldset>
 <div class='description'><p>Pick a time for a teleconf.</p>
 </div><div class='widget scheduling'>
 <input name="q12:format" value="1" type="hidden"><input name="q12:dim"
   value="4" type="hidden">
-<div class="overlarge">
-<table class="records_list data tMargin">
-<thead><tr><th scope="col">Hour</th><th scope="col">Monday</th></tr></thead><tbody><tr><td><a rel="nofollow" href="http://www.timeanddate.com/worldclock/fixedtime.html?hour=0&amp;min=0&amp;sec=0&amp;p1=1440"> 0 UTC</a></td><td><select name="q12:Monday0"><option value="0" title="I Cannot on Monday at  0 UTC">Cannot</option>
-<option value="1" title="I Can but prefer not on Monday at  0 UTC">Can but prefer not</option>
-<option value="2" title="I Can on Monday at  0 UTC">Can</option>
-<option value="3" title="I Can and prefer on Monday at  0 UTC">Can and prefer</option>
+  
+<div class="table-wrap">
+<table class="table-wrap">
+<thead><tr><th>Hour</th><th>Monday</th></tr></thead><tbody><tr><th><a rel="nofollow" href="http://www.timeanddate.com/worldclock/fixedtime.html?hour=08&amp;min=0&amp;sec=0&amp;p1=1440"> 08 UTC</a></th><td><select name="q5:c1"><option value="0" title="I Cannot on Monday at  08 UTC">Cannot</option>
+<option value="1" title="I Can but prefer not on Monday at  08 UTC">Can but prefer not</option>
+<option value="2" title="I Can on Monday at  08 UTC">Can</option>
+<option value="3" title="I Can and prefer on Monday at  08 UTC">Can and prefer</option>
 </select></td>
 </tr>
-<tr><td><a rel="nofollow" href="http://www.timeanddate.com/worldclock/fixedtime.html?hour=1&amp;min=0&amp;sec=0&amp;p1=1440"> 1 UTC</a></td><td><select name="q12:Monday1"><option value="0" title="I Cannot on Monday at  1 UTC">Cannot</option>
-<option value="1" title="I Can but prefer not on Monday at  1 UTC">Can but prefer not</option>
-<option value="2" title="I Can on Monday at  1 UTC">Can</option>
-<option value="3" title="I Can and prefer on Monday at  1 UTC">Can and prefer</option>
+<tr><th scope="row"><a rel="nofollow" href="http://www.timeanddate.com/worldclock/fixedtime.html?hour=09&amp;min=0&amp;sec=0&amp;p1=1440"> 09 UTC</a></th><td><select name="q5:c2"><option value="0" title="I Cannot on Monday at  09 UTC">Cannot</option>
+<option value="1" title="I Can but prefer not on Monday at  09 UTC">Can but prefer not</option>
+<option value="2" title="I Can on Monday at  09 UTC">Can</option>
+<option value="3" title="I Can and prefer on Monday at  09 UTC">Can and prefer</option>
 </select></td>
 </tr>
-<tr><td><a rel="nofollow" href="http://www.timeanddate.com/worldclock/fixedtime.html?hour=2&amp;min=0&amp;sec=0&amp;p1=1440"> 2 UTC</a></td><td><select name="q12:Monday2"><option value="0" title="I Cannot on Monday at  2 UTC">Cannot</option>
-<option value="1" title="I Can but prefer not on Monday at  2 UTC">Can but prefer not</option>
-<option value="2" title="I Can on Monday at  2 UTC">Can</option>
-<option value="3" title="I Can and prefer on Monday at  2 UTC">Can and prefer</option>
+<tr><th scope="row"><a rel="nofollow" href="http://www.timeanddate.com/worldclock/fixedtime.html?hour=14&amp;min=0&amp;sec=0&amp;p1=1440"> 14 UTC</a></th><td><select name="q5:c3"><option value="0" title="I Cannot on Monday at  14 UTC">Cannot</option>
+<option value="1" title="I Can but prefer not on Monday at  14 UTC">Can but prefer not</option>
+<option value="2" title="I Can on Monday at  14 UTC">Can</option>
+<option value="3" title="I Can and prefer on Monday at  14 UTC">Can and prefer</option>
 </select></td>
 </tr>
-</tbody></table></div>
+</tbody></table>
+  
+</div>
 </div>
 </fieldset>
 </div>
@@ -1016,15 +1133,50 @@ live with it), where 1  is the most preferred, 2 the next best and so on... You 
 </fieldset>
 </div>
 
-<div class='question optional l-box' id='wbsq14'><fieldset>
-<legend><span class="qtitle">14. Importance survey</span> (<strong>no longer proposed in the UI</strong>) <a class="edit" href="q/q14/" title="Edit text of question &quot;Importance survey&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
+<div class='question optional l-box' id='wbsq14'>
+
+<div class="l-cluster l-cluster--vertical-align">
+<div>
+<legend class="txt-mars">14. Importance survey</legend>
+<a class="button button--alt" href="q/q11/" title="Edit text of question &quot;Importance survey&quot;" alt="Edit">Edit</a>
+</div>
+</div>
+
+<fieldset>
 <div class='description'><p>Importance survey.</p>
-</div><div class='widget ms_importance'>
-<input type='hidden' name='q14:format' value='1' /><input type='hidden' name='q14:dim' value='9' /><ul class='compare'>
-<li><label for='xq14:c1'>Importance of choice 1</label> <select name='q14:c1' id='xq14:c1'><option value='0'>1 + (lowest)</option><option value='1'>2 ++</option><option value='2'>3 +++</option><option value='3'>4 ++++</option><option value='4'>5 +++++</option><option value='5'>6 ++++++</option><option value='6'>7  +++++++ (highest)</option><option value='7'>Not applicable</option><option value='8' selected='selected'>No opinion</option></select></li>
-<li><label for='xq14:c2'>Importance of choice 2</label> <select name='q14:c2' id='xq14:c2'><option value='0'>1 + (lowest)</option><option value='1'>2 ++</option><option value='2'>3 +++</option><option value='3'>4 ++++</option><option value='4'>5 +++++</option><option value='5'>6 ++++++</option><option value='6'>7  +++++++ (highest)</option><option value='7'>Not applicable</option><option value='8' selected='selected'>No opinion</option></select></li>
-<li><label for='xq14:c3'>Importance of choice 3</label> <select name='q14:c3' id='xq14:c3'><option value='0'>1 + (lowest)</option><option value='1'>2 ++</option><option value='2'>3 +++</option><option value='3'>4 ++++</option><option value='4'>5 +++++</option><option value='5'>6 ++++++</option><option value='6'>7  +++++++ (highest)</option><option value='7'>Not applicable</option><option value='8' selected='selected'>No opinion</option></select></li>
-</ul>
+</div>
+
+<div class='widget ms_importance'>
+<input type='hidden' name='q14:format' value='1' />
+<input type='hidden' name='q14:dim' value='9' />
+
+  <div class="component--fifty-fifty">
+	<div class="component--fifty-fifty__text">
+		<p><label for="xq14:c1">Importance of choice 1:</label></p>
+	</div>
+	<div class="component--fifty-fifty__text">
+<select name='q14:c1' id='xq14:c1'><option value='0'>1 + (lowest)</option><option value='1'>2 ++</option><option value='2'>3 +++</option><option value='3'>4 ++++</option><option value='4'>5 +++++</option><option value='5'>6 ++++++</option><option value='6'>7  +++++++ (highest)</option><option value='7'>Not applicable</option><option value='8' selected='selected'>No opinion</option></select>
+	</div>
+  </div>
+
+  <div class="component--fifty-fifty">
+	<div class="component--fifty-fifty__text">
+		<p><label for="xq14:c2">Importance of choice 2:</label></p>
+	</div>
+	<div class="component--fifty-fifty__text">
+<select name='q14:c2' id='xq14:c2'><option value='0'>1 + (lowest)</option><option value='1'>2 ++</option><option value='2'>3 +++</option><option value='3'>4 ++++</option><option value='4'>5 +++++</option><option value='5'>6 ++++++</option><option value='6'>7  +++++++ (highest)</option><option value='7'>Not applicable</option><option value='8' selected='selected'>No opinion</option></select>
+</div>
+</div>
+	
+  <div class="component--fifty-fifty">
+	<div class="component--fifty-fifty__text">
+		<p><label for="xq14:c3">Importance of choice 3:</label></p>
+	</div>
+	<div class="component--fifty-fifty__text">
+<select name='q14:c3' id='xq14:c3'><option value='0'>1 + (lowest)</option><option value='1'>2 ++</option><option value='2'>3 +++</option><option value='3'>4 ++++</option><option value='4'>5 +++++</option><option value='5'>6 ++++++</option><option value='6'>7  +++++++ (highest)</option><option value='7'>Not applicable</option><option value='8' selected='selected'>No opinion</option></select>
+	</div>
+  </div>
+
 </div>
 </fieldset>
 </div>
