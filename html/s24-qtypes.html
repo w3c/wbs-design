@@ -654,17 +654,12 @@ Answers received after that time may not be counted.
     <p>If you cannot use this on-line questionnaire, you may send your answers by email  to <a href='mailto:webreq%40w3.org'>webreq@w3.org</a> using the <a href="text">text version of this questionnaire</a>.</p>
 
 <form method="post" action="./?">
-<p>You're identified as .</p>
+     <p>You're identified as .</p>
 
-<div class='question l-box' id='wbsq1'>
+
+<div class="l-box">
 <fieldset>
-
-<div class="l-cluster l-cluster--vertical-align">
-<div>
 <legend class="txt-mars">1. Simple text question</legend>
-<a class="button button--alt" href="q/q1/" title="Edit text of question &quot;Simple text question&quot;" alt="Edit">Edit</a>
-</div>
-</div>
 
 <div class='description'>
 <p>The following flavors were nominated for the best ice cream survey (ol):</p>
@@ -680,9 +675,9 @@ Answers received after that time may not be counted.
   <li><a rel="nofollow" href="https://en.wikipedia.org/wiki/Strawberry_ice_cream">Strawberry</a></li>
 </ul>
 <p>We thank the nominees, and the persons who nominated them, for their support.</p>
+</div>
 
-  
-</div><div class='widget text'>
+<div class='widget text'>
 <p class="rationaleblock"><label for='xq1:rationale'>Rationale</label>
 <textarea id ='xq1:rationale' name='q1:rationale'></textarea></p>
 <p class="commentblock"><label for='xq1:comment'>Comments</label>
@@ -691,63 +686,61 @@ Answers received after that time may not be counted.
 </fieldset>
 </div>
 
-<div class='question optional l-box' id='wbsq2'>
+<div class='l-box' id='wbsq2'>
 <fieldset>
-
+<!--
 <div class="l-cluster l-cluster--vertical-align">
 <div>
-<legend class="txt-mars">2. Single selection required Yes/No</legend>
+<legend class="txt-mars">2. Single selection required Yes/No Single selection required Yes/No</legend>
 <a class="button button--alt" href="q/q2/" title="Edit text of question &quot; Single selection required Yes/No&quot;" alt="Edit">Edit</a>
 </div>
-</div>
+</div> -->
+<legend class="txt-mars">2. Single selection required Yes/No</legend>
 
 <div class='description'>
 <p>The Ice-cream Process Document states:</p>
-
-<blockquote><p>For this selection we use STV Meeks as the Tabulation system.</p></blockquote>
-
+<blockquote>For this selection we use STV Meeks as the Tabulation system.</blockquote>
+<p>Do you agree with this?</p>
 </div>
+
 <div class='widget yn'>
   <input type='hidden' name='q2:format' value='0' /><input type='hidden' name='q2:dim' value='1' />
 
-<div class="field-hint" id="hint-name-change-no">&nbsp;</div>
 <div class="radio-item">
-	<input type="radio" id="xq2:d1_yes_" name="q2:d1[]" value="yes">
 	<label for="xq2:d1_yes_">
 		<span class="faux-label">Yes</span>
 	</label>
+	<input type="radio" id="xq2:d1_yes_" name="q2:d1[]" value="yes">
 </div>
 
 <div class="radio-item">
-	<input type="radio" id="xq2:d1_no_" name="q2:d1[]" value="no">
 	<label for="xq2:d1_no_">
 		<span class="faux-label">No</span>
 	</label>
+	<input type="radio" id="xq2:d1_no_" name="q2:d1[]" value="no">
 </div>
 </fieldset>
+
 <fieldset>
 <p class="rationaleblock"><label for='xq2:rationale'>Rationale</label>
 <textarea id ='xq2:rationale' name='q2:rationale' class='rationale' rows='6'></textarea></p>
+</fieldset>
+
+<fieldset>
 <p class="commentblock"><label for='xq2:comment'>Comments</label>
 <textarea id='xq2:comment' name='q2:comment' class='comment' rows='3'></textarea></p>
 </fieldset>
 </div>
 
-<div class='question optional l-box' id='wbsq3'>
+<div class='l-box' id='wbsq3'>
 <fieldset>
-<div class="l-cluster l-cluster--vertical-align">
-<div>
 <legend class="txt-mars">3. Single selection required Yes/No/Concur/Abstain</legend>
-<a class="button button--alt" href="q/q3/" title="Edit text of question &quot;Single selection required Yes/No/Concur/Abstai&quot;" alt="Edit">Edit</a>
-</div>
-</div>
 
 <div class='description'>
 <p>Single selection required Yes/No/Concur/Abstain.</p>
 </div><div class='widget ync'>
 <!--<p>Please indicate which option matches your choice:</p>-->
 <input type='hidden' name='q3:format' value='0' /><input type='hidden' name='q3:dim' value='1' />
-
 
 <div class="radio-item">
 	<input type="radio" id="xq3:d1_yes_" name="q3:d1[]" value="yes">
@@ -777,22 +770,18 @@ Answers received after that time may not be counted.
 
 </div>
 
-<div class='question optional l-box' id='wbsq4'>
+<div class='l-box' id='wbsq4'>
 <fieldset>
-
-<div class="l-cluster l-cluster--vertical-align">
-<div>
 <legend class="txt-mars">4. Select one among many (drop-down list)</legend>
-<a class="button button--alt" href="q/q4/" title="Edit text of question &quot;Select one among many (drop-down list)&quot;" alt="Edit">Edit</a>
-</div>
-</div>
 
-<div class='description'><p>Select one among many.</p>
+<div class='description'>
+ <p>Select one among many.</p>
 </div>
 
 <div class='widget select'>
 <!-- p>Please indicate which option matches your choice:</p -->
-<input type='hidden' name='q4:format' value='0' /><input type='hidden' name='q4:dim' value='1' />
+  <input type='hidden' name='q4:format' value='0' />
+  <input type='hidden' name='q4:dim' value='1' />
 
 <label for="q4:d1">
 <span class="field-label"></span>
@@ -807,17 +796,14 @@ Answers received after that time may not be counted.
 </fieldset>
 </div>
 
-<div class='question optional l-box' id='wbsq5'>
+<div class='l-box' id='wbsq5'>
   <fieldset>
-  <div class="l-cluster l-cluster--vertical-align">
-  <div>
   <legend class="txt-mars">5. Select one among many (radio buttons)</legend>
-  <a class="button button--alt" href="q/q5/" title="Edit text of question &quot;Select one among many (radio buttons&quot;" alt="Edit">Edit</a>
-  </div>
-  </div>
   
-<div class='description'><p>Select one among many (radio buttons).</p>
+<div class='description'>
+  <p>Select one among many (radio buttons).</p>
 </div>
+
 <div class='widget radioSelect'>
 <!--<p>Please indicate which option matches your choice:</p>-->
 <input type='hidden' name='q5:format' value='0' /><input type='hidden' name='q5:dim' value='1' />
@@ -845,35 +831,26 @@ Answers received after that time may not be counted.
 </fieldset>
 </div>
 
-<div class='question required l-box' id='wbsq6'><fieldset>
-  <div class="l-cluster l-cluster--vertical-align">
-  <div>
+<div class='l-box' id='wbsq6'>
+  <fieldset>
   <legend class="txt-mars">6. Open comments</legend>
-  <a class="button button--alt" href="q/q6/" title="Edit text of question &quot;Open comments&quot;" alt="Edit">Edit</a>
-  </div>
-  </div>
   
-<div class='description'><p>You may add any comments you wish to record, including rationale for dismissals.</p>
+<div class='description'>
+  <p>You may add any comments you wish to record, including rationale for dismissals.</p>
 </div>
+
 <div class='widget open'>
-  
 <p><label for='xq6:comment'></label>
   <textarea id='xq2:comment' name='q6:comment' class='comment'></textarea></p>
 </div>
 </fieldset>
 </div>
 
-<div class='question optional l-box' id='wbsq7'>
-  <div class="l-cluster l-cluster--vertical-align">
-  <div>
+<div class='l-box' id='wbsq7'>
+ <fieldset>
   <legend class="txt-mars">7. Text entries</legend>
-  <a class="button button--alt" href="q/q7/" title="Edit text of question &quot;Text entries&quot;" alt="Edit">Edit</a>
-  </div>
-  </div>
   
-<fieldset>
-
-<div class='content'>
+<div class='description'>
 <p>Text entries.</p>
 </div>
 
@@ -905,14 +882,9 @@ Answers received after that time may not be counted.
 </fieldset>
 </div>
 
-<div class='question optional l-box' id='wbsq8'><fieldset>
-
-<div class="l-cluster l-cluster--vertical-align">
-<div>
+<div class='question optional l-box' id='wbsq8'>
+<fieldset>
 <legend class="txt-mars">8. Select multiple items (checkboxes)</legend>
-<a class="button button--alt" href="q/q8/" title="Edit text of question &quot;Select multiple items (checkboxes)&quot;" alt="Edit">Edit</a>
-</div>
-</div>
   
 <div class='description'>
 <p>Select multiple items (checkboxes).</p>
@@ -952,85 +924,168 @@ Answers received after that time may not be counted.
 </fieldset>
 </div>
 
-<div class='question optional l-box' id='wbsq9'><fieldset>
-<legend><span class="qtitle">9. Survey type</span><a class="edit" href="q/q9/" title="Edit text of question &quot;Survey type&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
-<div class='description'><p>Survey type.</p>
+<div class='l-box' id='wbsq9'>
+<fieldset>
+<legend class="txt-mars">9. Survey type</legend>
+  
+<div class='description'>
+  <p>Survey type.</p>
 </div>
+
 <div class="widget evaluation">
-<input name="q9:format" value="1" type="hidden"><input name="q9:dim" value="6" type="hidden"><ul class="compare">
-<li><label for="xq9:c1">1st choice</label> <select name="q9:c1" id="xq9:c1"><option value="0">1 &#x1F63B; (lowest)</option><option value="1">2 &#x1F63B;&#x1F63B;</option><option value="2">3 &#x1F63B;&#x1F63B;&#x1F63B;</option><option value="3">4 &#x1F63B;&#x1F63B;&#x1F63B;&#x1F63B;</option><option value="4">5 &#x1F63B;&#x1F63B;&#x1F63B;&#x1F63B;&#x1F63B; (highest)</option><option value="5" selected="selected">No opinion</option></select></li>
-<li><label for="xq9:c2">second choice</label> <select name="q9:c2" id="xq9:c2"><option value="0">1 &#x1F63B; (lowest)</option><option value="1">2 &#x1F63B;&#x1F63B;</option><option value="2">3 &#x1F63B;&#x1F63B;&#x1F63B;</option><option value="3">4 &#x1F63B;&#x1F63B;&#x1F63B;&#x1F63B;</option><option value="4">5 &#x1F63B;&#x1F63B;&#x1F63B;&#x1F63B;&#x1F63B; (highest)</option><option value="5" selected="selected">No opinion</option></select></li>
-<li><label for="xq9:c3">this is the third choice</label> <select name="q9:c3" id="xq9:c3"><option value="0">1 &#x1F63B; (lowest)</option><option value="1">2 &#x1F63B;&#x1F63B;</option><option value="2">3 &#x1F63B;&#x1F63B;&#x1F63B;</option><option value="3">4 &#x1F63B;&#x1F63B;&#x1F63B;&#x1F63B;</option><option value="4">5 &#x1F63B;&#x1F63B;&#x1F63B;&#x1F63B;&#x1F63B; (highest)</option><option value="5" selected="selected">No opinion</option></select></li>
-<li><label for="xq9:c3">this is the fourth and last choice</label> <select name="q9:c3" id="xq9:c3"><option value="0">1 &#x1F63B; (lowest)</option><option value="1">2 &#x1F63B;&#x1F63B;</option><option value="2">3 &#x1F63B;&#x1F63B;&#x1F63B;</option><option value="3">4 &#x1F63B;&#x1F63B;&#x1F63B;&#x1F63B;</option><option value="4">5 &#x1F63B;&#x1F63B;&#x1F63B;&#x1F63B;&#x1F63B; (highest)</option><option value="5" selected="selected">No opinion</option></select></li>
-<li><label for="xq9:c3">in fact, there was another one, promised it's
-the last one</label> <select name="q9:c3" id="xq9:c3"><option value="0">1 &#x1F63B; (lowest)</option><option value="1">2 &#x1F63B;&#x1F63B;</option><option value="2">3 &#x1F63B;&#x1F63B;&#x1F63B;</option><option value="3">4 &#x1F63B;&#x1F63B;&#x1F63B;&#x1F63B;</option><option value="4">5 &#x1F63B;&#x1F63B;&#x1F63B;&#x1F63B;&#x1F63B; (highest)</option><option value="5" selected="selected">No opinion</option></select></li>
-</ul>
+  <input name="q9:format" value="1" type="hidden">
+  <input name="q9:dim" value="6" type="hidden">
+
+  <div class="component--fifty-fifty">
+  <div class="component--fifty-fifty__text">
+	<p><label for="xq19:c1">1st choice</label></p>
+  </div>
+  <div class="component--fifty-fifty__text">
+      <select id="xq9:c1" name="xq9:c1">
+	<option value="0">1 &#x1F63B; (lowest)</option>
+	<option value="1">2 &#x1F63B;&#x1F63B;</option>
+	<option value="2">3 &#x1F63B;&#x1F63B;&#x1F63B;</option>
+	<option value="3">4 &#x1F63B;&#x1F63B;&#x1F63B;&#x1F63B;</option>
+	<option value="4">5 &#x1F63B;&#x1F63B;&#x1F63B;&#x1F63B;&#x1F63B; (highest)</option>
+	<option value="5" selected="selected">No opinion</option>
+      </select>
+  </div>
+  </div>
+
+  <div class="component--fifty-fifty">
+  <div class="component--fifty-fifty__text">
+	<p><label for="xq19:c2">Second choice</label></p>
+  </div>
+  <div class="component--fifty-fifty__text">
+      <select id="xq9:c2" name="xq9:c2">
+	<option value="0">1 &#x1F63B; (lowest)</option>
+	<option value="1">2 &#x1F63B;&#x1F63B;</option>
+	<option value="2">3 &#x1F63B;&#x1F63B;&#x1F63B;</option>
+	<option value="3">4 &#x1F63B;&#x1F63B;&#x1F63B;&#x1F63B;</option>
+	<option value="4">5 &#x1F63B;&#x1F63B;&#x1F63B;&#x1F63B;&#x1F63B; (highest)</option>
+	<option value="5" selected="selected">No opinion</option>
+      </select>
+  </div>
+  </div>
+
+  <div class="component--fifty-fifty">
+  <div class="component--fifty-fifty__text">
+	<p><label for="xq19:c3">This is the third choice</label></p>
+  </div>
+  <div class="component--fifty-fifty__text">
+      <select id="xq9:c3" name="xq9:c3">
+	<option value="0">1 &#x1F63B; (lowest)</option>
+	<option value="1">2 &#x1F63B;&#x1F63B;</option>
+	<option value="2">3 &#x1F63B;&#x1F63B;&#x1F63B;</option>
+	<option value="3">4 &#x1F63B;&#x1F63B;&#x1F63B;&#x1F63B;</option>
+	<option value="4">5 &#x1F63B;&#x1F63B;&#x1F63B;&#x1F63B;&#x1F63B; (highest)</option>
+	<option value="5" selected="selected">No opinion</option>
+      </select>
+  </div>
+  </div>
+
+  <div class="component--fifty-fifty">
+  <div class="component--fifty-fifty__text">
+	<p><label for="xq19:c4">This is the fourth and last choice</label></p>
+  </div>
+  <div class="component--fifty-fifty__text">
+      <select id="xq9:c4" name="xq9:c4">
+	<option value="0">1 &#x1F63B; (lowest)</option>
+	<option value="1">2 &#x1F63B;&#x1F63B;</option>
+	<option value="2">3 &#x1F63B;&#x1F63B;&#x1F63B;</option>
+	<option value="3">4 &#x1F63B;&#x1F63B;&#x1F63B;&#x1F63B;</option>
+	<option value="4">5 &#x1F63B;&#x1F63B;&#x1F63B;&#x1F63B;&#x1F63B; (highest)</option>
+	<option value="5" selected="selected">No opinion</option>
+      </select>
+  </div>
+  </div>
+  
+  <div class="component--fifty-fifty">
+  <div class="component--fifty-fifty__text">
+	<p><label for="xq19:c5">In fact, there was another one, promised it's the last one</label></p>
+  </div>
+  <div class="component--fifty-fifty__text">
+      <select id="xq9:c5" name="xq9:c5">
+	<option value="0">1 &#x1F63B; (lowest)</option>
+	<option value="1">2 &#x1F63B;&#x1F63B;</option>
+	<option value="2">3 &#x1F63B;&#x1F63B;&#x1F63B;</option>
+	<option value="3">4 &#x1F63B;&#x1F63B;&#x1F63B;&#x1F63B;</option>
+	<option value="4">5 &#x1F63B;&#x1F63B;&#x1F63B;&#x1F63B;&#x1F63B; (highest)</option>
+	<option value="5" selected="selected">No opinion</option>
+      </select>
+  </div>
+  </div>
+  
 </div>
 </fieldset>
 </div>
 
-<div class='question optional l-box' id='wbsq10'>
-
-<div class="l-cluster l-cluster--vertical-align">
-<div>
-<legend class="txt-mars">10. Straw-poll</legend>
-<a class="button button--alt" href="q/q10/" title="Edit text of question &quot;Straw-poll&quot;" alt="Edit">Edit</a>
-</div>
-</div>
+<div class='l-box' id='wbsq10'>
 
 <fieldset>
-<div class='description'><p>Straw-poll.</p>
+<legend class="txt-mars">10. Straw-poll</legend>
+
+<div class='description'>
+  <p>Straw-poll.</p>
 </div>
 
 <div class='widget choices2'>
 <input type='hidden' name='q10:format' value='1' />
 <input type='hidden' name='q10:dim' value='4' />
 
-<label for="xq10:c1">
-<span class="field-label">Choice 1</span>
-</label>
-<select id="xq10:c1" name="xq10:c1">
-<option value="2">Yes</option>
-<option value="3">Yes and prefer</option>
-<option value="1">Yes, but prefer not</option>
-<option value="0">No</option>
-</select>
-
-<label for="xq10:c2">
-<span class="field-label">Choice 2</span>
-</label>
-<select id="xq10:c2" name="xq10:c2">
-<option value="2">Yes</option>
-<option value="3">Yes and prefer</option>
-<option value="1">Yes, but prefer not</option>
-<option value="0">No</option>
-</select>
-
-<label for="xq10:c3">
-<span class="field-label">Choice 3</span>
-</label>
-<select id="xq10:c3" name="xq10:c3">
-<option value="2">Yes</option>
-<option value="3">Yes and prefer</option>
-<option value="1">Yes, but prefer not</option>
-<option value="0">No</option>
-</select>
-
+<div class="component--fifty-fifty">
+  <div class="component--fifty-fifty__text">
+	<p><label for="xq10:c1">Choice 1:</label></p>
+  </div>
+  <div class="component--fifty-fifty__text">
+      <select id="xq10:c1" name="xq10:c1">
+      <option value="2">Yes</option>
+      <option value="3">Yes and prefer</option>
+      <option value="1">Yes, but prefer not</option>
+      <option value="0">No</option>
+      </select>
+  </div>
 </div>
+  
+<div class="component--fifty-fifty">
+  <div class="component--fifty-fifty__text">
+	<p><label for="xq10:c2">Choice 2:</label></p>
+  </div>
+  <div class="component--fifty-fifty__text">
+      <select id="xq10:c2" name="xq10:c2">
+      <option value="2">Yes</option>
+      <option value="3">Yes and prefer</option>
+      <option value="1">Yes, but prefer not</option>
+      <option value="0">No</option>
+      </select>
+  </div>
+</div>
+
+<div class="component--fifty-fifty">
+  <div class="component--fifty-fifty__text">
+	<p><label for="xq10:c3">Choice 3:</label></p>
+  </div>
+  <div class="component--fifty-fifty__text">
+      <select id="xq10:c3" name="xq10:c3">
+      <option value="2">Yes</option>
+      <option value="3">Yes and prefer</option>
+      <option value="1">Yes, but prefer not</option>
+      <option value="0">No</option>
+      </select>
+  </div>
+</div>
+
 </fieldset>
 </div>
 
-<div class='question optional l-box' id='wbsq11'>
-  
-<div class="l-cluster l-cluster--vertical-align">
-<div>
+<div class='l-box' id='wbsq11'>
+<fieldset>
 <legend class="txt-mars">11. Rank-ordering</legend>
-<a class="button button--alt" href="q/q11/" title="Edit text of question &quot;Rank-ordering&quot;" alt="Edit">Edit</a>
-</div>
+
+<div class='description'>
+  <p>Question description.</p>
 </div>
 
-<fieldset>
-<div class='description'><p>Question description.</p></div>
 <div class='widget ranklist'>
 <p>Please select the rank-order (1 to 3) where 1 is the most preferred, 2 the next best and so on...</p>
 <input type='hidden' name='q11:format' value='1' />
@@ -1038,7 +1093,7 @@ the last one</label> <select name="q9:c3" id="xq9:c3"><option value="0">1 &#x1F6
 
   <div class="component--fifty-fifty">
 	<div class="component--fifty-fifty__text">
-		<p><label for="xq11:c1">choice AA:</label></p>
+		<p><label for="xq11:c1">Choice AA:</label></p>
 	</div>
 	<div class="component--fifty-fifty__text">
 		<select id="xq11:c1" name="q11:c1">
@@ -1051,7 +1106,7 @@ the last one</label> <select name="q9:c3" id="xq9:c3"><option value="0">1 &#x1F6
 
   <div class="component--fifty-fifty">
 	<div class="component--fifty-fifty__text">
-		<p><label for="xq11:c2">choice BB:</label></p>
+		<p><label for="xq11:c2">Choice BB:</label></p>
 	</div>
 	<div class="component--fifty-fifty__text">
 		<select id="xq11:c2" name="q11:c2">
@@ -1062,9 +1117,9 @@ the last one</label> <select name="q9:c3" id="xq9:c3"><option value="0">1 &#x1F6
 	</div>
   </div>
 	
-  <div class="component component--fifty-fifty">
+  <div class="component--fifty-fifty">
 	<div class="component--fifty-fifty__text">
-		<p><label for="xq11:c3">choice CC:</label></p>
+		<p><label for="xq11:c3">Choice CC:</label></p>
 	</div>
 	<div class="component--fifty-fifty__text">
 		<select id="xq11:c3" name="q11:c3">
@@ -1079,71 +1134,138 @@ the last one</label> <select name="q9:c3" id="xq9:c3"><option value="0">1 &#x1F6
 </fieldset>
 </div>
 
-<div class='question optional l-box' id='wbsq12'>
-<div class="l-cluster l-cluster--vertical-align">
-<div>
-<legend class="txt-mars">12. Pick a time for a teleconf</legend>
-  <a class="button button--alt" href="q/q12/" title="Edit text of question &quot;Pick a time for a teleconf&quot;" alt="Edit">Edit</a>
-</div>
-</div>
+<div class='l-box' id='wbsq12'>
 <fieldset>
-<div class='description'><p>Pick a time for a teleconf.</p>
-</div><div class='widget scheduling'>
-<input name="q12:format" value="1" type="hidden"><input name="q12:dim"
-  value="4" type="hidden">
+
+<legend class="txt-mars">12. Pick a time for a teleconf</legend>
+
+<div class='description'>
+  <p>Pick a time for a teleconf.</p>
+</div>
+
+<div class='widget scheduling'>
+  <input name="q12:format" value="1" type="hidden">
+  <input name="q12:dim" value="4" type="hidden">
   
 <div class="table-wrap">
-<table class="table-wrap">
-<thead><tr><th>Hour</th><th>Monday</th></tr></thead><tbody><tr><th><a rel="nofollow" href="http://www.timeanddate.com/worldclock/fixedtime.html?hour=08&amp;min=0&amp;sec=0&amp;p1=1440"> 08 UTC</a></th><td><select name="q5:c1"><option value="0" title="I Cannot on Monday at  08 UTC">Cannot</option>
+
+<table class="">
+  <thead>
+    <tr>
+      <th>Hour</th><th>Monday</th><th>Tuesday</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"><a rel="nofollow" href="http://www.timeanddate.com/worldclock/fixedtime.html?hour=08&amp;min=0&amp;sec=0&amp;p1=1440"> 08 UTC</a></th><td><select name="q5:c1"><option value="0" title="I Cannot on Monday at  08 UTC">Cannot</option>
 <option value="1" title="I Can but prefer not on Monday at  08 UTC">Can but prefer not</option>
 <option value="2" title="I Can on Monday at  08 UTC">Can</option>
 <option value="3" title="I Can and prefer on Monday at  08 UTC">Can and prefer</option>
 </select></td>
+<td><select name="q5:c4"><option value="0" title="I Cannot on Tuesday at  08 UTC">Cannot</option>
+<option value="1" title="I Can but prefer not on Tuesday at  08 UTC">Can but prefer not</option>
+<option value="2" title="I Can on Tuesday at  08 UTC">Can</option>
+<option value="3" title="I Can and prefer on Tuesday at  08 UTC">Can and prefer</option>
+</select></td>
 </tr>
-<tr><th scope="row"><a rel="nofollow" href="http://www.timeanddate.com/worldclock/fixedtime.html?hour=09&amp;min=0&amp;sec=0&amp;p1=1440"> 09 UTC</a></th><td><select name="q5:c2"><option value="0" title="I Cannot on Monday at  09 UTC">Cannot</option>
+<tr>
+  <th scope="row"><a rel="nofollow" href="http://www.timeanddate.com/worldclock/fixedtime.html?hour=09&amp;min=0&amp;sec=0&amp;p1=1440"> 09 UTC</a></th><td><select name="q5:c2"><option value="0" title="I Cannot on Monday at  09 UTC">Cannot</option>
 <option value="1" title="I Can but prefer not on Monday at  09 UTC">Can but prefer not</option>
 <option value="2" title="I Can on Monday at  09 UTC">Can</option>
 <option value="3" title="I Can and prefer on Monday at  09 UTC">Can and prefer</option>
 </select></td>
+<td><select name="q5:c5"><option value="0" title="I Cannot on Tuesday at  09 UTC">Cannot</option>
+<option value="1" title="I Can but prefer not on Tuesday at  09 UTC">Can but prefer not</option>
+<option value="2" title="I Can on Tuesday at  09 UTC">Can</option>
+<option value="3" title="I Can and prefer on Tuesday at  09 UTC">Can and prefer</option>
+</select></td>
 </tr>
-<tr><th scope="row"><a rel="nofollow" href="http://www.timeanddate.com/worldclock/fixedtime.html?hour=14&amp;min=0&amp;sec=0&amp;p1=1440"> 14 UTC</a></th><td><select name="q5:c3"><option value="0" title="I Cannot on Monday at  14 UTC">Cannot</option>
+<tr>
+  <th scope="row"><a rel="nofollow" href="http://www.timeanddate.com/worldclock/fixedtime.html?hour=14&amp;min=0&amp;sec=0&amp;p1=1440"> 14 UTC</a></th><td><select name="q5:c3"><option value="0" title="I Cannot on Monday at  14 UTC">Cannot</option>
 <option value="1" title="I Can but prefer not on Monday at  14 UTC">Can but prefer not</option>
 <option value="2" title="I Can on Monday at  14 UTC">Can</option>
 <option value="3" title="I Can and prefer on Monday at  14 UTC">Can and prefer</option>
 </select></td>
+<td><select name="q5:c6"><option value="0" title="I Cannot on Tuesday at  14 UTC">Cannot</option>
+<option value="1" title="I Can but prefer not on Tuesday at  14 UTC">Can but prefer not</option>
+<option value="2" title="I Can on Tuesday at  14 UTC">Can</option>
+<option value="3" title="I Can and prefer on Tuesday at  14 UTC">Can and prefer</option>
+</select></td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
   
 </div>
 </div>
 </fieldset>
 </div>
 
-<div class='question optional l-box' id='wbsq13'><fieldset>
-<legend><span class="qtitle">13. Cumulative vote</span><a class="edit" href="q/q13/" title="Edit text of question &quot;Cumulative vote&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
-<div class='description'><p>Select a % for each choice</p>
-</div><div class='widget cumulative'>
-<input name="q13:format" value="1" type="hidden"><input name="q13:dim" value="101" type="hidden"><ul class="compare">
-<li><label for="xq13:c1">choice 1</label> <select name="q13:c1" id="xq13:c1"><option style="color: menutext;" value="0">0</option><option style="color: menutext;" value="1">1</option><option style="color: menutext;" value="2">2</option><option style="color: menutext;" value="3">3</option><option style="color: menutext;" value="4">4</option><option style="color: menutext;" value="5">5</option><option style="color: menutext;" value="6">6</option><option style="color: menutext;" value="7">7</option><option style="color: menutext;" value="8">8</option><option style="color: menutext;" value="9">9</option><option style="color: menutext;" value="10">10</option><option style="color: menutext;" value="11">11</option><option style="color: menutext;" value="12">12</option><option style="color: menutext;" value="13">13</option><option style="color: menutext;" value="14">14</option><option style="color: menutext;" value="15">15</option><option style="color: menutext;" value="16">16</option><option style="color: menutext;" value="17">17</option><option style="color: menutext;" value="18">18</option><option style="color: menutext;" value="19">19</option><option style="color: menutext;" value="20">20</option><option style="color: menutext;" value="21">21</option><option style="color: menutext;" value="22">22</option><option style="color: menutext;" value="23">23</option><option style="color: menutext;" value="24">24</option><option style="color: menutext;" value="25">25</option><option style="color: menutext;" value="26">26</option><option style="color: menutext;" value="27">27</option><option style="color: menutext;" value="28">28</option><option style="color: menutext;" value="29">29</option><option style="color: menutext;" value="30">30</option><option style="color: menutext;" value="31">31</option><option style="color: menutext;" value="32">32</option><option style="color: menutext;" value="33">33</option><option style="color: menutext;" value="34">34</option><option style="color: menutext;" value="35">35</option><option style="color: menutext;" value="36">36</option><option style="color: menutext;" value="37">37</option><option style="color: menutext;" value="38">38</option><option style="color: menutext;" value="39">39</option><option style="color: menutext;" value="40">40</option><option style="color: menutext;" value="41">41</option><option style="color: menutext;" value="42">42</option><option style="color: menutext;" value="43">43</option><option style="color: menutext;" value="44">44</option><option style="color: menutext;" value="45">45</option><option style="color: menutext;" value="46">46</option><option style="color: menutext;" value="47">47</option><option style="color: menutext;" value="48">48</option><option style="color: menutext;" value="49">49</option><option style="color: menutext;" value="50">50</option><option style="color: menutext;" value="51">51</option><option style="color: menutext;" value="52">52</option><option style="color: menutext;" value="53">53</option><option style="color: menutext;" value="54">54</option><option style="color: menutext;" value="55">55</option><option style="color: menutext;" value="56">56</option><option style="color: menutext;" value="57">57</option><option style="color: menutext;" value="58">58</option><option style="color: menutext;" value="59">59</option><option style="color: menutext;" value="60">60</option><option style="color: menutext;" value="61">61</option><option style="color: menutext;" value="62">62</option><option style="color: menutext;" value="63">63</option><option style="color: menutext;" value="64">64</option><option style="color: menutext;" value="65">65</option><option style="color: menutext;" value="66">66</option><option style="color: menutext;" value="67">67</option><option style="color: menutext;" value="68">68</option><option style="color: menutext;" value="69">69</option><option style="color: menutext;" value="70">70</option><option style="color: menutext;" value="71">71</option><option style="color: menutext;" value="72">72</option><option style="color: menutext;" value="73">73</option><option style="color: menutext;" value="74">74</option><option style="color: menutext;" value="75">75</option><option style="color: menutext;" value="76">76</option><option style="color: menutext;" value="77">77</option><option style="color: menutext;" value="78">78</option><option style="color: menutext;" value="79">79</option><option style="color: menutext;" value="80">80</option><option style="color: menutext;" value="81">81</option><option style="color: menutext;" value="82">82</option><option style="color: menutext;" value="83">83</option><option style="color: menutext;" value="84">84</option><option style="color: menutext;" value="85">85</option><option style="color: menutext;" value="86">86</option><option style="color: menutext;" value="87">87</option><option style="color: menutext;" value="88">88</option><option style="color: menutext;" value="89">89</option><option style="color: menutext;" value="90">90</option><option style="color: menutext;" value="91">91</option><option style="color: menutext;" value="92">92</option><option style="color: menutext;" value="93">93</option><option style="color: menutext;" value="94">94</option><option style="color: menutext;" value="95">95</option><option style="color: menutext;" value="96">96</option><option style="color: menutext;" value="97">97</option><option style="color: menutext;" value="98">98</option><option style="color: menutext;" value="99">99</option><option style="color: menutext;" value="100">100</option></select></li>
-<li><label for="xq13:c2">choice 2</label> <select name="q13:c2" id="xq13:c2"><option style="color: menutext;" value="0">0</option><option style="color: menutext;" value="1">1</option><option style="color: menutext;" value="2">2</option><option style="color: menutext;" value="3">3</option><option style="color: menutext;" value="4">4</option><option style="color: menutext;" value="5">5</option><option style="color: menutext;" value="6">6</option><option style="color: menutext;" value="7">7</option><option style="color: menutext;" value="8">8</option><option style="color: menutext;" value="9">9</option><option style="color: menutext;" value="10">10</option><option style="color: menutext;" value="11">11</option><option style="color: menutext;" value="12">12</option><option style="color: menutext;" value="13">13</option><option style="color: menutext;" value="14">14</option><option style="color: menutext;" value="15">15</option><option style="color: menutext;" value="16">16</option><option style="color: menutext;" value="17">17</option><option style="color: menutext;" value="18">18</option><option style="color: menutext;" value="19">19</option><option style="color: menutext;" value="20">20</option><option style="color: menutext;" value="21">21</option><option style="color: menutext;" value="22">22</option><option style="color: menutext;" value="23">23</option><option style="color: menutext;" value="24">24</option><option style="color: menutext;" value="25">25</option><option style="color: menutext;" value="26">26</option><option style="color: menutext;" value="27">27</option><option style="color: menutext;" value="28">28</option><option style="color: menutext;" value="29">29</option><option style="color: menutext;" value="30">30</option><option style="color: menutext;" value="31">31</option><option style="color: menutext;" value="32">32</option><option style="color: menutext;" value="33">33</option><option style="color: menutext;" value="34">34</option><option style="color: menutext;" value="35">35</option><option style="color: menutext;" value="36">36</option><option style="color: menutext;" value="37">37</option><option style="color: menutext;" value="38">38</option><option style="color: menutext;" value="39">39</option><option style="color: menutext;" value="40">40</option><option style="color: menutext;" value="41">41</option><option style="color: menutext;" value="42">42</option><option style="color: menutext;" value="43">43</option><option style="color: menutext;" value="44">44</option><option style="color: menutext;" value="45">45</option><option style="color: menutext;" value="46">46</option><option style="color: menutext;" value="47">47</option><option style="color: menutext;" value="48">48</option><option style="color: menutext;" value="49">49</option><option style="color: menutext;" value="50">50</option><option style="color: menutext;" value="51">51</option><option style="color: menutext;" value="52">52</option><option style="color: menutext;" value="53">53</option><option style="color: menutext;" value="54">54</option><option style="color: menutext;" value="55">55</option><option style="color: menutext;" value="56">56</option><option style="color: menutext;" value="57">57</option><option style="color: menutext;" value="58">58</option><option style="color: menutext;" value="59">59</option><option style="color: menutext;" value="60">60</option><option style="color: menutext;" value="61">61</option><option style="color: menutext;" value="62">62</option><option style="color: menutext;" value="63">63</option><option style="color: menutext;" value="64">64</option><option style="color: menutext;" value="65">65</option><option style="color: menutext;" value="66">66</option><option style="color: menutext;" value="67">67</option><option style="color: menutext;" value="68">68</option><option style="color: menutext;" value="69">69</option><option style="color: menutext;" value="70">70</option><option style="color: menutext;" value="71">71</option><option style="color: menutext;" value="72">72</option><option style="color: menutext;" value="73">73</option><option style="color: menutext;" value="74">74</option><option style="color: menutext;" value="75">75</option><option style="color: menutext;" value="76">76</option><option style="color: menutext;" value="77">77</option><option style="color: menutext;" value="78">78</option><option style="color: menutext;" value="79">79</option><option style="color: menutext;" value="80">80</option><option style="color: menutext;" value="81">81</option><option style="color: menutext;" value="82">82</option><option style="color: menutext;" value="83">83</option><option style="color: menutext;" value="84">84</option><option style="color: menutext;" value="85">85</option><option style="color: menutext;" value="86">86</option><option style="color: menutext;" value="87">87</option><option style="color: menutext;" value="88">88</option><option style="color: menutext;" value="89">89</option><option style="color: menutext;" value="90">90</option><option style="color: menutext;" value="91">91</option><option style="color: menutext;" value="92">92</option><option style="color: menutext;" value="93">93</option><option style="color: menutext;" value="94">94</option><option style="color: menutext;" value="95">95</option><option style="color: menutext;" value="96">96</option><option style="color: menutext;" value="97">97</option><option style="color: menutext;" value="98">98</option><option style="color: menutext;" value="99">99</option><option style="color: menutext;" value="100">100</option></select></li>
-<li><label for="xq13:c3">choice 3</label> <select name="q13:c3" id="xq13:c3"><option style="color: menutext;" value="0">0</option><option style="color: menutext;" value="1">1</option><option style="color: menutext;" value="2">2</option><option style="color: menutext;" value="3">3</option><option style="color: menutext;" value="4">4</option><option style="color: menutext;" value="5">5</option><option style="color: menutext;" value="6">6</option><option style="color: menutext;" value="7">7</option><option style="color: menutext;" value="8">8</option><option style="color: menutext;" value="9">9</option><option style="color: menutext;" value="10">10</option><option style="color: menutext;" value="11">11</option><option style="color: menutext;" value="12">12</option><option style="color: menutext;" value="13">13</option><option style="color: menutext;" value="14">14</option><option style="color: menutext;" value="15">15</option><option style="color: menutext;" value="16">16</option><option style="color: menutext;" value="17">17</option><option style="color: menutext;" value="18">18</option><option style="color: menutext;" value="19">19</option><option style="color: menutext;" value="20">20</option><option style="color: menutext;" value="21">21</option><option style="color: menutext;" value="22">22</option><option style="color: menutext;" value="23">23</option><option style="color: menutext;" value="24">24</option><option style="color: menutext;" value="25">25</option><option style="color: menutext;" value="26">26</option><option style="color: menutext;" value="27">27</option><option style="color: menutext;" value="28">28</option><option style="color: menutext;" value="29">29</option><option style="color: menutext;" value="30">30</option><option style="color: menutext;" value="31">31</option><option style="color: menutext;" value="32">32</option><option style="color: menutext;" value="33">33</option><option style="color: menutext;" value="34">34</option><option style="color: menutext;" value="35">35</option><option style="color: menutext;" value="36">36</option><option style="color: menutext;" value="37">37</option><option style="color: menutext;" value="38">38</option><option style="color: menutext;" value="39">39</option><option style="color: menutext;" value="40">40</option><option style="color: menutext;" value="41">41</option><option style="color: menutext;" value="42">42</option><option style="color: menutext;" value="43">43</option><option style="color: menutext;" value="44">44</option><option style="color: menutext;" value="45">45</option><option style="color: menutext;" value="46">46</option><option style="color: menutext;" value="47">47</option><option style="color: menutext;" value="48">48</option><option style="color: menutext;" value="49">49</option><option style="color: menutext;" value="50">50</option><option style="color: menutext;" value="51">51</option><option style="color: menutext;" value="52">52</option><option style="color: menutext;" value="53">53</option><option style="color: menutext;" value="54">54</option><option style="color: menutext;" value="55">55</option><option style="color: menutext;" value="56">56</option><option style="color: menutext;" value="57">57</option><option style="color: menutext;" value="58">58</option><option style="color: menutext;" value="59">59</option><option style="color: menutext;" value="60">60</option><option style="color: menutext;" value="61">61</option><option style="color: menutext;" value="62">62</option><option style="color: menutext;" value="63">63</option><option style="color: menutext;" value="64">64</option><option style="color: menutext;" value="65">65</option><option style="color: menutext;" value="66">66</option><option style="color: menutext;" value="67">67</option><option style="color: menutext;" value="68">68</option><option style="color: menutext;" value="69">69</option><option style="color: menutext;" value="70">70</option><option style="color: menutext;" value="71">71</option><option style="color: menutext;" value="72">72</option><option style="color: menutext;" value="73">73</option><option style="color: menutext;" value="74">74</option><option style="color: menutext;" value="75">75</option><option style="color: menutext;" value="76">76</option><option style="color: menutext;" value="77">77</option><option style="color: menutext;" value="78">78</option><option style="color: menutext;" value="79">79</option><option style="color: menutext;" value="80">80</option><option style="color: menutext;" value="81">81</option><option style="color: menutext;" value="82">82</option><option style="color: menutext;" value="83">83</option><option style="color: menutext;" value="84">84</option><option style="color: menutext;" value="85">85</option><option style="color: menutext;" value="86">86</option><option style="color: menutext;" value="87">87</option><option style="color: menutext;" value="88">88</option><option style="color: menutext;" value="89">89</option><option style="color: menutext;" value="90">90</option><option style="color: menutext;" value="91">91</option><option style="color: menutext;" value="92">92</option><option style="color: menutext;" value="93">93</option><option style="color: menutext;" value="94">94</option><option style="color: menutext;" value="95">95</option><option style="color: menutext;" value="96">96</option><option style="color: menutext;" value="97">97</option><option style="color: menutext;" value="98">98</option><option style="color: menutext;" value="99">99</option><option style="color: menutext;" value="100">100</option></select></li>
-<li><label for="xq13:c4">choice 4</label> <select name="q13:c4" id="xq13:c4"><option style="color: menutext;" value="0">0</option><option style="color: menutext;" value="1">1</option><option style="color: menutext;" value="2">2</option><option style="color: menutext;" value="3">3</option><option style="color: menutext;" value="4">4</option><option style="color: menutext;" value="5">5</option><option style="color: menutext;" value="6">6</option><option style="color: menutext;" value="7">7</option><option style="color: menutext;" value="8">8</option><option style="color: menutext;" value="9">9</option><option style="color: menutext;" value="10">10</option><option style="color: menutext;" value="11">11</option><option style="color: menutext;" value="12">12</option><option style="color: menutext;" value="13">13</option><option style="color: menutext;" value="14">14</option><option style="color: menutext;" value="15">15</option><option style="color: menutext;" value="16">16</option><option style="color: menutext;" value="17">17</option><option style="color: menutext;" value="18">18</option><option style="color: menutext;" value="19">19</option><option style="color: menutext;" value="20">20</option><option style="color: menutext;" value="21">21</option><option style="color: menutext;" value="22">22</option><option style="color: menutext;" value="23">23</option><option style="color: menutext;" value="24">24</option><option style="color: menutext;" value="25">25</option><option style="color: menutext;" value="26">26</option><option style="color: menutext;" value="27">27</option><option style="color: menutext;" value="28">28</option><option style="color: menutext;" value="29">29</option><option style="color: menutext;" value="30">30</option><option style="color: menutext;" value="31">31</option><option style="color: menutext;" value="32">32</option><option style="color: menutext;" value="33">33</option><option style="color: menutext;" value="34">34</option><option style="color: menutext;" value="35">35</option><option style="color: menutext;" value="36">36</option><option style="color: menutext;" value="37">37</option><option style="color: menutext;" value="38">38</option><option style="color: menutext;" value="39">39</option><option style="color: menutext;" value="40">40</option><option style="color: menutext;" value="41">41</option><option style="color: menutext;" value="42">42</option><option style="color: menutext;" value="43">43</option><option style="color: menutext;" value="44">44</option><option style="color: menutext;" value="45">45</option><option style="color: menutext;" value="46">46</option><option style="color: menutext;" value="47">47</option><option style="color: menutext;" value="48">48</option><option style="color: menutext;" value="49">49</option><option style="color: menutext;" value="50">50</option><option style="color: menutext;" value="51">51</option><option style="color: menutext;" value="52">52</option><option style="color: menutext;" value="53">53</option><option style="color: menutext;" value="54">54</option><option style="color: menutext;" value="55">55</option><option style="color: menutext;" value="56">56</option><option style="color: menutext;" value="57">57</option><option style="color: menutext;" value="58">58</option><option style="color: menutext;" value="59">59</option><option style="color: menutext;" value="60">60</option><option style="color: menutext;" value="61">61</option><option style="color: menutext;" value="62">62</option><option style="color: menutext;" value="63">63</option><option style="color: menutext;" value="64">64</option><option style="color: menutext;" value="65">65</option><option style="color: menutext;" value="66">66</option><option style="color: menutext;" value="67">67</option><option style="color: menutext;" value="68">68</option><option style="color: menutext;" value="69">69</option><option style="color: menutext;" value="70">70</option><option style="color: menutext;" value="71">71</option><option style="color: menutext;" value="72">72</option><option style="color: menutext;" value="73">73</option><option style="color: menutext;" value="74">74</option><option style="color: menutext;" value="75">75</option><option style="color: menutext;" value="76">76</option><option style="color: menutext;" value="77">77</option><option style="color: menutext;" value="78">78</option><option style="color: menutext;" value="79">79</option><option style="color: menutext;" value="80">80</option><option style="color: menutext;" value="81">81</option><option style="color: menutext;" value="82">82</option><option style="color: menutext;" value="83">83</option><option style="color: menutext;" value="84">84</option><option style="color: menutext;" value="85">85</option><option style="color: menutext;" value="86">86</option><option style="color: menutext;" value="87">87</option><option style="color: menutext;" value="88">88</option><option style="color: menutext;" value="89">89</option><option style="color: menutext;" value="90">90</option><option style="color: menutext;" value="91">91</option><option style="color: menutext;" value="92">92</option><option style="color: menutext;" value="93">93</option><option style="color: menutext;" value="94">94</option><option style="color: menutext;" value="95">95</option><option style="color: menutext;" value="96">96</option><option style="color: menutext;" value="97">97</option><option style="color: menutext;" value="98">98</option><option style="color: menutext;" value="99">99</option><option style="color: menutext;" value="100">100</option></select></li>
-<li><span class="label">Total</span>: <input style="color: green;" disabled="disabled"> <span class="label">Remaining</span> <input style="color: green;" disabled="disabled"></li></ul>
+<div class='l-box' id='wbsq13'>
+<fieldset>
+<legend class="txt-mars">13. Cumulative vote</legend>
+  
+<div class='description'>
+  <p>Select a % for each choice</p>
+</div>
+
+<div class='widget cumulative'>
+
+<input name="q13:format" value="1" type="hidden">
+<input name="q13:dim" value="101" type="hidden">
+
+<div class="component--fifty-fifty">
+  <div class="component--fifty-fifty__text">
+	<p><label for="xq13:c1">Choice 1:</label></p>
+  </div>
+  <div class="component--fifty-fifty__text">
+	<select class="input-width-3" name="q13:c1" id="xq13:c1">
+	  <option style="color: menutext;" value="0">0</option><option style="color: menutext;" value="1">1</option><option style="color: menutext;" value="2">2</option><option style="color: menutext;" value="3">3</option><option style="color: menutext;" value="4">4</option><option style="color: menutext;" value="5">5</option><option style="color: menutext;" value="6">6</option><option style="color: menutext;" value="7">7</option><option style="color: menutext;" value="8">8</option><option style="color: menutext;" value="9">9</option><option style="color: menutext;" value="10">10</option><option style="color: menutext;" value="11">11</option><option style="color: menutext;" value="12">12</option><option style="color: menutext;" value="13">13</option><option style="color: menutext;" value="14">14</option><option style="color: menutext;" value="15">15</option><option style="color: menutext;" value="16">16</option><option style="color: menutext;" value="17">17</option><option style="color: menutext;" value="18">18</option><option style="color: menutext;" value="19">19</option><option style="color: menutext;" value="20">20</option><option style="color: menutext;" value="21">21</option><option style="color: menutext;" value="22">22</option><option style="color: menutext;" value="23">23</option><option style="color: menutext;" value="24">24</option><option style="color: menutext;" value="25">25</option><option style="color: menutext;" value="26">26</option><option style="color: menutext;" value="27">27</option><option style="color: menutext;" value="28">28</option><option style="color: menutext;" value="29">29</option><option style="color: menutext;" value="30">30</option><option style="color: menutext;" value="31">31</option><option style="color: menutext;" value="32">32</option><option style="color: menutext;" value="33">33</option><option style="color: menutext;" value="34">34</option><option style="color: menutext;" value="35">35</option><option style="color: menutext;" value="36">36</option><option style="color: menutext;" value="37">37</option><option style="color: menutext;" value="38">38</option><option style="color: menutext;" value="39">39</option><option style="color: menutext;" value="40">40</option><option style="color: menutext;" value="41">41</option><option style="color: menutext;" value="42">42</option><option style="color: menutext;" value="43">43</option><option style="color: menutext;" value="44">44</option><option style="color: menutext;" value="45">45</option><option style="color: menutext;" value="46">46</option><option style="color: menutext;" value="47">47</option><option style="color: menutext;" value="48">48</option><option style="color: menutext;" value="49">49</option><option style="color: menutext;" value="50">50</option><option style="color: menutext;" value="51">51</option><option style="color: menutext;" value="52">52</option><option style="color: menutext;" value="53">53</option><option style="color: menutext;" value="54">54</option><option style="color: menutext;" value="55">55</option><option style="color: menutext;" value="56">56</option><option style="color: menutext;" value="57">57</option><option style="color: menutext;" value="58">58</option><option style="color: menutext;" value="59">59</option><option style="color: menutext;" value="60">60</option><option style="color: menutext;" value="61">61</option><option style="color: menutext;" value="62">62</option><option style="color: menutext;" value="63">63</option><option style="color: menutext;" value="64">64</option><option style="color: menutext;" value="65">65</option><option style="color: menutext;" value="66">66</option><option style="color: menutext;" value="67">67</option><option style="color: menutext;" value="68">68</option><option style="color: menutext;" value="69">69</option><option style="color: menutext;" value="70">70</option><option style="color: menutext;" value="71">71</option><option style="color: menutext;" value="72">72</option><option style="color: menutext;" value="73">73</option><option style="color: menutext;" value="74">74</option><option style="color: menutext;" value="75">75</option><option style="color: menutext;" value="76">76</option><option style="color: menutext;" value="77">77</option><option style="color: menutext;" value="78">78</option><option style="color: menutext;" value="79">79</option><option style="color: menutext;" value="80">80</option><option style="color: menutext;" value="81">81</option><option style="color: menutext;" value="82">82</option><option style="color: menutext;" value="83">83</option><option style="color: menutext;" value="84">84</option><option style="color: menutext;" value="85">85</option><option style="color: menutext;" value="86">86</option><option style="color: menutext;" value="87">87</option><option style="color: menutext;" value="88">88</option><option style="color: menutext;" value="89">89</option><option style="color: menutext;" value="90">90</option><option style="color: menutext;" value="91">91</option><option style="color: menutext;" value="92">92</option><option style="color: menutext;" value="93">93</option><option style="color: menutext;" value="94">94</option><option style="color: menutext;" value="95">95</option><option style="color: menutext;" value="96">96</option><option style="color: menutext;" value="97">97</option><option style="color: menutext;" value="98">98</option><option style="color: menutext;" value="99">99</option><option style="color: menutext;" value="100">100</option>
+      </select>
+  </div>
+</div>
+
+
+<div class="component--fifty-fifty">
+  <div class="component--fifty-fifty__text">
+	<p><label for="xq13:c2">Choice 2:</label></p>
+  </div>
+  <div class="component--fifty-fifty__text">
+	<select class="input-width-3" name="q13:c2" id="xq13:c2">
+	  <option style="color: menutext;" value="0">0</option><option style="color: menutext;" value="1">1</option><option style="color: menutext;" value="2">2</option><option style="color: menutext;" value="3">3</option><option style="color: menutext;" value="4">4</option><option style="color: menutext;" value="5">5</option><option style="color: menutext;" value="6">6</option><option style="color: menutext;" value="7">7</option><option style="color: menutext;" value="8">8</option><option style="color: menutext;" value="9">9</option><option style="color: menutext;" value="10">10</option><option style="color: menutext;" value="11">11</option><option style="color: menutext;" value="12">12</option><option style="color: menutext;" value="13">13</option><option style="color: menutext;" value="14">14</option><option style="color: menutext;" value="15">15</option><option style="color: menutext;" value="16">16</option><option style="color: menutext;" value="17">17</option><option style="color: menutext;" value="18">18</option><option style="color: menutext;" value="19">19</option><option style="color: menutext;" value="20">20</option><option style="color: menutext;" value="21">21</option><option style="color: menutext;" value="22">22</option><option style="color: menutext;" value="23">23</option><option style="color: menutext;" value="24">24</option><option style="color: menutext;" value="25">25</option><option style="color: menutext;" value="26">26</option><option style="color: menutext;" value="27">27</option><option style="color: menutext;" value="28">28</option><option style="color: menutext;" value="29">29</option><option style="color: menutext;" value="30">30</option><option style="color: menutext;" value="31">31</option><option style="color: menutext;" value="32">32</option><option style="color: menutext;" value="33">33</option><option style="color: menutext;" value="34">34</option><option style="color: menutext;" value="35">35</option><option style="color: menutext;" value="36">36</option><option style="color: menutext;" value="37">37</option><option style="color: menutext;" value="38">38</option><option style="color: menutext;" value="39">39</option><option style="color: menutext;" value="40">40</option><option style="color: menutext;" value="41">41</option><option style="color: menutext;" value="42">42</option><option style="color: menutext;" value="43">43</option><option style="color: menutext;" value="44">44</option><option style="color: menutext;" value="45">45</option><option style="color: menutext;" value="46">46</option><option style="color: menutext;" value="47">47</option><option style="color: menutext;" value="48">48</option><option style="color: menutext;" value="49">49</option><option style="color: menutext;" value="50">50</option><option style="color: menutext;" value="51">51</option><option style="color: menutext;" value="52">52</option><option style="color: menutext;" value="53">53</option><option style="color: menutext;" value="54">54</option><option style="color: menutext;" value="55">55</option><option style="color: menutext;" value="56">56</option><option style="color: menutext;" value="57">57</option><option style="color: menutext;" value="58">58</option><option style="color: menutext;" value="59">59</option><option style="color: menutext;" value="60">60</option><option style="color: menutext;" value="61">61</option><option style="color: menutext;" value="62">62</option><option style="color: menutext;" value="63">63</option><option style="color: menutext;" value="64">64</option><option style="color: menutext;" value="65">65</option><option style="color: menutext;" value="66">66</option><option style="color: menutext;" value="67">67</option><option style="color: menutext;" value="68">68</option><option style="color: menutext;" value="69">69</option><option style="color: menutext;" value="70">70</option><option style="color: menutext;" value="71">71</option><option style="color: menutext;" value="72">72</option><option style="color: menutext;" value="73">73</option><option style="color: menutext;" value="74">74</option><option style="color: menutext;" value="75">75</option><option style="color: menutext;" value="76">76</option><option style="color: menutext;" value="77">77</option><option style="color: menutext;" value="78">78</option><option style="color: menutext;" value="79">79</option><option style="color: menutext;" value="80">80</option><option style="color: menutext;" value="81">81</option><option style="color: menutext;" value="82">82</option><option style="color: menutext;" value="83">83</option><option style="color: menutext;" value="84">84</option><option style="color: menutext;" value="85">85</option><option style="color: menutext;" value="86">86</option><option style="color: menutext;" value="87">87</option><option style="color: menutext;" value="88">88</option><option style="color: menutext;" value="89">89</option><option style="color: menutext;" value="90">90</option><option style="color: menutext;" value="91">91</option><option style="color: menutext;" value="92">92</option><option style="color: menutext;" value="93">93</option><option style="color: menutext;" value="94">94</option><option style="color: menutext;" value="95">95</option><option style="color: menutext;" value="96">96</option><option style="color: menutext;" value="97">97</option><option style="color: menutext;" value="98">98</option><option style="color: menutext;" value="99">99</option><option style="color: menutext;" value="100">100</option>
+      </select>
+  </div>
+</div>
+
+
+<div class="component--fifty-fifty">
+  <div class="component--fifty-fifty__text">
+	<p><label for="xq13:c3">Choice 3:</label></p>
+  </div>
+  <div class="component--fifty-fifty__text">
+	<select class="input-width-3" name="q13:c3" id="xq13:c3">
+	  <option style="color: menutext;" value="0">0</option><option style="color: menutext;" value="1">1</option><option style="color: menutext;" value="2">2</option><option style="color: menutext;" value="3">3</option><option style="color: menutext;" value="4">4</option><option style="color: menutext;" value="5">5</option><option style="color: menutext;" value="6">6</option><option style="color: menutext;" value="7">7</option><option style="color: menutext;" value="8">8</option><option style="color: menutext;" value="9">9</option><option style="color: menutext;" value="10">10</option><option style="color: menutext;" value="11">11</option><option style="color: menutext;" value="12">12</option><option style="color: menutext;" value="13">13</option><option style="color: menutext;" value="14">14</option><option style="color: menutext;" value="15">15</option><option style="color: menutext;" value="16">16</option><option style="color: menutext;" value="17">17</option><option style="color: menutext;" value="18">18</option><option style="color: menutext;" value="19">19</option><option style="color: menutext;" value="20">20</option><option style="color: menutext;" value="21">21</option><option style="color: menutext;" value="22">22</option><option style="color: menutext;" value="23">23</option><option style="color: menutext;" value="24">24</option><option style="color: menutext;" value="25">25</option><option style="color: menutext;" value="26">26</option><option style="color: menutext;" value="27">27</option><option style="color: menutext;" value="28">28</option><option style="color: menutext;" value="29">29</option><option style="color: menutext;" value="30">30</option><option style="color: menutext;" value="31">31</option><option style="color: menutext;" value="32">32</option><option style="color: menutext;" value="33">33</option><option style="color: menutext;" value="34">34</option><option style="color: menutext;" value="35">35</option><option style="color: menutext;" value="36">36</option><option style="color: menutext;" value="37">37</option><option style="color: menutext;" value="38">38</option><option style="color: menutext;" value="39">39</option><option style="color: menutext;" value="40">40</option><option style="color: menutext;" value="41">41</option><option style="color: menutext;" value="42">42</option><option style="color: menutext;" value="43">43</option><option style="color: menutext;" value="44">44</option><option style="color: menutext;" value="45">45</option><option style="color: menutext;" value="46">46</option><option style="color: menutext;" value="47">47</option><option style="color: menutext;" value="48">48</option><option style="color: menutext;" value="49">49</option><option style="color: menutext;" value="50">50</option><option style="color: menutext;" value="51">51</option><option style="color: menutext;" value="52">52</option><option style="color: menutext;" value="53">53</option><option style="color: menutext;" value="54">54</option><option style="color: menutext;" value="55">55</option><option style="color: menutext;" value="56">56</option><option style="color: menutext;" value="57">57</option><option style="color: menutext;" value="58">58</option><option style="color: menutext;" value="59">59</option><option style="color: menutext;" value="60">60</option><option style="color: menutext;" value="61">61</option><option style="color: menutext;" value="62">62</option><option style="color: menutext;" value="63">63</option><option style="color: menutext;" value="64">64</option><option style="color: menutext;" value="65">65</option><option style="color: menutext;" value="66">66</option><option style="color: menutext;" value="67">67</option><option style="color: menutext;" value="68">68</option><option style="color: menutext;" value="69">69</option><option style="color: menutext;" value="70">70</option><option style="color: menutext;" value="71">71</option><option style="color: menutext;" value="72">72</option><option style="color: menutext;" value="73">73</option><option style="color: menutext;" value="74">74</option><option style="color: menutext;" value="75">75</option><option style="color: menutext;" value="76">76</option><option style="color: menutext;" value="77">77</option><option style="color: menutext;" value="78">78</option><option style="color: menutext;" value="79">79</option><option style="color: menutext;" value="80">80</option><option style="color: menutext;" value="81">81</option><option style="color: menutext;" value="82">82</option><option style="color: menutext;" value="83">83</option><option style="color: menutext;" value="84">84</option><option style="color: menutext;" value="85">85</option><option style="color: menutext;" value="86">86</option><option style="color: menutext;" value="87">87</option><option style="color: menutext;" value="88">88</option><option style="color: menutext;" value="89">89</option><option style="color: menutext;" value="90">90</option><option style="color: menutext;" value="91">91</option><option style="color: menutext;" value="92">92</option><option style="color: menutext;" value="93">93</option><option style="color: menutext;" value="94">94</option><option style="color: menutext;" value="95">95</option><option style="color: menutext;" value="96">96</option><option style="color: menutext;" value="97">97</option><option style="color: menutext;" value="98">98</option><option style="color: menutext;" value="99">99</option><option style="color: menutext;" value="100">100</option>
+      </select>
+  </div>
+</div>
+
+<div class="l-cluster l-cluster--vertical-align">
+<div>
+  <span class="">Total</span>: <input class="input-width-5" disabled="disabled">
+  <span class="label">Remaining</span> <input class="input-width-5" disabled="disabled">
+</div>
+</div>
+
 </div>
 </fieldset>
 </div>
 
-<div class='question optional l-box' id='wbsq14'>
-
-<div class="l-cluster l-cluster--vertical-align">
-<div>
-<legend class="txt-mars">14. Importance survey</legend>
-<a class="button button--alt" href="q/q11/" title="Edit text of question &quot;Importance survey&quot;" alt="Edit">Edit</a>
-</div>
-</div>
+<div class='l-box' id='wbsq14'>
 
 <fieldset>
-<div class='description'><p>Importance survey.</p>
+<legend class="txt-mars">14. Importance survey</legend>
+
+<div class='description'>
+  <p>Importance survey.</p>
 </div>
 
 <div class='widget ms_importance'>
@@ -1181,15 +1303,27 @@ the last one</label> <select name="q9:c3" id="xq9:c3"><option value="0">1 &#x1F6
 </fieldset>
 </div>
 
-<div class='question optional l-box' id='wbsq15'><fieldset>
-<legend><span class="qtitle">15. Importance and Satisfaction survey</span> (<strong>no longer proposed in the UI</strong>) <a class="edit" href="q/q15/" title="Edit text of question &quot;Cumulative vote&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
-<div class='description'><p>Importance and Satisfaction survey.</p>
-</div><div class='widget ms_importance_satis'>
-<input type='hidden' name='q15:format' value='1' /><input
-  type='hidden' name='q15:dim' value='19' />
+<div class='l-box' id='wbsq15'>
+<fieldset>
+<legend class="txt-mars">15. Importance and Satisfaction survey</legend>
+  
+<div class='description'>
+  <p>This type of question is longer proposed in the UI but needs to be adapted to display old surveys containing it.</p>
+</div>
+
+<div class='widget ms_importance_satis'>
+  <input type='hidden' name='q15:format' value='1' />
+  <input type='hidden' name='q15:dim' value='19' />
+
 <div class="overlarge">
-<table class="records_list data tMargin"><thead><tr><th scope='col'>Rated item</th><th scope='col'>Importance</th><th scope='col'>Satisfaction</th></tr></thead><tbody>
-<tr class='even'><th scope='row'>choice 1</th><td><label
+
+  <table>
+    <thead>
+      <tr><th>Rated item</th><th>Importance</th><th>Satisfaction</th></tr>
+    </thead>
+    <tbody>
+      <tr class='even'>
+	<th scope='row'>choice 1</th><td><label
   for='xq15:c1'><select  title='Importance of choice1' name='q15:c1[]'
     id='xq15:c1'><option value='0'>1 + (lowest)</option><option
       value='1'>2 ++</option><option value='2'>3 +++</option><option
@@ -1213,14 +1347,12 @@ the last one</label> <select name="q9:c3" id="xq9:c3"><option value="0">1 &#x1F6
 				    applicable</option><option
 				      value='18'
 				      selected='selected'>No
-				      opinion</option></select></label></td></tr><tr
-					class='odd'><th
-					  scope='row'>choice
-					  2</th><td><label
-					    for='xq15:c2'><select
-					      title='Importance of
-					      choice2' name='q15:c2[]'
-					      id='xq15:c2'><option
+				      opinion</option></select></label></td>
+				    </tr>
+				    <tr	class='odd'><th scope='row'>choice 2</th>
+				    <td><label for='xq15:c2'>
+				      <select title='Importance of choice2' name='q15:c2[]' id='xq15:c2'>
+					<option
 						value='0'>1 +
 						(lowest)</option><option
 						  value='1'>2
@@ -1240,7 +1372,12 @@ the last one</label> <select name="q9:c3" id="xq9:c3"><option value="0">1 &#x1F6
 							      applicable</option><option
 								value='8'
 								selected='selected'>No
-								opinion</option></select></label></td><td><label><select
+								opinion</option></select>
+								</label>
+							      </td>
+							      <td>
+								<label>
+								<select
 								  title='Satisfaction
 								  on
 								  choice2'
@@ -1267,25 +1404,38 @@ the last one</label> <select name="q9:c3" id="xq9:c3"><option value="0">1 &#x1F6
 										    applicable</option><option
 										      value='18'
 										      selected='selected'>No
-										      opinion</option></select></label></td></tr><tr
-											class='even'><th
+										      opinion</option></select></label></td>
+										    </tr>
+										    <tr
+										      class='even'>
+										      <th
 											  scope='row'>choice
-											  3</th><td><label
+											3
+										      </th>
+											<td><label
 											    for='xq15:c3'><select  title='Importance of choice3' name='q15:c3[]' id='xq15:c3'><option value='0'>1 + (lowest)</option><option value='1'>2 ++</option><option value='2'>3 +++</option><option value='3'>4 ++++</option><option value='4'>5 +++++</option><option value='5'>6 ++++++</option><option value='6'>7  +++++++ (highest)</option><option value='7'>Not applicable</option><option value='8' selected='selected'>No opinion</option></select></label></td><td><label><select title='Satisfaction on choice3' name='q15:c3[]'><option value='9'>1 + (lowest)</option><option value='10'>2 ++</option><option value='11'>3 +++</option><option value='12'>4 ++++</option><option value='13'>5 +++++</option><option value='14'>6 ++++++</option><option value='15'>7  +++++++ (highest)</option><option value='16'>Didn&#039;t know</option><option value='17'>Not applicable</option><option value='18' selected='selected'>No opinion</option></select></label></td></tr></tbody></table></div>
 
 </div>
 </fieldset>
 </div>
 
-<div class='question required l-box' id='wbstp'><fieldset>
-<legend><span class="qtitle">16. Technical Plenary widget </span> (<strong>no longer proposed in the UI</strong>) <a class="edit" href="q/q16/" title="Edit text of question &quot;Monday, 11 November Group Meetings&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
-<div class='description'>For Group meetings on Monday, 11 November:</div><div class='widget tp_wg'>
-<input type='hidden' name='tp:format' value='0' /><input type='hidden' name='tp:dim' value='2' /><p><label title='Not Attending that day'><input type='radio' name='tp:d1[]' value='na'  /> Not attending that day</label></p>
-<p><label title='Attending as observer'><input type='radio' name='tp:d1[]' value='obs'  /> Attending as an
+<div class='l-box' id='wbstp'>
+<fieldset>
+<legend class="txt-mars">16. Technical Plenary widget</legend>
+<div class='description'>
+  <p>For Group meetings on Monday, 11 November:</p>
+  <p>This type of question is longer proposed in the UI but needs to be adapted to display old surveys containing it.</p>
+</div>
+
+<div class='widget tp_wg'>
+  <input type='hidden' name='tp:format' value='0' />
+  <input type='hidden' name='tp:dim' value='2' />
+  <p><label title='Not Attending that day'><input type='radio' name='tp:d1[]' value='na'  /> Not attending that day</label></p>
+  <p><label title='Attending as observer'><input type='radio' name='tp:d1[]' value='obs'  /> Attending as an
 observer only (check at least one of the appropriate requests below  in the 'Observer request' column)</label></p>
 <p>Attending as a  participant in the selected group below:</p>
 <div class="overlarge">
-<table class="records_list data tMargin">
+<table class="">
 <thead><tr><th scope='col'>Group meeting</th><th scope='col'>Attending as a participant in this group</th><th scope='col'>Confidentiality</th><th scope='col'>Observer request</th></tr></thead>
 <tbody><tr><th scope='row'></th>
 <td><label><input  title='Attending  as a Group participant'
@@ -1364,21 +1514,44 @@ observer only (check at least one of the appropriate requests below  in the 'Obs
 </fieldset>
 </div>
    
-<div class='question optional l-box' id='wbsq17'><fieldset>
-<legend><span class="qtitle">17. Employees list</span> (<strong>no longer proposed in the UI</strong>) <a class="edit" href="q/q17/" title="Edit text of question &quot;Employees list&quot;"><img src="../icons/stock_edit.png" alt="Edit" /></a></legend>
-<div class='description'><p>Full statement of question.</p>
-</div><div class='widget employees'>
-<input type='hidden' name='q16:format' value='0' /><input type='hidden' name='q16:dim' value='3' /><select name='q16:d1[]'><option  value='0' >Nobody</option>
+<div class='l-box' id='wbsq17'>
+<fieldset>
+<legend class="txt-mars">17. Employees list</legend>
+<div class='description'>
+  <p>This type of question is longer proposed in the UI but needs to be adapted to display old surveys containing it.</p>
+  <p>Please select up to three participants for this Interest Group.</p>
+  <p>If the participant's name does not appear in the list below, you can add them using the AC Rep tool (clicking the <q>Add User</q> button).</p>
+</div>
+<div class='widget employees'>
+  <input type='hidden' name='q16:format' value='0' /
+  <input type='hidden' name='q16:dim' value='3' />
+
+<label for="q16:d1">
+<span class="field-label"></span>
+</label>
+<select id="q16:d1" name="q16:d1[]">
+  <option  value='0' >Nobody</option>
 </select>
-<select name='q16:d2[]'><option  value='0' >Nobody</option>
-</select>
-<select name='q16:d3[]'><option  value='0' >Nobody</option>
+  
+<label for="q16:d12">
+<span class="field-label"></span>
+</label>
+<select id="q16:d2" name="q16:d2[]">
+  <option  value='0' >Nobody</option>
 </select>
 
-<textarea id='xq16:comment' name='q16:comment' class='comment' rows='3'></textarea></p>
+<label for="q16:d3">
+<span class="field-label"></span>
+</label>
+<select id="q16:d3" name="q16:d3[]">
+  <option  value='0' >Nobody</option>
+</select>
 </div>
 </fieldset>
 
+<fieldset>
+<p><textarea id='xq16:comment' name='q16:comment' class='comment' rows='3'></textarea></p>
+</fieldset>
 </div>
 <hr/>
 <p>This questionnaire is open for answers until <a href='http://www.timeanddate.com/worldclock/fixedtime.html?day=31&amp;month=12&amp;year=2015&amp;hour=23&amp;min=59&amp;sec=0&amp;p1=43'>23:59, Boston time on
@@ -1386,23 +1559,38 @@ observer only (check at least one of the appropriate requests below  in the 'Obs
 Answers received after that time may not be counted.
 </p>
 <p>The <a href='results'>results of this questionnaire</a> are available only to the participants of the group (and the W3C Team)</p>
- <p><label><input type="checkbox" name="wbs:ccme" /> <strong>Send a copy</strong> of these answers to my email address (laurent@w3.org)</label> (if this isn't your email address, you can <a href="/users/myprofile">update your contact information</a>).</p>
 
-   <p><input type="submit" class="submit_button" value="Submit your answers" name="action" /></p>
+ <div class='l-box l-box--no-padding l-box--no-border'>
+ <div class="checkbox-item">
+	<input type="checkbox" name="wbs:ccme" id="ccme" appearance="base">
+	<label for="ccme">
+		<span class="faux-label">Send a copy</strong> of these answers to my email address (laurent@w3.org) (if this isn't your email address, you can <a href="/users/myprofile">update your contact information</a>).</span>
+	</label>
+ </div>
+ <p><button class="button" type="submit" name="action">Submit your answers</button></p>
+ </div>
 </form>
+
+<p>&nbsp;</p> 
 <form novalidate method="post" action="./?">
-<div class='delete_section'>
-<p class='delete_section_label'>You may <strong id="delete">completely remove</strong> your
-response from our records.<br/>
-As this operation is <strong>not
-reversible</strong>, <label>please confirm your desire to delete
-your answers by first checking <strong>this box</strong>: <input type="checkbox"
- name="confirm" /></label></p>
-<p class='delete_section_button'><input type="submit"
-class="delete_button" name="action" value="Delete my answer
-entirely" /></p>
-<p class ='clear'></p>
+ <div class="l-box">
+ <p>You may <strong id="delete">completely remove</strong> your
+response from our records. As this operation is <strong>not reversible</strong>, please confirm your desire to delete
+  your answers by first checking the box below:</p>
+ <div class="l-cluster l-cluster--vertical-align">
+ <div>
+    <div class="checkbox-item">
+	<input type="checkbox" name="wbs:ccme" id="ccme" appearance="base">
+	<label for="ccme">
+		<span class="faux-label">I confirm</span>
+	</label>
+    </div>
+    <button class="button button--alt" type="submit" name="action">Delete my answer entirely</button> </p>
+	</div>
 </div>
+
+</div>
+
 </form>
 
 			      
