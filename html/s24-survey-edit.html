@@ -1,7 +1,7 @@
 <!doctype html>
 <html dir="ltr" lang="en" class="no-js">
 <head>
-    <title>WBS | xx | xx</title>
+    <title>Edit the questionnaire WBS question types - Web-Based Straw-poll and Balloting System</title>
 
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -61,12 +61,12 @@
                 }
             })();
         </script>
-
-<!-- custom css for wbs -->
-  <link rel="stylesheet" type="text/css" href="../css/site-wbs-style.css" title="default" />
-<!--  -->  
     
-    </head>
+<!-- custom css for wbs
+  <link rel="stylesheet" type="text/css" href="../css/site-wbs-style.css" title="default" />
+ -->  
+
+</head>
 
 <body class="default">
 <a class="skip-link" href="#main">Skip to content</a>
@@ -633,34 +633,351 @@
         </div>
     </div>
 </nav>
-                <main id="main">
-                                            
 
-                                
+<main id="main">
+  <div class="content">
+    <article>
+    <h1>Edit the questionnaire WBS question types</h1>
+    
+    <div>
+ 
+    <p>You can tweak the settings of the current questionnaire with the form below, or <a href="q/">add a new question</a>, or edit <a href="#questions">one of the existing questions</a>.</p>
+    
+<form method="post" action="handler">
+  <input name="wgid" type="hidden" value="99999" />
+  <input name="qairedupd" type="hidden" value="2016-07-07 11:38:16" />
+      
+<div>
+<h2 class="txt-mars">Questionnaire</h2>
+  <p>Questionnaire identifier: <code>wbs-types-test</code></p>
+</div>
+  
+<div class="l-box field-group" id="questionnaire">  
+<fieldset>
+<div class="component--fifty-fifty">
+  <div class="component--fifty-fifty__text">
+	<div class="field">
+		<label for="startdate">
+			<span class="field-label">Questionnaire’s starting date <span class="required"></span></span>
+		</label>
+		<div class="field-hint" id="hint-startdate">starts at 0:00 Eastern time</div>
+		<input id="startdate" name="startdate" type="date" required="required" size="10" class="w8em format-y-m-d divider-dash highlight-days-67  no-transparency input-width-10" value="2014-11-21">
+	 </div>
+  </div>
+	 
+  <div class="component--fifty-fifty__text">
+    <div class="field">
+		<label for="closedate">
+			<span class="field-label">Questionnaire's closing date <span class="required"></span></span>
+		</label>
+		<div class="field-hint" id="hint-closedate">ends at midnight Eastern time</div>
+                <input required="required" name="closedate" type="date" size="10" id="closedate" class="w8em format-y-m-d divider-dash highlight-days-67  no-transparency input-width-10" value="2016-12-31" />
+    </div>
+  </div>
+  </div>
+ </fieldset>
 
-                                
+ <!-- 
+ <fieldset>
+   <div class="field">
+		<label for="startdate">
+			<span class="field-label">Questionnaire’s starting date<span class="required"></span></span>
+		</label>
+		<div class="field-hint" id="hint-startdate">starts at 0:00 Eastern time</div>
+		<input id="startdate" name="startdate" type="date" required="required" size="10" class="w8em format-y-m-d divider-dash highlight-days-67  no-transparency" value="2014-11-21">
+   </div>		
+ </fieldset>
+    
+ <fieldset>
+   <div class="field">
+		<label for="closedate">
+			<span class="field-label">Questionnaire's closing date <span class="required"></span></span>
+		</label>
+		<div class="field-hint" id="hint-closedate">ends at midnight Eastern time</div>
+                <input required="required" name="closedate" type="date" size="10" id="closedate" class="w8em format-y-m-d divider-dash highlight-days-67  no-transparency" value="2016-12-31" />
+   </div>		
+ </fieldset>
+ -->
+   
+ <fieldset>
+   <div class="field">
+		<label for="shortdesc">
+			<span class="field-label">Title of the questionnaire<span class="required"></span></span>
+		</label>
+		<input id="shortdesc" name="shortdesc" type="text" required="required"value="WBS question types - new design">
+   </div>		
+ </fieldset>
 
-                                
+ <fieldset>
+   <div class="field">
+		<label for="resultsACL">
+			<span class="field-label">Who is allowed to see the results?<span class="required"></span></span>
+                </label>
+                <select name="resultsACL" id="resultsACL">
+                 <option value="group" selected='selected'>only the participants of the Test Group</option>
+                 <option value="team">only the Team</option>
+                 <option value="memberOrTeam">The Team, but responders can choose to make their responses Member-visible</option>
+                 <option value="member">anybody with Member access</option>
+                 <option value="public">anybody</option>
+                </select>
+                <p class='message'>Before changing this, ensure that changing the visibility of currently <a href='results'>received answers</a> is acceptable to the responders.</p>
+   </div>		
 
-                            <div class="content">
-        <article>
-            <h1>Title</h1>
+</fieldset>
+</div>
 
-                                                                        <div class="component component--text">
+     
+<div>
+  <h2 class="txt-mars field-group">Options</h2>
+</div>
+
+<div class='l-box' id='options'>
+<fieldset>
+
+<label>
+<input id="reminderoption" name="reminderoption" title="reminder date option"
+type="checkbox"  checked='checked' /> Enable reminder:</label>
+<span class="elem_hide" id="reminderalert"> <em>This option is not
+available for questionnaires open for less than 7 days</em></span>
+<div class="elem_inline" id="remindervalue">
+<ul>
+<li class='optional'><label>Reminder date:
+<input id="reminderdate" name="reminderdate" type="date" size="10" class="w8em format-y-m-d divider-dash
+highlight-days-67 no-transparency" value="2014-12-10" />
+</label></li>
+<li class='optional'><label>Reminder mailing list:
+<input id="remindelist" name="reminderlist" type="email" maxlength="255" value="laurent@w3.org" />
+</label><span> (enter one email address, if empty an email will be sent to each non-responder participant of the Test Group)</span></li>
+</ul>
+</div>
+
+<label><input type="checkbox" name="allowNonW3CUsers"  checked='checked' /> Allow to answer the questionnaire without a W3C account</label>
+<label>Send all the responses to the following email address(es): <input type="email" multiple="multiple" name="emailNotif" maxlength="255" value=""/></label> (optional, comma-separated list for several addresses)
+<label>E-mail address(es) to which the responders can choose to copy his/her responses (e.g. w3c-archive@w3.org): <input multiple="multiple" type="email" name="params[emailCC]" maxlength="255" value=""/></label>  (optional, comma-separated list for several addresses)
+
+</fieldset>
+</div>
+
+<div>
+<h2 class="txt-mars">Order of the existing questions. Use input area to change order</h2>
+<div class='l-box' id='order'>
+
+  <fieldset>
+  <ol>
+    <li>
+<div class="component--fifty-fifty">
+  <div class="component--fifty-fifty__text">
+	<p><label for="seqno:q1">Simple text question</label></p>
+  </div>
+  <div class="component--fifty-fifty__text">
+    <input type="text" class="input-width-3" id="seqno:q1" name="seqno:q1" value="10">
+  </div>
+  </li>
+      <li>
+<div class="component--fifty-fifty">
+  <div class="component--fifty-fifty__text">
+	<p><label for="seqno:q1">Single selection required Yes/No</label></p>
+  </div>
+  <div class="component--fifty-fifty__text">
+    <input type="text" class="input-width-3" id="seqno:q1" name="seqno:q2" value="20">
+  </div>
+  </li>
+      <li>
+<div class="component--fifty-fifty">
+  <div class="component--fifty-fifty__text">
+	<p><label for="seqno:q3">Single selection required Yes/No/Concur/Abstain</label></p>
+  </div>
+  <div class="component--fifty-fifty__text">
+    <input type="text" class="input-width-3" id="seqno:q3" name="seqno:q3" value="30">
+  </div>
+  </li>
+      <li>
+<div class="component--fifty-fifty">
+  <div class="component--fifty-fifty__text">
+	<p><label for="seqno:q4">Select one among many (drop-down list)</label></p>
+  </div>
+  <div class="component--fifty-fifty__text">
+    <input type="text" class="input-width-3" id="seqno:q4" name="seqno:q4" value="40">
+  </div>
+  </li>
+      <li>
+<div class="component--fifty-fifty">
+  <div class="component--fifty-fifty__text">
+	<p><label for="seqno:q5">Select one among many (radio buttons)</label></p>
+  </div>
+  <div class="component--fifty-fifty__text">
+    <input type="text" class="input-width-3" id="seqno:q5" name="seqno:q5" value="50">
+  </div>
+  </li>
+      <li>
+<div class="component--fifty-fifty">
+  <div class="component--fifty-fifty__text">
+	<p><label for="seqno:q6">Open comments</label></p>
+  </div>
+  <div class="component--fifty-fifty__text">
+    <input type="text" class="input-width-3" id="seqno:q6" name="seqno:q6" value="60">
+  </div>
+  </li>
+      <li>
+<div class="component--fifty-fifty">
+  <div class="component--fifty-fifty__text">
+	<p><label for="seqno:q7">Text entries</label></p>
+  </div>
+  <div class="component--fifty-fifty__text">
+    <input type="text" class="input-width-3" id="seqno:q7" name="seqno:q7" value="70">
+  </div>
+  </li>
+      <li>
+<div class="component--fifty-fifty">
+  <div class="component--fifty-fifty__text">
+	<p><label for="seqno:q8">Select multiple items (checkboxes)</label></p>
+  </div>
+  <div class="component--fifty-fifty__text">
+    <input type="text" class="input-width-3" id="seqno:q8" name="seqno:q8" value="80">
+  </div>
+  </li>
+      <li>
+<div class="component--fifty-fifty">
+  <div class="component--fifty-fifty__text">
+	<p><label for="seqno:q9">Survey type</label></p>
+  </div>
+  <div class="component--fifty-fifty__text">
+    <input type="text" class="input-width-3" id="seqno:q9" name="seqno:q9" value="90">
+  </div>
+  </li>
+      <li>
+<div class="component--fifty-fifty">
+  <div class="component--fifty-fifty__text">
+	<p><label for="seqno:q10">Straw-poll</label></p>
+  </div>
+  <div class="component--fifty-fifty__text">
+    <input type="text" class="input-width-3" id="seqno:q10" name="seqno:q10" value="100">
+  </div>
+  </li>
+      <li>
+<div class="component--fifty-fifty">
+  <div class="component--fifty-fifty__text">
+	<p><label for="seqno:q11">Rank-ordering</label></p>
+  </div>
+  <div class="component--fifty-fifty__text">
+    <input type="text" class="input-width-3" id="seqno:q11" name="seqno:q11" value="110">
+  </div>
+  </li>
+        <li>
+<div class="component--fifty-fifty">
+  <div class="component--fifty-fifty__text">
+	<p><label for="seqno:q12">Pick a time for a teleconf</label></p>
+  </div>
+  <div class="component--fifty-fifty__text">
+    <input type="text" class="input-width-3" id="seqno:q12" name="seqno:q12" value="120">
+  </div>
+  </li>
+        <li>
+<div class="component--fifty-fifty">
+  <div class="component--fifty-fifty__text">
+	<p><label for="seqno:q13">Cumulative vote</label></p>
+  </div>
+  <div class="component--fifty-fifty__text">
+    <input type="text" class="input-width-3" id="seqno:q13" name="seqno:q13" value="130">
+  </div>
+  </li>
+        <li>
+<div class="component--fifty-fifty">
+  <div class="component--fifty-fifty__text">
+	<p><label for="seqno:q14">Importance survey</label></p>
+  </div>
+  <div class="component--fifty-fifty__text">
+    <input type="text" class="input-width-3" id="seqno:q14" name="seqno:q14" value="140">
+  </div>
+  </li>
+          <li>
+<div class="component--fifty-fifty">
+  <div class="component--fifty-fifty__text">
+	<p><label for="seqno:q15">Importance and Satisfaction survey</label></p>
+  </div>
+  <div class="component--fifty-fifty__text">
+    <input type="text" class="input-width-3" id="seqno:q15" name="seqno:q15" value="150">
+  </div>
+  </li>
+        <li>
+<div class="component--fifty-fifty">
+  <div class="component--fifty-fifty__text">
+	<p><label for="seqno:q16">Monday, 27 October All Group Meetings Attendance</label></p>
+  </div>
+  <div class="component--fifty-fifty__text">
+    <input type="text" class="input-width-3" id="seqno:q16" name="seqno:q16" value="160">
+  </div>
+  </li>
+</ol>
+  </fieldset>
+
+</div>
+</div>
+
+<p><button class="button" type="submit" name="action" value="Update questionnaire data">Update questionnaire data</button></p>
+
+</form>
+
+<div>
+<h2 class="txt-mars">Add/Edit questions</h2>
+<div class='l-box' id='questions'>
+<ul class=".clean-list">
+<li><a href="q/">Add a question to this questionnaire</a></li>
+<li><a href='q/q1/'>Edit question "Simple text question"</a></li><li><a href='q/q2/'>Edit question "Single selection required Yes/No"</a></li><li><a href='q/q3/'>Edit question "Single selection required Yes/No/Concur/Abstain"</a></li><li><a href='q/q4/'>Edit question "Select one among many (drop-down list)"</a></li><li><a href='q/q5/'>Edit question "Select one among many (radio buttons)"</a></li><li><a href='q/q6/'>Edit question "Open comments"</a></li><li><a href='q/q7/'>Edit question "Text entries"</a></li><li><a href='q/q8/'>Edit question "Select multiple items (checkboxes)"</a></li><li><a href='q/q9/'>Edit question "Survey type"</a></li><li><a href='q/q10/'>Edit question "Straw-poll"</a></li><li><a href='q/q11/'>Edit question "Rank-ordering"</a></li><li><a href='q/q12/'>Edit question " Pick a time for a teleconf"</a></li><li><a href='q/q13/'>Edit question "Cumulative vote"</a></li><li><a href='q/q14/'>Edit question " Importance survey"</a></li><li><a href='q/q15/'>Edit question " Importance and Satisfaction survey"</a></li><li><a href='q/tpac/'>Edit question "Monday, 27 October All Group Meetings Attendance "</a></li></ul>
+</div>
+</div>
+
+<p>
+<a href="/2002/09/wbs/showwb">WBS home</a> /
+<a href="/2002/09/wbs/showq">Questionnaires</a>
+/ <a href='../'>WG questionnaires</a>
+/ <a href='./'>Answer this questionnaire</a>
+/ <a href='results'>Show results</a>
+</p>
+
+<script type='text/javascript' src='/2002/09/wbs/reminderEvents.js'></script>
+
+	  
+	  
+			      
         </div>
 
             
-        </article>
-                                    <section class="related">
+	</article>
+      
+    <section class="related">
     <div class="related__inner">
-        <h2 class="txt-jupiter">In this section</h2>
+        <h2 class="txt-jupiter">This Questionnaire</h2><p>
         <ul class="clean-list" role="list">
-                                                            <li><a href="">Item1</a></li>
-                                                            <li><a href="">Item1</a></li>
+          <li><a href="/2002/09/wbs/99999/wbs-types-test/">Answer</a></li>
+          <li><a href="/2002/09/wbs/99999/wbs-types-test/results">Results</a></li>
+          <li><a href="/2002/09/wbs/99999/wbs-types-test/handler" title='Edit this questionnaire'>Edit</a></li>
+          <li><a href="/2002/09/wbs/99999/wbs-types-test/q/" title='Add a question to this questionnaire'>Add a question</a></li>
+          <li><a href="/2002/09/wbs/99999/wbs-types-test/handler#questions" title='Edit an existing question of this questionnaire'>Edit a
+  question</a></li>
+          <li><a href="/2002/09/wbs/99999/wbs-types-test/impersonate" title='Impersonate a user for this questionnaire'>Impersonate</a></li>
+         </ul></p>
+	
+	<h2 class="txt-jupiter">This Group</h2><p>
+        <ul class="clean-list" role="list">
+          <li><a href="/2002/09/wbs/99999/" title="Current questionnaires for this group">Current questionnaires</a></li>
+          <li><a href="/2002/09/wbs/99999/factory" title="Create a questionnaire for this group">Create a new questionnaire</a></li>
+	</ul></p>
 
-                                    </ul>
+	
+	<h2 class="txt-jupiter">Nearby</h2><p>
+        <ul class="clean-list" role="list">
+          <li><a href="/2002/09/wbs/" title='WBS Home'>WBS Home</a></li>
+          <li><a href="/2002/09/wbs/showq" title='Current questionnaires for all the groups'>Current questionnaires</a></li>
+          <li><a href="/2002/09/wbs/myQuestionnaires" title='List of questionnaires
+  you are supposed to answer'><em>My</em> questionnaires</a></li>
+          <li><a href="/2004/01/pp-impl/" title='Working Group management
+     system and Call for Participation'><abbr title='Working Group'>WG</abbr> Management
+  (<abbr title='Implementation of the Patent Policy'>IPP</abbr>) </a></li>
+          <li><a href="/2000/09/dbwg/details?group=99999" title='Group details'>Group details </a></li>
+	</ul></p>
     </div>
-</section>
+    </section>
 
                         </div>
                     </main>
