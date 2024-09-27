@@ -640,10 +640,9 @@
       <div class="content">
         <article>    
         <h1 class="title">WBS question types</h1>
-
         <div>
 
-   <div id="w3c_content_body">
+   <div>
 
 <p> Only people identified as participants of the Test Group can answer this form.</p>
 <p>This questionnaire is open for answers until <a href='http://www.timeanddate.com/worldclock/fixedtime.html?day=31&amp;month=12&amp;year=2015&amp;hour=23&amp;min=59&amp;sec=0&amp;p1=43'>23:59, Boston time on
@@ -723,12 +722,12 @@ Answers received after that time may not be counted.
 </fieldset>
 
 <fieldset>
-<p class="rationaleblock"><label for='xq2:rationale'>Rationale</label>
+<p><label for='xq2:rationale'>Rationale</label>
 <textarea id ='xq2:rationale' name='q2:rationale' class='rationale' rows='6'></textarea></p>
 </fieldset>
 
 <fieldset>
-<p class="commentblock"><label for='xq2:comment'>Comments</label>
+<p><label for='xq2:comment'>Comments</label>
 <textarea id='xq2:comment' name='q2:comment' class='comment' rows='3'></textarea></p>
 </fieldset>
 </div>
@@ -739,7 +738,9 @@ Answers received after that time may not be counted.
 
 <div class='description'>
 <p>Single selection required Yes/No/Concur/Abstain.</p>
-</div><div class='widget ync'>
+</div>
+
+<div class='widget ync'>
 <!--<p>Please indicate which option matches your choice:</p>-->
 <input type='hidden' name='q3:format' value='0' /><input type='hidden' name='q3:dim' value='1' />
 
@@ -863,20 +864,20 @@ Answers received after that time may not be counted.
 <label for="xnominee:1">
 <span class="field-label">Name</span>
 </label>
-<input type="text" id="xnominee:1" name="xnominee:1" value="">
+<input type="text" class="input-width-30" id="xnominee:1" name="xnominee:1" value="">
 </div>
 <div class="field">
 <label for="xnominee:2">
 <span class="field-label">Affiliation</span>
 </label>
-<input type="text" id="xnominee:2" name="xnominee:2" value="">
+<input type="text" class="input-width-30" id="xnominee:2" name="xnominee:2" value="">
 </div>
 
 <div class="field">
 <label for="xnominee:3">
 <span class="field-label">Email</span>
 </label>
-<input type="text" id="xnominee:3" name="xnominee:3" value="">
+<input type="text" class="input-width-30" id="xnominee:3" name="xnominee:3" value="">
 </div>
 
 </div>
@@ -1554,12 +1555,14 @@ observer only (check at least one of the appropriate requests below  in the 'Obs
 <p><textarea id='xq16:comment' name='q16:comment' class='comment' rows='3'></textarea></p>
 </fieldset>
 </div>
-<hr/>
+
+<div>
 <p>This questionnaire is open for answers until <a href='http://www.timeanddate.com/worldclock/fixedtime.html?day=31&amp;month=12&amp;year=2015&amp;hour=23&amp;min=59&amp;sec=0&amp;p1=43'>23:59, Boston time on
 2015-12-31.</a>
 Answers received after that time may not be counted.
 </p>
 <p>The <a href='results'>results of this questionnaire</a> are available only to the participants of the group (and the W3C Team)</p>
+</div>
 
  <div class='l-box l-box--no-padding l-box--no-border'>
  <div class="checkbox-item">
@@ -1572,29 +1575,37 @@ Answers received after that time may not be counted.
  </div>
 </form>
 
-<p>&nbsp;</p> 
 <form novalidate method="post" action="./?">
- <div class="l-box">
- <p>You may <strong id="delete">completely remove</strong> your
+ <div class="l-box note--error family-grouping">
+ You may <strong id="delete">completely remove</strong> your
 response from our records. As this operation is <strong>not reversible</strong>, please confirm your desire to delete
-  your answers by first checking the box below:</p>
+  your answers by first checking the box below:
  <div class="l-cluster l-cluster--vertical-align">
  <div>
-    <div class="checkbox-item">
+ <div class="checkbox-item">
 	<input type="checkbox" name="wbs:ccme" id="ccme" appearance="base">
 	<label for="ccme">
 		<span class="faux-label">I confirm</span>
 	</label>
     </div>
-    <button class="button button--alt" type="submit" name="action">Delete my answer entirely</button> </p>
-	</div>
-</div>
+    <button class="button button--alt u-bg-error" type="submit" name="action">Delete my answer entirely</button>
+ </div>
 
 </div>
-
 </form>
-		      
 </div>
+
+</div>
+<!--
+ <div class="l-cluster component--members__cta family-grouping">
+	<div>
+	  <a class="button button--alt" href="/2002/09/wbs/showq">Open questionnaires</a>
+	  <a class="button button--alt" href="../">Group questionnaires</a>
+	  <a class="button button--alt" href="../">Edit</a>
+	  <a class="button button--alt" href="results">Show results</a>
+	</div>
+ </div>
+-->
 </article>
 
 <section class="related">
