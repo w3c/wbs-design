@@ -675,7 +675,7 @@
     </div>
   </div>
   </div>
- </fieldset>
+</fieldset>
 
  <!-- 
  <fieldset>
@@ -684,7 +684,7 @@
 			<span class="field-label">Questionnaire’s starting date<span class="required"></span></span>
 		</label>
 		<div class="field-hint" id="hint-startdate">starts at 0:00 Eastern time</div>
-		<input id="startdate" name="startdate" type="date" required="required" size="10" class="w8em format-y-m-d divider-dash highlight-days-67  no-transparency" value="2014-11-21">
+		<input id="startdate" name="startdate" type="date" required="required" class="w8em format-y-m-d divider-dash highlight-days-67  no-transparency" value="2014-11-21">
    </div>		
  </fieldset>
     
@@ -694,17 +694,17 @@
 			<span class="field-label">Questionnaire's closing date <span class="required"></span></span>
 		</label>
 		<div class="field-hint" id="hint-closedate">ends at midnight Eastern time</div>
-                <input required="required" name="closedate" type="date" size="10" id="closedate" class="w8em format-y-m-d divider-dash highlight-days-67  no-transparency" value="2016-12-31" />
+                <input required="required" name="closedate" type="date" id="closedate" class="w8em format-y-m-d divider-dash highlight-days-67  no-transparency" value="2016-12-31" />
    </div>		
  </fieldset>
  -->
    
  <fieldset>
    <div class="field">
-		<label for="shortdesc">
-			<span class="field-label">Title of the questionnaire<span class="required"></span></span>
-		</label>
-		<input id="shortdesc" name="shortdesc" type="text" required="required"value="WBS question types - new design">
+	<label for="shortdesc">
+	  <span class="field-label">Title of the questionnaire</span>
+	</label>
+	<input id="shortdesc" name="shortdesc" type="text" required="required" value="WBS question types">
    </div>		
  </fieldset>
 
@@ -713,6 +713,7 @@
 		<label for="resultsACL">
 			<span class="field-label">Who is allowed to see the results?<span class="required"></span></span>
                 </label>
+   	        <div class="field-hint" id="hint-resultsACL">Before changing this, ensure that changing the visibility of currently <a href='results'>received answers</a> is acceptable to the responders.</div>
                 <select name="resultsACL" id="resultsACL">
                  <option value="group" selected='selected'>only the participants of the Test Group</option>
                  <option value="team">only the Team</option>
@@ -720,50 +721,81 @@
                  <option value="member">anybody with Member access</option>
                  <option value="public">anybody</option>
                 </select>
-                <p class='message'>Before changing this, ensure that changing the visibility of currently <a href='results'>received answers</a> is acceptable to the responders.</p>
    </div>		
+</fieldset>
+</div>
+     
+<div>
+  <h2 class="txt-mars">Options</h2>
+</div>
 
+<div class='l-box field-group' id='options'>
+<fieldset>
+<div class="checkbox-item">
+  <input type="checkbox" name="reminderoption" id="reminderoption" appearance="base  title="reminder option">
+  <label for="reminderoption">
+    <span class="faux-label">Enable reminder</span> <span class="elem_hide" id="reminderalert"> <em>This option is not available for questionnaires open for less than 7 days</em></span>
+  </label>
+</div>
+</fieldset>
+
+<div class='l-box l-box--no-border l-box--no-padding'>
+<fieldset>
+    <div class="field">
+	<label for="reminderdate">
+	  <span class="field-label">Reminder date<span class="required"></span></span>
+	</label>
+        <input id="reminderdate" name="reminderdate" type="date" required="required" class="w8em format-y-m-d divider-dash highlight-days-67  no-transparency input-width-10" value="">
+    </div>
+</fieldset>
+    
+<fieldset>
+    <div class="field family-grouping">
+	<label for="reminderlist">
+ 	  <span class="field-label">Reminder mailing list<span class="required"></span></span>
+	</label>
+	<div class="field-hint" id="hint-reminderlist">enter one email address, if empty an email will be sent to each non-responder participant of the Test Group</div>
+        <input required="required" type="text" id="reminderlist" name="reminderlist" value="" />
+    </div>
 </fieldset>
 </div>
 
-     
-<div>
-  <h2 class="txt-mars field-group">Options</h2>
-</div>
-
-<div class='l-box' id='options'>
 <fieldset>
-
-<label>
-<input id="reminderoption" name="reminderoption" title="reminder date option"
-type="checkbox"  checked='checked' /> Enable reminder:</label>
-<span class="elem_hide" id="reminderalert"> <em>This option is not
-available for questionnaires open for less than 7 days</em></span>
-<div class="elem_inline" id="remindervalue">
-<ul>
-<li class='optional'><label>Reminder date:
-<input id="reminderdate" name="reminderdate" type="date" size="10" class="w8em format-y-m-d divider-dash
-highlight-days-67 no-transparency" value="2014-12-10" />
-</label></li>
-<li class='optional'><label>Reminder mailing list:
-<input id="remindelist" name="reminderlist" type="email" maxlength="255" value="laurent@w3.org" />
-</label><span> (enter one email address, if empty an email will be sent to each non-responder participant of the Test Group)</span></li>
-</ul>
+<div class="checkbox-item">
+<input type="checkbox" name="allowNonW3CUsers" id="allowNonW3CUsers" appearance="base title="allowNonW3CUsers">
+<label for="allowNonW3CUsers">
+<span class="faux-label">Allow to answer the questionnaire without a W3C account</span>
+</label>
 </div>
-
-<label><input type="checkbox" name="allowNonW3CUsers"  checked='checked' /> Allow to answer the questionnaire without a W3C account</label>
-<label>Send all the responses to the following email address(es): <input type="email" multiple="multiple" name="emailNotif" maxlength="255" value=""/></label> (optional, comma-separated list for several addresses)
-<label>E-mail address(es) to which the responders can choose to copy his/her responses (e.g. w3c-archive@w3.org): <input multiple="multiple" type="email" name="params[emailCC]" maxlength="255" value=""/></label>  (optional, comma-separated list for several addresses)
-
+</fieldset>
+   
+<fieldset>
+   <div class="field">
+	<label for="emailNotif">
+	  <span class="field-label">Send all the responses to the following email address(es)<span class="required"></span></span>
+	</label>
+	<div class="field-hint" id="hint-emailNotif">optional, comma-separated list for several addresses</div>
+	<input id="emailNotif" name="emailNotif" type="email" multiple="multiple" maxlength="255" value="">
+   </div>		
+</fieldset>
+   
+<fieldset>
+   <div class="field">
+	<label for="emailCC">
+	  <span class="field-label">E-mail address(es) to which the responders can choose to copy his/her responses (e.g. w3c-archive@w3.org)<span class="required"></span></span>
+	</label>
+	<div class="field-hint" id="hint-emailCC">optional, comma-separated list for several addresses</div>
+	<input id="emailCC" name="params[emailCC]" type="email" multiple="multiple" maxlength="255" value="">
+   </div>		
 </fieldset>
 </div>
 
 <div>
 <h2 class="txt-mars">Order of the existing questions. Use input area to change order</h2>
-<div class='l-box' id='order'>
+<div class='l-box l-box--no-padding' id='order'>
 
   <fieldset>
-  <ol>
+  <ol clean-list>
     <li>
 <div class="component--fifty-fifty">
   <div class="component--fifty-fifty__text">
@@ -921,27 +953,26 @@ highlight-days-67 no-transparency" value="2014-12-10" />
 <div>
 <h2 class="txt-mars">Add/Edit questions</h2>
 <div class='l-box' id='questions'>
-<ul class=".clean-list">
+<ul class="clean-list">
 <li><a href="q/">Add a question to this questionnaire</a></li>
 <li><a href='q/q1/'>Edit question "Simple text question"</a></li><li><a href='q/q2/'>Edit question "Single selection required Yes/No"</a></li><li><a href='q/q3/'>Edit question "Single selection required Yes/No/Concur/Abstain"</a></li><li><a href='q/q4/'>Edit question "Select one among many (drop-down list)"</a></li><li><a href='q/q5/'>Edit question "Select one among many (radio buttons)"</a></li><li><a href='q/q6/'>Edit question "Open comments"</a></li><li><a href='q/q7/'>Edit question "Text entries"</a></li><li><a href='q/q8/'>Edit question "Select multiple items (checkboxes)"</a></li><li><a href='q/q9/'>Edit question "Survey type"</a></li><li><a href='q/q10/'>Edit question "Straw-poll"</a></li><li><a href='q/q11/'>Edit question "Rank-ordering"</a></li><li><a href='q/q12/'>Edit question " Pick a time for a teleconf"</a></li><li><a href='q/q13/'>Edit question "Cumulative vote"</a></li><li><a href='q/q14/'>Edit question " Importance survey"</a></li><li><a href='q/q15/'>Edit question " Importance and Satisfaction survey"</a></li><li><a href='q/tpac/'>Edit question "Monday, 27 October All Group Meetings Attendance "</a></li></ul>
 </div>
 </div>
 
-<p>
-<a href="/2002/09/wbs/showwb">WBS home</a> /
-<a href="/2002/09/wbs/showq">Questionnaires</a>
-/ <a href='../'>WG questionnaires</a>
-/ <a href='./'>Answer this questionnaire</a>
-/ <a href='results'>Show results</a>
-</p>
+<div class="l-box l-box--no-border l-box--no-padding">
+     <div class="l-cluster component--members__cta">
+	<div>
+	  <a class="button button--alt" href="/2002/09/wbs/showq">Questionnaires</a>
+	  <a class="button button--alt" href="../">Group questionnaires</a>
+	  <a class="button button--alt" href="../">Answer</a>
+	  <a class="button button--alt" href="results">Show results</a>
+	</div>
+     </div>
+ </div>
 
 <script type='text/javascript' src='/2002/09/wbs/reminderEvents.js'></script>
-
-	  
-	  
 			      
         </div>
-
             
 	</article>
       
