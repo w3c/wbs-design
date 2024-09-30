@@ -62,10 +62,40 @@
             })();
         </script>
 
-<!-- custom css for wbs -->
+<!-- custom css for wbs
   <link rel="stylesheet" type="text/css" href="../css/site-wbs-style.css" title="default" />
-<!--  -->  
-    
+ -->  
+    <style>
+.lol > * {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.lol > * {
+  border-bottom: solid 1px #bdbdbd;
+}
+#lists {
+  clear: both;
+}
+h2 {
+  margin-top: 2em;
+}
+.related__inner h2 {
+  margin-top: 0;
+}
+.sub-unsub-links {
+  margin-bottom: 1em;
+}
+@media screen and (min-width: 600px) {
+  .sub-unsub-links {
+    float: right;
+    margin-left: 1em;
+  }
+  .lol li {
+    clear: both;
+  }
+}
+</style>
+
     </head>
 
 <body class="default">
@@ -633,68 +663,108 @@
         </div>
     </div>
 </nav>
-                <main id="main">
-                                            
+<main id="main">
+ <div class="content">
+   <article>
+   <h2>Open questionnaires for the Sysadmin Access</h2>
+     <p>This page shows open questionnaires for the Sysadmin Access. See who can do what for this group.</p>
 
-                                
+<ul class="clean-list lol">
 
-                                
-
-                                
-
-                            <div class="content">
-        <article>
-            <h2>Open questionnaires for the Group ...</h2>
-
-			    <div class="component component--text">
-
-
-<p>
-This page shows open questionnaires for ... .</p>
-
-<h3 id='x99999' class='questionnaireList'>Group Name</h3>
-<ul class='questionnaireList'>
-<li><span class='qaire votable'></span><span class='qaireTools'>&nbsp;
-  Edit &nbsp;Results </span><br /></li>
-<li><span class='qaire votable'><a href='test-call/'>Call for Review:
-  HTML tidy service is W3C Proposed Recommendation</a>: open until 29
-  July 2016</span><span class='qaireTools'>&nbsp; <a class='icon'
-  href='test-call/handler' title='Edit &quot;Call for Review: HTML
-  tidy service is W3C Proposed Recommendation&quot;'><img
-  src='../icons/stock_edit.png' alt='Edit' /></a> &nbsp; <a
-  class='icon' href='test-call/results' title='Results of &quot;Call for Review: HTML tidy service is W3C Proposed Recommendation&quot;'>&nbsp;<img src='../icons/list.png' alt='List' /></a> </span><br /></li>
-<li><span class='qaire votable'><a href='test-reminder/'>Test RFE for WBS</a>: open until 31 December 2016</span><span class='qaireTools'>&nbsp; <a class='icon' href='test-reminder/handler' title='Edit &quot;Test RFE for WBS&quot;'><img src='../icons/stock_edit.png' alt='Edit' /></a> &nbsp; <a class='icon' href='test-reminder/results' title='Results of &quot;Test RFE for WBS&quot;'>&nbsp;<img src='../icons/list.png' alt='List' /></a> </span><br /></li>
-
-<li><span class='qaire votable'><a href='wbs-types-orig/'>WBS question types</a>: open until 31 December 2016</span><span class='qaireTools'>&nbsp; <a class='icon' href='wbs-types-orig/handler' title='Edit &quot;WBS question types&quot;'><img src='../icons/stock_edit.png' alt='Edit' /></a> &nbsp; <a class='icon' href='wbs-types-orig/results' title='Results of &quot;WBS question types&quot;'>&nbsp;<img src='../icons/list.png' alt='List' /></a> </span><br /></li>
-<li><span class='qaire votable'><a href='wbs-types-test/'>WBS question types - new design</a>: open until 31 December 2016</span><span class='qaireTools'>&nbsp; <a class='icon' href='wbs-types-test/handler' title='Edit &quot;WBS question types - new design&quot;'><img src='../icons/stock_edit.png' alt='Edit' /></a> &nbsp; <a class='icon' href='wbs-types-test/results' title='Results of &quot;WBS question types - new design&quot;'>&nbsp;<img src='../icons/list.png' alt='List' /></a> </span><br /></li>
+<li id="test-call">
+<h3 class="txt-saturn"><a href="test-call">Call for Review: HTML tidy service is W3C Proposed Recommendation</a></h3>
+<div class="sub-unsub-links l-cluster">
+<ul class="clean-list">
+<li><a class="button" href="test-call/handler" title='Edit &quot;Call for Review: HTML
+  tidy service is W3C Proposed Recommendation&quot;'>Edit</a></li>
+<li><a class="button button--alt" href="test-call/results" title="Results of &quot;Call for Review: HTML tidy service is W3C Proposed Recommendation">Results</a></li>
 </ul>
-<p class='questionnaireList'>Add <a href='factory'>a new
-questionnaire</a> for this group  &nbsp; <a class='icon'
-href='factory' title='Add a new questionnaire for this group'><img src='../icons/new.png' alt='new'
-/></a></p>
-<p>List <a href='all'>all</a> / <a href='closed'>closed</a>
-questionnaires for this group</p>
+</div>
+<div id="qaireno test-call-desc" class="description"><p>open until 29 July 2016.</p></div>
 
-			      
-        </div>
+<li id="test-reminder">
+<h3 class="txt-saturn"><a href="test-reminder">Test RFE for WBS</a></h3>
+<div class="sub-unsub-links l-cluster">
+<ul class="clean-list">
+<li><a class="button" href="test-reminder/handler" title="Edit &quot;Test RFE for WBS&quot;">Edit</a></li>
+<li><a class="button button--alt" href="test-reminder/results" title="Results of &quot; Test RFE for WBS&quot;">Results</a></li>
+</ul>
+</div>
+<div id="test-reminder-desc" class="description"><p>open until 31 December 2016.</p></div>
+  
+<li id="wbs-types-orig">
+<h3 class="txt-saturn"><a href="wbs-types-orig">WBS question types</a></h3>
+<div class="sub-unsub-links l-cluster">
+<ul class="clean-list">
+<li><a class="button" href="wbs-types-orig/handler" title="Edit &quot;WBS question types&quot;">Edit</a></li>
+<li><a class="button button--alt" href="wbs-types-orig/results" title="Results of &quot;WBS question types&quot;">Results</a></li>
+</ul>
+</div>
+<div id="wbs-types-orig-desc" class="description"><p>31 December 2016.</p></div>
 
-            
-        </article>
-                                    <section class="related">
+<li id="wbs-types-test">
+<h3 class="txt-saturn"><a href="wbs-types-test">WBS question types - new design</a></h3>
+<div class="sub-unsub-links l-cluster">
+<ul class="clean-list">
+<li><a class="button" href="wbs-types-test/handler" title="Edit &quot;WBS question types - new design&quot;">Edit</a></li>
+<li><a class="button button--alt" href="wbs-types-test/results" title="Results of &quot;WBS question types - new design&quot;">Results</a></li>
+</ul>
+</div>
+<div id="wbs-types-test-desc" class="description"><p>open until 31 December 2016.</p></div>
+</ul>
+
+<div class="family-grouping">
+<ul class="clean-list lol">
+<li id="new-questionnaire">
+<div class="sub-unsub-links l-cluster">
+<ul class="clean-list">
+  <a class="button button--alt" href="factory" title="Add a new questionnaire for this group">Add</a>
+</ul>
+</div>
+<div id="new-questionnaire-desc" class="description"><p class="txt-saturn">Add a new questionnaire for this group</p></div>
+
+<li id="list-questionnaires">
+<div class="sub-unsub-links l-cluster">
+<ul class="clean-list">
+  <a class="button button--alt" href="all" title="List all questionnaires for this group">All</a>
+  <a class="button button--alt" href="closed" title="List closed questionnaires for this group">Closed</a>
+</ul>
+</div>
+<div id="list-questionnaires-desc" class="description"><p class="txt-saturn">List all / closed questionnaires for this group</p></div>
+
+</ul>
+</div>
+</article>
+
+      
+ <section class="related">
     <div class="related__inner">
-        <h2 class="txt-jupiter">In this section</h2>
+
+      <h2 class="txt-jupiter">This Group</h2>
+        <p>
         <ul class="clean-list" role="list">
-                                                            <li><a href="">Item1</a></li>
-                                                            <li><a href="">Item1</a></li>
+          <li><a href="/2002/09/wbs/99999/" title="Current questionnaires for this group">Current questionnaires</a></li>
+          <li><a href="/2002/09/wbs/99999/factory" title="Create a questionnaire for this group">Create a new questionnaire</a></li>
+	</ul></p>
 
-                                    </ul>
+	
+	<h2 class="txt-jupiter">Nearby</h2>
+	<p>
+        <ul class="clean-list" role="list">
+          <li><a href="/2002/09/wbs/" title="WBS Home">WBS Home</a></li>
+          <li><a href="/2002/09/wbs/showq" title="Current questionnaires for all the groups">Current questionnaires</a></li>
+          <li><a href="/2002/09/wbs/myQuestionnaires" title="List of questionnaires you are supposed to answer">My questionnaires</a></li>
+          <li><a href="/groups/" title="W3C Groups">W3C Groups</a></li>
+	</ul></p>
     </div>
-</section>
+ </section>
+    
+  </div>
+  </main>
+  </div>
 
-                        </div>
-                    </main>
-                                </div>
-                <footer class="global-footer">
+  
+   <footer class="global-footer">
     <div class="l-center">
         <div class="global-footer__links">
             <div class="l-cluster">
