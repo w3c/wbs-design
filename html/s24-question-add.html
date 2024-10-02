@@ -1,7 +1,7 @@
 <!doctype html>
 <html dir="ltr" lang="en" class="no-js">
 <head>
-    <title>WBS | xx | xx</title>
+    <title>Edit the questionnaire WBS question types - Web-Based Straw-poll and Balloting System</title>
 
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,15 +31,16 @@
         Edge, Chrome 39+, Opera 26+, Safari 9+, iOS 9+, Android ~5+, Android UCBrowser ~11.8+
         FF 47+
         -->
+
         <link rel="stylesheet" id="advanced-stylesheet"
               href="https://www.w3.org/assets/website-2021/styles/advanced.css?ver=1.4" media="
             only print,
             only all and (pointer: fine), only all and (pointer: coarse), only all and (pointer: none),
-            only all and (min--moz-device-pixel-ratio:0) and (display-mode:browser), (min--moz-device-pixel-ratio:0) and (display-mode:fullscreen)
-        ">
+            only all and (min--moz-device-pixel-ratio:0) and (display-mode:browser), (min--moz-device-pixel-ratio:0) and (display-mode:fullscreen) ">
+
         <link rel="stylesheet" href="https://www.w3.org/assets/website-2021/styles/print.css" media="print"/>
     
-            <script src="https://www.w3.org/assets/website-2021/js/libraries/fontfaceobserver.js"></script>
+        <script src="https://www.w3.org/assets/website-2021/js/libraries/fontfaceobserver.js"></script>
 
         <script>
             var myFont = new FontFaceObserver('Noto Sans');
@@ -62,11 +63,11 @@
             })();
         </script>
     
-<!-- custom css for wbs -->
+<!-- custom css for wbs
   <link rel="stylesheet" type="text/css" href="../css/site-wbs-style.css" title="default" />
-<!--  -->
+ -->  
 
-    </head>
+</head>
 
 <body class="default">
 <a class="skip-link" href="#main">Skip to content</a>
@@ -633,39 +634,165 @@
         </div>
     </div>
 </nav>
-                <main id="main">
-                                            
 
-                                
+<main id="main">
+  <div class="content">
+    <article>
+    <h1>Add a question to 'WBS question types'</h1>
 
-                                
+    <form method="get" action="./">
+    <div><p>This form allows to add questions to the questionnaire <cite>Test for WBS RFE</cite>; as a first step, you need to <strong>choose a type of question</strong> to create in the list below - you'<!-- ' -->ll be prompted for further data once you submit the form.</p></div>
 
-                                
+    <div class='l-box'>
+    <fieldset>
 
-                            <div class="content">
-        <article>
-            <h1>Title</h1>
+    <p class="txt-saturn">Question type:</p>
 
-                                                                        <div class="component component--text">
-        </div>
-
-            
-        </article>
-                                    <section class="related">
-    <div class="related__inner">
-        <h2 class="txt-jupiter">In this section</h2>
-        <ul class="clean-list" role="list">
-                                                            <li><a href="">Item1</a></li>
-                                                            <li><a href="">Item1</a></li>
-
-                                    </ul>
+    <div class="field">
+	<fieldset role="group" aria-describedby="hint-name-change">
+		<legend class="group-legend">No input</legend>
+		<div class="radio-item">
+			<input type="radio" id="type-text" name="type" value="text">
+			<label for="type-text">
+				<span class="faux-label">Simple Text</span>
+		  </label>
+		  <div class="field-hint">This control doesn’t take any input; it is useful if you want to add a text section in the questionnaire (introductory statement, for instance)</div>
+		</div>
+	</fieldset>
     </div>
-</section>
 
-                        </div>
-                    </main>
-                                </div>
-                <footer class="global-footer">
+    <div class="field">
+	<fieldset role="group" aria-describedby="hint-name-change">
+		<legend class="group-legend family-grouping">Single selection required</legend>
+		<div class="radio-item">
+			<input type="radio" id="type-yn" name="type" value="yn">
+			<label for="type-yn">
+				<span class="faux-label">Yes/No</span>
+		        </label>
+			<div class="field-hint">This control propose a simple alternative &quot;yes&quot; or &quot;no&quot;</div>
+		</div>
+		<div class="radio-item">
+			<input type="radio" id="type-ync" name="type" value="ync">
+			<label for="type-ync">
+				<span class="faux-label">Yes/No/Concur/Abstain</span>
+			</label>
+		        <div class="field-hint">This control proposes a 4 item radio buttons list: yes, no, concur or abstain, useful for instance to take formal vote</div>
+		</div>
+		<div class="radio-item">
+			<input type="radio" id="type-select" name="type" value="select">
+			<label for="type-select">
+				<span class="faux-label">Select one among many (drop-down list)</span>
+		        </label>
+			<div class="field-hint">This control allows to ask to select one (and only one) item in a list of choices that you define. This version uses a dropdown list which is usually more adapted for long list of choices (also available as radio buttons)</div>
+		</div>
+		<div class="radio-item">
+			<input type="radio" id="type-radioselect" name="type" value="radioSelect">
+			<label for="type-radioselect">
+				<span class="faux-label">Select one among many (radio buttons)</span>
+			</label>
+		        <div class="field-hint">This control allows to ask to select one (and only one) item in a list of choices that you define. This version uses radio buttons, more adapated for a short list or for items with long labels</div>
+		</div>
+	</fieldset>
+    </div>
+
+    
+      
+<dl>
+
+<dt>Multiple selections permitted</dt>
+   <dd><dl>
+<dt><label><input name='type' type='radio' value='multi' /> Select multiple items (checkboxes)</label></dt>
+<dd>This control proposes a list of checkboxes that allows the responders to choose zero, one or as many items in the list of choices you define. The number of checkable items can be limited (ask Dom for this). </dd>
+<dt><label><input name='type' type='radio' value='evaluation' /> Survey type</label></dt>
+<dd>This control proposes to rate the choices you define on a scale you define</dd>
+<dt><label><input name='type' type='radio' value='choices2' /> Straw-poll</label></dt>
+<dd>This control proposes a straw-poll system, allowing to choose a preferred choice and to mark other choices as acceptable.</dd>
+<dt><label><input name='type' type='radio' value='ranklist' /> Rank-ordering</label></dt>
+<dd>This control allows to order a list of choices in the order of preference for the responder</dd>
+<dt><label><input name='type' type='radio' value='scheduling' /> Pick a time for a teleconf</label></dt>
+<dd>This control proposes a table of possibles days and times for scheduling a regular event (typically a teleconference).</dd>
+<dt><label><input name='type' type='radio' value='cumulative' /> Cumulative vote</label></dt>
+<dd>This control proposes to use cumulative vote on a set of options</dd>
+</dl></dd>
+<dt>Free text input</dt>
+   <dd><dl>
+<dt><label><input name='type' type='radio' value='open' /> Open comments</label></dt>
+<dd>This control proposes a text entry zone, where the responders are invited to give their comments</dd>
+<dt><label><input name='type' type='radio' value='texts' /> Text entries</label></dt>
+<dd>This control proposes as many text entries as you create choices for it, where responders are free to put any text strings (of less than 256 characters)</dd>
+</dl></dd>
+</dl>
+
+<p><button class="button" type="submit" name="action">Submit</button></p>
+</fieldset>
+</div>
+</form>
+
+
+<form action="./" method="post">
+<input name="wgid" type="hidden" value="109" />
+<input name="qaireno" type="hidden" value="Test-wbs-rfe" />
+<div class='l-box'>
+<div><p>You can also <a name='copy' id='copy'>start from an existing question</a> by giving:</p></div>
+<ul>
+<li><label>a new identifier: <input maxlength="8" size="8" name="qno" type="text"
+value=""/></label> (any number and letters OK, up to 8 characters, must be unique among the questionnaire'<!-- ' -->s questions)</li>
+<li><label for='uri_select'>Question to copy</label>: <select name='uri_select' id='uri_select'>
+        <option disabled="disabled">Questions in this questionnaire</option>
+        <option value=''>None of the ones below</option>
+<option value='https://www.w3.org/2002/09/wbs/109/Test-wbs-rfe/q/q1/'>q1</option>
+<option value='https://www.w3.org/2002/09/wbs/109/Test-wbs-rfe/q/q2/'>q2</option>
+<option value='https://www.w3.org/2002/09/wbs/109/Test-wbs-rfe/q/q3/'>q3</option>
+<option value='https://www.w3.org/2002/09/wbs/109/Test-wbs-rfe/q/q4/'>q4</option>
+</select></li>
+<li><strong>OR</strong> <label>the URI of the question you want to copy: <input name="uri" type="text" value=""/></label></li>
+</ul>
+<p><button class="button" type="submit" name="action">Copy and create</button></p>
+</div>
+</form>
+
+
+      </article>
+      
+    <section class="related">
+    <div class="related__inner">
+        <h2 class="txt-jupiter">This Questionnaire</h2><p>
+        <ul class="clean-list" role="list">
+          <li><a href="/2002/09/wbs/99999/wbs-types-test/">Answer</a></li>
+          <li><a href="/2002/09/wbs/99999/wbs-types-test/results">Results</a></li>
+          <li><a href="/2002/09/wbs/99999/wbs-types-test/handler" title='Edit this questionnaire'>Edit</a></li>
+          <li><a href="/2002/09/wbs/99999/wbs-types-test/q/" title='Add a question to this questionnaire'>Add a question</a></li>
+          <li><a href="/2002/09/wbs/99999/wbs-types-test/handler#questions" title='Edit an existing question of this questionnaire'>Edit a
+  question</a></li>
+          <li><a href="/2002/09/wbs/99999/wbs-types-test/impersonate" title='Impersonate a user for this questionnaire'>Impersonate</a></li>
+         </ul></p>
+	
+	<h2 class="txt-jupiter">This Group</h2><p>
+        <ul class="clean-list" role="list">
+          <li><a href="/2002/09/wbs/99999/" title="Current questionnaires for this group">Current questionnaires</a></li>
+          <li><a href="/2002/09/wbs/99999/factory" title="Create a questionnaire for this group">Create a new questionnaire</a></li>
+	</ul></p>
+
+	
+	<h2 class="txt-jupiter">Nearby</h2><p>
+        <ul class="clean-list" role="list">
+          <li><a href="/2002/09/wbs/" title='WBS Home'>WBS Home</a></li>
+          <li><a href="/2002/09/wbs/showq" title='Current questionnaires for all the groups'>Current questionnaires</a></li>
+          <li><a href="/2002/09/wbs/myQuestionnaires" title='List of questionnaires
+  you are supposed to answer'><em>My</em> questionnaires</a></li>
+          <li><a href="/2004/01/pp-impl/" title='Working Group management
+     system and Call for Participation'><abbr title='Working Group'>WG</abbr> Management
+  (<abbr title='Implementation of the Patent Policy'>IPP</abbr>) </a></li>
+          <li><a href="/2000/09/dbwg/details?group=99999" title='Group details'>Group details </a></li>
+	</ul></p>
+    </div>
+    </section>
+
+      </div>
+     </main>
+     </div>
+
+     <footer class="global-footer">
     <div class="l-center">
         <div class="global-footer__links">
             <div class="l-cluster">
