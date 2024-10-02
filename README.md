@@ -25,6 +25,7 @@ It contains the snapshots of some of the HTML pages of the application and its e
 * [WBS Edit form using S24 template](https://w3c.github.io/wbs-design/html/s24-survey-edit.html)
 * [WBS All question results types using S24 template](https://w3c.github.io/wbs-design/html/s24-qtypes-results.html)
 * [WBS Surveys list using S24 template](https://w3c.github.io/wbs-design/html/s24-list-surveys.html)
+* [WBS Add question using S24 template](https://w3c.github.io/wbs-design/html/s24-questions-add.html)
 
 
 
