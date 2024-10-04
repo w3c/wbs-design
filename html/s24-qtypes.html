@@ -723,7 +723,7 @@ Answers received after that time may not be counted.
 
 <fieldset>
 <p><label for='xq2:rationale'>Rationale</label>
-<textarea id ='xq2:rationale' name='q2:rationale' class='rationale' rows='6'></textarea></p>
+<textarea id ='xq2:rationale' name='q2:rationale' class='rationale' rows='3'></textarea></p>
 </fieldset>
 
 <fieldset>
@@ -843,7 +843,7 @@ Answers received after that time may not be counted.
 
 <div class='widget open'>
 <p><label for='xq6:comment'></label>
-  <textarea id='xq2:comment' name='q6:comment' class='comment'></textarea></p>
+  <textarea id='xq6:comment' name='q6:comment' class='comment'></textarea></p>
 </div>
 </fieldset>
 </div>
@@ -1252,8 +1252,8 @@ Answers received after that time may not be counted.
 
 <div class="l-cluster l-cluster--vertical-align">
 <div>
-  <span class="">Total</span>: <input class="input-width-5" disabled="disabled">
-  <span class="label">Remaining</span> <input class="input-width-5" disabled="disabled">
+  <label for="xq13:total">Total :</label><input id="xq13:total" class="input-width-5" disabled="disabled">
+  <label for="xq13:remaining">Remaining :</label><input id="xq13:remaining" class="input-width-5" disabled="disabled">
 </div>
 </div>
 
@@ -1529,21 +1529,21 @@ observer only (check at least one of the appropriate requests below  in the 'Obs
   <input type='hidden' name='q16:dim' value='3' />
 
 <label for="q16:d1">
-<span class="field-label"></span>
+  <span class="field-label" for="q16:d1"></span>
 </label>
 <select id="q16:d1" name="q16:d1[]">
   <option  value='0' >Nobody</option>
 </select>
   
 <label for="q16:d12">
-<span class="field-label"></span>
+<span class="field-label" for="q16:d2"></span>
 </label>
 <select id="q16:d2" name="q16:d2[]">
   <option  value='0' >Nobody</option>
 </select>
 
 <label for="q16:d3">
-<span class="field-label"></span>
+<span class="field-label" for="q16:d3"></span>
 </label>
 <select id="q16:d3" name="q16:d3[]">
   <option  value='0' >Nobody</option>
@@ -1551,9 +1551,6 @@ observer only (check at least one of the appropriate requests below  in the 'Obs
 </div>
 </fieldset>
 
-<fieldset>
-<p><textarea id='xq16:comment' name='q16:comment' class='comment' rows='3'></textarea></p>
-</fieldset>
 </div>
 
 <div>
