@@ -695,33 +695,73 @@
 	</fieldset>
     </div>
 
-    
-      
-<dl>
+    <div class="field">
+	<fieldset role="group" aria-describedby="hint-name-change">
+		<legend class="group-legend family-grouping">Multiple selections permitted</legend>
+		<div class="radio-item">
+			<input type="radio" id="type-multi" name="type" value="multi">
+			<label for="type-multi">
+				<span class="faux-label">Select multiple items (checkboxes)</span>
+		  </label>
+		  <div class="field-hint">This control proposes a list of checkboxes that allows the responders to choose zero, one or as many items in the list of choices you define. The number of checkable items can be limited</div>
+		</div>
+		<div class="radio-item">
+			<input type="radio" id="type-evaluation" name="type" value="evaluation">
+			<label for="type-evaluation">
+				<span class="faux-label">Survey type</span>
+		  </label>
+		  <div class="field-hint">This control proposes to rate the choices you define on a scale you define</div>
+		</div>
+		<div class="radio-item">
+			<input type="radio" id="type-choices2" name="type" value="choices2">
+			<label for="type-choices2">
+				<span class="faux-label">Straw-poll</span>
+		  </label>
+		  <div class="field-hint">This control proposes a straw-poll system, allowing to choose a preferred choice and to mark other choices as acceptable</div>
+		</div>
+		<div class="radio-item">
+			<input type="radio" id="type-ranklist" name="type" value="ranklist">
+			<label for="type-ranklist">
+				<span class="faux-label">Rank-ordering</span>
+		  </label>
+		  <div class="field-hint">This control allows to order a list of choices in the order of preference for the responder</div>
+		</div>
+		<div class="radio-item">
+			<input type="radio" id="type-scheduling" name="type" value="scheduling">
+			<label for="type-scheduling">
+				<span class="faux-label">Pick a time for a teleconf</span>
+		  </label>
+		  <div class="field-hint">This control proposes a table of possibles days and times for scheduling a regular event (typically a teleconference)</div>
+		</div>
+		<div class="radio-item">
+			<input type="radio" id="type-cumulative" name="type" value="cumulative">
+			<label for="type-cumulative">
+				<span class="faux-label">Cumulative vote</span>
+		  </label>
+		  <div class="field-hint">This control proposes to use cumulative vote on a set of options</div>
+		</div>
+	</fieldset>
+    </div>
 
-<dt>Multiple selections permitted</dt>
-   <dd><dl>
-<dt><label><input name='type' type='radio' value='multi' /> Select multiple items (checkboxes)</label></dt>
-<dd>This control proposes a list of checkboxes that allows the responders to choose zero, one or as many items in the list of choices you define. The number of checkable items can be limited (ask Dom for this). </dd>
-<dt><label><input name='type' type='radio' value='evaluation' /> Survey type</label></dt>
-<dd>This control proposes to rate the choices you define on a scale you define</dd>
-<dt><label><input name='type' type='radio' value='choices2' /> Straw-poll</label></dt>
-<dd>This control proposes a straw-poll system, allowing to choose a preferred choice and to mark other choices as acceptable.</dd>
-<dt><label><input name='type' type='radio' value='ranklist' /> Rank-ordering</label></dt>
-<dd>This control allows to order a list of choices in the order of preference for the responder</dd>
-<dt><label><input name='type' type='radio' value='scheduling' /> Pick a time for a teleconf</label></dt>
-<dd>This control proposes a table of possibles days and times for scheduling a regular event (typically a teleconference).</dd>
-<dt><label><input name='type' type='radio' value='cumulative' /> Cumulative vote</label></dt>
-<dd>This control proposes to use cumulative vote on a set of options</dd>
-</dl></dd>
-<dt>Free text input</dt>
-   <dd><dl>
-<dt><label><input name='type' type='radio' value='open' /> Open comments</label></dt>
-<dd>This control proposes a text entry zone, where the responders are invited to give their comments</dd>
-<dt><label><input name='type' type='radio' value='texts' /> Text entries</label></dt>
-<dd>This control proposes as many text entries as you create choices for it, where responders are free to put any text strings (of less than 256 characters)</dd>
-</dl></dd>
-</dl>
+    <div class="field">
+	<fieldset role="group" aria-describedby="hint-name-change">
+		<legend class="group-legend family-grouping">Free text input</legend>
+		<div class="radio-item">
+			<input type="radio" id="type-open" name="type" value="open">
+			<label for="type-open">
+				<span class="faux-label">Open comments</span>
+		        </label>
+			<div class="field-hint">This control proposes a text entry zone, where the responders are invited to give their comments</div>
+		</div>
+		<div class="radio-item">
+			<input type="radio" id="type-texts" name="type" value="texts">
+			<label for="type-texts">
+				<span class="faux-label">Text entries</span>
+		        </label>
+			<div class="field-hint">This control proposes as many text entries as you create choices for it, where responders are free to put any text strings (of less than 256 characters)</div>
+		</div>
+	</fieldset>
+    </div>
 
 <p><button class="button" type="submit" name="action">Submit</button></p>
 </fieldset>
@@ -732,8 +772,29 @@
 <form action="./" method="post">
 <input name="wgid" type="hidden" value="109" />
 <input name="qaireno" type="hidden" value="Test-wbs-rfe" />
-<div class='l-box'>
-<div><p>You can also <a name='copy' id='copy'>start from an existing question</a> by giving:</p></div>
+
+<div class='l-box field-group'>
+<div>
+<p>You can also <a name='copy' id='copy'>start from an existing question</a> by giving:</p></div>
+<fieldset>
+<div class="field">
+<label for="qno">
+<span class="field-label">A new identifier</span>
+</label>
+<input type="text" class="input-width-30" id="qno" name="qno" value="">
+</div>
+</fieldset>
+
+<fieldset>
+<div class="field">
+<label for="url">
+<span class="field-label">Question to copy</span>
+</label>
+<input type="text" class="input-width-30" id="url" name="url2" value="">
+</div>
+</fieldset>
+
+
 <ul>
 <li><label>a new identifier: <input maxlength="8" size="8" name="qno" type="text"
 value=""/></label> (any number and letters OK, up to 8 characters, must be unique among the questionnaire'<!-- ' -->s questions)</li>
