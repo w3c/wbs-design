@@ -657,9 +657,9 @@ Answers received after that time may not be counted.
      <p>You're identified as .</p>
 
 
-<div class="l-box">
+<div class="l-box field-group">
 <fieldset>
-<legend class="txt-mars">1. Simple text question</legend>
+  <legend><span class="field-label">1. Simple text question</span></legend>
 
 <div class='description'>
 <p>The following flavors were nominated for the best ice cream survey (ol):</p>
@@ -677,16 +677,31 @@ Answers received after that time may not be counted.
 <p>We thank the nominees, and the persons who nominated them, for their support.</p>
 </div>
 
-<div class='widget text'>
-<p class="rationaleblock"><label for='xq1:rationale'>Rationale</label>
-<textarea id ='xq1:rationale' name='q1:rationale'></textarea></p>
-<p class="commentblock"><label for='xq1:comment'>Comments</label>
-<textarea id='xq1:comment' name='q1:comment'></textarea></p>
+<div class='widget text field-group'>
+
+<fieldset>
+<div class="field">
+<label for="xq1:rationale">
+<span class="field-label">Rationale</span>
+</label>
+<textarea id ='xq1:rationale' name='xq1:rationale' rows='3'></textarea>
+</div>
+</fieldset>
+
+<fieldset>
+<div class="field">
+<label for="xq1:comment">
+<span class="field-label">Comments</span>
+</label>
+<textarea id ='xq1:comment' name='xq1:comment' rows='3'></textarea>
+</div>
+</fieldset>
+
 </div>
 </fieldset>
 </div>
 
-<div class='l-box' id='wbsq2'>
+<div class='l-box field-group' id='wbsq2'>
 <fieldset>
 <!--
 <div class="l-cluster l-cluster--vertical-align">
@@ -695,7 +710,7 @@ Answers received after that time may not be counted.
 <a class="button button--alt" href="q/q2/" title="Edit text of question &quot; Single selection required Yes/No&quot;" alt="Edit">Edit</a>
 </div>
 </div> -->
-<legend class="txt-mars">2. Single selection required Yes/No</legend>
+<legend><span class="field-label">2. Single selection required Yes/No </span></legend>
 
 <div class='description'>
 <p>The Ice-cream Process Document states:</p>
@@ -722,19 +737,28 @@ Answers received after that time may not be counted.
 </fieldset>
 
 <fieldset>
-<p><label for='xq2:rationale'>Rationale</label>
-<textarea id ='xq2:rationale' name='q2:rationale' class='rationale' rows='3'></textarea></p>
+<div class="field">
+<label for="xq2:rationale">
+<span class="field-label">Rationale</span>
+</label>
+<textarea id ='xq2:rationale' name='q2:rationale' class='rationale' rows='3'></textarea>
+</div>
 </fieldset>
 
 <fieldset>
-<p><label for='xq2:comment'>Comments</label>
-<textarea id='xq2:comment' name='q2:comment' class='comment' rows='3'></textarea></p>
+<div class="field">
+<label for="xq2:comment">
+<span class="field-label">Comments</span>
+</label>
+<textarea id ='xq2:comment' name='q2:comment' rows='3'></textarea>
+</div>
 </fieldset>
+
 </div>
 
 <div class='l-box' id='wbsq3'>
 <fieldset>
-<legend class="txt-mars">3. Single selection required Yes/No/Concur/Abstain</legend>
+<legend><span class="field-label">3. Single selection required Yes/No/Concur/Abstain</span></legend>
 
 <div class='description'>
 <p>Single selection required Yes/No/Concur/Abstain.</p>
@@ -774,7 +798,7 @@ Answers received after that time may not be counted.
 
 <div class='l-box' id='wbsq4'>
 <fieldset>
-<legend class="txt-mars">4. Select one among many (drop-down list)</legend>
+<legend><span class="field-label">4. Select one among many (drop-down list)</span></legend>
 
 <div class='description'>
  <p>Select one among many.</p>
@@ -800,7 +824,7 @@ Answers received after that time may not be counted.
 
 <div class='l-box' id='wbsq5'>
   <fieldset>
-  <legend class="txt-mars">5. Select one among many (radio buttons)</legend>
+  <legend><span class="field-label">5. Select one among many (radio buttons)</span></legend>
   
 <div class='description'>
   <p>Select one among many (radio buttons).</p>
@@ -835,7 +859,7 @@ Answers received after that time may not be counted.
 
 <div class='l-box' id='wbsq6'>
   <fieldset>
-  <legend class="txt-mars">6. Open comments</legend>
+  <legend><span class="field-label">6. Open comments</span></legend>
   
 <div class='description'>
   <p>You may add any comments you wish to record, including rationale for dismissals.</p>
@@ -848,45 +872,50 @@ Answers received after that time may not be counted.
 </fieldset>
 </div>
 
-<div class='l-box' id='wbsq7'>
- <fieldset>
-  <legend class="txt-mars">7. Text entries</legend>
-  
+<div class='l-box field-group' id='wbsq7'>
+  <legend><span class="field-label">7. Text entries</span></legend>
+
 <div class='description'>
 <p>Text entries.</p>
 </div>
 
-<div class='widget texts'>
+<div class='widget texts field-group'>
 <input type="hidden" name="nominee:format" value="2">
 <input type="hidden" name="nominee:dim" value="1">
 
+<fieldset>
 <div class="field">
 <label for="xnominee:1">
 <span class="field-label">Name</span>
 </label>
 <input type="text" class="input-width-30" id="xnominee:1" name="xnominee:1" value="">
 </div>
+</fieldset>
+
+<fieldset>
 <div class="field">
 <label for="xnominee:2">
 <span class="field-label">Affiliation</span>
 </label>
 <input type="text" class="input-width-30" id="xnominee:2" name="xnominee:2" value="">
 </div>
+</fieldset>
 
+<fieldset>
 <div class="field">
 <label for="xnominee:3">
 <span class="field-label">Email</span>
 </label>
 <input type="text" class="input-width-30" id="xnominee:3" name="xnominee:3" value="">
 </div>
-
-</div>
 </fieldset>
+
+</div>
 </div>
 
-<div class='question optional l-box' id='wbsq8'>
+<div class='l-box field-group' id='wbsq8'>
 <fieldset>
-<legend class="txt-mars">8. Select multiple items (checkboxes)</legend>
+<legend><span class="field-label">8. Select multiple items (checkboxes)</span></legend>
   
 <div class='description'>
 <p>Select multiple items (checkboxes).</p>
@@ -917,18 +946,22 @@ Answers received after that time may not be counted.
 </label>
 </div>
 </div>
-
 </fieldset>
+
 <fieldset>
-<p class="commentblock"><label for='xq2:comment'>Comments</label>
-<textarea id='xq2:comment' name='q2:comment' class='comment'></textarea></p>
-
+<div class="field">
+<label for="xq8:comment">
+<span class="field-label">Comments</span>
+</label>
+<textarea id ='xq8:comment' name='q8:comment' rows='3'></textarea>
+</div>
 </fieldset>
+
 </div>
 
 <div class='l-box' id='wbsq9'>
 <fieldset>
-<legend class="txt-mars">9. Survey type</legend>
+<legend><span class="field-label">9. Survey type</span></legend>
   
 <div class='description'>
   <p>Survey type.</p>
@@ -1025,7 +1058,7 @@ Answers received after that time may not be counted.
 <div class='l-box' id='wbsq10'>
 
 <fieldset>
-<legend class="txt-mars">10. Straw-poll</legend>
+<legend><span class="field-label">10. Straw-poll</span></legend>
 
 <div class='description'>
   <p>Straw-poll.</p>
@@ -1082,7 +1115,7 @@ Answers received after that time may not be counted.
 
 <div class='l-box' id='wbsq11'>
 <fieldset>
-<legend class="txt-mars">11. Rank-ordering</legend>
+<legend><span class="field-label">11. Rank-ordering</span></legend>
 
 <div class='description'>
   <p>Question description.</p>
@@ -1139,7 +1172,7 @@ Answers received after that time may not be counted.
 <div class='l-box' id='wbsq12'>
 <fieldset>
 
-<legend class="txt-mars">12. Pick a time for a teleconf</legend>
+<legend><span class="field-label">12. Pick a time for a teleconf</span></legend>
 
 <div class='description'>
   <p>Pick a time for a teleconf.</p>
@@ -1204,7 +1237,7 @@ Answers received after that time may not be counted.
 
 <div class='l-box' id='wbsq13'>
 <fieldset>
-<legend class="txt-mars">13. Cumulative vote</legend>
+<legend><span class="field-label">13. Cumulative vote</span></legend>
   
 <div class='description'>
   <p>Select a % for each choice</p>
@@ -1252,8 +1285,8 @@ Answers received after that time may not be counted.
 
 <div class="l-cluster l-cluster--vertical-align">
 <div>
-  <label for="xq13:total">Total :</label><input id="xq13:total" class="input-width-5" disabled="disabled">
-  <label for="xq13:remaining">Remaining :</label><input id="xq13:remaining" class="input-width-5" disabled="disabled">
+  <label for="xq13:total"><span class="field-label"> Total:</span></label><input id="xq13:total" class="input-width-3"  type="text"  disabled="disabled">
+  <label for="xq13:remaining"<span class="field-label">Remaining:</span></label><input id="xq13:remaining" class="input-width-3" type="text" disabled="disabled">
 </div>
 </div>
 
@@ -1264,7 +1297,7 @@ Answers received after that time may not be counted.
 <div class='l-box' id='wbsq14'>
 
 <fieldset>
-<legend class="txt-mars">14. Importance survey</legend>
+<legend><span class="field-label">14. Importance survey</span></legend>
 
 <div class='description'>
   <p>Importance survey.</p>
@@ -1307,7 +1340,7 @@ Answers received after that time may not be counted.
 
 <div class='l-box' id='wbsq15'>
 <fieldset>
-<legend class="txt-mars">15. Importance and Satisfaction survey</legend>
+<legend><span class="field-label">15. Importance and Satisfaction survey</span></legend>
   
 <div class='description'>
   <p>This type of question is longer proposed in the UI but needs to be adapted to display old surveys containing it.</p>
@@ -1317,7 +1350,7 @@ Answers received after that time may not be counted.
   <input type='hidden' name='q15:format' value='1' />
   <input type='hidden' name='q15:dim' value='19' />
 
-<div class="overlarge">
+<div>
 
   <table>
     <thead>
@@ -1423,7 +1456,7 @@ Answers received after that time may not be counted.
 
 <div class='l-box' id='wbstp'>
 <fieldset>
-<legend class="txt-mars">16. Technical Plenary widget</legend>
+<legend><span class="field-label">16. Technical Plenary widget</span></legend>
 <div class='description'>
   <p>For Group meetings on Monday, 11 November:</p>
   <p>This type of question is longer proposed in the UI but needs to be adapted to display old surveys containing it.</p>
@@ -1518,38 +1551,46 @@ observer only (check at least one of the appropriate requests below  in the 'Obs
    
 <div class='l-box' id='wbsq17'>
 <fieldset>
-<legend class="txt-mars">17. Employees list</legend>
+<legend><span class="field-label">17. Employees list</span></legend>
 <div class='description'>
   <p>This type of question is longer proposed in the UI but needs to be adapted to display old surveys containing it.</p>
   <p>Please select up to three participants for this Interest Group.</p>
   <p>If the participant's name does not appear in the list below, you can add them using the AC Rep tool (clicking the <q>Add User</q> button).</p>
 </div>
-<div class='widget employees'>
+</fieldset>
+
+<div class='widget employees field-group'>
   <input type='hidden' name='q16:format' value='0' /
   <input type='hidden' name='q16:dim' value='3' />
 
+<fieldset>
 <label for="q16:d1">
   <span class="field-label" for="q16:d1"></span>
 </label>
 <select id="q16:d1" name="q16:d1[]">
   <option  value='0' >Nobody</option>
 </select>
-  
+  </fieldset>
+
+<fieldset>
 <label for="q16:d12">
 <span class="field-label" for="q16:d2"></span>
 </label>
 <select id="q16:d2" name="q16:d2[]">
   <option  value='0' >Nobody</option>
 </select>
+</fieldset>
 
+<fieldset>
 <label for="q16:d3">
 <span class="field-label" for="q16:d3"></span>
 </label>
 <select id="q16:d3" name="q16:d3[]">
   <option  value='0' >Nobody</option>
 </select>
-</div>
 </fieldset>
+
+</div>
 
 </div>
 
