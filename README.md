@@ -21,7 +21,7 @@ It contains the snapshots of some of the HTML pages of the application and its e
 * [Test wysiwyg editor (using jquery plugin 'wysiwyg')](https://w3c.github.io/wbs-design/html/wbs-wysiwyg.html)
 
 * [WBS Home Page using new Design System](https://w3c.github.io/wbs-design/html/s24-home.html)
-* [WBS All question types using new Design System](https://w3c.github.io/wbs-design/html/s24-qtypes.html)  (Draft)
+* [WBS All question types using new Design System](https://w3c.github.io/wbs-design/html/s24-qtypes.html)
 * [WBS Edit form using new Design System](https://w3c.github.io/wbs-design/html/s24-survey-edit.html)  (Draft)
 * [WBS All question results types using new Design System](https://w3c.github.io/wbs-design/html/s24-qtypes-results.html)  (Draft)
 * [WBS Surveys list using new Design System](https://w3c.github.io/wbs-design/html/s24-list-surveys.html)  (Draft)
