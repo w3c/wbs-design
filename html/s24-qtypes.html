@@ -660,8 +660,8 @@ Answers received after that time may not be counted.
 <div class="l-box field-group">
 <fieldset>
   <legend><span class="field-label">1. Simple text question</span></legend>
+</fieldset>
 
-<div class='description'>
 <p>The following flavors were nominated for the best ice cream survey (ol):</p>
 <ol>
   <li><a rel="nofollow" href="https://en.wikipedia.org/wiki/Chocolate_ice_cream">Chocolate</a></li>
@@ -675,9 +675,6 @@ Answers received after that time may not be counted.
   <li><a rel="nofollow" href="https://en.wikipedia.org/wiki/Strawberry_ice_cream">Strawberry</a></li>
 </ul>
 <p>We thank the nominees, and the persons who nominated them, for their support.</p>
-</div>
-
-<div class='widget text field-group'>
 
 <fieldset>
 <div class="field">
@@ -698,29 +695,19 @@ Answers received after that time may not be counted.
 </fieldset>
 
 </div>
-</fieldset>
-</div>
 
 <div class='l-box field-group' id='wbsq2'>
 <fieldset>
-<!--
-<div class="l-cluster l-cluster--vertical-align">
-<div>
-<legend class="txt-mars">2. Single selection required Yes/No Single selection required Yes/No</legend>
-<a class="button button--alt" href="q/q2/" title="Edit text of question &quot; Single selection required Yes/No&quot;" alt="Edit">Edit</a>
-</div>
-</div> -->
 <legend><span class="field-label">2. Single selection required Yes/No </span></legend>
+</fieldset>
 
-<div class='description'>
 <p>The Ice-cream Process Document states:</p>
 <blockquote>For this selection we use STV Meeks as the Tabulation system.</blockquote>
 <p>Do you agree with this?</p>
-</div>
+  
+<input type='hidden' name='q2:format' value='0' /><input type='hidden' name='q2:dim' value='1' />
 
-<div class='widget yn'>
-  <input type='hidden' name='q2:format' value='0' /><input type='hidden' name='q2:dim' value='1' />
-
+<fieldset>
 <div class="radio-item">
 	<label for="xq2:d1_yes_">
 		<span class="faux-label">Yes</span>
@@ -733,7 +720,6 @@ Answers received after that time may not be counted.
 		<span class="faux-label">No</span>
 	</label>
 	<input type="radio" id="xq2:d1_no_" name="q2:d1[]" value="no">
-</div>
 </fieldset>
 
 <fieldset>
@@ -756,18 +742,17 @@ Answers received after that time may not be counted.
 
 </div>
 
-<div class='l-box' id='wbsq3'>
+<div class='l-box field-group' id='wbsq3'>
 <fieldset>
 <legend><span class="field-label">3. Single selection required Yes/No/Concur/Abstain</span></legend>
+</fieldset>
 
-<div class='description'>
-<p>Single selection required Yes/No/Concur/Abstain.</p>
-</div>
+<p>Should we make the results of this survey public?</p>
 
-<div class='widget ync'>
-<!--<p>Please indicate which option matches your choice:</p>-->
+<!-- Please indicate which option matches your choice: -->
 <input type='hidden' name='q3:format' value='0' /><input type='hidden' name='q3:dim' value='1' />
 
+<fieldset>
 <div class="radio-item">
 	<input type="radio" id="xq3:d1_yes_" name="q3:d1[]" value="yes">
 	<label for="xq3:d1_yes_">
@@ -796,90 +781,89 @@ Answers received after that time may not be counted.
 
 </div>
 
-<div class='l-box' id='wbsq4'>
+<div class='l-box field-group' id='wbsq4'>
 <fieldset>
 <legend><span class="field-label">4. Select one among many (drop-down list)</span></legend>
+</fieldset>
 
-<div class='description'>
- <p>Select one among many.</p>
-</div>
+<p>Select one flavor from those listed.</p>
 
-<div class='widget select'>
 <!-- p>Please indicate which option matches your choice:</p -->
-  <input type='hidden' name='q4:format' value='0' />
-  <input type='hidden' name='q4:dim' value='1' />
+<input type='hidden' name='q4:format' value='0' />
+<input type='hidden' name='q4:dim' value='1' />
 
+<fieldset>
+<div class="field">
 <label for="q4:d1">
 <span class="field-label"></span>
 </label>
 <select id="q4:d1" name="q4:d1[]">
-<option value="c1">Choice1</option>
-<option value="c2">Choice2</option>
-<option value="c3">Choice3</option>
+<option value=""></option>
+<option value="c1">Vanilla</option>
+<option value="c2">Chocolate</option>
+<option value="c3">Burgundy blackcurrant sorbet</option>
 </select>
 </div>
-
 </fieldset>
 </div>
 
-<div class='l-box' id='wbsq5'>
+<div class='l-box field-group' id='wbsq5'>
   <fieldset>
   <legend><span class="field-label">5. Select one among many (radio buttons)</span></legend>
-  
-<div class='description'>
-  <p>Select one among many (radio buttons).</p>
-</div>
+  </fieldset>
 
-<div class='widget radioSelect'>
+<p>Select one flavor from those listed.</p>
+
 <!--<p>Please indicate which option matches your choice:</p>-->
 <input type='hidden' name='q5:format' value='0' /><input type='hidden' name='q5:dim' value='1' />
 
+<fieldset>
 <div class="radio-item">
 	<input type="radio" id="xq5:d1_c1_" name="q5:d1[]" value="c1">
 	<label for="xq5:d1_c1_">
-		<span class="faux-label">Choice 1</span>
+		<span class="faux-label">Vanilla</span>
 	</label>
 </div>
 <div class="radio-item">
 	<input type="radio" id="xq5:d1_c2_" name="q5:d1[]" value="c2">
 	<label for="xq5:d1_c2_">
-		<span class="faux-label">Choice 2</span>
+		<span class="faux-label">Chocolate</span>
 	</label>
 </div>
 <div class="radio-item">
 	<input type="radio" id="xq5:d1_c3_" name="q5:d1[]" value="c3">
 	<label for="xq5:d1_c3_">
-		<span class="faux-label">Choice 3</span>
+		<span class="faux-label">Burgundy blackcurrant sorbet</span>
 	</label>
 </div>
-
-</div>
 </fieldset>
 </div>
 
-<div class='l-box' id='wbsq6'>
+<div class='l-box field-group' id='wbsq6'>
   <fieldset>
   <legend><span class="field-label">6. Open comments</span></legend>
-  
-<div class='description'>
-  <p>You may add any comments you wish to record, including rationale for dismissals.</p>
-</div>
+  </fieldset>
 
-<div class='widget open'>
-<p><label for='xq6:comment'></label>
-  <textarea id='xq6:comment' name='q6:comment' class='comment'></textarea></p>
+  <p>You may add any comments you wish to record, including rationale for dismissals.</p>
+
+<fieldset>
+<div class="field">
+  <label for="'xq6:comment">
+	<span class="field-label"></span>
+  </label>
+  <textarea id="'xq6:comment" name="'xq6:comment"></textarea>
 </div>
 </fieldset>
+  
 </div>
 
 <div class='l-box field-group' id='wbsq7'>
-  <legend><span class="field-label">7. Text entries</span></legend>
+<fieldset>
+<legend><span class="field-label">7. Text entries</span></legend>
+</fieldset>
 
-<div class='description'>
-<p>Text entries.</p>
-</div>
-
-<div class='widget texts field-group'>
+<p>Please provide the following information</p>
+  
 <input type="hidden" name="nominee:format" value="2">
 <input type="hidden" name="nominee:dim" value="1">
 
@@ -911,41 +895,53 @@ Answers received after that time may not be counted.
 </fieldset>
 
 </div>
-</div>
 
 <div class='l-box field-group' id='wbsq8'>
 <fieldset>
 <legend><span class="field-label">8. Select multiple items (checkboxes)</span></legend>
-  
-<div class='description'>
-<p>Select multiple items (checkboxes).</p>
-</div>
+</fieldset>
 
-<div class='widget multi'>
+<p>Please vote for <strong>up to two flavors</strong>.</p>
+
 <input type='hidden' name='q8:format' value='0' />
 <input type='hidden' name='q8:dim' value='1' />
 
+<fieldset>
 <div class="checkbox-item">
 <input type="checkbox" name="q8:d1[]" id="xq8:d1_c1_" appearance="base">
 <label for="xq8:d1_c1_">
-<span class="faux-label">Choice 1</span>
+<span class="faux-label">Vanilla</span>
 </label>
 </div>
 
 <div class="checkbox-item">
 <input type="checkbox" name="q8:d1[]" id="xq8:d1_c2_" appearance="base">
 <label for="xq8:d1_c2_">
-<span class="faux-label">Choice 2</span>
+<span class="faux-label">Strawberry</span>
 </label>
 </div>
 
 <div class="checkbox-item">
 <input type="checkbox" name="q8:d1[]" id="xq8:d1_c3_" appearance="base">
 <label for="xq8:d1_c3_">
-<span class="faux-label">Choice 3</span>
+<span class="faux-label">Lemon sorbet</span>
 </label>
 </div>
+
+<div class="checkbox-item">
+<input type="checkbox" name="q8:d1[]" id="xq8:d1_c4_" appearance="base">
+<label for="xq8:d1_c4_">
+<span class="faux-label">Burgundy blackcurrant sorbet</span>
+</label>
 </div>
+
+<div class="checkbox-item">
+<input type="checkbox" name="q8:d1[]" id="xq8:d1_c5_" appearance="base">
+<label for="xq8:d1_c5_">
+<span class="faux-label">Mango / Passion</span>
+</label>
+</div>
+
 </fieldset>
 
 <fieldset>
@@ -959,21 +955,20 @@ Answers received after that time may not be counted.
 
 </div>
 
-<div class='l-box' id='wbsq9'>
+<div class='l-box field-group' id='wbsq9'>
 <fieldset>
 <legend><span class="field-label">9. Survey type</span></legend>
-  
-<div class='description'>
-  <p>Survey type.</p>
-</div>
+</fieldset>
 
-<div class="widget evaluation">
+  <p>Please indicate your level of interest among the different choices:</p>
+
   <input name="q9:format" value="1" type="hidden">
   <input name="q9:dim" value="6" type="hidden">
 
+<fieldset>
   <div class="component--fifty-fifty">
   <div class="component--fifty-fifty__text">
-	<p><label for="xq19:c1">1st choice</label></p>
+	<label for="xq9:c1">1st choice</label>
   </div>
   <div class="component--fifty-fifty__text">
       <select id="xq9:c1" name="xq9:c1">
@@ -986,42 +981,49 @@ Answers received after that time may not be counted.
       </select>
   </div>
   </div>
+</fieldset>
 
+<fieldset>
   <div class="component--fifty-fifty">
   <div class="component--fifty-fifty__text">
-	<p><label for="xq19:c2">Second choice</label></p>
+	<label for="xq9:c2">Second choice</label>
   </div>
   <div class="component--fifty-fifty__text">
       <select id="xq9:c2" name="xq9:c2">
 	<option value="0">1 &#x1F63B; (lowest)</option>
-	<option value="1">2 &#x1F63B;&#x1F63B;</option>
+	<option value="1" selected="selected">2 &#x1F63B;&#x1F63B;</option>
 	<option value="2">3 &#x1F63B;&#x1F63B;&#x1F63B;</option>
 	<option value="3">4 &#x1F63B;&#x1F63B;&#x1F63B;&#x1F63B;</option>
 	<option value="4">5 &#x1F63B;&#x1F63B;&#x1F63B;&#x1F63B;&#x1F63B; (highest)</option>
-	<option value="5" selected="selected">No opinion</option>
+	<option value="5">No opinion</option>
       </select>
   </div>
-  </div>
+  </div> 
+</fieldset>
 
+
+<fieldset>
   <div class="component--fifty-fifty">
   <div class="component--fifty-fifty__text">
-	<p><label for="xq19:c3">This is the third choice</label></p>
+	<label for="xq9:c3">This is the third choice</label>
   </div>
   <div class="component--fifty-fifty__text">
       <select id="xq9:c3" name="xq9:c3">
-	<option value="0">1 &#x1F63B; (lowest)</option>
+	<option value="0" selected="selected">1 &#x1F63B; (lowest)</option>
 	<option value="1">2 &#x1F63B;&#x1F63B;</option>
 	<option value="2">3 &#x1F63B;&#x1F63B;&#x1F63B;</option>
 	<option value="3">4 &#x1F63B;&#x1F63B;&#x1F63B;&#x1F63B;</option>
 	<option value="4">5 &#x1F63B;&#x1F63B;&#x1F63B;&#x1F63B;&#x1F63B; (highest)</option>
-	<option value="5" selected="selected">No opinion</option>
+	<option value="5">No opinion</option>
       </select>
   </div>
   </div>
-
+</fieldset>
+  
+<fieldset>
   <div class="component--fifty-fifty">
   <div class="component--fifty-fifty__text">
-	<p><label for="xq19:c4">This is the fourth and last choice</label></p>
+	<label for="xq9:c4">This is the fourth and last choice</label>
   </div>
   <div class="component--fifty-fifty__text">
       <select id="xq9:c4" name="xq9:c4">
@@ -1029,15 +1031,17 @@ Answers received after that time may not be counted.
 	<option value="1">2 &#x1F63B;&#x1F63B;</option>
 	<option value="2">3 &#x1F63B;&#x1F63B;&#x1F63B;</option>
 	<option value="3">4 &#x1F63B;&#x1F63B;&#x1F63B;&#x1F63B;</option>
-	<option value="4">5 &#x1F63B;&#x1F63B;&#x1F63B;&#x1F63B;&#x1F63B; (highest)</option>
-	<option value="5" selected="selected">No opinion</option>
+	<option value="4" selected="selected">5 &#x1F63B;&#x1F63B;&#x1F63B;&#x1F63B;&#x1F63B; (highest)</option>
+	<option value="5">No opinion</option>
       </select>
   </div>
   </div>
+</fieldset>
   
+<fieldset>
   <div class="component--fifty-fifty">
   <div class="component--fifty-fifty__text">
-	<p><label for="xq19:c5">In fact, there was another one, promised it's the last one</label></p>
+  <label for="xq9:c5">In fact, there was another one, promised it's the last one</label>
   </div>
   <div class="component--fifty-fifty__text">
       <select id="xq9:c5" name="xq9:c5">
@@ -1050,27 +1054,25 @@ Answers received after that time may not be counted.
       </select>
   </div>
   </div>
+</fieldset>
   
 </div>
-</fieldset>
-</div>
 
-<div class='l-box' id='wbsq10'>
+<div class='l-box field-group' id='wbsq10'>
 
 <fieldset>
 <legend><span class="field-label">10. Straw-poll</span></legend>
+</fieldset>
 
-<div class='description'>
-  <p>Straw-poll.</p>
-</div>
+  <p>Please rank the importance of having the following desserts.</p>
 
-<div class='widget choices2'>
 <input type='hidden' name='q10:format' value='1' />
 <input type='hidden' name='q10:dim' value='4' />
 
+<fieldset>
 <div class="component--fifty-fifty">
   <div class="component--fifty-fifty__text">
-	<p><label for="xq10:c1">Choice 1:</label></p>
+	<label for="xq10:c1">An ice cream</label>
   </div>
   <div class="component--fifty-fifty__text">
       <select id="xq10:c1" name="xq10:c1">
@@ -1081,10 +1083,12 @@ Answers received after that time may not be counted.
       </select>
   </div>
 </div>
-  
+</fieldset>
+ 
+<fieldset>
 <div class="component--fifty-fifty">
   <div class="component--fifty-fifty__text">
-	<p><label for="xq10:c2">Choice 2:</label></p>
+	<label for="xq10:c2">A cake with lots of whipped cream</label>
   </div>
   <div class="component--fifty-fifty__text">
       <select id="xq10:c2" name="xq10:c2">
@@ -1095,10 +1099,12 @@ Answers received after that time may not be counted.
       </select>
   </div>
 </div>
+</fieldset>
 
+<fieldset>
 <div class="component--fifty-fifty">
   <div class="component--fifty-fifty__text">
-	<p><label for="xq10:c3">Choice 3:</label></p>
+	<label for="xq10:c3">I prefer to have cheese</label>
   </div>
   <div class="component--fifty-fifty__text">
       <select id="xq10:c3" name="xq10:c3">
@@ -1108,27 +1114,24 @@ Answers received after that time may not be counted.
       <option value="0">No</option>
       </select>
   </div>
-</div>
-
 </fieldset>
 </div>
+  
 
-<div class='l-box' id='wbsq11'>
+<div class='l-box field-group' id='wbsq11'>
 <fieldset>
 <legend><span class="field-label">11. Rank-ordering</span></legend>
+</fieldset>
 
-<div class='description'>
-  <p>Question description.</p>
-</div>
-
-<div class='widget ranklist'>
+<p>What kind of pie do you prefer</p>
 <p>Please select the rank-order (1 to 3) where 1 is the most preferred, 2 the next best and so on...</p>
 <input type='hidden' name='q11:format' value='1' />
 <input type='hidden' name='q11:dim' value='5' />
 
+<fieldset>
   <div class="component--fifty-fifty">
 	<div class="component--fifty-fifty__text">
-		<p><label for="xq11:c1">Choice AA:</label></p>
+		<label for="xq11:c1">An apple pie:</label>
 	</div>
 	<div class="component--fifty-fifty__text">
 		<select id="xq11:c1" name="q11:c1">
@@ -1138,10 +1141,12 @@ Answers received after that time may not be counted.
 </select>
 	</div>
   </div>
+</fieldset>
 
+<fieldset>
   <div class="component--fifty-fifty">
 	<div class="component--fifty-fifty__text">
-		<p><label for="xq11:c2">Choice BB:</label></p>
+		<label for="xq11:c2">A lemon pie with custard:</label>
 	</div>
 	<div class="component--fifty-fifty__text">
 		<select id="xq11:c2" name="q11:c2">
@@ -1150,11 +1155,13 @@ Answers received after that time may not be counted.
 <option value="4">Ranked 3</option>
 </select>
 	</div>
-  </div>
+</div>
+</fieldset>
 	
+<fieldset>
   <div class="component--fifty-fifty">
 	<div class="component--fifty-fifty__text">
-		<p><label for="xq11:c3">Choice CC:</label></p>
+		<label for="xq11:c3">A tarte tatin:</label>
 	</div>
 	<div class="component--fifty-fifty__text">
 		<select id="xq11:c3" name="q11:c3">
@@ -1164,24 +1171,21 @@ Answers received after that time may not be counted.
 </select>
 	</div>
   </div>
-
-</div>
-</fieldset>
-</div>
-
-<div class='l-box' id='wbsq12'>
 <fieldset>
 
-<legend><span class="field-label">12. Pick a time for a teleconf</span></legend>
-
-<div class='description'>
-  <p>Pick a time for a teleconf.</p>
 </div>
 
-<div class='widget scheduling'>
+<div class='l-box field-group' id='wbsq12'>
+<fieldset>
+<legend><span class="field-label">12. Pick a time</span></legend>
+</fieldset>
+
+  <p>Pick a time for a dinner.</p>
+
   <input name="q12:format" value="1" type="hidden">
   <input name="q12:dim" value="4" type="hidden">
   
+<fieldset>
 <div class="table-wrap">
 
 <table class="">
@@ -1231,23 +1235,22 @@ Answers received after that time may not be counted.
 </table>
   
 </div>
-</div>
 </fieldset>
+
 </div>
 
-<div class='l-box' id='wbsq13'>
+<div class='l-box field-group' id='wbsq13'>
 <fieldset>
 <legend><span class="field-label">13. Cumulative vote</span></legend>
-  
-<div class='description'>
-  <p>Select a % for each choice</p>
-</div>
+</fieldset>
 
-<div class='widget cumulative'>
+  <p>Select a % for each choice</p>
+
 
 <input name="q13:format" value="1" type="hidden">
 <input name="q13:dim" value="101" type="hidden">
 
+<fieldset>
 <div class="component--fifty-fifty">
   <div class="component--fifty-fifty__text">
 	<p><label for="xq13:c1">Choice 1:</label></p>
@@ -1258,11 +1261,13 @@ Answers received after that time may not be counted.
       </select>
   </div>
 </div>
+</fieldset>
 
 
+<fieldset>
 <div class="component--fifty-fifty">
   <div class="component--fifty-fifty__text">
-	<p><label for="xq13:c2">Choice 2:</label></p>
+	<p><label for="xq13:c2">Choice number 2:</label></p>
   </div>
   <div class="component--fifty-fifty__text">
 	<select class="input-width-3" name="q13:c2" id="xq13:c2">
@@ -1270,11 +1275,12 @@ Answers received after that time may not be counted.
       </select>
   </div>
 </div>
+</fieldset>
 
-
+<fieldset>
 <div class="component--fifty-fifty">
   <div class="component--fifty-fifty__text">
-	<p><label for="xq13:c3">Choice 3:</label></p>
+	<p><label for="xq13:c3">This is the third choice:</label></p>
   </div>
   <div class="component--fifty-fifty__text">
 	<select class="input-width-3" name="q13:c3" id="xq13:c3">
@@ -1282,76 +1288,76 @@ Answers received after that time may not be counted.
       </select>
   </div>
 </div>
+<fieldset>
 
+<fieldset>
 <div class="l-cluster l-cluster--vertical-align">
 <div>
   <label for="xq13:total"><span class="field-label"> Total:</span></label><input id="xq13:total" class="input-width-3"  type="text"  disabled="disabled">
   <label for="xq13:remaining"<span class="field-label">Remaining:</span></label><input id="xq13:remaining" class="input-width-3" type="text" disabled="disabled">
 </div>
 </div>
+<fieldset>
 
 </div>
-</fieldset>
-</div>
 
-<div class='l-box' id='wbsq14'>
+<div class='l-box field-group' id='wbsq14'>
 
 <fieldset>
 <legend><span class="field-label">14. Importance survey</span></legend>
+</fieldset>
 
-<div class='description'>
-  <p>Importance survey.</p>
-</div>
+  <p>State your opinion on need to discuss the following choices of restaurants.</p>
 
-<div class='widget ms_importance'>
 <input type='hidden' name='q14:format' value='1' />
 <input type='hidden' name='q14:dim' value='9' />
 
+<fieldset>
   <div class="component--fifty-fifty">
 	<div class="component--fifty-fifty__text">
-		<p><label for="xq14:c1">Importance of choice 1:</label></p>
+		<label for="xq14:c1">Importance of choice 1:</label>
 	</div>
 	<div class="component--fifty-fifty__text">
 <select name='q14:c1' id='xq14:c1'><option value='0'>1 + (lowest)</option><option value='1'>2 ++</option><option value='2'>3 +++</option><option value='3'>4 ++++</option><option value='4'>5 +++++</option><option value='5'>6 ++++++</option><option value='6'>7  +++++++ (highest)</option><option value='7'>Not applicable</option><option value='8' selected='selected'>No opinion</option></select>
 	</div>
   </div>
+</fieldset>
 
+<fieldset>
   <div class="component--fifty-fifty">
 	<div class="component--fifty-fifty__text">
-		<p><label for="xq14:c2">Importance of choice 2:</label></p>
+		<label for="xq14:c2">Importance of choice number 2:</label>
 	</div>
 	<div class="component--fifty-fifty__text">
 <select name='q14:c2' id='xq14:c2'><option value='0'>1 + (lowest)</option><option value='1'>2 ++</option><option value='2'>3 +++</option><option value='3'>4 ++++</option><option value='4'>5 +++++</option><option value='5'>6 ++++++</option><option value='6'>7  +++++++ (highest)</option><option value='7'>Not applicable</option><option value='8' selected='selected'>No opinion</option></select>
 </div>
 </div>
+</fieldset>
 	
+<fieldset>
   <div class="component--fifty-fifty">
 	<div class="component--fifty-fifty__text">
-		<p><label for="xq14:c3">Importance of choice 3:</label></p>
+		<label for="xq14:c3">Importance of third choice:</label>
 	</div>
 	<div class="component--fifty-fifty__text">
 <select name='q14:c3' id='xq14:c3'><option value='0'>1 + (lowest)</option><option value='1'>2 ++</option><option value='2'>3 +++</option><option value='3'>4 ++++</option><option value='4'>5 +++++</option><option value='5'>6 ++++++</option><option value='6'>7  +++++++ (highest)</option><option value='7'>Not applicable</option><option value='8' selected='selected'>No opinion</option></select>
 	</div>
   </div>
-
-</div>
 </fieldset>
+  
 </div>
 
-<div class='l-box' id='wbsq15'>
+<div class='l-box field-group' id='wbsq15'>
 <fieldset>
 <legend><span class="field-label">15. Importance and Satisfaction survey</span></legend>
-  
-<div class='description'>
-  <p>This type of question is longer proposed in the UI but needs to be adapted to display old surveys containing it.</p>
-</div>
+</fieldset>
 
-<div class='widget ms_importance_satis'>
+  <p>This type of question is longer proposed in the UI but needs to be adapted to display old surveys containing it.</p>
+
   <input type='hidden' name='q15:format' value='1' />
   <input type='hidden' name='q15:dim' value='19' />
-
+<fieldset>
 <div>
-
   <table>
     <thead>
       <tr><th>Rated item</th><th>Importance</th><th>Satisfaction</th></tr>
@@ -1449,12 +1455,10 @@ Answers received after that time may not be counted.
 										      </th>
 											<td><label
 											    for='xq15:c3'><select  title='Importance of choice3' name='q15:c3[]' id='xq15:c3'><option value='0'>1 + (lowest)</option><option value='1'>2 ++</option><option value='2'>3 +++</option><option value='3'>4 ++++</option><option value='4'>5 +++++</option><option value='5'>6 ++++++</option><option value='6'>7  +++++++ (highest)</option><option value='7'>Not applicable</option><option value='8' selected='selected'>No opinion</option></select></label></td><td><label><select title='Satisfaction on choice3' name='q15:c3[]'><option value='9'>1 + (lowest)</option><option value='10'>2 ++</option><option value='11'>3 +++</option><option value='12'>4 ++++</option><option value='13'>5 +++++</option><option value='14'>6 ++++++</option><option value='15'>7  +++++++ (highest)</option><option value='16'>Didn&#039;t know</option><option value='17'>Not applicable</option><option value='18' selected='selected'>No opinion</option></select></label></td></tr></tbody></table></div>
-
-</div>
 </fieldset>
 </div>
 
-<div class='l-box' id='wbstp'>
+<div class='l-box field-group' id='wbstp'>
 <fieldset>
 <legend><span class="field-label">16. Technical Plenary widget</span></legend>
 <div class='description'>
@@ -1501,46 +1505,7 @@ observer only (check at least one of the appropriate requests below  in the 'Obs
 <td><label><input  title='Attending Efficient XML Interchange as a Group participant' type='radio' name='tp:d1[]' value='EXI' /></label></td>
 <td>Not Member confidential</td>
 <td><label><input  title='Requesting observer status for Efficient XML Interchange meeting' type='checkbox' name='tp:d2[]' value='EXI' /> (with Chair's agreement)</label></td></tr>
-<tr><th scope='row'>I18N (Internationalization)</th>
-<td><label><input  title='Attending I18N (Internationalization) CANCELED as a Group participant' type='radio' name='tp:d1[]' value='I18N' /></label></td>
-<td>Not Member confidential</td>
-<td><label><input  title='Requesting observer status for I18N (Internationalization) CANCELED meeting' type='checkbox' name='tp:d2[]' value='I18N' /> (with Chair's agreement)</label></td></tr>
-<tr><th scope='row'>Protocols and Formats</th>
-<td><label><input  title='Attending Protocols and Formats as a Group participant' type='radio' name='tp:d1[]' value='PF' /></label></td>
-<td>Not Member confidential</td>
-<td><label><input  title='Requesting observer status for Protocols and Formats meeting' type='checkbox' name='tp:d2[]' value='PF' /> (with Chair's agreement)</label></td></tr>
-<tr><th scope='row'>Systems Applications</th>
-<td><label><input  title='Attending Systems Applications as a Group participant' type='radio' name='tp:d1[]' value='c17' /></label></td>
-<td>Not Member confidential</td>
-<td><label><input  title='Requesting observer status for Systems Applications meeting' type='checkbox' name='tp:d2[]' value='c17' /> (with Chair's agreement)</label></td></tr>
-<tr><th scope='row'>TAG</th>
-<td><label><input  title='Attending TAG as a Group participant' type='radio' name='tp:d1[]' value='TAG' /></label></td>
-<td><strong>Member confidential</strong></td>
-<td><label><input  title='Requesting observer status for TAG meeting' type='checkbox' name='tp:d2[]' value='TAG' /></label></td></tr>
-<tr><th scope='row'>Timed Text</th>
-<td><label><input  title='Attending Timed Text as a Group participant' type='radio' name='tp:d1[]' value='TT' /></label></td>
-<td>Not Member confidential</td>
-<td><label><input  title='Requesting observer status for Timed Text meeting' type='checkbox' name='tp:d2[]' value='TT' /> (with Chair's agreement)</label></td></tr>
-<tr><th scope='row'>User Agent Accessibility</th>
-<td><label><input  title='Attending User Agent Accessibility as a Group participant' type='radio' name='tp:d1[]' value='UA' /></label></td>
-<td>Not Member confidential</td>
-<td><label><input  title='Requesting observer status for User Agent Accessibility meeting' type='checkbox' name='tp:d2[]' value='UA' /></label></td></tr>
-<tr><th scope='row'>Web and Broadcasting BG</th>
-<td><label><input  title='Attending Web and Broadcasting BG as a Group participant' type='radio' name='tp:d1[]' value='WebB' /></label></td>
-<td>Not Member confidential</td>
-<td><label><input  title='Requesting observer status for Web and Broadcasting BG meeting' type='checkbox' name='tp:d2[]' value='WebB' /> (with Chair's agreement)</label></td></tr>
-<tr><th scope='row'>Web Applications</th>
-<td><label><input  title='Attending Web Applications as a Group participant' type='radio' name='tp:d1[]' value='WebApp' /></label></td>
-<td>Not Member confidential</td>
-<td><label><input  title='Requesting observer status for Web Applications meeting' type='checkbox' name='tp:d2[]' value='WebApp' /> (with Chair's agreement)</label></td></tr>
-<tr><th scope='row'>Web Real-Time Communications</th>
-<td><label><input  title='Attending Web Real-Time Communications as a Group participant' type='radio' name='tp:d1[]' value='WebRT' /></label></td>
-<td>Not Member confidential</td>
-<td><label><input  title='Requesting observer status for Web Real-Time Communications meeting' type='checkbox' name='tp:d2[]' value='WebRT' /> (with Chair's agreement)</label></td></tr>
-<tr><th scope='row'>XML Query</th>
-<td><label><input  title='Attending XML Query as a Group participant' type='radio' name='tp:d1[]' value='XMLQ' /></label></td>
-<td>Not Member confidential</td>
-<td><label><input  title='Requesting observer status for XML Query meeting' type='checkbox' name='tp:d2[]' value='XMLQ' /> (with Chair's agreement)</label></td></tr>
+
 <tr><th scope='row'>Other (Please specify below)</th>
 <td></td><td></td><td><label><input  title='Attending a meeting not listed here or something not matching one of the above choices' type='checkbox' name='tp:d2[]' value='other' /></label> (explain below)</td></tr>
 </tbody></table></div><p class="commentblock"><label for='xtp:comment'></label> <br />
@@ -1549,17 +1514,15 @@ observer only (check at least one of the appropriate requests below  in the 'Obs
 </fieldset>
 </div>
    
-<div class='l-box' id='wbsq17'>
+<div class='l-box field-group' id='wbsq17'>
 <fieldset>
 <legend><span class="field-label">17. Employees list</span></legend>
-<div class='description'>
+</fieldset>
+
   <p>This type of question is longer proposed in the UI but needs to be adapted to display old surveys containing it.</p>
   <p>Please select up to three participants for this Interest Group.</p>
   <p>If the participant's name does not appear in the list below, you can add them using the AC Rep tool (clicking the <q>Add User</q> button).</p>
-</div>
-</fieldset>
 
-<div class='widget employees field-group'>
   <input type='hidden' name='q16:format' value='0' /
   <input type='hidden' name='q16:dim' value='3' />
 
@@ -1570,7 +1533,7 @@ observer only (check at least one of the appropriate requests below  in the 'Obs
 <select id="q16:d1" name="q16:d1[]">
   <option  value='0' >Nobody</option>
 </select>
-  </fieldset>
+</fieldset>
 
 <fieldset>
 <label for="q16:d12">
@@ -1592,8 +1555,6 @@ observer only (check at least one of the appropriate requests below  in the 'Obs
 
 </div>
 
-</div>
-
 <div>
 <p>This questionnaire is open for answers until <a href='http://www.timeanddate.com/worldclock/fixedtime.html?day=31&amp;month=12&amp;year=2015&amp;hour=23&amp;min=59&amp;sec=0&amp;p1=43'>23:59, Boston time on
 2015-12-31.</a>
@@ -1602,7 +1563,8 @@ Answers received after that time may not be counted.
 <p>The <a href='results'>results of this questionnaire</a> are available only to the participants of the group (and the W3C Team)</p>
 </div>
 
- <div class='l-box l-box--no-padding l-box--no-border'>
+ <div class="l-cluster l-cluster--vertical-align">
+ <div>
  <div class="checkbox-item">
 	<input type="checkbox" name="wbs:ccme" id="ccme" appearance="base">
 	<label for="ccme">
@@ -1610,7 +1572,6 @@ Answers received after that time may not be counted.
 	</label>
  </div>
  <p><button class="button" type="submit" name="action" value="Submit your answers">Submit your answers</button></p>
- </div>
 </form>
 
  <form novalidate method="post" action="./?">
@@ -1626,12 +1587,13 @@ response from our records. As this operation is <strong>not reversible</strong>,
 	<label for="ccme">
 		<span class="faux-label">I confirm</span>
 	</label>
-    </div>
-    <button class="button button--alt u-bg-error" type="submit" name="action" value="Delete my answer entirely">Delete my answer</button>
  </div>
+ <button class="button button--alt u-bg-error" type="submit" name="action" value="Delete my answer entirely">Delete my answer</button>
+ </div>
+</div></div>
 
-</div>
 </form>
+
 </div>
 
 </div>
