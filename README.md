@@ -22,7 +22,7 @@ It contains the snapshots of some of the HTML pages of the application and its e
 
 * [WBS Home Page using new Design System](https://w3c.github.io/wbs-design/html/s24-home.html)
 * [WBS All question types using new Design System](https://w3c.github.io/wbs-design/html/s24-qtypes.html)
-* [WBS Edit form using new Design System](https://w3c.github.io/wbs-design/html/s24-survey-edit.html)  (Draft)
+* [WBS Edit form using new Design System](https://w3c.github.io/wbs-design/html/s24-survey-edit.html) 
 * [WBS All question results types using new Design System](https://w3c.github.io/wbs-design/html/s24-qtypes-results.html)  (Draft)
 * [WBS Surveys list using new Design System](https://w3c.github.io/wbs-design/html/s24-list-surveys.html)  (Draft)
 * [WBS Add question using new Design System](https://w3c.github.io/wbs-design/html/s24-question-add.html)  (Draft)
