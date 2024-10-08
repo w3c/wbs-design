@@ -640,37 +640,37 @@
     <article>
     <h1>Add a question to 'WBS question types'</h1>
 
+    <p>This form allows to add questions to the questionnaire <cite>Test for WBS RFE</cite>; as a first step, you need to <strong>choose a type of question</strong> to create in the list below - you'll be prompted for further data once you submit the form.</p>
+
     <form method="get" action="./">
-    <div><p>This form allows to add questions to the questionnaire <cite>Test for WBS RFE</cite>; as a first step, you need to <strong>choose a type of question</strong> to create in the list below - you'<!-- ' -->ll be prompted for further data once you submit the form.</p></div>
 
     <div class='l-box'>
-    <fieldset>
-
-    <p class="txt-saturn">Question type:</p>
 
     <div class="field">
-	<fieldset role="group" aria-describedby="hint-name-change">
-		<legend class="group-legend">No input</legend>
+      <fieldset role="group">
+                <legend class="group-legend">No input</legend>
 		<div class="radio-item">
 			<input type="radio" id="type-text" name="type" value="text">
 			<label for="type-text">
 				<span class="faux-label">Simple Text</span>
-		  </label>
+		        </label>
 		  <div class="field-hint">This control doesn’t take any input; it is useful if you want to add a text section in the questionnaire (introductory statement, for instance)</div>
 		</div>
-	</fieldset>
-    </div>
+      </fieldset>
+     </div>
 
     <div class="field">
-	<fieldset role="group" aria-describedby="hint-name-change">
+      <fieldset role="group">
 		<legend class="group-legend family-grouping">Single selection required</legend>
+
 		<div class="radio-item">
 			<input type="radio" id="type-yn" name="type" value="yn">
 			<label for="type-yn">
 				<span class="faux-label">Yes/No</span>
-		        </label>
-			<div class="field-hint">This control propose a simple alternative &quot;yes&quot; or &quot;no&quot;</div>
+			</label>
+		        <div class="field-hint">This control propose a simple alternative &quot;yes&quot; or &quot;no&quot;</div>
 		</div>
+
 		<div class="radio-item">
 			<input type="radio" id="type-ync" name="type" value="ync">
 			<label for="type-ync">
@@ -678,6 +678,7 @@
 			</label>
 		        <div class="field-hint">This control proposes a 4 item radio buttons list: yes, no, concur or abstain, useful for instance to take formal vote</div>
 		</div>
+
 		<div class="radio-item">
 			<input type="radio" id="type-select" name="type" value="select">
 			<label for="type-select">
@@ -685,6 +686,7 @@
 		        </label>
 			<div class="field-hint">This control allows to ask to select one (and only one) item in a list of choices that you define. This version uses a dropdown list which is usually more adapted for long list of choices (also available as radio buttons)</div>
 		</div>
+
 		<div class="radio-item">
 			<input type="radio" id="type-radioselect" name="type" value="radioSelect">
 			<label for="type-radioselect">
@@ -692,59 +694,64 @@
 			</label>
 		        <div class="field-hint">This control allows to ask to select one (and only one) item in a list of choices that you define. This version uses radio buttons, more adapated for a short list or for items with long labels</div>
 		</div>
-	</fieldset>
+      </fieldset>
     </div>
 
     <div class="field">
-	<fieldset role="group" aria-describedby="hint-name-change">
+      <fieldset role="group">
 		<legend class="group-legend family-grouping">Multiple selections permitted</legend>
 		<div class="radio-item">
 			<input type="radio" id="type-multi" name="type" value="multi">
 			<label for="type-multi">
 				<span class="faux-label">Select multiple items (checkboxes)</span>
-		  </label>
+		        </label>
 		  <div class="field-hint">This control proposes a list of checkboxes that allows the responders to choose zero, one or as many items in the list of choices you define. The number of checkable items can be limited</div>
 		</div>
+
 		<div class="radio-item">
 			<input type="radio" id="type-evaluation" name="type" value="evaluation">
 			<label for="type-evaluation">
 				<span class="faux-label">Survey type</span>
-		  </label>
+		        </label>
 		  <div class="field-hint">This control proposes to rate the choices you define on a scale you define</div>
 		</div>
+
 		<div class="radio-item">
 			<input type="radio" id="type-choices2" name="type" value="choices2">
 			<label for="type-choices2">
 				<span class="faux-label">Straw-poll</span>
-		  </label>
+		        </label>
 		  <div class="field-hint">This control proposes a straw-poll system, allowing to choose a preferred choice and to mark other choices as acceptable</div>
 		</div>
+
 		<div class="radio-item">
 			<input type="radio" id="type-ranklist" name="type" value="ranklist">
 			<label for="type-ranklist">
 				<span class="faux-label">Rank-ordering</span>
-		  </label>
+		        </label>
 		  <div class="field-hint">This control allows to order a list of choices in the order of preference for the responder</div>
 		</div>
+
 		<div class="radio-item">
 			<input type="radio" id="type-scheduling" name="type" value="scheduling">
 			<label for="type-scheduling">
 				<span class="faux-label">Pick a time for a teleconf</span>
-		  </label>
+	   	        </label>
 		  <div class="field-hint">This control proposes a table of possibles days and times for scheduling a regular event (typically a teleconference)</div>
 		</div>
+
 		<div class="radio-item">
 			<input type="radio" id="type-cumulative" name="type" value="cumulative">
 			<label for="type-cumulative">
 				<span class="faux-label">Cumulative vote</span>
-		  </label>
+		        </label>
 		  <div class="field-hint">This control proposes to use cumulative vote on a set of options</div>
 		</div>
-	</fieldset>
+      </fieldset>
     </div>
 
     <div class="field">
-	<fieldset role="group" aria-describedby="hint-name-change">
+      <fieldset role="group">
 		<legend class="group-legend family-grouping">Free text input</legend>
 		<div class="radio-item">
 			<input type="radio" id="type-open" name="type" value="open">
@@ -753,6 +760,7 @@
 		        </label>
 			<div class="field-hint">This control proposes a text entry zone, where the responders are invited to give their comments</div>
 		</div>
+
 		<div class="radio-item">
 			<input type="radio" id="type-texts" name="type" value="texts">
 			<label for="type-texts">
@@ -760,95 +768,91 @@
 		        </label>
 			<div class="field-hint">This control proposes as many text entries as you create choices for it, where responders are free to put any text strings (of less than 256 characters)</div>
 		</div>
-	</fieldset>
+      </fieldset>
     </div>
-
-<p><button class="button" type="submit" name="action">Submit</button></p>
-</fieldset>
 </div>
-</form>
 
+<button class="button" type="submit" name="action" value="Submit">Submit</button>
+</form>
+<p>You can also <a name='copy' id='copy'>start from an existing question</a> by giving:</p>
 
 <form action="./" method="post">
 <input name="wgid" type="hidden" value="109" />
 <input name="qaireno" type="hidden" value="Test-wbs-rfe" />
-
 <div class='l-box field-group'>
-<div>
-<p>You can also <a name='copy' id='copy'>start from an existing question</a> by giving:</p></div>
 <fieldset>
-<div class="field">
-<label for="qno">
-<span class="field-label">A new identifier</span>
-</label>
-<input type="text" class="input-width-30" id="qno" name="qno" value="">
+  <div class="field">
+    <label for="qno">
+      <span class="field-label">A new identifier <span class="required">(Required)</span></span>
+    </label>
+    <div class="field-hint" id="hint-startdate">any number and letters OK, up to 8 characters, must be unique among the questionnaire's questions</div>
+    <input type="text" class="input-width-10" id="qno" name="qno" required="required" value="">
 </div>
 </fieldset>
 
 <fieldset>
-<div class="field">
-<label for="url">
-<span class="field-label">Question to copy</span>
-</label>
-<input type="text" class="input-width-30" id="url" name="url2" value="">
-</div>
-</fieldset>
-
-
-<ul>
-<li><label>a new identifier: <input maxlength="8" size="8" name="qno" type="text"
-value=""/></label> (any number and letters OK, up to 8 characters, must be unique among the questionnaire'<!-- ' -->s questions)</li>
-<li><label for='uri_select'>Question to copy</label>: <select name='uri_select' id='uri_select'>
+  <div class="field">
+    <label for="uri_select">
+      <span class="field-label">Question to copy</span>
+    </label>
+    <select name='uri_select' id='uri_select'>
         <option disabled="disabled">Questions in this questionnaire</option>
         <option value=''>None of the ones below</option>
-<option value='https://www.w3.org/2002/09/wbs/109/Test-wbs-rfe/q/q1/'>q1</option>
-<option value='https://www.w3.org/2002/09/wbs/109/Test-wbs-rfe/q/q2/'>q2</option>
-<option value='https://www.w3.org/2002/09/wbs/109/Test-wbs-rfe/q/q3/'>q3</option>
-<option value='https://www.w3.org/2002/09/wbs/109/Test-wbs-rfe/q/q4/'>q4</option>
-</select></li>
-<li><strong>OR</strong> <label>the URI of the question you want to copy: <input name="uri" type="text" value=""/></label></li>
-</ul>
-<p><button class="button" type="submit" name="action">Copy and create</button></p>
+        <option value='https://www.w3.org/2002/09/wbs/109/Test-wbs-rfe/q/q1/'>q1</option>
+        <option value='https://www.w3.org/2002/09/wbs/109/Test-wbs-rfe/q/q2/'>q2</option>
+        <option value='https://www.w3.org/2002/09/wbs/109/Test-wbs-rfe/q/q3/'>q3</option>
+        <option value='https://www.w3.org/2002/09/wbs/109/Test-wbs-rfe/q/q4/'>q4</option>
+    </select>
+  </div>
+</fieldset>
+
+<p><strong>OR</strong></p>
+
+<fieldset>
+  <div class="field">
+    <label for="uri">
+      <span class="field-label">The URI of the question you want to copy</span>
+    </label>
+    <input type="text" class="input-width-30" id="uri" name="uri" value="">
 </div>
+</fieldset>
+
+</div>
+<button class="button" type="submit" name="action" value="Copy and create">Copy and create</button>
 </form>
 
-
-      </article>
+</article>
       
-    <section class="related">
+ <section class="related">
     <div class="related__inner">
-        <h2 class="txt-jupiter">This Questionnaire</h2><p>
-        <ul class="clean-list" role="list">
-          <li><a href="/2002/09/wbs/99999/wbs-types-test/">Answer</a></li>
-          <li><a href="/2002/09/wbs/99999/wbs-types-test/results">Results</a></li>
-          <li><a href="/2002/09/wbs/99999/wbs-types-test/handler" title='Edit this questionnaire'>Edit</a></li>
-          <li><a href="/2002/09/wbs/99999/wbs-types-test/q/" title='Add a question to this questionnaire'>Add a question</a></li>
-          <li><a href="/2002/09/wbs/99999/wbs-types-test/handler#questions" title='Edit an existing question of this questionnaire'>Edit a
-  question</a></li>
-          <li><a href="/2002/09/wbs/99999/wbs-types-test/impersonate" title='Impersonate a user for this questionnaire'>Impersonate</a></li>
-         </ul></p>
-	
-	<h2 class="txt-jupiter">This Group</h2><p>
-        <ul class="clean-list" role="list">
-          <li><a href="/2002/09/wbs/99999/" title="Current questionnaires for this group">Current questionnaires</a></li>
-          <li><a href="/2002/09/wbs/99999/factory" title="Create a questionnaire for this group">Create a new questionnaire</a></li>
-	</ul></p>
-
-	
-	<h2 class="txt-jupiter">Nearby</h2><p>
-        <ul class="clean-list" role="list">
-          <li><a href="/2002/09/wbs/" title='WBS Home'>WBS Home</a></li>
-          <li><a href="/2002/09/wbs/showq" title='Current questionnaires for all the groups'>Current questionnaires</a></li>
-          <li><a href="/2002/09/wbs/myQuestionnaires" title='List of questionnaires
-  you are supposed to answer'><em>My</em> questionnaires</a></li>
-          <li><a href="/2004/01/pp-impl/" title='Working Group management
-     system and Call for Participation'><abbr title='Working Group'>WG</abbr> Management
-  (<abbr title='Implementation of the Patent Policy'>IPP</abbr>) </a></li>
-          <li><a href="/2000/09/dbwg/details?group=99999" title='Group details'>Group details </a></li>
-	</ul></p>
+      <h2 class="txt-jupiter">This Questionnaire</h2>
+      <ul class="clean-list" role="list">
+          <li><a href="/2002/09/wbs/109/Test-wbs-rfe/">Answer</a></li>
+          <li><a href="/2002/09/wbs/109/Test-wbs-rfe/results">Results</a></li>
+          <li><a href="/2002/09/wbs/109/Test-wbs-rfe/handler" title="Edit this questionnaire">Edit</a></li>
+          <li><a href="/2002/09/wbs/109/Test-wbs-rfe/q/" title="Add a question to this questionnaire">Add a question</a></li>
+          <li><a href="/2002/09/wbs/109/Test-wbs-rfe/handler#questions" title="Edit an existing question of this questionnaire'">Edit a question</a></li>
+          <li><a href="/2002/09/wbs/109/Test-wbs-rfe/impersonate" title="Impersonate a user for this questionnaires">Impersonate</a></li>
+	</ul>
+      </div>
+      <div class="related__inner family-grouping">
+      <h2 class="txt-jupiter">This Group</h2>
+       <ul class="clean-list" role="list">
+          <li><a href="/2002/09/wbs/109/" title="Current questionnaires for this group">Current questionnaires</a></li>
+          <li><a href="/2002/09/wbs/109/factory" title="Create a questionnaire for this group">Create a new questionnaire</a></li>
+      </ul>
+      </div>
+      <div class="related__inner family-grouping">
+      <h2 class="txt-jupiter">WBS Home</h2>
+       <ul class="clean-list" role="list">
+          <li><a href="/2002/09/wbs/" title="WBS Home">WBS Home</a></li>
+          <li><a href="/2002/09/wbs/showq" title="Current questionnaires for all the groups">Current questionnaires</a></li>
+          <li><a href="href='/2002/09/wbs/myQuestionnaires" title="List of questionnaires you are supposed to answer">My questionnaires</a></li>
+          <li><a href="/groups/">W3C Groups</a></li>
+      </ul>
     </div>
-    </section>
-
+</section>
+    
       </div>
      </main>
      </div>
