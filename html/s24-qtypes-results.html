@@ -65,8 +65,13 @@
 <!-- custom css for wbs
   <link rel="stylesheet" type="text/css" href="css/design-style.css" title="default" />
 -->
-
-    </head>
+<style>
+td {
+  border-right: solid 1px #bdbdbd !important;
+  border-bottom: none !important;
+}
+</style>
+</head>
 
 <body class="landing">
 <a class="skip-link" href="#main">Skip to content</a>
@@ -266,10 +271,16 @@
 </tr>
 </thead>
 <tbody>
-<tr><td scope='row'>User1 Test (<a href='./?email=@w3.org'>impersonate</a>)</td>
-<td class=''></td><td class='meta'>This is a comment</td></tr>
-<tr><td scope='row'>User2 Test (<a href='./?email=@w3.org'>impersonate</a>)</td>
-<td class=''></td><td class='meta'>This is a comment</td></tr>
+<tr>
+<td scope='row'>User1 Test (<a href='./?email=@w3.org'>impersonate</a>)</td>
+<td></td>
+<td>This is a comment</td>
+</tr>
+<tr>
+<td scope='row'>User2 Test (<a href='./?email=@w3.org'>impersonate</a>)</td>
+<td></td>
+<td>This is a comment</td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -357,15 +368,15 @@
 <thead>
 <tr>
 <th>Responder</th>
-<th scope='col'>Single selection required Yes/No/Concur/Abstain</th><th scope='col' class='meta'>Rationale</th><th scope='col' class='meta'>Comments</th></tr>
+<th scope='col'>Single selection required Yes/No/Concur/Abstain</th><th scope='col'>Rationale</th><th scope='col'>Comments</th></tr>
 </thead>
 <tbody>
 <tr><td scope='row'>User1 Test (<a href='./?email=@w3.org'>impersonate</a>)</td>
 <td>no</td>
-<td class='meta'></td><td class='meta'></td></tr>
+<td></td><td></td></tr>
 <tr><td scope='row'>User2 Test (<a href='./?email=@w3.org'>impersonate</a>)</td>
 <td>concur</td>
-<td class='meta'>This is a rationale</td><td class='meta'></td></tr>
+<td>This is a rationale</td><td></td></tr>
 </tbody>
 </table>
 </div>
@@ -402,15 +413,15 @@
 <thead>
 <tr>
 <th>Responder</th>
-<th scope='col'>Select one among many (drop-down list)</th><th scope='col' class='meta'>Rationale</th><th scope='col' class='meta'>Comments</th></tr>
+<th scope='col'>Select one among many (drop-down list)</th><th scope='col'>Rationale</th><th scope='col'>Comments</th></tr>
 </thead>
 <tbody>
 <tr><td scope='row'>User1 Test (<a href='./?email=@w3.org'>impersonate</a>)</td>
 <td>choice2</td>
-<td class='meta'></td><td class='meta'>This is a comment</td></tr>
+<td></td><td>This is a comment</td></tr>
 <tr><td scope='row'>User2 Test (<a href='./?email=@w3.org'>impersonate</a>)</td>
 <td>choice2</td>
-<td class='meta'></td><td class='meta'></td></tr>
+<td></td><td></td></tr>
 </tbody>
 </table>
 </div>
@@ -447,15 +458,15 @@
 <thead>
 <tr>
 <th>Responder</th>
-<th scope='col'>Select one among many (radio buttons)</th><th scope='col' class='meta'>Rationale</th><th scope='col' class='meta'>Comments</th></tr>
+<th scope='col'>Select one among many (radio buttons)</th><th scope='col'>Rationale</th><th scope='col'>Comments</th></tr>
 </thead>
 <tbody>
 <tr><td scope='row'>User1 Test (<a href='./?email=@w3.org'>impersonate</a>)</td>
 <td>choice1</td>
-<td class='meta'>This is a rationale</td><td class='meta'></td></tr>
+<td>This is a rationale</td><td></td></tr>
 <tr><td scope='row'>User2 Test (<a href='./?email=@w3.org'>impersonate</a>)</td>
 <td>choice1</td>
-<td class='meta'></td><td class='meta'></td></tr>
+<td></td><td></td></tr>
 </tbody>
 </table>
 </div>
@@ -471,13 +482,13 @@
 <thead>
 <tr>
 <th>Responder</th>
-<th scope='col' class='meta'>Open comments</th><th scope='col' class='meta'>Rationale</th></tr>
+<th scope='col'>Open comments</th><th scope='col'>Rationale</th></tr>
 </thead>
 <tbody>
 <tr><td scope='row'>User1 Test (<a href='./?email=@w3.org'>impersonate</a>)</td>
-<td class='meta'></td><td class='meta'>This is an open comment</td></tr>
+<td></td><td>This is an open comment</td></tr>
 <tr><td scope='row'>User2 Test (<a href='./?email=@w3.org'>impersonate</a>)</td>
-<td class='meta'></td><td class='meta'>This is a comment</td></tr>
+<td></td><td>This is a comment</td></tr>
 </tbody>
 </table>
 </div>
@@ -493,19 +504,19 @@
 <thead>
 <tr>
 <th>Responder</th>
-<th scope='col'>Item 1</th><th scope='col'>Item 2</th><th scope='col'>Item 3</th><th scope='col' class='meta'>Rationale</th><th scope='col' class='meta'>Comments</th></tr>
+<th scope='col'>Item 1</th><th scope='col'>Item 2</th><th scope='col'>Item 3</th><th scope='col'>Rationale</th><th scope='col'>Comments</th></tr>
 </thead>
 <tbody>
 <tr><td scope='row'>User1 Test (<a href='./?email=@w3.org'>impersonate</a>)</td>
 <td>My comment</td>
 <td></td>
 <td></td>
-<td class='meta'></td><td class='meta'></td></tr>
+<td'></td><td></td></tr>
 <tr><td scope='row'>User2 Test (<a href='./?email=@w3.org'>impersonate</a>)</td>
 <td></td>
 <td>I prefer </td>
 <td></td>
-<td class='meta'></td><td class='meta'></td></tr>
+<td></td><td></td></tr>
 </tbody>
 </table>
 </div>
@@ -545,7 +556,7 @@
 <thead>
 <tr>
 <th>Responder</th>
-<th scope='col'>Select multiple items (checkboxes)</th><th scope='col' class='meta'>Rationale</th><th scope='col' class='meta'>Comments</th></tr>
+<th scope='col'>Select multiple items (checkboxes)</th><th scope='col'>Rationale</th><th scope='col'>Comments</th></tr>
 </thead>
 <tbody>
 <tr><td scope='row'>User1 Test (<a href='./?email=@w3.org'>impersonate</a>)</td>
@@ -553,12 +564,12 @@
 <li>choice2</li>
 <li>choice3</li>
 </ul></td>
-<td class='meta'></td><td class='meta'></td></tr>
+<td></td><td></td></tr>
 <tr><td scope='row'>User2 Test (<a href='./?email=@w3.org'>impersonate</a>)</td>
 <!-- MutExcStates --> <td><ul><li>choice1</li>
 <li>choice3</li>
 </ul></td>
-<td class='meta'></td><td class='meta'></td></tr>
+<td></td><td></td></tr>
 </tbody>
 </table>
 <h4><a id='xq8-choice' name='xq8-choice'>View by choice</a></h4>
@@ -644,7 +655,7 @@
 <thead>
 <tr>
 <th>Responder</th>
-<th scope='col'>choice 1</th><th scope='col'>choice 2</th><th scope='col'>choice 3</th><th scope='col'>choice 4</th><th scope='col' class='meta'>Rationale</th><th scope='col' class='meta'>Comments</th></tr>
+<th scope='col'>choice 1</th><th scope='col'>choice 2</th><th scope='col'>choice 3</th><th scope='col'>choice 4</th><th scope='col'>Rationale</th><th scope='col'>Comments</th></tr>
 </thead>
 <tbody>
 <tr><td scope='row'>User1 Test (<a href='./?email=@w3.org'>impersonate</a>)</td>
@@ -652,13 +663,13 @@
 <td title='choice 2: 2'>2</td>
 <td title='choice 3: 5'>5</td>
 <td title='choice 4: No opinion'>No opinion</td>
-<td class='meta'></td><td class='meta'></td></tr>
+<td></td><td></td></tr>
 <tr><td scope='row'>User2 Test (<a href='./?email=@w3.org'>impersonate</a>)</td>
 <!-- MutExcStates --> <td title='choice 1: No opinion'>No opinion</td>
 <td title='choice 2: 2'>2</td>
 <td title='choice 3: 4'>4</td>
 <td title='choice 4: 5'>5</td>
-<td class='meta'></td><td class='meta'></td></tr>
+<td></td><td></td></tr>
 </tbody>
 </table>
 </div>
@@ -714,19 +725,19 @@
 <thead>
 <tr>
 <th>Responder</th>
-<th scope='col'>choice1</th><th scope='col'>choice2</th><th scope='col'>choice3</th><th scope='col' class='meta'>Rationale</th><th scope='col' class='meta'>Comments</th></tr>
+<th scope='col'>choice1</th><th scope='col'>choice2</th><th scope='col'>choice3</th><th scope='col'>Rationale</th><th scope='col'>Comments</th></tr>
 </thead>
 <tbody>
 <tr><td scope='row'>User1 Test (<a href='./?email=@w3.org'>impersonate</a>)</td>
 <!-- MutExcStates --> <td title='choice1: Yes'>Yes</td>
 <td title='choice2: Yes, and prefer'>Yes, and prefer</td>
 <td title='choice3: No'>No</td>
-<td class='meta'></td><td class='meta'>This is a comment</td></tr>
+<td></td><td>This is a comment</td></tr>
 <tr><td scope='row'>User2 Test (<a href='./?email=@w3.org'>impersonate</a>)</td>
 <!-- MutExcStates --> <td title='choice1: Yes, and prefer'>Yes, and prefer</td>
 <td title='choice2: Yes, but prefer not'>Yes, but prefer not</td>
 <td title='choice3: No'>No</td>
-<td class='meta'></td><td class='meta'></td></tr>
+<td></td><td></td></tr>
 </tbody>
 </table>
 </div>
@@ -780,19 +791,19 @@
 <thead>
 <tr>
 <th>Responder</th>
-<th scope='col'>choix 1</th><th scope='col'>choix2</th><th scope='col'>choix3</th><th scope='col' class='meta'>Rationale</th><th scope='col' class='meta'>Comments</th></tr>
+<th scope='col'>choix 1</th><th scope='col'>choix2</th><th scope='col'>choix3</th><th scope='col'>Rationale</th><th scope='col'>Comments</th></tr>
 </thead>
 <tbody>
 <tr><td scope='row'>User1 Test (<a href='./?email=w3.org'>impersonate</a>)</td>
 <!-- MutExcStates --> <td title='choix 1: Ranked 1'>Ranked 1</td>
 <td title='choix2: Ranked 2'>Ranked 2</td>
 <td title='choix3: Don’t want'>Don’t want</td>
-<td class='meta'></td><td class='meta'></td></tr>
+<td></td><td></td></tr>
 <tr><td scope='row'>User2 Test (<a href='./?email=@w3.org'>impersonate</a>)</td>
 <!-- MutExcStates --> <td title='choix 1: Don’t mind'>Don’t mind</td>
 <td title='choix2: Ranked 1'>Ranked 1</td>
 <td title='choix3: Ranked 3'>Ranked 3</td>
-<td class='meta'></td><td class='meta'></td></tr>
+<td></td><td></td></tr>
 </tbody>
 </table>
 </div>
@@ -854,19 +865,19 @@
 <thead>
 <tr>
 <th>Responder</th>
-<th scope='col'>Monday, 0 UTC</th><th scope='col'>Monday, 1 UTC</th><th scope='col'>Monday, 2 UTC</th><th scope='col' class='meta'>Rationale</th><th scope='col' class='meta'>Comments</th></tr>
+<th scope='col'>Monday, 0 UTC</th><th scope='col'>Monday, 1 UTC</th><th scope='col'>Monday, 2 UTC</th><th scope='col'>Rationale</th><th scope='col'>Comments</th></tr>
 </thead>
 <tbody>
 <tr><td scope='row'>User1 Test (<a href='./?email=@w3.org'>impersonate</a>)</td>
 <!-- MutExcStates --> <td title='Monday, 0 UTC: Yes, but prefer not'>Yes, but prefer not</td>
 <td title='Monday, 1 UTC: Yes'>Yes</td>
 <td title='Monday, 2 UTC: Yes, and prefer'>Yes, and prefer</td>
-<td class='meta'></td><td class='meta'></td></tr>
+<td></td><td></td></tr>
 <tr><td scope='row'>User2 Test (<a href='./?email=@w3.org'>impersonate</a>)</td>
 <!-- MutExcStates --> <td title='Monday, 0 UTC: Yes, and prefer'>Yes, and prefer</td>
 <td title='Monday, 1 UTC: Yes'>Yes</td>
 <td title='Monday, 2 UTC: No'>No</td>
-<td class='meta'></td><td class='meta'></td></tr>
+<td></td><td></td></tr>
 </tbody>
 </table>
 </div>
@@ -1317,7 +1328,7 @@
 <thead>
 <tr>
 <th>Responder</th>
-<th scope='col'>choice 1</th><th scope='col'>choice 2</th><th scope='col'>choice 3</th><th scope='col'>choice 4</th><th scope='col' class='meta'>Rationale</th><th scope='col' class='meta'>Comments</th></tr>
+<th scope='col'>choice 1</th><th scope='col'>choice 2</th><th scope='col'>choice 3</th><th scope='col'>choice 4</th><th scope='col'>Rationale</th><th scope='col'>Comments</th></tr>
 </thead>
 <tbody>
 <tr><td scope='row'>User1 Test (<a href='./?email=@w3.org'>impersonate</a>)</td>
@@ -1325,13 +1336,13 @@
 <td title='choice 2: 50'>50</td>
 <td title='choice 3: 5'>5</td>
 <td title='choice 4: 15'>15</td>
-<td class='meta'></td><td class='meta'></td></tr>
+<td></td><td></td></tr>
 <tr><td scope='row'>User2 Test (<a href='./?email=@w3.org'>impersonate</a>)</td>
 <!-- MutExcStates --> <td title='choice 1: 90'>90</td>
 <td title='choice 2: 5'>5</td>
 <td title='choice 3: 3'>3</td>
 <td title='choice 4: 2'>2</td>
-<td class='meta'></td><td class='meta'></td></tr>
+<td></td><td></td></tr>
 </tbody>
 </table>
 </div>
@@ -1398,19 +1409,19 @@
 <thead>
 <tr>
 <th>Responder</th>
-<th scope='col'>choice1</th><th scope='col'>choice2</th><th scope='col'>choice3</th><th scope='col' class='meta'>Rationale</th><th scope='col' class='meta'>Comments</th></tr>
+<th scope='col'>choice1</th><th scope='col'>choice2</th><th scope='col'>choice3</th><th scope='col'>Rationale</th><th scope='col'>Comments</th></tr>
 </thead>
 <tbody>
 <tr><td scope='row'>User1 Test (<a href='./?email=@w3.org'>impersonate</a>)</td>
 <!-- MutExcStates --> <td title='choice1: 1'>1</td>
 <td title='choice2: 5'>5</td>
 <td title='choice3: 7'>7</td>
-<td class='meta'></td><td class='meta'></td></tr>
+<td></td><td></td></tr>
 <tr><td scope='row'>User2 Test (<a href='./?email=@w3.org'>impersonate</a>)</td>
 <!-- MutExcStates --> <td title='choice1: Not applicable'>Not applicable</td>
 <td title='choice2: 4'>4</td>
 <td title='choice3: No opinion'>No opinion</td>
-<td class='meta'></td><td class='meta'></td></tr>
+<td></td><td></td></tr>
 </tbody>
 </table>
 </div>
@@ -1506,15 +1517,15 @@
 <thead>
 <tr>
 <th>Responder</th>
-<th scope='col'>1</th><th scope='col' class='meta'>Rationale</th><th scope='col' class='meta'>Comments</th></tr>
+<th scope='col'>1</th><th scope='col'>Rationale</th><th scope='col'>Comments</th></tr>
 </thead>
 <tbody>
 <tr><td scope='row'>User1 Test (<a href='./?email=@w3.org'>impersonate</a>)</td>
 <td>choice1</td>
-<td class='meta'></td><td class='meta'></td></tr>
+<td></td><td></td></tr>
 <tr><td scope='row'>User2 Test (<a href='./?email=@w3.org'>impersonate</a>)</td>
 <td>choice1</td>
-<td class='meta'></td><td class='meta'></td></tr>
+<td></td><td></td></tr>
 </tbody>
 </table>
 </div>
@@ -1648,11 +1659,11 @@
 <tr><td scope='row'><span title='Member-visible'>&#x272a;</span>User1 Test</td><td></td>
 <td>Audio Working Group</td>
 <td></td>
-<td class='meta'></td></tr>
+<td></td></tr>
 <tr><td scope='row'><span title='Member-visible'>&#x272a;</span>User2 Test</td><td></td>
 <td>Requesting observer status</td>
 <td>Audio Working Group, Education and Outreach Working Group, TAG</td>
-<td class='meta'></td></tr>
+<td></td></tr>
 </tbody></table></div>
 </div><h2>More details on responses</h2>
 <ul>
