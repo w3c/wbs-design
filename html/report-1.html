@@ -1,0 +1,268 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+    <title>WBS question types</title>
+
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="description"/>
+    <meta name="thumbnail" content="https://www.w3.org/assets/website-2021/images/w3c-opengraph-image.png"/>
+    <meta property="og:url" content="https://www.w3.org/"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Title"/>
+    <meta property="og:image" content="https://www.w3.org/assets/website-2021/images/w3c-opengraph-image.png"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+    <meta property="og:description" content="description"/>
+    <meta property="og:site_name" content="W3C"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:site" content="w3c"/>
+    <meta name="twitter:url" content="url"/>
+    <meta name="twitter:title" content="title"/>
+    <meta name="twitter:description" content="description"/>
+    <meta name="twitter:image" content="https://www.w3.org/assets/website-2021/images/w3c-opengraph-image.png"/>
+    <link rel="home" href="https://www.w3.org/"/>
+
+    <link rel="stylesheet" href="https://www.w3.org/assets/website-2021/styles/core.css?ver=1.4" media="screen"/>
+
+        <!--
+        CSS Mustard Cut
+        Print (Edge doesn't apply to print otherwise)
+        Edge, Chrome 39+, Opera 26+, Safari 9+, iOS 9+, Android ~5+, Android UCBrowser ~11.8+
+        FF 47+
+        -->
+        <link rel="stylesheet" id="advanced-stylesheet"
+              href="https://www.w3.org/assets/website-2021/styles/advanced.css?ver=1.4" media="
+            only print,
+            only all and (pointer: fine), only all and (pointer: coarse), only all and (pointer: none),
+            only all and (min--moz-device-pixel-ratio:0) and (display-mode:browser), (min--moz-device-pixel-ratio:0) and (display-mode:fullscreen)
+        ">
+        <link rel="stylesheet" href="https://www.w3.org/assets/website-2021/styles/print.css" media="print"/>
+   
+        <link rel="stylesheet" href="../fa/css/fontawesome.min.css">
+        <link rel="stylesheet" href="../fa/css/brands.min.css">
+        <link rel="stylesheet" href="../fa/css/solid.min.css">
+    
+        <script src="https://www.w3.org/assets/website-2021/js/libraries/fontfaceobserver.js"></script>
+
+        <script>
+            var myFont = new FontFaceObserver('Noto Sans');
+
+            Promise.all([myFont.load()]).then(function () {
+                document.documentElement.className += " fonts-loaded";
+            });
+
+            (function () {
+                var linkEl = document.getElementById('advanced-stylesheet');
+                if (window.matchMedia && window.matchMedia(linkEl.media).matches) {
+                    var script = document.createElement('script');
+                    script.src = 'https://www.w3.org/assets/website-2021/js/main.js?ver=1.4';
+                    script.defer = true;
+                    document.querySelector('head').appendChild(script);
+                    (function (H) {
+                        H.className = H.className.replace(/\bno-js\b/, 'js')
+                    })(document.documentElement);
+                }
+            })();
+        </script>
+
+<!-- custom css for wbs -->
+  <link rel="stylesheet" type="text/css" href="css/design-style.css" title="default" />
+<!--  -->
+    
+    </head>
+
+
+<body class="default">
+<div class="grid-wrap">
+<div class="wrap">
+
+<main id="main">
+
+<div class="content">
+ <article>    
+ <h1 class="title">WBS question types</h1>
+
+<form method="post" action="./?">
+
+    <legend>
+      <span class="field-label">Test Design System 1</span>
+    </legend>
+
+        <div class="field">
+		<label for="arrival-date">
+			<span class="field-label">Date of arrival</span>
+		</label>
+		<div class="field-hint" id="hint-arrival-date">For example 30/05/2021</div>
+		<input type="text" class="input-width-10" id="arrival-date" name="arrival-date" aria-describedby="hint-arrival-date">
+	</div>
+
+	<div class="field">
+		<fieldset role="group" aria-describedby="hint-date-of-birth">
+			<legend>
+				<span class="field-label">Date of birth (an example of a memorable date)</span>
+			</legend>
+			<div class="field-hint u-no-margin-top" id="hint-date-of-birth">For example 20 07 1972</div>
+			<div class="memorable-date">
+				<label for="bday-day" class="faux-label">Day</label>
+				<input type="text" class="input-width-2" id="bday-day" name="bday-day" autocomplete="bday-day" pattern="[0-9]*" inputmode="numeric" min="0" max="31">
+			</div>
+			<div class="memorable-date">
+				<label for="bday-month" class="faux-label">Month</label>
+				<input type="text" class="input-width-2" id="bday-month" name="bday-month" autocomplete="bday-month" pattern="[0-9]*" inputmode="numeric" min="1" max="12">
+			</div>
+			<div class="memorable-date">
+				<label for="bday-year" class="faux-label">Year</label>
+				<input type="text" class="input-width-4" id="bday-year" name="bday-year" autocomplete="bday-year" pattern="[0-9]*" inputmode="numeric" min="1900" max="2050">
+			</div>
+		</fieldset>
+	</div>
+
+	<div class="field">
+		<fieldset role="group" aria-describedby="hint-meeting-time">
+			<legend>
+				<span class="field-label">Specify a start time for your meeting</span>
+			</legend>
+			<div class="field-hint u-no-margin-top" id="hint-meeting-time">Use <dfn id="utc"><abbr title="Coordinated Universal Time">UTC</abbr></dfn> and your local time zone</div>
+			<div class="input-group">
+				<div>
+					<label for="meeting-time" class="faux-label">Start time</label>
+					<input type="text" class="input-width-5" id="meeting-time" name="meeting-time">
+				</div>
+				<div>
+					<label for="meeting-time" class="faux-label">Time zone</label>
+					<select id="timezone" name="timezone">
+						<option value="UTC−12:00">UTC−12:00</option>
+						<option value="UTC+13:00">UTC+13:00</option>
+						<option value="UTC+14:00">UTC+14:00</option>
+					</select>
+				</div>
+			</div>
+		</fieldset>
+	</div>
+   
+     
+<div class='l-box'>
+    <legend>
+      <span class="field-label">Test Design System 2: using a 'l-box'</span>
+    </legend>
+
+        <div class="field">
+		<label for="arrival-date">
+			<span class="field-label">Date of arrival</span>
+		</label>
+		<div class="field-hint" id="hint-arrival-date">For example 30/05/2021</div>
+		<input type="text" class="input-width-10" id="arrival-date" name="arrival-date" aria-describedby="hint-arrival-date">
+	</div>
+
+	<div class="field">
+		<fieldset role="group" aria-describedby="hint-date-of-birth">
+			<legend>
+				<span class="field-label">Date of birth (an example of a memorable date)</span>
+			</legend>
+			<div class="field-hint u-no-margin-top" id="hint-date-of-birth">For example 20 07 1972</div>
+			<div class="memorable-date">
+				<label for="bday-day" class="faux-label">Day</label>
+				<input type="text" class="input-width-2" id="bday-day" name="bday-day" autocomplete="bday-day" pattern="[0-9]*" inputmode="numeric" min="0" max="31">
+			</div>
+			<div class="memorable-date">
+				<label for="bday-month" class="faux-label">Month</label>
+				<input type="text" class="input-width-2" id="bday-month" name="bday-month" autocomplete="bday-month" pattern="[0-9]*" inputmode="numeric" min="1" max="12">
+			</div>
+			<div class="memorable-date">
+				<label for="bday-year" class="faux-label">Year</label>
+				<input type="text" class="input-width-4" id="bday-year" name="bday-year" autocomplete="bday-year" pattern="[0-9]*" inputmode="numeric" min="1900" max="2050">
+			</div>
+		</fieldset>
+	</div>
+
+	<div class="field">
+		<fieldset role="group" aria-describedby="hint-meeting-time">
+			<legend>
+				<span class="field-label">Specify a start time for your meeting</span>
+			</legend>
+			<div class="field-hint u-no-margin-top" id="hint-meeting-time">Use <dfn id="utc"><abbr title="Coordinated Universal Time">UTC</abbr></dfn> and your local time zone</div>
+			<div class="input-group">
+				<div>
+					<label for="meeting-time" class="faux-label">Start time</label>
+					<input type="text" class="input-width-5" id="meeting-time" name="meeting-time">
+				</div>
+				<div>
+					<label for="meeting-time" class="faux-label">Time zone</label>
+					<select id="timezone" name="timezone">
+						<option value="UTC−12:00">UTC−12:00</option>
+						<option value="UTC+13:00">UTC+13:00</option>
+						<option value="UTC+14:00">UTC+14:00</option>
+					</select>
+				</div>
+			</div>
+		</fieldset>
+	</div>
+</div>
+     
+<div class='l-box field-group'>
+    <legend>
+      <span class="field-label">Test Design System 3: using a 'l-box' and an attribute 'field-group'</span>
+    </legend>
+
+        <div class="field">
+		<label for="arrival-date">
+			<span class="field-label">Date of arrival</span>
+		</label>
+		<div class="field-hint" id="hint-arrival-date">For example 30/05/2021</div>
+		<input type="text" class="input-width-10" id="arrival-date" name="arrival-date" aria-describedby="hint-arrival-date">
+	</div>
+
+	<div class="field">
+		<fieldset role="group" aria-describedby="hint-date-of-birth">
+			<legend>
+				<span class="field-label">Date of birth (an example of a memorable date)</span>
+			</legend>
+			<div class="field-hint u-no-margin-top" id="hint-date-of-birth">For example 20 07 1972</div>
+			<div class="memorable-date">
+				<label for="bday-day" class="faux-label">Day</label>
+				<input type="text" class="input-width-2" id="bday-day" name="bday-day" autocomplete="bday-day" pattern="[0-9]*" inputmode="numeric" min="0" max="31">
+			</div>
+			<div class="memorable-date">
+				<label for="bday-month" class="faux-label">Month</label>
+				<input type="text" class="input-width-2" id="bday-month" name="bday-month" autocomplete="bday-month" pattern="[0-9]*" inputmode="numeric" min="1" max="12">
+			</div>
+			<div class="memorable-date">
+				<label for="bday-year" class="faux-label">Year</label>
+				<input type="text" class="input-width-4" id="bday-year" name="bday-year" autocomplete="bday-year" pattern="[0-9]*" inputmode="numeric" min="1900" max="2050">
+			</div>
+		</fieldset>
+	</div>
+
+	<div class="field">
+		<fieldset role="group" aria-describedby="hint-meeting-time">
+			<legend>
+				<span class="field-label">Specify a start time for your meeting</span>
+			</legend>
+			<div class="field-hint u-no-margin-top" id="hint-meeting-time">Use <dfn id="utc"><abbr title="Coordinated Universal Time">UTC</abbr></dfn> and your local time zone</div>
+			<div class="input-group">
+				<div>
+					<label for="meeting-time" class="faux-label">Start time</label>
+					<input type="text" class="input-width-5" id="meeting-time" name="meeting-time">
+				</div>
+				<div>
+					<label for="meeting-time" class="faux-label">Time zone</label>
+					<select id="timezone" name="timezone">
+						<option value="UTC−12:00">UTC−12:00</option>
+						<option value="UTC+13:00">UTC+13:00</option>
+						<option value="UTC+14:00">UTC+14:00</option>
+					</select>
+				</div>
+			</div>
+		</fieldset>
+	</div>
+</div>
+
+</article>
+</div>
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
