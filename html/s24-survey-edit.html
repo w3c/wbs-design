@@ -66,6 +66,12 @@
 <!-- custom css for wbs
   <link rel="stylesheet" type="text/css" href="../css/site-wbs-style.css" title="default" />
  -->  
+<style>
+
+.related__inner > * + h2 {
+   margin-top: 2.5rem;  
+}
+</style>
 
 </head>
 
@@ -956,8 +962,8 @@ If you would like to allow additional groups or users to answer, edit and/or see
         </div>
             
 	</article>
- <section class="related">
-    <div class="related__inner">
+ <div class="related">
+      <nav class="related__inner" aria-labelledby="related-label">
       <h2 class="txt-jupiter">This Questionnaire</h2>
       <ul class="clean-list" role="list">
           <li><a href="/2002/09/wbs/109/Test-wbs-rfe/">Answer</a></li>
@@ -967,24 +973,20 @@ If you would like to allow additional groups or users to answer, edit and/or see
           <li><a href="/2002/09/wbs/109/Test-wbs-rfe/handler#questions" title="Edit an existing question of this questionnaire'">Edit a question</a></li>
           <li><a href="/2002/09/wbs/109/Test-wbs-rfe/impersonate" title="Impersonate a user for this questionnaires">Impersonate</a></li>
 	</ul>
-      </div>
-      <div class="related__inner family-grouping">
       <h2 class="txt-jupiter">This Group</h2>
        <ul class="clean-list" role="list">
-          <li><a href="/2002/09/wbs/109/" title="Current questionnaires for this group">Current questionnaires</a></li>
+          <li><a href="/2002/09/wbs/109/" title="Current questionnaires for this group">Open questionnaires for the group</a></li>
           <li><a href="/2002/09/wbs/109/factory" title="Create a questionnaire for this group">Create a new questionnaire</a></li>
       </ul>
-      </div>
-      <div class="related__inner family-grouping">
       <h2 class="txt-jupiter">WBS Home</h2>
        <ul class="clean-list" role="list">
           <li><a href="/2002/09/wbs/" title="WBS Home">WBS Home</a></li>
-          <li><a href="/2002/09/wbs/showq" title="Current questionnaires for all the groups">Current questionnaires</a></li>
+          <li><a href="/2002/09/wbs/showq" title="Current questionnaires for all the groups">All open questionnaires</a></li>
           <li><a href="href='/2002/09/wbs/myQuestionnaires" title="List of questionnaires you are supposed to answer">My questionnaires</a></li>
           <li><a href="/groups/">W3C Groups</a></li>
       </ul>
-    </div>
-</section>
+    </nav>
+</div>
 
      </div>
      </main>
