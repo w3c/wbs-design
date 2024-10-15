@@ -66,11 +66,17 @@
             })();
         </script>
 
-<!-- custom css for wbs -->
+<!-- custom css for wbs
   <link rel="stylesheet" type="text/css" href="css/design-style.css" title="default" />
-<!--  -->
-    
-    </head>
+ -->
+ 
+<style>
+.related__inner > * + h2 {
+   margin-top: 2.5rem;  
+}
+</style>
+
+</head>
 
 <body class="default">
 <a class="skip-link" href="#main">Skip to content</a>
@@ -658,9 +664,9 @@ Answers received after that time may not be counted.
     <p>If you cannot use this on-line questionnaire, you may send your answers by email  to <a href='mailto:webreq%40w3.org'>webreq@w3.org</a> using the <a href="text">text version of this questionnaire</a>.</p>
 
 <form method="post" action="./?">
-     <p>You're identified as .</p>
 
-
+<p>You're identified as .</p>
+     
 <div class="l-box field-group">
 <fieldset>
   <legend><span class="group-legend">1. Simple text question</span> <a href="q/q1/" title="Edit text of question &quot;Simple text question&quot;"><span class="far fa-edit" aria-hidden="true" alt="Edit"> </span></a></legend>
@@ -1602,37 +1608,33 @@ response from our records. As this operation is <strong>not reversible</strong>,
 </div>
 
 </article>
-
-<section class="related">
-    <div class="related__inner">
-      <h2 class="txt-jupiter">This Questionnaire</h2>
-      <ul class="clean-list" role="list">
+	
+ <div class="related">
+   <nav class="related__inner" aria-labelledby="related-label">
+     <h2 class="txt-jupiter">This Questionnaire</h2>
+     <ul class="clean-list" role="list">
           <li><a href="/2002/09/wbs/109/Test-wbs-rfe/">Answer</a></li>
           <li><a href="/2002/09/wbs/109/Test-wbs-rfe/results">Results</a></li>
           <li><a href="/2002/09/wbs/109/Test-wbs-rfe/handler" title="Edit this questionnaire">Edit</a></li>
           <li><a href="/2002/09/wbs/109/Test-wbs-rfe/q/" title="Add a question to this questionnaire">Add a question</a></li>
           <li><a href="/2002/09/wbs/109/Test-wbs-rfe/handler#questions" title="Edit an existing question of this questionnaire'">Edit a question</a></li>
           <li><a href="/2002/09/wbs/109/Test-wbs-rfe/impersonate" title="Impersonate a user for this questionnaires">Impersonate</a></li>
-	</ul>
-      </div>
-      <div class="related__inner family-grouping">
-      <h2 class="txt-jupiter">This Group</h2>
-       <ul class="clean-list" role="list">
-          <li><a href="/2002/09/wbs/109/" title="Current questionnaires for this group">Current questionnaires</a></li>
-          <li><a href="/2002/09/wbs/109/factory" title="Create a questionnaire for this group">Create a new questionnaire</a></li>
-      </ul>
-      </div>
-      <div class="related__inner family-grouping">
-      <h2 class="txt-jupiter">WBS Home</h2>
-       <ul class="clean-list" role="list">
+     </ul>
+     <h2 class="txt-jupiter">This Group</h2>
+     <ul class="clean-list" role="list">
+          <li><a href="/2002/09/wbs/109/" title="Current questionnaires for this group">Open questionnaires for this group</a></li>
+          <li><a href="/2002/09/wbs/109/factory" title="Create a questionnaire for this group">Create a new questionnaire for this group</a></li>
+     </ul>
+     <h2 class="txt-jupiter">WBS Home</h2>
+     <ul class="clean-list" role="list">
           <li><a href="/2002/09/wbs/" title="WBS Home">WBS Home</a></li>
-          <li><a href="/2002/09/wbs/showq" title="Current questionnaires for all the groups">Current questionnaires</a></li>
+          <li><a href="/2002/09/wbs/showq" title="Current questionnaires for all the groups">All open questionnaires</a></li>
           <li><a href="href='/2002/09/wbs/myQuestionnaires" title="List of questionnaires you are supposed to answer">My questionnaires</a></li>
           <li><a href="/groups/">W3C Groups</a></li>
-      </ul>
-    </div>
-</section>
-    
+     </ul>
+   </nav>
+ </div>
+
   </div>
  </main>
 </div>

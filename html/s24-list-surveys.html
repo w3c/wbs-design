@@ -72,7 +72,7 @@
     <style>
 .lol > * {
   padding-top: 1em;
-  padding-bottom: 1em;
+  padding-bottom: 2.5em !important;
 }
 .lol > * {
   border-bottom: solid 1px #bdbdbd;
@@ -97,6 +97,12 @@ h2 {
   .lol li {
     clear: both;
   }
+}
+</style>
+
+<style>
+.related__inner > * + h2 {
+   margin-top: 2.5rem;  
 }
 </style>
 
@@ -739,30 +745,24 @@ h2 {
 </ul>
 </div>
 </article>
-
-      
- <section class="related">
-    <div class="related__inner">
-
-      <h2 class="txt-jupiter">This Group</h2>
-        <p>
-        <ul class="clean-list" role="list">
-          <li><a href="/2002/09/wbs/99999/" title="Current questionnaires for this group">Current questionnaires</a></li>
-          <li><a href="/2002/09/wbs/99999/factory" title="Create a questionnaire for this group">Create a new questionnaire</a></li>
-	</ul></p>
-
 	
-	<h2 class="txt-jupiter">Nearby</h2>
-	<p>
-        <ul class="clean-list" role="list">
-          <li><a href="/2002/09/wbs/">WBS Home</a></li>
-          <li><a href="/2002/09/wbs/showq" title="Current questionnaires for all the groups">Current questionnaires</a></li>
-          <li><a href="/2002/09/wbs/myQuestionnaires" title="List of questionnaires you are supposed to answer">My questionnaires</a></li>
+ <div class="related">
+   <nav class="related__inner" aria-labelledby="related-label">
+   <h2 class="txt-jupiter">This Group</h2>
+     <ul class="clean-list" role="list">
+          <li><a href="/2002/09/wbs/109/" title="Current questionnaires for this group">Open questionnaires for this group</a></li>
+          <li><a href="/2002/09/wbs/109/factory" title="Create a questionnaire for this group">Create a new questionnaire for this group</a></li>
+     </ul>
+     <h2 class="txt-jupiter">WBS Home</h2>
+     <ul class="clean-list" role="list">
+          <li><a href="/2002/09/wbs/" title="WBS Home">WBS Home</a></li>
+          <li><a href="/2002/09/wbs/showq" title="Current questionnaires for all the groups">All open questionnaires</a></li>
+          <li><a href="href='/2002/09/wbs/myQuestionnaires" title="List of questionnaires you are supposed to answer">My questionnaires</a></li>
           <li><a href="/groups/">W3C Groups</a></li>
-	</ul></p>
-    </div>
- </section>
-    
+     </ul>
+   </nav>
+ </div>
+ 
   </div>
   </main>
   </div>
