@@ -645,11 +645,16 @@
   <div class="content">
     <article>
     <h1>Add a question to 'WBS question types'</h1>
-
-    <p>This form allows to add questions to the questionnaire <cite>Test for WBS RFE</cite>; as a first step, you need to <strong>choose a type of question</strong> to create in the list below - you'll be prompted for further data once you submit the form.</p>
+    <ul>
+      <li><a href="#create">Create a question from scratch</a></li>
+      <li><a href="#copy">Copy an existing question</a></li>
+    </ul>
 
     <form method="get" action="./">
-
+    <div> </div>
+    <div> </div>
+    <h2 name="create" id="create">Create a question from scratch</h2>
+    <p>You need to first <strong>choose a type of question</strong> to create in the list below - you'll be prompted for further data once you submit the form.</p>
     <div class='l-box'>
 
     <div class="field">
@@ -780,11 +785,15 @@
 
 <button class="button" type="submit" name="action" value="Submit">Submit</button>
 </form>
-<p>You can also <a name='copy' id='copy'>start from an existing question</a> by giving:</p>
+
 
 <form action="./" method="post">
 <input name="wgid" type="hidden" value="109" />
 <input name="qaireno" type="hidden" value="Test-wbs-rfe" />
+<div> </div>
+<h2 name="copy" id="copy">Copy an existing question</h2>
+<p>You can also start from an existing question by giving:</p>
+
 <div class='l-box field-group'>
 <fieldset>
   <div class="field">
@@ -826,6 +835,7 @@
 </div>
 <button class="button" type="submit" name="action" value="Copy and create">Copy and create</button>
 </form>
+
 
 </article>
       
