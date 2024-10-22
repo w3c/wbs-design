@@ -63,9 +63,8 @@
         </script>
     
 <style>
-td {
-  border-right: solid 1px #bdbdbd !important;
-  border-bottom: none !important;
+td, th {
+  border-right: solid 1px #bdbdbd;
 }
 </style>
 </head>
@@ -394,14 +393,15 @@ td {
 <div class='l-box'>
 <h3 id='xq1' name='xq1'>1. Simple text question</h3>
 <p>The following flavors were nominated for the best ice cream survey.</p>
-<h4 id='xq1-det' name='xq1-det'>Details</h4>
-<div>
 <table>
+<caption>
+  <h4>Details</h4>
+</caption>
 <thead>
 <tr>
-<th scope='col'>Responder</th>
-<th scope='col'>Rationale</th>
-<th scope='col'>Comments</th>
+<th>Responder</th>
+<th>Rationale</th>
+<th>Comments</th>
 </tr>
 </thead>
 <tbody>
@@ -418,17 +418,15 @@ td {
 </tbody>
 </table>
 </div>
-</div>
 
 <div class='l-box'>
 <h3 id='xq2' name='xq2'>2. Single selection required Yes/No</h3>
 <p>Ice-cream Process Document state.</p>
-<h4 id='xq2-sum' name='xq2-sum'>Summary (all responders)</h4>
-<p>(The results on your answers appears in bold)</p>
-<div>
 <table>
-<colgroup span='1'></colgroup>
-<colgroup span='1'></colgroup>
+<caption>
+  <h4 id='xq2-sum' name='xq2-sum'>Summary all responders</h4>
+  <p>(The results on your answers appears in bold)</p>
+</caption>
 <thead>
 <tr>
 <th scope='col'>Choice</th>
@@ -446,10 +444,11 @@ td {
 </tr>
 </tbody>
 </table>
-</div>
-<h4 id='xq2-det' name='xq2-det'>Details</h4>
-<div>
+
 <table>
+<caption>
+<h4 id='xq2-det' name='xq2-det'>Details</h4>
+</caption>
 <thead>
 <tr>
 <th scope='col'>Responder</th>
@@ -465,19 +464,20 @@ td {
 </tbody>
 </table>
 </div>
-</div>
 
 <div class='l-box'>
 <h3 id='xq3' name='xq3'>3. Single selection required Yes/No/Concur/Abstain</h3>
 <p>Should we make the results of this survey public?</p>
 
-<h4 id='xq3-sum' name='xq3-sum'>Summary</h4>
-<p>(The results on your answers appears in bold)</p>
-<div>
 <table>
-<colgroup span='1'></colgroup>
-<colgroup span='1'></colgroup><thead><tr><th scope='col' rowspan='2'>Choice</th><th scope='colgroup'>All responders</th></tr><tr>
-<th>Results</th></tr></thead>
+<caption>
+<h4 id='xq3-sum' name='xq3-sum'>Summary all responders</h4>
+<p>(The results on your answers appears in bold)</p>
+</caption>
+<thead>
+  <tr><th>Choice</th>
+  <th>Results</th></tr>
+</thead>
 <tbody>
 <tr>
 <td scope='row'>yes</td>
@@ -497,10 +497,11 @@ td {
 </tr>
 </tbody>
 </table>
-</div>
-<h4>Details</h4>
-<div>
+
 <table>
+<caption>
+<h4>Details</h4>
+</caption>
 <thead>
 <tr>
 <th>Responder</th>
@@ -515,20 +516,23 @@ td {
 <td>This is a rationale</td><td></td></tr>
 </tbody>
 </table>
-</div>
+
 </div>
 
 <div class='question l-box'>
 <h3 id='xq4' name='xq4'>4. Select one among many (drop-down list)</h3>
 <p>Select one among many .</p>
 
-<h4 id='xq4-sum' name='xq4-sum'>Summary</h4>
-<p>(The results on your answers appears in bold)</p>
-<div>
 <table>
-<colgroup span='1'></colgroup>
-<colgroup span='1'></colgroup><thead><tr><th scope='col' rowspan='2'>Choice</th><th scope='colgroup'>All responders</th></tr><tr>
-<th scope='col'>Results</th></tr></thead>
+<caption>
+<h4 id='xq4-sum' name='xq4-sum'>Summary all responders</h4>
+<p>(The results on your answers appears in bold)</p>
+</caption>
+ <thead><tr>
+  <th>Choice</th>
+  <th>Results</th>
+  </tr>
+  </thead>
 <tbody>
 <tr>
 <td scope='row'>choice1</td>
@@ -544,14 +548,18 @@ td {
 </tr>
 </tbody>
 </table>
-</div>
-<h4>Details</h4>
-<div>
+
 <table>
+<caption>
+<h4>Details</h4>
+</caption>
 <thead>
 <tr>
 <th>Responder</th>
-<th scope='col'>Select one among many (drop-down list)</th><th scope='col'>Rationale</th><th scope='col'>Comments</th></tr>
+<th>Select one among many (drop-down list)</th>
+<th>Rationale</th>
+<th>Comments</th>
+</tr>
 </thead>
 <tbody>
 <tr><td scope='row'>User1 Test (<a href='./?email=@w3.org'>impersonate</a>)</td>
@@ -564,41 +572,52 @@ td {
 </tr>
 </tbody>
 </table>
-</div>
+
 </div>
 
 <div class='question l-box'>
-<h3>5. <a id='xq5' name='xq5'>Select one among many (radio buttons)</a></h3>
-<div class='results'>
-<p>Select one among many (radio buttons).</p>
+<h3 id='xq5' name='xq5'>5. Select one among many (radio buttons)</h3>
+<p>Description 'Select one among many (radio buttons)'.</p>
 
-<h4><a id='xq5-sum' name='xq5-sum'>Summary</a></h4>
-<p>(The results on your answers appears in bold)</p><table
-  class='summary data'>
-<colgroup span='1'></colgroup>
-<colgroup span='1'></colgroup><thead><tr><th scope='col' rowspan='2'>Choice</th><th scope='colgroup'>All responders</th></tr><tr>
-<th scope='col'>Results</th></tr></thead>
+<table>
+<caption>
+<h4 id='xq5-sum' name='xq5-sum'>Summary all responders</h4>
+<p>(The results on your answers appears in bold)</p>
+</caption>
+<thead>
+<tr>
+<th>Choice</th>
+<th>Results</th>
+</tr>
+</thead>
 <tbody>
-<tr class='odd'>
+<tr>
 <td scope='row'>choice1</td>
 <td>2</td>
 </tr>
-<tr class='even'>
+<tr>
 <td scope='row'>choice2</td>
 <td></td>
 </tr>
-<tr class='odd'>
+<tr>
 <td scope='row'>choice3</td>
 <td></td>
 </tr>
 </tbody>
 </table>
+
+<table>
+<caption>
 <h4>Details</h4>
-<table class='results data'>
+</caption>
 <thead>
 <tr>
+<caption>
 <th>Responder</th>
-<th scope='col'>Select one among many (radio buttons)</th><th scope='col'>Rationale</th><th scope='col'>Comments</th></tr>
+<th>Select one among many (radio buttons)</th>
+<th>Rationale</th>
+<th>Comments</th>
+</tr>
 </thead>
 <tbody>
 <tr><td scope='row'>User1 Test (<a href='./?email=@w3.org'>impersonate</a>)</td>
@@ -610,19 +629,20 @@ td {
 </tbody>
 </table>
 </div>
-</div>
 
 <div class='question l-box'>
-<h3>6. <a id='xq6' name='xq6'>Open comments</a></h3>
-<div class='results'>
-<p>Open comments.</p>
+<h3 id='xq6' name='xq6'>6. Open comments</h3>
+<p>Description 'Open comments'.</p>
 
+<table>
+<caption>
 <h4>Details</h4>
-<table class='results data'>
+</caption>
 <thead>
 <tr>
 <th>Responder</th>
-<th scope='col'>Open comments</th><th scope='col'>Rationale</th></tr>
+<th scope='col'>Open comments</th>
+<th scope='col'>Rationale</th></tr>
 </thead>
 <tbody>
 <tr><td scope='row'>User1 Test (<a href='./?email=@w3.org'>impersonate</a>)</td>
@@ -632,19 +652,24 @@ td {
 </tbody>
 </table>
 </div>
-</div>
 
 <div class='question l-box'>
-<h3>7. <a id='xq7' name='xq7'>Text entries</a></h3>
-<div class='results'>
-<p>Text entries.</p>
+<h3 id='xq7' name='xq7'>7. Text entries</h3>
+<p>Description 'Text entries'.</p>
 
+<table>
+<caption>
 <h4>Details</h4>
-<table class='results data'>
+</caption>
 <thead>
 <tr>
 <th>Responder</th>
-<th scope='col'>Item 1</th><th scope='col'>Item 2</th><th scope='col'>Item 3</th><th scope='col'>Rationale</th><th scope='col'>Comments</th></tr>
+<th>Item 1</th>
+<th>Item 2</th>
+<th>Item 3</th>
+<th>Rationale</th>
+<th>Comments</th>
+</tr>
 </thead>
 <tbody>
 <tr><td scope='row'>User1 Test (<a href='./?email=@w3.org'>impersonate</a>)</td>
@@ -659,21 +684,25 @@ td {
 <td></td><td></td></tr>
 </tbody>
 </table>
-</div>
+
 </div>
 
 <div class='question l-box'>
-<h3>8. <a id='xq8' name='xq8'>Select multiple items (checkboxes)</a></h3>
-<div class='results'>
-<p><a href='#xq8-sum'>summary</a> | <a href='#xq8-resp'>by responder</a> | <a href='#xq8-choice'>by choice</a></p>
-<p>Select multiple items (checkboxes).</p>
+<h3 id='xq8' name='xq8'>8. Select multiple items (checkboxes)</h3>
+<p>Description 'Select multiple items'.</p>
+<p><a href='#xq8-sum'>summary all responders</a> | <a href='#xq8-resp'>by responder</a> | <a href='#xq8-choice'>by choice</a></p>
 
-<h4><a id='xq8-sum' name='xq8-sum'>Summary</a></h4>
-<p>(The results on your answers appears in bold)</p><table
-  class='summary data'>
-<colgroup span='1'></colgroup>
-<colgroup span='1'></colgroup><thead><tr><th scope='col' rowspan='2'>Choice</th><th scope='colgroup'>All responders</th></tr><tr>
-<th scope='col'>Results</th></tr></thead>
+<table>
+<caption>
+<h4 id='xq8-sum' name='xq8-sum'>Summary all responders</h4>
+<p>(The results on your answers appears in bold)</p>
+</caption>
+  <thead>
+    <tr>
+    <th>Choice</th>
+    <th>Results</th>
+  </tr>
+  </thead>
 <tbody>
 <tr class='odd'>
 <td scope='row'>choice1</td>
@@ -689,14 +718,19 @@ td {
 </tr>
 </tbody>
 </table>
+
 <p>Skip to <a href='#xq8-choice'>view by choice</a>.</p>
-<h4><a id='xq8-resp' name='xq8-resp'>View by responder</a></h4>
-<h4>Details</h4>
-<table class='results data'>
+<table>
+<caption>
+<h4 id='xq8-resp' name='xq8-resp'>View by responder - Details</h4>
+</caption>
 <thead>
 <tr>
 <th>Responder</th>
-<th scope='col'>Select multiple items (checkboxes)</th><th scope='col'>Rationale</th><th scope='col'>Comments</th></tr>
+<th>Select multiple items (checkboxes)</th>
+<th>Rationale</th>
+<th>Comments</th>
+</tr>
 </thead>
 <tbody>
 <tr><td scope='row'>User1 Test (<a href='./?email=@w3.org'>impersonate</a>)</td>
@@ -712,11 +746,17 @@ td {
 <td></td><td></td></tr>
 </tbody>
 </table>
-<h4><a id='xq8-choice' name='xq8-choice'>View by choice</a></h4>
-<table class='results data'>
+
+<table>
+<caption>
+<h4 id='xq8-choice' name='xq8-choice'>View by choice</h4>
+</caption>
 <thead>
 <tr>
-<th>Choice</th><th>Responders</th></tr></thead>
+  <th>Choice</th>
+  <th>Responders</th>
+</tr>
+</thead>
 <tbody>
 <tr><td scope='row'>choice1</td>
 <td><ul><li><span title='Member-visible'>&#x272a;</span>User1 Test</li>
@@ -732,20 +772,29 @@ td {
 </tr></tbody>
 </table>
 </div>
-</div>
 
 <div class='question l-box'>
-<h3>9. <a id='xq9' name='xq9'>Survey type</a></h3>
-<div class='results'>
-<p>Survey type.</p>
+<h3 id='xq9' name='xq9'>9. Survey type</h3>
+<p>Description 'Survey type'</p>
 
-<h4><a id='xq9-sum' name='xq9-sum'>Summary</a></h4>
-<p>(The results on your answers appears in bold)</p><table class='summary data'>
-<colgroup span='1'></colgroup>
-<colgroup span='6'></colgroup><thead><tr><th scope='col' rowspan='2'>Choice</th><th scope='colgroup' colspan='6'>All responders</th></tr><tr>
-<th scope='col'>1</th><th scope='col'>2</th><th scope='col'>3</th><th scope='col'>4</th><th scope='col'>5</th><th scope='col'>No opinion</th></tr></thead>
+<table class='summary data'>
+<caption>
+<h4 id='xq9-sum' name='xq9-sum'>Summary</h4>
+  <p>(The results on your answers appears in bold)</p>
+</caption>
+  <thead>
+    <tr>
+      <th>Choice</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+      <th>No opinion</th>
+      </tr>
+    </thead>
 <tbody>
-<tr class='odd'>
+<tr>
 <td scope='row'>choice 1</td>
 <td>1</td>
 <td></td>
@@ -754,7 +803,7 @@ td {
 <td></td>
 <td>1</td>
 </tr>
-<tr class='even'>
+<tr>
 <td scope='row'>choice 2</td>
 <td></td>
 <td>2</td>
@@ -763,7 +812,7 @@ td {
 <td></td>
 <td></td>
 </tr>
-<tr class='odd'>
+<tr>
 <td scope='row'>choice 3</td>
 <td></td>
 <td></td>
@@ -772,7 +821,7 @@ td {
 <td>1</td>
 <td></td>
 </tr>
-<tr class='even'>
+<tr>
 <td scope='row'>choice 4</td>
 <td></td>
 <td></td>
@@ -783,19 +832,38 @@ td {
 </tr>
 </tbody>
 </table>
-<p>Averages:</p>
-<table class='summary data'><thead><tr><th scope='col'  rowspan='2'>Choices</th>
-<th scope='col'  colspan='1'>All responders: </th></tr><tr><th scope='col'>Value</th></tr></thead><tbody><tr><td scope='row'>choice 1</td><td>1.00</td></tr>
+
+<table class='summary data'>
+<caption>
+<h4>Averages all responders<h4>
+</caption>
+  <thead>
+    <tr>
+    <th>Choices</th>
+    <th>Value</th>
+  </tr>
+  </thead>
+<tbody><tr><td scope='row'>choice 1</td><td>1.00</td></tr>
 <tr><td scope='row'>choice 2</th><td>2.00</td></tr>
 <tr><td scope='row'>choice 3</th><td>4.50</td></tr>
 <tr><td scope='row'>choice 4</th><td>5.00</td></tr>
-</tbody></table>
+</tbody>
+</table>
+
+<table>
+<caption>
 <h4>Details</h4>
-<table class='results data'>
+</caption>
 <thead>
 <tr>
 <th>Responder</th>
-<th scope='col'>choice 1</th><th scope='col'>choice 2</th><th scope='col'>choice 3</th><th scope='col'>choice 4</th><th scope='col'>Rationale</th><th scope='col'>Comments</th></tr>
+<th>choice 1</th>
+<th>choice 2</th>
+<th>choice 3</th>
+<th>choice 4</th>
+<th>Rationale</th>
+<th>Comments</th>
+</tr>
 </thead>
 <tbody>
 <tr><td scope='row'>User1 Test (<a href='./?email=@w3.org'>impersonate</a>)</td>
@@ -812,19 +880,26 @@ td {
 <td></td><td></td></tr>
 </tbody>
 </table>
-</div>
+
 </div>
 
 <div class='question l-box'>
-<h3>10. <a id='xq10' name='xq10'>Straw-poll</a></h3>
-<div class='results'>
-<p>Straw-poll.</p>
+<h3 id='xq10' name='xq10'>10. Straw-poll</h3>
+<p>'Question Description'.</p>
 
-<h4><a id='xq10-sum' name='xq10-sum'>Summary</a></h4>
-<p>(The results on your answers appears in bold)</p><table class='summary data'>
-<colgroup span='1'></colgroup>
-<colgroup span='4'></colgroup><thead><tr><th scope='col' rowspan='2'>Choice</th><th scope='colgroup' colspan='4'>All responders</th></tr><tr>
-<th scope='col'>No</th><th scope='col'>Yes, but prefer not</th><th scope='col'>Yes</th><th scope='col'>Yes, and prefer</th></tr></thead>
+<table>
+<caption>
+<h4 id='xq10-sum' name='xq10-sum'>Summary all responders</h4>
+<p>(The results on your answers appears in bold)</p>
+</caption>
+  <thead>
+    <tr>
+      <th>Choice</th>
+      <th>No</th>
+      <th>Yes, but prefer not</th>
+      <th>Yes</th><th scope='col'>Yes, and prefer</th>
+    </tr>
+    </thead>
 <tbody>
 <tr class='odd'>
 <td scope='row'>choice1</td>
@@ -849,9 +924,17 @@ td {
 </tr>
 </tbody>
 </table>
-<p>Ranking of choices in order of least unacceptable/most prefered:</p>
+
 <table class='summary data'>
-<thead><tr><th scope='col'>Ranks</th><th scope='col'>All responders: </th></tr></thead>
+<caption>
+<p>Ranking of choices in order of most prefered / least unacceptable:</p>
+</caption>
+  <thead>
+    <tr>
+      <th>Ranks</th>
+      <th>all responders</th>
+    </tr>
+    </thead>
 <tbody>
 <tr><td scope='row'>1</td><td>choice1</td>
 </tr>
@@ -859,13 +942,21 @@ td {
 </tr>
 <tr><td scope='row'>3</td><td>choice3</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+
+<table>
+<caption>
 <h4>Details</h4>
-<table class='results data'>
+</caption>
 <thead>
 <tr>
 <th>Responder</th>
-<th scope='col'>choice1</th><th scope='col'>choice2</th><th scope='col'>choice3</th><th scope='col'>Rationale</th><th scope='col'>Comments</th></tr>
+<th>choice1</th>
+<th>choice2</th><th scope='col'>choice3</th>
+<th>Rationale</th>
+<th>Comments</th>
+</tr>
 </thead>
 <tbody>
 <tr><td scope='row'>User1 Test (<a href='./?email=@w3.org'>impersonate</a>)</td>
@@ -881,18 +972,28 @@ td {
 </tbody>
 </table>
 </div>
-</div>
 
 <div class='question l-box'>
 <h3>11. <a id='xq11' name='xq11'>Rank-ordering</a></h3>
-<div class='results'>
-<p>Rank-ordering.</p>
 
-<h4><a id='xq11-sum' name='xq11-sum'>Summary</a></h4>
-<p>(The results on your answers appears in bold)</p><table class='summary data'>
-<colgroup span='1'></colgroup>
-<colgroup span='5'></colgroup><thead><tr><th scope='col' rowspan='2'>Choice</th><th scope='colgroup' colspan='5'>All responders</th></tr><tr>
-<th scope='col'>Don’t mind</th><th scope='col'>Don’t want</th><th scope='col'>Ranked 1</th><th scope='col'>Ranked 2</th><th scope='col'>Ranked 3</th></tr></thead>
+<p>'Question Description'.</p>
+
+<table>
+<caption>
+<h4 id='xq11-sum' name='xq11-sum'>Summary all responders</h4>
+<p>(The results on your answers appears in bold)</p>
+<caption>
+
+  <thead>
+    <tr>
+      <th>Choice</th>
+      <th>Don’t mind</th>
+      <th>Don’t want</th>
+      <th>Ranked 1</th>
+      <th>Ranked 2</th>
+      <th>Ranked 3</th>
+    </tr>
+    </thead>
 <tbody>
 <tr class='odd'>
 <td scope='row'>choix 1</td>
@@ -920,18 +1021,36 @@ td {
 </tr>
 </tbody>
 </table>
-<p>Averages:</p>
-<table class='summary data'><thead><tr><th scope='col'  rowspan='2'>Choices</th>
-<th scope='col'  colspan='1'>All responders: </th></tr><tr><th scope='col'>Value</th></tr></thead><tbody><tr><td scope='row'>choix 1</td><td>1.00</td></tr>
+
+<table class='summary data'>
+<caption>
+<p>Averages all responders:</p>
+</caption>
+  <thead>
+    <tr>
+    <th>Choices</th>
+    <th>Value</th>
+  </tr>
+  </thead>
+<tbody><tr><td scope='row'>choix 1</td><td>1.00</td></tr>
 <tr><td scope='row'>choix2</td><td>1.50</td></tr>
 <tr><td scope='row'>choix3</td><td>3.00</td></tr>
-</tbody></table>
-<h4>Details</h4>
+</tbody>
+</table>
+
 <table class='results data'>
+<caption>
+<h4>Details</h4>
+</caption>
 <thead>
 <tr>
 <th>Responder</th>
-<th scope='col'>choix 1</th><th scope='col'>choix2</th><th scope='col'>choix3</th><th scope='col'>Rationale</th><th scope='col'>Comments</th></tr>
+<th>choix 1</th>
+<th>choix2</th>
+<th>choix3</th>
+<th>Rationale</th>
+<th>Comments</th>
+ </tr>
 </thead>
 <tbody>
 <tr><td scope='row'>User1 Test (<a href='./?email=w3.org'>impersonate</a>)</td>
@@ -947,20 +1066,24 @@ td {
 </tbody>
 </table>
 </div>
-</div>
 
 <div class='question l-box'>
-<h3>12. <a id='xq12' name='xq12'> Pick a time for a teleconf</a></h3>
-<div class='results'>
+<h3 id='xq12' name='xq12'>12. Pick a time for a teleconf</h3>
 <p>Pick a time for a teleconf.</p>
 
-<h4><a id='xq12-sum' name='xq12-sum'>Summary</a></h4>
-<p>(The results on your answers appears in bold)</p>
 <table class='summary data'>
-<colgroup span='1'></colgroup>
-  <colgroup span='4'></colgroup>
-  <thead><tr><th scope='col' rowspan='2'>Choice</th><th scope='colgroup' colspan='4'>All responders</th></tr><tr>
-    <th scope='col'>No</th><th scope='col'>Yes, but prefer not</th><th scope='col'>Yes</th><th scope='col'>Yes, and prefer</th></tr>
+<caption>
+<h4 id='xq12-sum' name='xq12-sum'>Summary all responders</h4>
+<p>(The results on your answers appears in bold)</p>
+</caption>
+  <thead>
+    <tr>
+      <th>Choice</th>
+	<th>No</th>
+	<th>Yes, but prefer not</th>
+	<th>Yes</th>
+	<th>Yes, and prefer</th>
+      </tr>
   </thead>
 <tbody>
 <tr class='odd'>
@@ -986,9 +1109,17 @@ td {
 </tr>
 </tbody>
 </table>
-<p>Ranking of choices in order of least unacceptable/most prefered:</p>
-<table class='summary data'>
-<thead><tr><th scope='col'>Ranks</th><th scope='col'>All responders: </th></tr></thead>
+
+<table>
+<caption>
+<p>Ranking of choices in order of most prefered/least unacceptable:</p>
+</caption>
+  <thead>
+    <tr>
+      <th>Ranks</th>
+      <th>all responders</th>
+    </tr>
+    </thead>
 <tbody>
 <tr><td scope='row'>1</td><td>Monday, 1 UTC</td>
 </tr>
@@ -998,14 +1129,20 @@ td {
 </tr>
 </tbody>
 </table>
+
+<table>
+<caption id="unique-caption-id2">
 <h4>Details</h4>
-<div>
-<table class='results data'>
-<caption id="unique-caption-id2"></caption>
+</caption>
 <thead>
 <tr>
 <th>Responder</th>
-<th scope='col'>Monday, 0 UTC</th><th scope='col'>Monday, 1 UTC</th><th scope='col'>Monday, 2 UTC</th><th scope='col'>Rationale</th><th scope='col'>Comments</th></tr>
+<th>Monday, 0 UTC</th>
+<th>Monday, 1 UTC</th>
+<th>Monday, 2 UTC</th>
+<th>Rationale</th>
+<th>Comments</th>
+</tr>
 </thead>
 <tbody>
 <tr><td scope='row'>User1 Test (<a href='./?email=@w3.org'>impersonate</a>)</td>
@@ -1021,21 +1158,22 @@ td {
 </tbody>
 </table>
 </div>
-</div>
-</div>
 
 <div class='question l-box'>
-<h3>13. <a id='xq13' name='xq13'>Cumulative vote</a></h3>
-<div class='results'>
+<h3 id='xq13' name='xq13'>13. Cumulative vote</h3>
 <p>Select a % for each choice</p>
 
-<h4><a id='xq13-sum' name='xq13-sum'>Summary</a></h4>
-<p>(The results on your answers appears in bold)</p>
+
 <!-- <div class='scroll'> -->
 <div class="table-wrap" role="region" aria-labelledby="unique-caption-id" tabindex="0">
-<table class='summary data' id="unique-caption-id">
-<colgroup span='1'></colgroup>
-<colgroup span='101'></colgroup><thead><tr><th scope='col' rowspan='2'>Choice</th><th scope='colgroup' colspan='101'>All responders</th></tr><tr>
+<table id="unique-caption-id">
+<caption>
+<h4 id='xq13-sum' name='xq13-sum'>Summary all responders</h4>
+<p>(The results on your answers appears in bold)</p>
+</caption>
+  <thead>
+    <tr>
+      <th>Choice</th>
 <th scope='col'>0</th><th scope='col'>1</th><th scope='col'>2</th><th scope='col'>3</th><th scope='col'>4</th><th scope='col'>5</th><th scope='col'>6</th><th scope='col'>7</th><th scope='col'>8</th><th scope='col'>9</th><th scope='col'>10</th><th scope='col'>11</th><th scope='col'>12</th><th scope='col'>13</th><th scope='col'>14</th><th scope='col'>15</th><th scope='col'>16</th><th scope='col'>17</th><th scope='col'>18</th><th scope='col'>19</th><th scope='col'>20</th><th scope='col'>21</th><th scope='col'>22</th><th scope='col'>23</th><th scope='col'>24</th><th scope='col'>25</th><th scope='col'>26</th><th scope='col'>27</th><th scope='col'>28</th><th scope='col'>29</th><th scope='col'>30</th><th scope='col'>31</th><th scope='col'>32</th><th scope='col'>33</th><th scope='col'>34</th><th scope='col'>35</th><th scope='col'>36</th><th scope='col'>37</th><th scope='col'>38</th><th scope='col'>39</th><th scope='col'>40</th><th scope='col'>41</th><th scope='col'>42</th><th scope='col'>43</th><th scope='col'>44</th><th scope='col'>45</th><th scope='col'>46</th><th scope='col'>47</th><th scope='col'>48</th><th scope='col'>49</th><th scope='col'>50</th><th scope='col'>51</th><th scope='col'>52</th><th scope='col'>53</th><th scope='col'>54</th><th scope='col'>55</th><th scope='col'>56</th><th scope='col'>57</th><th scope='col'>58</th><th scope='col'>59</th><th scope='col'>60</th><th scope='col'>61</th><th scope='col'>62</th><th scope='col'>63</th><th scope='col'>64</th><th scope='col'>65</th><th scope='col'>66</th><th scope='col'>67</th><th scope='col'>68</th><th scope='col'>69</th><th scope='col'>70</th><th scope='col'>71</th><th scope='col'>72</th><th scope='col'>73</th><th scope='col'>74</th><th scope='col'>75</th><th scope='col'>76</th><th scope='col'>77</th><th scope='col'>78</th><th scope='col'>79</th><th scope='col'>80</th><th scope='col'>81</th><th scope='col'>82</th><th scope='col'>83</th><th scope='col'>84</th><th scope='col'>85</th><th scope='col'>86</th><th scope='col'>87</th><th scope='col'>88</th><th scope='col'>89</th><th scope='col'>90</th><th scope='col'>91</th><th scope='col'>92</th><th scope='col'>93</th><th scope='col'>94</th><th scope='col'>95</th><th scope='col'>96</th><th scope='col'>97</th><th scope='col'>98</th><th scope='col'>99</th><th scope='col'>100</th></tr></thead>
 <tbody>
 <tr class='odd'>
@@ -1455,20 +1593,40 @@ td {
 <td></td>
 </tr>
 </tbody>
-</table></div>
-<p>Stats:</p>
-<table class='summary data'><thead><tr><th scope='col'  rowspan='2'>Choices</th>
-<th scope='col'  colspan='3'>All responders: </th></tr><tr><th scope='col'>Average</th><th scope='col'>Median</th><th scope='col'>Standard Deviation</th></tr></thead><tbody><tr><td scope='row'>choice 1</td><td>60.00</td><td>60.00</td><td>30.00</td></tr>
+</table>
+</div>
+
+<table class='summary data'>
+<caption>
+<p>Statistics for all responders:</p>
+</caption>
+  <thead>
+  <tr>
+  <th>Choices</th>
+  <th>Average</th>
+  <th>Median</th>
+  <th>Standard Deviation</th>
+  </tr>
+</thead>
+<tbody><tr><td scope='row'>choice 1</td><td>60.00</td><td>60.00</td><td>30.00</td></tr>
 <tr><td scope='row'>choice 2</td><td>27.50</td><td>27.50</td><td>22.50</td></tr>
 <tr><td scope='row'>choice 3</td><td>4.00</td><td>4.00</td><td>1.00</td></tr>
 <tr><td scope='row'>choice 4</td><td>8.50</td><td>8.50</td><td>6.50</td></tr>
-</tbody></table>
+</tbody>
+</table>
+
+<table>
+<caption>
 <h4>Details</h4>
-<table class='results data'>
+</caption>
 <thead>
 <tr>
 <th>Responder</th>
-<th scope='col'>choice 1</th><th scope='col'>choice 2</th><th scope='col'>choice 3</th><th scope='col'>choice 4</th><th scope='col'>Rationale</th><th scope='col'>Comments</th></tr>
+<th>choice 1</th>
+<th>choice 2</th><th scope='col'>choice 3</th>
+<th>choice 4</th><th scope='col'>Rationale</th>
+<th>Comments</th>
+</tr>
 </thead>
 <tbody>
 <tr><td scope='row'>User1 Test (<a href='./?email=@w3.org'>impersonate</a>)</td>
@@ -1486,19 +1644,30 @@ td {
 </tbody>
 </table>
 </div>
-</div>
 
 <div class='question l-box'>
-<h3>14. <a id='xq14' name='xq14'> Importance survey</a></h3>
-<div class='results'>
-<p>Importance survey.</p>
+<h3 id='xq14' name='xq14'>14. Importance survey</h3>
+<p>'Question Description'.</p>
 
-<h4><a id='xq14-sum' name='xq14-sum'>Summary</a></h4>
+<table>
+<caption>
+<h4 id='xq14-sum' name='xq14-sum'>Summary all responders</h4>
 <p>(The results on your answers appears in bold)</p>
-<table class='summary data'>
-<colgroup span='1'></colgroup>
-<colgroup span='9'></colgroup><thead><tr><th scope='col' rowspan='2'>Choice</th><th scope='colgroup' colspan='9'>All responders</th></tr><tr>
-<th scope='col'>1</th><th scope='col'>2</th><th scope='col'>3</th><th scope='col'>4</th><th scope='col'>5</th><th scope='col'>6</th><th scope='col'>7</th><th scope='col'>Not applicable</th><th scope='col'>No opinion</th></tr></thead>
+</caption>
+  <thead>
+    <tr>
+      <th>Choice</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+      <th>6</th>
+      <th>7</th>
+      <th>Not applicable</th>
+      <th>No opinion</th>
+    </tr>
+  </thead>
 <tbody>
 <tr class='odd'>
 <td scope='row'>choice1</td>
@@ -1538,18 +1707,36 @@ td {
 </tr>
 </tbody>
 </table>
-<p>Averages:</p>
-<table class='summary data'><thead><tr><th scope='col'  rowspan='2'>Choices</th>
-<th scope='col'  colspan='1'>All responders: </th></tr><tr><th scope='col'>Importance</th></tr></thead><tbody><tr><td scope='row'>choice1</td><td>1.00</td></tr>
+
+<table
+<caption>
+<p>Averages for all responders:</p>
+</caption>
+  <thead>
+    <tr>
+      <th>Choices</th>
+      <th>Importance</th>
+    </tr>
+    </thead>
+  <tbody><tr><td scope='row'>choice1</td><td>1.00</td></tr>
 <tr><td scope='row'>choice2</td><td>4.50</td></tr>
 <tr><td scope='row'>choice3</td><td>7.00</td></tr>
-</tbody></table>
+</tbody>
+</table>
+
+<table>
+<caption>
 <h4>Details</h4>
-<table class='results data'>
+</caption>
 <thead>
 <tr>
 <th>Responder</th>
-<th scope='col'>choice1</th><th scope='col'>choice2</th><th scope='col'>choice3</th><th scope='col'>Rationale</th><th scope='col'>Comments</th></tr>
+<th>choice1</th>
+<th>choice2</th>
+<th>choice3</th>
+<th>Rationale</th>
+<th>Comments</th>
+</tr>
 </thead>
 <tbody>
 <tr><td scope='row'>User1 Test (<a href='./?email=@w3.org'>impersonate</a>)</td>
@@ -1565,18 +1752,43 @@ td {
 </tbody>
 </table>
 </div>
-</div>
 
 <div class='question l-box'>
-<h3>15. <a id='xq15' name='xq15'> Importance and Satisfaction survey</a></h3>
-<div class='results'>
-<p>Importance and Satisfaction survey.</p>
+<h3 id='xq15' name='xq15'>15. Importance and Satisfaction survey</h3>
+<p>'Question Description'.</p>
 
-<h4><a id='xq15-sum' name='xq15-sum'>Summary</a></h4>
-<p>(The results on your answers appears in bold)</p><div class='scroll'><table class='summary data'>
+<div class='scroll'>
+<table>
+<caption>
+<h4 id='xq15-sum' name='xq15-sum'>Summary all responders</h4>
+<p>(The results on your answers appears in bold)</p>
+</caption>
 <colgroup span='1'></colgroup>
-<colgroup span='19'></colgroup><thead><tr><th scope='col' rowspan='2'>Choice</th><th scope='colgroup' colspan='19'>All responders</th></tr><tr>
-<th scope='col'>1</th><th scope='col'>2</th><th scope='col'>3</th><th scope='col'>4</th><th scope='col'>5</th><th scope='col'>6</th><th scope='col'>7</th><th scope='col'>Not applicable</th><th scope='col'>No opinion</th><th scope='col'>1</th><th scope='col'>2</th><th scope='col'>3</th><th scope='col'>4</th><th scope='col'>5</th><th scope='col'>6</th><th scope='col'>7</th><th scope='col'>Didn&#039;t know</th><th scope='col'>Not applicable</th><th scope='col'>No opinion</th></tr></thead>
+  <colgroup span='19'></colgroup>
+  <thead>
+    <tr>
+        <th>Choice</th>
+        <th>1</th>
+        <th>2</th>
+	<th>3</th>
+	<th>4</th>
+	<th>5</th>
+	<th>6</th>
+	<th>7</th>
+	<th>Not applicable</th>
+	<th>No opinion</th>
+	<th>1</th>
+	<th>2</th>
+	<th>3</th>
+	<th>4</th>
+	<th>5</th>
+	<th>6</th>
+	<th>7</th>
+	<th>Didn&#039;t know</th>
+	<th>Not applicable</th>
+	<th>No opinion</th>
+      </tr>
+      </thead>
 <tbody>
 <tr class='odd'>
 <td scope='row'>choice1</td>
@@ -1645,19 +1857,37 @@ td {
 <td></td>
 </tr>
 </tbody>
-</table></div>
-<p>Averages:</p>
-<table class='summary data'><thead><tr><th scope='col'  rowspan='2'>Choices</th>
-<th scope='col'  colspan='2'>All responders: </th></tr><tr><th scope='col'>Importance</th><th scope='col'>Satisfaction</th></tr></thead><tbody><tr><td scope='row'>choice1</td><td>1.00</td><td>1.00</td></tr>
+</table>
+</div>
+
+<table>
+<caption>
+<p>Averages for all responders:</p>
+</caption>
+  <thead>
+    <tr>
+      <th>Choices</th>
+      <th>Importance</th>
+      <th>Satisfaction</th>
+  </tr>
+  </thead>
+<tbody><tr><td scope='row'>choice1</td><td>1.00</td><td>1.00</td></tr>
 <tr><td scope='row'>choice2</td><td>4.00</td><td>3.00</td></tr>
 <tr><td scope='row'>choice3</td><td>5.50</td><td>5.00</td></tr>
-</tbody></table>
+</tbody>
+</table>
+
+<table>
+<caption>
 <h4>Details</h4>
-<table class='results data'>
+</caption>
 <thead>
 <tr>
 <th>Responder</th>
-<th scope='col'>1</th><th scope='col'>Rationale</th><th scope='col'>Comments</th></tr>
+<th>Choice</th>
+<th>Rationale</th>
+<th>Comments</th>
+</tr>
 </thead>
 <tbody>
 <tr><td scope='row'>User1 Test (<a href='./?email=@w3.org'>impersonate</a>)</td>
@@ -1669,18 +1899,23 @@ td {
 </tbody>
 </table>
 </div>
-</div>
 
 <div class='question l-box'>
-<h3>16. <a id='xtpac' name='xtpac'>Monday, 27 October All Group Meetings Attendance </a></h3>
-<div class='results'>
+<h3 id='xtpac' name='xtpac'>16. Monday, 27 October All Group Meetings Attendance </h3>
  For Group meetings on Monday, 27 October:
-<h4><a id='xtpac-sum' name='xtpac-sum'>Summary</a></h4>
-<p>(The results on your answers appears in bold)</p><table
-  class='summary data'>
-<colgroup span='1'></colgroup>
-<colgroup span='2'></colgroup><thead><tr><th scope='col' rowspan='2'>Choice</th><th scope='colgroup' colspan='2'>All responders</th></tr><tr>
-<th scope='col'>Attending as group participant</th><th scope='col'>Requesting observer status</th></tr></thead>
+
+<table>
+<caption>
+<h4 id='xtpac-sum' name='xtpac-sum'>Summary all responders</h4>
+<p>(The results on your answers appears in bold)</p>
+</caption>
+  <thead>
+    <tr>
+      <th>Choice</th>
+      <th>Attending as group participant</th>
+      <th>Requesting observer status</th>
+    </tr>
+    </thead>
 <tbody>
 <tr class='odd'>
 <td scope='row'>Not attending that day</td>
@@ -1789,12 +2024,22 @@ td {
 </tr>
 </tbody>
 </table>
+
 <p>Attending that day: 1 group participants, 1 Observers, summing up to 2 attendants (note that the details group participants/observers may not match the sum of each column due to registrants checking both group participants and observer status).</p>
+
+<table>
+<caption>
 <h4>Details</h4>
-<table class='results data'>
+</caption>
 <thead>
 <tr>
-<th scope='col'>Responder</th><th scope='col'>Organization</th><th scope='col'>Attending as group participant</th><th>Requesting Observer status</th><th scope='col'>Comment</th></tr></thead>
+  <th>Responder</th>
+  <th>Organization</th>
+  <th>Attending as group participant</th>
+  <th>Requesting Observer status</th>
+  <th>Comment</th>
+  </tr>
+  </thead>
 <tbody>
 <tr><td scope='row'><span title='Member-visible'>&#x272a;</span>User1 Test</td><td></td>
 <td>Audio Working Group</td>
@@ -1804,8 +2049,11 @@ td {
 <td>Requesting observer status</td>
 <td>Audio Working Group, Education and Outreach Working Group, TAG</td>
 <td></td></tr>
-</tbody></table></div>
-</div><h2>More details on responses</h2>
+</tbody>
+</table>
+</div>
+
+<h2>More details on responses</h2>
 <ul>
 <li><strong>User1 Test</strong>: last responded on 7, July 2016 at 11:44 (UTC)</li>
 <li><strong>User2 Test</strong>: last responded on 7, July 2016 at 11:47 (UTC)</li>
