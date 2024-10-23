@@ -24,9 +24,18 @@ It contains the snapshots of some of the HTML pages of the application and its e
 * [WBS All question types using new Design System](https://w3c.github.io/wbs-design/html/s24-qtypes.html)
 * [WBS Edit form using new Design System](https://w3c.github.io/wbs-design/html/s24-survey-edit.html) 
 * [WBS Add a question using new Design System](https://w3c.github.io/wbs-design/html/s24-question-add.html)
+* [WBS Surveys list using new Design System](https://w3c.github.io/wbs-design/html/s24-list-surveys.html)
 * [WBS All question results types using new Design System](https://w3c.github.io/wbs-design/html/s24-qtypes-results.html)  (Draft)
-* [WBS Surveys list using new Design System](https://w3c.github.io/wbs-design/html/s24-list-surveys.html)  (Draft)
+* [WBS Create a questionnaire using new Design System](https://w3c.github.io/wbs-design/html/s24-survey-creation.html)  (Draft)
 * [WBS Edit a question using new Design System](https://w3c.github.io/wbs-design/html/s24-question-edit.html)  (Draft)
+* [WBS Template meeting registration](https://w3c.github.io/wbs-design/html-s24-template-meeting.html)  (Draft)
+* [WBS Teleconference scheduling](https://w3c.github.io/wbs-design/html-s24-template-teleconf.html)  (Draft)
+* [WBS Template CfR for Proposed Recommendation](https://w3c.github.io/wbs-design/html-s24-template-pr.html)  (Draft)
+* [WBS Template CfR Group Charter](https://w3c.github.io/wbs-design/html-s24-template-charter.html)  (Draft)
+* [WBS My questionnaires](https://w3c.github.io/wbs-design/html-s24-my-questionnaires.html)  (Draft)
+* [WBS All current questionnaires](https://w3c.github.io/wbs-design/html-s24-current-questionnaires.html)  (Draft)
+* [WBS Access rights](https://w3c.github.io/wbs-design/html/s24-access.html)  (Draft)
+* [WBS Impersonate a user](https://w3c.github.io/wbs-design/html/s24-impersonate.html)  (Draft)
 
 
 
