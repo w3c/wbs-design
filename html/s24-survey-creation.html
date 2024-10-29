@@ -1,7 +1,7 @@
 <!doctype html>
 <html dir="ltr" lang="en" class="no-js">
 <head>
-    <title>WBS | xx | xx</title>
+    <title>WBS - Create a new questionnaire for survey name</title>
 
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -39,7 +39,11 @@
         ">
         <link rel="stylesheet" href="https://www.w3.org/assets/website-2021/styles/print.css" media="print"/>
     
-            <script src="https://www.w3.org/assets/website-2021/js/libraries/fontfaceobserver.js"></script>
+        <link rel="stylesheet" href="../fa/css/fontawesome.min.css">
+        <link rel="stylesheet" href="../fa/css/brands.min.css">
+        <link rel="stylesheet" href="../fa/css/solid.min.css">
+
+        <script src="https://www.w3.org/assets/website-2021/js/libraries/fontfaceobserver.js"></script>
 
         <script>
             var myFont = new FontFaceObserver('Noto Sans');
@@ -61,10 +65,21 @@
                 }
             })();
         </script>
-    
-<!-- custom css for wbs -->
+
+<!-- custom css for wbs
   <link rel="stylesheet" type="text/css" href="../css/site-wbs-style.css" title="default" />
-<!--  -->
+ -->  
+
+<style>
+.survey-list > * {
+  padding-top: 1em;
+  padding-bottom: 1.75em;
+  border-bottom: solid 1px #bdbdbd;
+}
+.related__inner > * + h2 {
+   margin-top: 2.5rem;  
+}
+</style>
 
     </head>
 
@@ -73,9 +88,9 @@
 <div class="grid-wrap">
     <div class="wrap">
         <header class="global-header">
-            <span role="status" aria-live="polite"></span>
-                                        
-                                        <nav id="global-nav" aria-label="Main">
+        <span role="status" aria-live="polite"></span>
+      
+<nav id="global-nav" aria-label="Main">
     <div class="global-nav__inner l-center">
         <a class="logo-link" href="https://www.w3.org/" hreflang="en">
             <span class="logo">
@@ -85,9 +100,9 @@
         </a>
         <button type="button" class="button button--ghost with-icon--after with-icon--larger" data-trigger="mobile-nav"
                 style="display: none;"></button>
-        <ul class="clean-list" data-component="nav-double-intro">
+        <ul data-component="nav-double-intro">
                             <li class="top-nav-item has-children">
-                    <a href="https://www.w3.org/standards/" class="nav-link">Standards <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" height="16" width="16" class="icon icon--submenu" focusable="false" aria-hidden="true" fill="currentColor" style="visibility: hidden"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg></a>
+                    <a href="https://www.w3.org/standards/" class="nav-link">Standards</a>
                     <div class="nav__submenu" data-nav="submenu" style="display: none;">
                         <div class="l-center">
                             <div class="nav__submenu__intro">
@@ -97,76 +112,34 @@
                                                                                                                 <a href="https://www.w3.org/standards/">Explore web standards</a>
                                                                     </div>
                             </div>
-                                                            <ul class="clean-list" role="list">
+                                                            <ul>
                                                                             <li >
-                                            <a class="with-icon--before with-icon--larger" href="https://www.w3.org/standards/about/">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 512" class="icon icon--larger" focusable="false" aria-hidden="true" width="1em" height="1em">
-                                                    <path class="chevron-left" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"/>
-                                                    <path class="chevron-right" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/>
-                                                </svg>
-                                                About W3C web standards
-                                            </a>
+                                            <a href="https://www.w3.org/standards/about/">About W3C web standards</a>
                                         </li>
                                                                             <li >
-                                            <a class="with-icon--before with-icon--larger" href="https://www.w3.org/TR/">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 512" class="icon icon--larger" focusable="false" aria-hidden="true" width="1em" height="1em">
-                                                    <path class="chevron-left" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"/>
-                                                    <path class="chevron-right" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/>
-                                                </svg>
-                                                W3C standards and drafts
-                                            </a>
+                                            <a href="https://www.w3.org/TR/">W3C standards &amp; drafts</a>
                                         </li>
                                                                             <li >
-                                            <a class="with-icon--before with-icon--larger" href="https://www.w3.org/standards/types/">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 512" class="icon icon--larger" focusable="false" aria-hidden="true" width="1em" height="1em">
-                                                    <path class="chevron-left" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"/>
-                                                    <path class="chevron-right" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/>
-                                                </svg>
-                                                Types of documents W3C publishes
-                                            </a>
+                                            <a href="https://www.w3.org/standards/types/">Types of documents W3C publishes</a>
                                         </li>
                                                                             <li >
-                                            <a class="with-icon--before with-icon--larger" href="https://www.w3.org/translations/">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 512" class="icon icon--larger" focusable="false" aria-hidden="true" width="1em" height="1em">
-                                                    <path class="chevron-left" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"/>
-                                                    <path class="chevron-right" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/>
-                                                </svg>
-                                                Translations of W3C standards and drafts
-                                            </a>
+                                            <a href="https://www.w3.org/translations/">Translations of W3C standards &amp; drafts</a>
                                         </li>
                                                                             <li >
-                                            <a class="with-icon--before with-icon--larger" href="https://www.w3.org/standards/review/">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 512" class="icon icon--larger" focusable="false" aria-hidden="true" width="1em" height="1em">
-                                                    <path class="chevron-left" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"/>
-                                                    <path class="chevron-right" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/>
-                                                </svg>
-                                                Reviews and public feedback
-                                            </a>
+                                            <a href="https://www.w3.org/standards/review/">Reviews &amp; public feedback</a>
                                         </li>
                                                                             <li >
-                                            <a class="with-icon--before with-icon--larger" href="https://www.w3.org/liaisons/">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 512" class="icon icon--larger" focusable="false" aria-hidden="true" width="1em" height="1em">
-                                                    <path class="chevron-left" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"/>
-                                                    <path class="chevron-right" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/>
-                                                </svg>
-                                                Liaisons
-                                            </a>
+                                            <a href="https://www.w3.org/liaisons/">Liaisons</a>
                                         </li>
                                                                             <li >
-                                            <a class="with-icon--before with-icon--larger" href="https://www.w3.org/get-involved/promote/">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 512" class="icon icon--larger" focusable="false" aria-hidden="true" width="1em" height="1em">
-                                                    <path class="chevron-left" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"/>
-                                                    <path class="chevron-right" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/>
-                                                </svg>
-                                                Promote web standards
-                                            </a>
+                                            <a href="https://www.w3.org/get-involved/promote/">Promote web standards</a>
                                         </li>
                                                                     </ul>
                                                     </div>
                     </div>
                 </li>
                             <li class="top-nav-item has-children">
-                    <a href="https://www.w3.org/groups/" class="nav-link">Groups <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" height="16" width="16" class="icon icon--submenu" focusable="false" aria-hidden="true" fill="currentColor" style="visibility: hidden"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg></a>
+                    <a href="https://www.w3.org/groups/" class="nav-link">Groups</a>
                     <div class="nav__submenu" data-nav="submenu" style="display: none;">
                         <div class="l-center">
                             <div class="nav__submenu__intro">
@@ -176,85 +149,37 @@
                                                                                                                 <a href="https://www.w3.org/groups/">About W3C groups</a>
                                                                     </div>
                             </div>
-                                                            <ul class="clean-list" role="list">
+                                                            <ul>
                                                                             <li >
-                                            <a class="with-icon--before with-icon--larger" href="https://www.w3.org/groups/wg/">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 512" class="icon icon--larger" focusable="false" aria-hidden="true" width="1em" height="1em">
-                                                    <path class="chevron-left" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"/>
-                                                    <path class="chevron-right" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/>
-                                                </svg>
-                                                Working Groups
-                                            </a>
+                                            <a href="https://www.w3.org/groups/wg/">Working Groups</a>
                                         </li>
                                                                             <li >
-                                            <a class="with-icon--before with-icon--larger" href="https://www.w3.org/groups/ig/">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 512" class="icon icon--larger" focusable="false" aria-hidden="true" width="1em" height="1em">
-                                                    <path class="chevron-left" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"/>
-                                                    <path class="chevron-right" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/>
-                                                </svg>
-                                                Interest Groups
-                                            </a>
+                                            <a href="https://www.w3.org/groups/ig/">Interest Groups</a>
                                         </li>
                                                                             <li >
-                                            <a class="with-icon--before with-icon--larger" href="https://www.w3.org/groups/cg/">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 512" class="icon icon--larger" focusable="false" aria-hidden="true" width="1em" height="1em">
-                                                    <path class="chevron-left" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"/>
-                                                    <path class="chevron-right" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/>
-                                                </svg>
-                                                Community Groups
-                                            </a>
+                                            <a href="https://www.w3.org/groups/cg/">Community Groups</a>
                                         </li>
                                                                             <li >
-                                            <a class="with-icon--before with-icon--larger" href="https://www.w3.org/groups/bg/">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 512" class="icon icon--larger" focusable="false" aria-hidden="true" width="1em" height="1em">
-                                                    <path class="chevron-left" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"/>
-                                                    <path class="chevron-right" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/>
-                                                </svg>
-                                                Business Groups
-                                            </a>
+                                            <a href="https://www.w3.org/groups/bg/">Business Groups</a>
                                         </li>
                                                                             <li >
-                                            <a class="with-icon--before with-icon--larger" href="https://www.w3.org/groups/other/tag/">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 512" class="icon icon--larger" focusable="false" aria-hidden="true" width="1em" height="1em">
-                                                    <path class="chevron-left" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"/>
-                                                    <path class="chevron-right" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/>
-                                                </svg>
-                                                Technical Architecture Group
-                                            </a>
+                                            <a href="https://www.w3.org/groups/other/tag/">Technical Architecture Group</a>
                                         </li>
                                                                             <li >
-                                            <a class="with-icon--before with-icon--larger" href="https://www.w3.org/invited-experts/">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 512" class="icon icon--larger" focusable="false" aria-hidden="true" width="1em" height="1em">
-                                                    <path class="chevron-left" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"/>
-                                                    <path class="chevron-right" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/>
-                                                </svg>
-                                                Invited Experts
-                                            </a>
+                                            <a href="https://www.w3.org/invited-experts/">Invited Experts</a>
                                         </li>
                                                                             <li >
-                                            <a class="with-icon--before with-icon--larger" href="https://www.w3.org/guide/">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 512" class="icon icon--larger" focusable="false" aria-hidden="true" width="1em" height="1em">
-                                                    <path class="chevron-left" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"/>
-                                                    <path class="chevron-right" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/>
-                                                </svg>
-                                                Participant guidebook
-                                            </a>
+                                            <a href="https://www.w3.org/guide/">Participant guidebook</a>
                                         </li>
                                                                             <li >
-                                            <a class="with-icon--before with-icon--larger" href="https://www.w3.org/about/positive-work-environment/">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 512" class="icon icon--larger" focusable="false" aria-hidden="true" width="1em" height="1em">
-                                                    <path class="chevron-left" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"/>
-                                                    <path class="chevron-right" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/>
-                                                </svg>
-                                                Positive work environment
-                                            </a>
+                                            <a href="https://www.w3.org/about/positive-work-environment/">Positive work environment</a>
                                         </li>
                                                                     </ul>
                                                     </div>
                     </div>
                 </li>
                             <li class="top-nav-item has-children">
-                    <a href="https://www.w3.org/get-involved/" class="nav-link">Get involved <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" height="16" width="16" class="icon icon--submenu" focusable="false" aria-hidden="true" fill="currentColor" style="visibility: hidden"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg></a>
+                    <a href="https://www.w3.org/get-involved/" class="nav-link">Get involved</a>
                     <div class="nav__submenu" data-nav="submenu" style="display: none;">
                         <div class="l-center">
                             <div class="nav__submenu__intro">
@@ -264,67 +189,31 @@
                                                                                                                 <a href="https://www.w3.org/get-involved/">Find ways to get involved</a>
                                                                     </div>
                             </div>
-                                                            <ul class="clean-list" role="list">
+                                                            <ul>
                                                                             <li >
-                                            <a class="with-icon--before with-icon--larger" href="https://www.w3.org/ecosystems/">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 512" class="icon icon--larger" focusable="false" aria-hidden="true" width="1em" height="1em">
-                                                    <path class="chevron-left" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"/>
-                                                    <path class="chevron-right" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/>
-                                                </svg>
-                                                Browse our work by industry
-                                            </a>
+                                            <a href="https://www.w3.org/ecosystems/">Browse our work by industry</a>
                                         </li>
                                                                             <li >
-                                            <a class="with-icon--before with-icon--larger" href="https://www.w3.org/membership/">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 512" class="icon icon--larger" focusable="false" aria-hidden="true" width="1em" height="1em">
-                                                    <path class="chevron-left" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"/>
-                                                    <path class="chevron-right" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/>
-                                                </svg>
-                                                Become a Member
-                                            </a>
+                                            <a href="https://www.w3.org/membership/">Become a Member</a>
                                         </li>
                                                                             <li >
-                                            <a class="with-icon--before with-icon--larger" href="https://www.w3.org/Member/">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 512" class="icon icon--larger" focusable="false" aria-hidden="true" width="1em" height="1em">
-                                                    <path class="chevron-left" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"/>
-                                                    <path class="chevron-right" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/>
-                                                </svg>
-                                                Member Home (restricted)
-                                            </a>
+                                            <a href="https://www.w3.org/Member/">Member Home (restricted)</a>
                                         </li>
                                                                             <li >
-                                            <a class="with-icon--before with-icon--larger" href="https://www.w3.org/email/">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 512" class="icon icon--larger" focusable="false" aria-hidden="true" width="1em" height="1em">
-                                                    <path class="chevron-left" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"/>
-                                                    <path class="chevron-right" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/>
-                                                </svg>
-                                                Follow mailing lists
-                                            </a>
+                                            <a href="https://www.w3.org/email/">Mailing lists</a>
                                         </li>
                                                                             <li >
-                                            <a class="with-icon--before with-icon--larger" href="https://www.w3.org/donate/">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 512" class="icon icon--larger" focusable="false" aria-hidden="true" width="1em" height="1em">
-                                                    <path class="chevron-left" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"/>
-                                                    <path class="chevron-right" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/>
-                                                </svg>
-                                                Make a donation
-                                            </a>
+                                            <a href="https://www.w3.org/donate/">Make a donation</a>
                                         </li>
                                                                             <li >
-                                            <a class="with-icon--before with-icon--larger" href="https://www.w3.org/sponsor/">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 512" class="icon icon--larger" focusable="false" aria-hidden="true" width="1em" height="1em">
-                                                    <path class="chevron-left" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"/>
-                                                    <path class="chevron-right" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/>
-                                                </svg>
-                                                Sponsor an event
-                                            </a>
+                                            <a href="https://www.w3.org/sponsor/">Sponsor an event</a>
                                         </li>
                                                                     </ul>
                                                     </div>
                     </div>
                 </li>
                             <li class="top-nav-item has-children">
-                    <a href="https://www.w3.org/resources/" class="nav-link">Resources <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" height="16" width="16" class="icon icon--submenu" focusable="false" aria-hidden="true" fill="currentColor" style="visibility: hidden"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg></a>
+                    <a href="https://www.w3.org/resources/" class="nav-link">Resources</a>
                     <div class="nav__submenu" data-nav="submenu" style="display: none;">
                         <div class="l-center">
                             <div class="nav__submenu__intro">
@@ -334,155 +223,71 @@
                                                                                                                 <a href="https://www.w3.org/resources/">Learn from W3C resources</a>
                                                                     </div>
                             </div>
-                                                            <ul class="clean-list" role="list">
+                                                            <ul>
                                                                             <li >
-                                            <a class="with-icon--before with-icon--larger" href="https://www.w3.org/developers/">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 512" class="icon icon--larger" focusable="false" aria-hidden="true" width="1em" height="1em">
-                                                    <path class="chevron-left" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"/>
-                                                    <path class="chevron-right" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/>
-                                                </svg>
-                                                Developers
-                                            </a>
+                                            <a href="https://www.w3.org/developers/">Developers</a>
                                         </li>
                                                                             <li >
-                                            <a class="with-icon--before with-icon--larger" href="https://www.w3.org/developers/tools/">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 512" class="icon icon--larger" focusable="false" aria-hidden="true" width="1em" height="1em">
-                                                    <path class="chevron-left" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"/>
-                                                    <path class="chevron-right" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/>
-                                                </svg>
-                                                Validators and tools
-                                            </a>
+                                            <a href="https://www.w3.org/developers/tools/">Validators &amp; tools</a>
                                         </li>
                                                                             <li >
-                                            <a class="with-icon--before with-icon--larger" href="https://www.w3.org/WAI/fundamentals/">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 512" class="icon icon--larger" focusable="false" aria-hidden="true" width="1em" height="1em">
-                                                    <path class="chevron-left" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"/>
-                                                    <path class="chevron-right" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/>
-                                                </svg>
-                                                Accessibility fundamentals
-                                            </a>
+                                            <a href="https://www.w3.org/WAI/fundamentals/">Accessibility fundamentals</a>
                                         </li>
                                                                             <li >
-                                            <a class="with-icon--before with-icon--larger" href="https://www.w3.org/International/i18n-drafts/nav/about">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 512" class="icon icon--larger" focusable="false" aria-hidden="true" width="1em" height="1em">
-                                                    <path class="chevron-left" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"/>
-                                                    <path class="chevron-right" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/>
-                                                </svg>
-                                                Internationalization
-                                            </a>
+                                            <a href="https://www.w3.org/International/i18n-drafts/nav/about">Internationalization</a>
                                         </li>
                                                                             <li >
-                                            <a class="with-icon--before with-icon--larger" href="https://www.w3.org/translations/">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 512" class="icon icon--larger" focusable="false" aria-hidden="true" width="1em" height="1em">
-                                                    <path class="chevron-left" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"/>
-                                                    <path class="chevron-right" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/>
-                                                </svg>
-                                                Translations of W3C standards and drafts
-                                            </a>
+                                            <a href="https://www.w3.org/translations/">Translations of W3C standards and drafts</a>
                                         </li>
                                                                             <li >
-                                            <a class="with-icon--before with-icon--larger" href="https://www.w3.org/policies/code-of-conduct/">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 512" class="icon icon--larger" focusable="false" aria-hidden="true" width="1em" height="1em">
-                                                    <path class="chevron-left" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"/>
-                                                    <path class="chevron-right" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/>
-                                                </svg>
-                                                Code of conduct
-                                            </a>
+                                            <a href="https://www.w3.org/policies/code-of-conduct/">Code of conduct</a>
                                         </li>
                                                                             <li >
-                                            <a class="with-icon--before with-icon--larger" href="https://www.w3.org/reports/">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 512" class="icon icon--larger" focusable="false" aria-hidden="true" width="1em" height="1em">
-                                                    <path class="chevron-left" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"/>
-                                                    <path class="chevron-right" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/>
-                                                </svg>
-                                                Reports
-                                            </a>
+                                            <a href="https://www.w3.org/reports/">Reports</a>
                                         </li>
                                                                     </ul>
                                                     </div>
                     </div>
                 </li>
                             <li class="top-nav-item has-children">
-                    <a href="https://www.w3.org/news-events/" class="nav-link">News and events <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" height="16" width="16" class="icon icon--submenu" focusable="false" aria-hidden="true" fill="currentColor" style="visibility: hidden"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg></a>
+                    <a href="https://www.w3.org/news-events/" class="nav-link">News &amp; events</a>
                     <div class="nav__submenu" data-nav="submenu" style="display: none;">
                         <div class="l-center">
                             <div class="nav__submenu__intro">
-                                <h2 class="nav__submenu__intro__heading">News and events</h2>
+                                <h2 class="nav__submenu__intro__heading">News &amp; events</h2>
                                 <div class="nav__submenu__intro__text">
                                                                             <p>Recent content across news, blogs, press releases, media; upcoming events.</p>
-                                                                                                                <a href="https://www.w3.org/news-events/">Follow news and events</a>
+                                                                                                                <a href="https://www.w3.org/news-events/">Follow news &amp; events</a>
                                                                     </div>
                             </div>
-                                                            <ul class="clean-list" role="list">
+                                                            <ul>
                                                                             <li >
-                                            <a class="with-icon--before with-icon--larger" href="https://www.w3.org/news/">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 512" class="icon icon--larger" focusable="false" aria-hidden="true" width="1em" height="1em">
-                                                    <path class="chevron-left" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"/>
-                                                    <path class="chevron-right" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/>
-                                                </svg>
-                                                News
-                                            </a>
+                                            <a href="https://www.w3.org/news/">News</a>
                                         </li>
                                                                             <li >
-                                            <a class="with-icon--before with-icon--larger" href="https://www.w3.org/blog/">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 512" class="icon icon--larger" focusable="false" aria-hidden="true" width="1em" height="1em">
-                                                    <path class="chevron-left" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"/>
-                                                    <path class="chevron-right" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/>
-                                                </svg>
-                                                Blog
-                                            </a>
+                                            <a href="https://www.w3.org/blog/">Blog</a>
                                         </li>
                                                                             <li class="break-after">
-                                            <a class="with-icon--before with-icon--larger" href="https://www.w3.org/press-releases/">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 512" class="icon icon--larger" focusable="false" aria-hidden="true" width="1em" height="1em">
-                                                    <path class="chevron-left" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"/>
-                                                    <path class="chevron-right" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/>
-                                                </svg>
-                                                Press releases
-                                            </a>
+                                            <a href="https://www.w3.org/press-releases/">Press releases</a>
                                         </li>
                                                                             <li >
-                                            <a class="with-icon--before with-icon--larger" href="https://www.w3.org/about/press-media/">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 512" class="icon icon--larger" focusable="false" aria-hidden="true" width="1em" height="1em">
-                                                    <path class="chevron-left" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"/>
-                                                    <path class="chevron-right" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/>
-                                                </svg>
-                                                Press and media
-                                            </a>
+                                            <a href="https://www.w3.org/about/press-media/">Press &amp; media</a>
                                         </li>
                                                                             <li >
-                                            <a class="with-icon--before with-icon--larger" href="https://www.w3.org/events/">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 512" class="icon icon--larger" focusable="false" aria-hidden="true" width="1em" height="1em">
-                                                    <path class="chevron-left" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"/>
-                                                    <path class="chevron-right" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/>
-                                                </svg>
-                                                Events
-                                            </a>
+                                            <a href="https://www.w3.org/events/">Events</a>
                                         </li>
                                                                             <li >
-                                            <a class="with-icon--before with-icon--larger" href="https://www.w3.org/news-events/w3c-tpac/">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 512" class="icon icon--larger" focusable="false" aria-hidden="true" width="1em" height="1em">
-                                                    <path class="chevron-left" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"/>
-                                                    <path class="chevron-right" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/>
-                                                </svg>
-                                                Annual W3C Conference (TPAC)
-                                            </a>
+                                            <a href="https://www.w3.org/news-events/w3c-tpac/">Annual W3C Conference (TPAC)</a>
                                         </li>
                                                                             <li >
-                                            <a class="with-icon--before with-icon--larger" href="https://www.w3.org/policies/code-of-conduct/">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 512" class="icon icon--larger" focusable="false" aria-hidden="true" width="1em" height="1em">
-                                                    <path class="chevron-left" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"/>
-                                                    <path class="chevron-right" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/>
-                                                </svg>
-                                                Code of conduct
-                                            </a>
+                                            <a href="https://www.w3.org/policies/code-of-conduct/">Code of conduct</a>
                                         </li>
                                                                     </ul>
                                                     </div>
                     </div>
                 </li>
                             <li class="top-nav-item has-children">
-                    <a href="https://www.w3.org/about/" class="nav-link">About <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" height="16" width="16" class="icon icon--submenu" focusable="false" aria-hidden="true" fill="currentColor" style="visibility: hidden"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg></a>
+                    <a href="https://www.w3.org/about/" class="nav-link">About</a>
                     <div class="nav__submenu" data-nav="submenu" style="display: none;">
                         <div class="l-center">
                             <div class="nav__submenu__intro">
@@ -492,126 +297,54 @@
                                                                                                                 <a href="https://www.w3.org/about/">Find out more about us</a>
                                                                     </div>
                             </div>
-                                                            <ul class="clean-list" role="list">
+                                                            <ul>
                                                                             <li >
-                                            <a class="with-icon--before with-icon--larger" href="https://www.w3.org/mission/">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 512" class="icon icon--larger" focusable="false" aria-hidden="true" width="1em" height="1em">
-                                                    <path class="chevron-left" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"/>
-                                                    <path class="chevron-right" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/>
-                                                </svg>
-                                                Our mission
-                                            </a>
+                                            <a href="https://www.w3.org/mission/">Our mission</a>
                                         </li>
                                                                             <li >
-                                            <a class="with-icon--before with-icon--larger" href="https://www.w3.org/about/leadership/">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 512" class="icon icon--larger" focusable="false" aria-hidden="true" width="1em" height="1em">
-                                                    <path class="chevron-left" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"/>
-                                                    <path class="chevron-right" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/>
-                                                </svg>
-                                                Leadership
-                                            </a>
+                                            <a href="https://www.w3.org/about/leadership/">Leadership</a>
                                         </li>
                                                                             <li >
-                                            <a class="with-icon--before with-icon--larger" href="https://www.w3.org/staff/">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 512" class="icon icon--larger" focusable="false" aria-hidden="true" width="1em" height="1em">
-                                                    <path class="chevron-left" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"/>
-                                                    <path class="chevron-right" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/>
-                                                </svg>
-                                                Staff
-                                            </a>
+                                            <a href="https://www.w3.org/staff/">Staff</a>
                                         </li>
                                                                             <li >
-                                            <a class="with-icon--before with-icon--larger" href="https://www.w3.org/evangelists/">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 512" class="icon icon--larger" focusable="false" aria-hidden="true" width="1em" height="1em">
-                                                    <path class="chevron-left" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"/>
-                                                    <path class="chevron-right" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/>
-                                                </svg>
-                                                Evangelists
-                                            </a>
+                                            <a href="https://www.w3.org/evangelists/">Evangelists</a>
                                         </li>
                                                                             <li class="break-after">
-                                            <a class="with-icon--before with-icon--larger" href="https://www.w3.org/careers/">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 512" class="icon icon--larger" focusable="false" aria-hidden="true" width="1em" height="1em">
-                                                    <path class="chevron-left" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"/>
-                                                    <path class="chevron-right" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/>
-                                                </svg>
-                                                Careers
-                                            </a>
+                                            <a href="https://www.w3.org/careers/">Careers</a>
                                         </li>
                                                                             <li >
-                                            <a class="with-icon--before with-icon--larger" href="https://www.w3.org/about/diversity/">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 512" class="icon icon--larger" focusable="false" aria-hidden="true" width="1em" height="1em">
-                                                    <path class="chevron-left" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"/>
-                                                    <path class="chevron-right" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/>
-                                                </svg>
-                                                Diversity
-                                            </a>
+                                            <a href="https://www.w3.org/about/diversity/">Diversity</a>
                                         </li>
                                                                             <li >
-                                            <a class="with-icon--before with-icon--larger" href="https://www.w3.org/about/corporation/">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 512" class="icon icon--larger" focusable="false" aria-hidden="true" width="1em" height="1em">
-                                                    <path class="chevron-left" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"/>
-                                                    <path class="chevron-right" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/>
-                                                </svg>
-                                                Corporation
-                                            </a>
+                                            <a href="https://www.w3.org/about/corporation/">Corporation</a>
                                         </li>
                                                                             <li >
-                                            <a class="with-icon--before with-icon--larger" href="https://www.w3.org/sponsor/">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 512" class="icon icon--larger" focusable="false" aria-hidden="true" width="1em" height="1em">
-                                                    <path class="chevron-left" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"/>
-                                                    <path class="chevron-right" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/>
-                                                </svg>
-                                                Sponsoring W3C
-                                            </a>
+                                            <a href="https://www.w3.org/sponsor/">Sponsoring W3C</a>
                                         </li>
                                                                             <li >
-                                            <a class="with-icon--before with-icon--larger" href="https://www.w3.org/about/press-media/">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 512" class="icon icon--larger" focusable="false" aria-hidden="true" width="1em" height="1em">
-                                                    <path class="chevron-left" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"/>
-                                                    <path class="chevron-right" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/>
-                                                </svg>
-                                                Media kit
-                                            </a>
+                                            <a href="https://www.w3.org/about/press-media/">Media kit</a>
                                         </li>
                                                                             <li >
-                                            <a class="with-icon--before with-icon--larger" href="https://www.w3.org/contact/">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 512" class="icon icon--larger" focusable="false" aria-hidden="true" width="1em" height="1em">
-                                                    <path class="chevron-left" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"/>
-                                                    <path class="chevron-right" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/>
-                                                </svg>
-                                                Contact
-                                            </a>
+                                            <a href="https://www.w3.org/contact/">Contact</a>
                                         </li>
                                                                             <li >
-                                            <a class="with-icon--before with-icon--larger" href="https://www.w3.org/policies/">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 512" class="icon icon--larger" focusable="false" aria-hidden="true" width="1em" height="1em">
-                                                    <path class="chevron-left" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"/>
-                                                    <path class="chevron-right" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/>
-                                                </svg>
-                                                Policies and legal information
-                                            </a>
+                                            <a href="https://www.w3.org/policies/">Policies &amp; legal information</a>
                                         </li>
                                                                             <li >
-                                            <a class="with-icon--before with-icon--larger" href="https://www.w3.org/help/">
-                                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 512" class="icon icon--larger" focusable="false" aria-hidden="true" width="1em" height="1em">
-                                                    <path class="chevron-left" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"/>
-                                                    <path class="chevron-right" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/>
-                                                </svg>
-                                                Help
-                                            </a>
+                                            <a href="https://www.w3.org/help/">Help</a>
                                         </li>
                                                                     </ul>
                                                     </div>
                     </div>
                 </li>
                         <li class="top-nav-item">
-                <a hreflang="en" href="/help/search/" class="nav-link icon-link">
+                <a hreflang="en" href="https://www.w3.org/help/search/" class="nav-link icon-link">
                     <img class="icon" src="https://www.w3.org/assets/website-2021/svg/search.svg" width="24" height="24" alt aria-hidden="true"><span class="hide-at-max-width">Search</span>
                 </a>
             </li>
             <li class="top-nav-item">
-                <a hreflang="en" href="/users/myprofile/" id="account-login-link" class="account-login icon-link with-icon--after">
+                <a hreflang="en" href="https://www.w3.org/users/myprofile/" id="account-login-link" class="account-login icon-link with-icon--after">
                     My account <span class="avatar avatar--small icon">
                         <img src="https://www.w3.org/assets/website-2021/svg/avatar.svg" width="24" height="24" alt aria-hidden="true"/>
                     </span>
@@ -620,12 +353,13 @@
         </ul>
     </div>
 </nav>
-                    </header>
+
+        </header>
                         
 <nav id="breadcrumb" aria-label="Breadcrumb">
     <div class="l-center">
         <div class="l-cluster">
-            <ol class="breadcrumbs clean-list" role="list">
+            <ol class="breadcrumbs" role="list">
               <li><a href="/">Home</a></li>
               <li><a href="https://www.w3.org/2002/09/wbs/" aria-current="page">WBS Home</a></li>
             </ol>
@@ -633,39 +367,159 @@
         </div>
     </div>
 </nav>
-                <main id="main">
-                                            
+<main id="main">
+ <div class="content">
+   <article>
 
-                                
+<h1>WBS - Create a new questionnaire for survey name</h1>
 
-                                
+<p class="doc">Use this form to create a new questionnaire for the <strong>Sysadmin Access</strong> - by default, only participants to this group will be allowed to answer it.<br>
+If you would like to allow additional groups or users to answer, edit and/or see the results of this questionnaire, then after the creation of this form <a href="mailto:sysreq@w3.org?subject=[WBS] Set additional rights for a questionnaire of the group Sysadmin Access (109)&amp;body=Please, add the following rights(s) for the WBS questionnaire:%0A%0A Questionnaire Identifier: ........%0ARight(s) (*) / User(s) or Group(s): ........ / ........%0A%0A%0AThank you%0A%0A(*) possible rights: see a questionnaire, vote, edit a questionnaire, see the results"> send a sysreq request with the list of groups/users to authorize.</a></p>
 
-                                
+<h3>Create a questionnaire from a template</h3>
+<div class="create">
+<ul>
+<li><a href="registrationFactory">F2F meeting registration</a></li>
+<li><a href="teleconfFactory">Teleconference scheduling</a></li>
+</ul>
+    <p>(send more templates suggestions to <a href="mailto:w3t-sys@w3.org?Subject=WBS%20Templates%20suggestions">w3t-sys@w3.org</a>).</p>
+</div>
+<h3>Copy an existing questionnaire</h3>
+<form action="factory" method="post">
+<div class="create">
+<ul>
+<li><label class="required" title="(any number and letters OK, up to 40 characters, must be unique among the group's questionnaires)"><strong>Identifier for the new questionnaire</strong>: <input maxlength="40" size="15" name="qaireno" type="text" required="required" value="" accesskey="c"></label> <span class="required">(*)</span></li>
+        <li><label for="uri_select">Questionnaire to copy</label>: <select name="uri_select" id="uri_select">
+        <option value="">None of the ones below</option>
+        <optgroup label="Recently edited questionnaires">
+<option value="https://www.w3.org/2002/09/wbs/109/Test-wbs-rfe/" title="Test for WBS RFE">Test for WBS RFE</option>
+<option value="https://www.w3.org/2002/09/wbs/99999/wbs-types-orig/" title="WBS question types">WBS question types</option>
+<option value="https://www.w3.org/2002/09/wbs/99999/test-copy-choice-4/" title="Test copy 4">Test copy 4</option>
+<option value="https://www.w3.org/2002/09/wbs/99999/test-copy-choices/" title="Test copy choices">Test copy choices</option>
+<option value="https://www.w3.org/2002/09/wbs/99999/test-copy-choice-3/" title="Test copy choices">Test copy choices</option>
+<option value="https://www.w3.org/2002/09/wbs/99999/test-copy-choices-2/" title="Test copy choices">Test copy choices</option>
+<option value="https://www.w3.org/2002/09/wbs/1/CGS-TPAC2024/" title="Community Groups - Will your group meet at TPAC2024?">Community Groups - Will your group meet at TPAC2024?</option>
+<option value="https://www.w3.org/2002/09/wbs/102172/2024-joint-meetings-time-preference/" title="Time preference for the Joint ACT meetings">Time preference for the Joint ACT meetings</option>
+<option value="https://www.w3.org/2002/09/wbs/93339/2024-joint-meetings-time-preference/" title="Time preference for the Joint ACT meetings">Time preference for the Joint ACT meetings</option>
+<option value="https://www.w3.org/2002/09/wbs/109/test-randomize/" title="Test Randomize feature">Test Randomize feature</option>
+</optgroup>
+        <optgroup label="Closed questionnaires for this group">
+<option value="https://www.w3.org/2002/09/wbs/109/test-randomize/" title="Test Randomize feature">Test Randomize feature</option>
+<option value="https://www.w3.org/2002/09/wbs/109/test-creation-2/" title="Survey with sentive questions">Survey with sentive questions</option>
+<option value="https://www.w3.org/2002/09/wbs/109/test-creation-1/" title="Test creation questionnaire">Test creation questionnaire</option>
+<option value="https://www.w3.org/2002/09/wbs/109/test-registration-f2f/" title="Registration for the F2F meeting of the Sysadmin Access (2021-02-15/2021-02-15 in Sophia)">Registration for the F2F meeting of the Sysadmin Access (2021-02-15/2021-02-15 in Sophia)</option>
+<option value="https://www.w3.org/2002/09/wbs/109/test-create-1/" title="Test creation without redirect to cgi">Test creation without redirect to cgi</option>
+<option value="https://www.w3.org/2002/09/wbs/109/test-copy-questionnaire/" title="Test option VoterBehalf">Test option VoterBehalf</option>
+<option value="https://www.w3.org/2002/09/wbs/109/test-f2f-6/" title="Registration for the F2F meeting of the Sysadmin Access (2021-02-18/2021-02-19 in Ercim - Sophia Antipolis )">Registration for the F2F meeting of the Sysadmin Access (2021-02-18/2021-02-19 in Ercim - Sophia Antipolis )</option>
+<option value="https://www.w3.org/2002/09/wbs/109/test-f2f-7/" title="Registration for the F2F meeting of the Sysadmin Access (2021-02-16/2021-02-19 in Ercim - Sophia Antipolis)">Registration for the F2F meeting of the Sysadmin Access (2021-02-16/2021-02-19 in Ercim - Sophia Antipolis)</option>
+<option value="https://www.w3.org/2002/09/wbs/109/may2009-f2f-dates/" title="Dates for Sysweb Geek Week in 2009">Dates for Sysweb Geek Week in 2009</option>
+<option value="https://www.w3.org/2002/09/wbs/109/200711f2fproj/" title="Proposed Projects for Geeking Session">Proposed Projects for Geeking Session</option>
+<option value="https://www.w3.org/2002/09/wbs/109/200706f2ftravel/" title="Travel Schedules to Coordinate Ground Transportation">Travel Schedules to Coordinate Ground Transportation</option>
+<option value="https://www.w3.org/2002/09/wbs/109/sysweb2007calls/" title="Sysweb Call Meeting Dates">Sysweb Call Meeting Dates</option>
+<option value="https://www.w3.org/2002/09/wbs/109/200705sysconfs/" title="May 2007 Conferences">May 2007 Conferences</option>
+<option value="https://www.w3.org/2002/09/wbs/109/SyswebNovF2F/" title="Sysweb November F2F Date preferences">Sysweb November F2F Date preferences</option>
+<option value="https://www.w3.org/2002/09/wbs/109/maychoice/" title="Sysweb May FTF preferences">Sysweb May FTF preferences</option>
+<option value="https://www.w3.org/2002/09/wbs/109/ftf200605/" title="Preferences for Sysweb FTF Spring 2006">Preferences for Sysweb FTF Spring 2006</option>
+<option value="https://www.w3.org/2002/09/wbs/109/sysftf200502/" title="Sysweb FTF Meeting and Dinner">Sysweb FTF Meeting and Dinner</option>
+<option value="https://www.w3.org/2002/09/wbs/109/f2f-pizzas/" title="Deciding what pizzas to order for Friday's lunch">Deciding what pizzas to order for Friday's lunch</option>
+<option value="https://www.w3.org/2002/09/wbs/109/mayftf/" title="May FTF Scheduling preference">May FTF Scheduling preference</option>
+<option value="https://www.w3.org/2002/09/wbs/109/OpenIDSys/" title=""></option>
+</optgroup>
+</select></li>
+<li><label for="uri_copy">OR URI of the questionnaire you want to copy: <input name="uri" id="uri_copy" type="uri" value=""></label><br>
+<em>(Be sure that the option 'The responses are collected for ...' of the copied questionnaire is the one that you want for the new questionnaire, otherwise you'll have to change it by editing the new questionnaire before opening it)</em></li>
+</ul>
 
-                            <div class="content">
-        <article>
-            <h1>Title</h1>
+</div>
+<br><input type="submit" class="submit_button" value="Copy and create">
+</form>
 
-                                                                        <div class="component component--text">
-        </div>
+<h3>Create a questionnaire from scratch</h3>
+<form method="post" action="factory">
+      <div class="create">
+    <ul class="edit">
+  <li>
+<label>Questionnaire identifier: <input required="required" maxlength="40" size="15" name="qaireno" type="text" value=""></label> (any number and letters OK, up to 40 characters, must be unique among the group's questionnaires)
+<input name="wgid" type="hidden" value="109">
+<input name="qairedupd" type="hidden" value="2024-10-29"> <span class="required">(*)</span>
+</li><li><label>Questionnaire’s starting date:
+<input id="startdate" name="startdate" type="date" required="required" size="10" value="2024-10-29"></label> (starts at 0:00 Eastern time)
+</li><li><label>Questionnaire's closing date:
+<input id="closedate" required="required" name="closedate" type="date" size="10" value="2024-10-28"></label> (ends at midnight Eastern time)
+</li>
 
-            
-        </article>
-                                    <section class="related">
-    <div class="related__inner">
-        <h2 class="txt-jupiter">In this section</h2>
-        <ul class="clean-list" role="list">
-                                                            <li><a href="">Item1</a></li>
-                                                            <li><a href="">Item1</a></li>
+<li><label>Title of the questionnaire<br>
+<input name="shortdesc" required="required" type="text" size="80" value="">
+</label></li>
+<li><strong>The responses are collected 'per individual' for this group</strong>.<input type="hidden" value="individual" name="voterBehalf"><br>&nbsp;</li>
 
-                                    </ul>
-    </div>
-</section>
+<li><label for="allowed">Who is allowed to see the results? </label><select id="allowed" name="resultsACL">
+<option value="group">only the participants of the Sysadmin Access</option>
+<option value="team">only the Team</option>
+<option value="memberOrTeam">The Team, but responders can choose to make their responses Member-visible</option>
+<option value="member">anybody with Member access</option>
+<option value="public">anybody</option>
+</select>
+</li>
 
-                        </div>
-                    </main>
-                                </div>
-                <footer class="global-footer">
+
+<li>
+<label>
+<input id="reminderoption" name="reminderoption" title="reminder date option" type="checkbox"> Enable reminder</label>
+<span class="elem_hide" id="reminderalert"> <em>This option is not
+available for questionnaires open for less than 7 days</em></span>
+<div class="elem_hide" id="remindervalue">
+<ul class="edit">
+<li><label>Reminder date:
+<input id="reminderdate" name="reminderdate" type="date" size="10" value="">
+</label></li>
+<li><label>Reminder mailing list:
+<input id="remindelist" name="reminderlist" type="email" maxlength="255" value="">
+</label><span> (enter one email address, if empty an email will be sent to each non-responder participant of the Sysadmin Access)</span></li>
+</ul>
+</div>
+</li>
+
+
+<li><label><input type="checkbox" name="allowNonW3CUsers"> Allow to answer the questionnaire without a W3C account</label></li>
+<li><label>Send all the responses to the following email address(es): <input type="email" name="emailNotif" maxlength="255" value="" multiple=""></label> (optional, comma-separated list for several addresses)</li>
+<li><label>E-mail address(es) to which the responders can choose to copy their responses (e.g. w3c-archive@w3.org): <input type="email" name="params[emailCC]" maxlength="255" value="" multiple=""></label>  (optional, comma-separated list for several addresses)</li>
+
+
+</ul>
+</div>
+<br>
+<input type="submit" class="submit_button" name="action" value="Create
+a new questionnaire">
+</form>
+   
+</form>
+   
+</article>
+	
+ <div class="related">
+   <nav class="related__inner" aria-labelledby="related-label">
+   <h2 class="txt-jupiter">This Group</h2>
+     <ul role="list">
+          <li><a href="/2002/09/wbs/109/" title="Current questionnaires for this group">Open questionnaires for this group</a></li>
+          <li><a href="/2002/09/wbs/109/factory" title="Create a questionnaire for this group">Create a new questionnaire for this group</a></li>
+     </ul>
+     <h2 class="txt-jupiter">WBS Home</h2>
+     <ul role="list">
+          <li><a href="/2002/09/wbs/" title="WBS Home">WBS Home</a></li>
+          <li><a href="/2002/09/wbs/showq" title="Current questionnaires for all the groups">All open questionnaires</a></li>
+          <li><a href="href='/2002/09/wbs/myQuestionnaires" title="List of questionnaires you are supposed to answer">My questionnaires</a></li>
+          <li><a href="/groups/">W3C Groups</a></li>
+     </ul>
+   </nav>
+ </div>
+ 
+  </div>
+  </main>
+  </div>
+
+  
+   <footer class="global-footer">
     <div class="l-center">
         <div class="global-footer__links">
             <div class="l-cluster">
