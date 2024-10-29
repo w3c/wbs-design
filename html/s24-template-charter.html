@@ -372,8 +372,62 @@
    <article>
 
    <h1>Create a Call For Review for a Working Group or Interest Group Charter</h1>
-   <p>This forms allow you to create a Call For Review for a Working Group or Interest Group Charter. The generated form is incomplete and requires you to provide some additional information such as an executive summary and the list of materials to review. You can freely update the generated form using WBS interface.</p>
+   <p>This forms allow you to create a Call For Review for a Working
+   Group or Interest Group Charter. The generated form is
+   <strong>incomplete</strong> and requires you to provide some
+   additional information such as an executive summary and the list of
+   materials to review. You  can freely update the generated form
+   using <a href="https://www.w3.org/2002/09/wbs/99999/">WBS interface</a>.</p>
 
+<form action="https://www.w3.org/2002/09/wbs/99999/factory?fromTemplate" method="post">
+<div class="create">
+<p>
+<input type="hidden" name="startdate" id="startdate" value="2024-10-30" />
+<input type="hidden" name="resultsACL" value="memberOrTeam" />
+<input type="hidden" name="voterBehalf" value="employer" />
+<input type="hidden" name="wgid" value="99999" />
+<input type="hidden" name="type" value="apcfr" />
+<input type="hidden" name="params[emailCC]" value="w3c-archive@w3.org,w3c-ac-forum@w3.org" />
+<ul class='alignedlabels edit'>
+<li><label for="shortdesc">A short name for this review:</label> <input type="text" name="qaireno"  id="shortdesc" maxlength="40" size="15" /></li>
+<li><label for="uri">Charter URI:</label> <input type="text" id="uri" name="params[activityURI]" />
+<li><label for="teamname">Team Contact name:</label> <input type="text" id="teamname" name="params[activityLead]" />
+<li><label for="teamemail">Team Contact email:</label> <input type="text" id="teamemail" name="params[activityLeadEmail]" />
+<li><label for="wgnames">Name of the Working or Interest Group:</label> <input type="text" id="wgnames" name="params[groups]" />
+<li><label for="newscope">In case of a renewal of an existing charter, has the group scope changed?</label><fieldset> 
+<label>Yes <input type="radio" name="params[scope]" value="yes" checked="checked" /></label> &nbsp; 
+<label>No <input type="radio" name="params[scope]" value="no" /></label>
+</fieldset></li>
+<li><label for="closedate">End of review period:</label> <input type="date" id="closedate" size="10" name="closedate" value="YYYY-MM-DD" /></li>
+<li><label for="horizontalreview">Strategy Issue URI of horizontal review of the charter:</label> <input type="text" id="horizontalreview" name="params[issueURI]" />
+
+<li>
+<label for="reminderoption">Enable reminder:</label>
+<input id="reminderoption" name="reminderoption" title="reminder date option"
+type="checkbox" />
+&nbsp; <span class="elem_hide" id="reminderalert"> <em>This option is not
+available for questionnaires open for less than 8 days</em></span>
+<div class="elem_hide" id="remindervalue">
+<ul>
+<li><label for="reminderdate">Reminder date:</label>
+<input id="reminderdate" name="reminderdate" type="date" size="10" value="YYYY-MM-DD" />
+</li>
+<li><label for="remindelist">Reminder mailing list:</label>
+<input id="remindelist" name="reminderlist" type="email" maxlength="255" value="" />
+&nbsp; <span> (enter one email address, if empty an email will be sent to each non-responder group participant)</span></li>
+</ul>
+</div>
+</li>
+
+<li><label for="email">Email to which reviews are sent:</label> <input type="text" id="email" name="emailNotif" /></label></li>
+</ul>
+</p>
+<p>
+<input type="submit" class="submit_button" />&nbsp;<input type="reset" class="reset_button" />
+</p>
+</div>
+</form>
+   
 </article>
 	
  <div class="related">

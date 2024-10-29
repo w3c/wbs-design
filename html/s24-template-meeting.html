@@ -374,6 +374,33 @@
    <h1>Create a registration form</h1>
    <p>This forms allow you to create a registration form for the F2F meetings of your groups. It creates a set of basic questions that you can freely update or complete once the form is created using <a href="https://www.w3.org/2002/09/wbs/99999/">WBS interface</a>.</p>
    <p class="message">Don’t forget to contact <a href="mailto:calreq@w3.org">calreq@w3.org</a> about F2F meetings.</p>
+
+   <form action="https://www.w3.org/2002/09/wbs/99999/factory?fromTemplate" method="post">
+<div class="create">
+<p>
+<input type="hidden" name="startdate" value="2024-10-29" />
+<input type="hidden" name="resultsACL" value="group" />
+<input type="hidden" name="voterBehalf" value="individual" />
+<input type="hidden" name="wgid" value="99999" />
+<input type="hidden" name="type" value="registration" />
+
+<ul class='alignedlabels edit'>
+<li><label for="meeting">A machine identifier for this meeting:</label> <input type="text" name="qaireno" id ="meeting" maxlength="40" size="15" />&nbsp; (any number and letters OK, up to 40 characters)</li>
+<li><label for="Location">Location:</label> <input type="text" name="params[location]" id ="Location" /></li>
+<li><label for="start">Meeting start date:</label> <input type="date" size="10" id="start" name="params[start]" value="YYYY-MM-DD" /></li>
+<li><label for="end">Meeting end date:</label> <input type="date" size="10" id="end" name="params[end]" value="YYYY-MM-DD" /></li>
+<li><label for="closedate">Registration cut-off date:</label> <input type="date" size="10" id="closedate" name="closedate" value="YYYY-MM-DD" /></li>
+<li><label for="Logistics">Logistics page (URI):</label> <input type="text" name="params[logistics]" id ="Logistics" />&nbsp; (leave empty if none)</li>
+<li><label for="Agenda">Agenda (URI):</label> <input type="text" name="params[agenda]" id ="Agenda" />&nbsp; (leave empty if none)</li>
+<li><label for="food">Propose food preferences:</label> <input type="checkbox" name="params[food]" id ="food" /></li>
+<li><label for="accomodations">Propose accessibility accomodations (Sign Language Interpreting, Assistive Listening Devices and Alternative Formats):</label> <input type="checkbox" name="params[accessibility]" id ="accomodations" /></li>
+</ul></p>
+<p>
+<input type="submit" class="submit_button" />
+</p>
+</div>
+</form>
+
 </article>
 	
  <div class="related">

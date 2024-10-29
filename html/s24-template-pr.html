@@ -374,6 +374,47 @@
    <h1>Create a Call For Review for Proposed (Edited) Recommendations</h1>
    <p>This forms allow you to create a Call For Review for a Proposed Recommendation or a Proposed Edited Recommendation. It creates a set of basic questions that you can freely update or complete once the form is created using <a href="https://www.w3.org/2002/09/wbs/99999/">WBS interface</a>.</p>
 
+<form action="https://www.w3.org/2002/09/wbs/99999/factory?fromTemplate" method="post">
+<div class="create">
+<p>																		     
+<input type="hidden" name="startdate" id="startdate" value="2024-10-30" />
+<input type="hidden" name="resultsACL" value="memberOrTeam" />
+<input type="hidden" name="voterBehalf" value="employer" />
+<input type="hidden" name="wgid" value="99999" />
+<input type="hidden" name="type" value="prcfr" />
+<input type="hidden" name="params[emailCC]" value="w3c-archive@w3.org,w3c-ac-forum@w3.org" />
+<ul class='alignedlabels edit'>
+<li><label for="shortdesc">A short name for this review:</label> <input type="text" id="shortdesc" name="qaireno" maxlength="40" size="15" /></li>
+<li><label for="uri">URI of the Proposed (Edited) Recommendation:</label> <input type="text" id="uri" name="params[uris]" />&nbsp; <strong>the documents have to be publicly accessible</strong> (if several docs are to be reviewed at the same time, put a comma-separated list of URIs)</li>
+<li><label for="closedate">End of review period:</label> <input type="date" id="closedate" size="10" name="closedate" value="YYYY-MM-DD" /></li>
+
+<li>
+<label for="reminderoption">Enable reminder:</label>
+<input id="reminderoption" name="reminderoption" title="reminder date option"
+type="checkbox" />
+<span class="elem_hide" id="reminderalert"> &nbsp;<em>This option is not
+available for questionnaires open for less than 8 days</em></span>
+<div class="elem_hide" id="remindervalue">
+<ul>
+<li><label for="reminderdate">Reminder date:</label>
+<input id="reminderdate" name="reminderdate" type="date" size="10" value="YYYY-MM-DD" />
+</li>
+<li><label for="remindelist">Reminder mailing list:</label>
+<input id="remindelist" name="reminderlist" type="email" maxlength="255" value="" />
+<span>&nbsp; (enter one email address, if empty an email will be sent to each non-responder group participant)</span></li>
+</ul>
+</div>
+</li>
+
+<li><label for="emailNotif"><a href="https://lists.w3.org/Archives/Team/">Team-only mailing list</a> to which reviews are sent:</label> <input type="text" id="emailNotif" name="emailNotif" /></li>
+</ul>
+</p>																      
+<p>
+<input type="submit" class="submit_button" />&nbsp;<input type="reset" class="reset_button" />
+</p>
+</div>
+</form>
+ 
 </article>
 	
  <div class="related">
