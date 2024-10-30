@@ -28,7 +28,7 @@ It contains the snapshots of some of the HTML pages of the application and its e
 * [WBS Surveys list using new Design System](https://w3c.github.io/wbs-design/html/s24-list-surveys.html)
 * [WBS All question results types using new Design System](https://w3c.github.io/wbs-design/html/s24-qtypes-results.html)
 * [WBS All question results types (compact view) using new Design System](https://w3c.github.io/wbs-design/html/s24-qtypes-results-compact-view.html)  (Draft)
-* [WBS Create a questionnaire using new Design System](https://w3c.github.io/wbs-design/html/s24-survey-creation.html)  (Draft)
+* [WBS Create a questionnaire using new Design System](https://w3c.github.io/wbs-design/html/s24-survey-creation.html)
 * [WBS Edit a question using new Design System](https://w3c.github.io/wbs-design/html/s24-question-edit.html)  (Draft)
 * [WBS Template meeting registration](https://w3c.github.io/wbs-design/html/s24-template-meeting.html)  (Draft)
 * [WBS Teleconference scheduling](https://w3c.github.io/wbs-design/html/s24-template-teleconf.html)  (Draft)
