@@ -1,0 +1,803 @@
+<!doctype html>
+<html dir="ltr" lang="en" class="js fonts-loaded">
+<head>
+    <title>WBS question types results compact view</title>
+
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="description"/>
+    <meta name="thumbnail" content="https://www.w3.org/assets/website-2021/images/w3c-opengraph-image.png"/>
+    <meta property="og:url" content="https://www.w3.org/"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Title"/>
+    <meta property="og:image" content="https://www.w3.org/assets/website-2021/images/w3c-opengraph-image.png"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+    <meta property="og:description" content="description"/>
+    <meta property="og:site_name" content="W3C"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:site" content="w3c"/>
+    <meta name="twitter:url" content="url"/>
+    <meta name="twitter:title" content="title"/>
+    <meta name="twitter:description" content="description"/>
+    <meta name="twitter:image" content="https://www.w3.org/assets/website-2021/images/w3c-opengraph-image.png"/>
+    <link rel="home" href="https://www.w3.org/"/>
+
+    <link rel="stylesheet" href="https://www.w3.org/assets/website-2021/styles/core.css?ver=1.4" media="screen"/>
+
+        <!--
+        CSS Mustard Cut
+        Print (Edge doesn't apply to print otherwise)
+        Edge, Chrome 39+, Opera 26+, Safari 9+, iOS 9+, Android ~5+, Android UCBrowser ~11.8+
+        FF 47+
+        -->
+        <link rel="stylesheet" id="advanced-stylesheet"
+              href="https://www.w3.org/assets/website-2021/styles/advanced.css?ver=1.4" media="
+            only print,
+            only all and (pointer: fine), only all and (pointer: coarse), only all and (pointer: none),
+            only all and (min--moz-device-pixel-ratio:0) and (display-mode:browser), (min--moz-device-pixel-ratio:0) and (display-mode:fullscreen)
+        ">
+        <link rel="stylesheet" href="https://www.w3.org/assets/website-2021/styles/print.css" media="print"/>
+    
+            <script src="https://www.w3.org/assets/website-2021/js/libraries/fontfaceobserver.js"></script>
+
+        <script>
+            var myFont = new FontFaceObserver('Noto Sans');
+
+            Promise.all([myFont.load()]).then(function () {
+                document.documentElement.className += " fonts-loaded";
+            });
+
+            (function () {
+                var linkEl = document.getElementById('advanced-stylesheet');
+                if (window.matchMedia && window.matchMedia(linkEl.media).matches) {
+                    var script = document.createElement('script');
+                    script.src = 'https://www.w3.org/assets/website-2021/js/main.js?ver=1.4';
+                    script.defer = true;
+                    document.querySelector('head').appendChild(script);
+                    (function (H) {
+                        H.className = H.className.replace(/\bno-js\b/, 'js')
+                    })(document.documentElement);
+                }
+            })();
+        </script>
+    
+<style>
+td, th {
+  border-right: solid 1px #bdbdbd;
+}
+</style>
+</head>
+
+<body class="landing">
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="grid-wrap">
+ <div class="wrap">
+ <header class="global-header">
+            <span role="status" aria-live="polite"></span>
+
+<nav id="global-nav" aria-label="Main">
+    <div class="global-nav__inner l-center">
+        <a class="logo-link" href="https://www.w3.org/" hreflang="en">
+            <span class="logo">
+                <img src="https://www.w3.org/assets/logos/w3c/w3c-no-bars.svg" alt="W3C" role="img"/>
+            </span>
+            <span class="visuallyhidden">Visit the W3C homepage</span>
+        </a>
+        <button type="button" class="button button--ghost with-icon--after with-icon--larger" data-trigger="mobile-nav"
+                style="display: none;"></button>
+        <ul data-component="nav-double-intro">
+                            <li class="top-nav-item has-children">
+                    <a href="https://www.w3.org/standards/" class="nav-link">Standards</a>
+                    <div class="nav__submenu" data-nav="submenu" style="display: none;">
+                        <div class="l-center">
+                            <div class="nav__submenu__intro">
+                                <h2 class="nav__submenu__intro__heading">Standards</h2>
+                                <div class="nav__submenu__intro__text">
+                                                                            <p>Understand the various specifications, their maturity levels on the web standards track, and their adoption.</p>
+                                                                                                                <a href="https://www.w3.org/standards/">Explore web standards</a>
+                                                                    </div>
+                            </div>
+                                                            <ul>
+                                                                            <li >
+                                            <a href="https://www.w3.org/standards/about/">About W3C web standards</a>
+                                        </li>
+                                                                            <li >
+                                            <a href="https://www.w3.org/TR/">W3C standards &amp; drafts</a>
+                                        </li>
+                                                                            <li >
+                                            <a href="https://www.w3.org/standards/types/">Types of documents W3C publishes</a>
+                                        </li>
+                                                                            <li >
+                                            <a href="https://www.w3.org/translations/">Translations of W3C standards &amp; drafts</a>
+                                        </li>
+                                                                            <li >
+                                            <a href="https://www.w3.org/standards/review/">Reviews &amp; public feedback</a>
+                                        </li>
+                                                                            <li >
+                                            <a href="https://www.w3.org/liaisons/">Liaisons</a>
+                                        </li>
+                                                                            <li >
+                                            <a href="https://www.w3.org/get-involved/promote/">Promote web standards</a>
+                                        </li>
+                                                                    </ul>
+                                                    </div>
+                    </div>
+                </li>
+                            <li class="top-nav-item has-children">
+                    <a href="https://www.w3.org/groups/" class="nav-link">Groups</a>
+                    <div class="nav__submenu" data-nav="submenu" style="display: none;">
+                        <div class="l-center">
+                            <div class="nav__submenu__intro">
+                                <h2 class="nav__submenu__intro__heading">Groups</h2>
+                                <div class="nav__submenu__intro__text">
+                                                                            <p>A variety of groups develop Web Standards, guidelines, or supporting materials.</p>
+                                                                                                                <a href="https://www.w3.org/groups/">About W3C groups</a>
+                                                                    </div>
+                            </div>
+                                                            <ul>
+                                                                            <li >
+                                            <a href="https://www.w3.org/groups/wg/">Working Groups</a>
+                                        </li>
+                                                                            <li >
+                                            <a href="https://www.w3.org/groups/ig/">Interest Groups</a>
+                                        </li>
+                                                                            <li >
+                                            <a href="https://www.w3.org/groups/cg/">Community Groups</a>
+                                        </li>
+                                                                            <li >
+                                            <a href="https://www.w3.org/groups/bg/">Business Groups</a>
+                                        </li>
+                                                                            <li >
+                                            <a href="https://www.w3.org/groups/other/tag/">Technical Architecture Group</a>
+                                        </li>
+                                                                            <li >
+                                            <a href="https://www.w3.org/invited-experts/">Invited Experts</a>
+                                        </li>
+                                                                            <li >
+                                            <a href="https://www.w3.org/guide/">Participant guidebook</a>
+                                        </li>
+                                                                            <li >
+                                            <a href="https://www.w3.org/about/positive-work-environment/">Positive work environment</a>
+                                        </li>
+                                                                    </ul>
+                                                    </div>
+                    </div>
+                </li>
+                            <li class="top-nav-item has-children">
+                    <a href="https://www.w3.org/get-involved/" class="nav-link">Get involved</a>
+                    <div class="nav__submenu" data-nav="submenu" style="display: none;">
+                        <div class="l-center">
+                            <div class="nav__submenu__intro">
+                                <h2 class="nav__submenu__intro__heading">Get involved</h2>
+                                <div class="nav__submenu__intro__text">
+                                                                            <p>W3C works at the nexus of core technology, industry needs, and societal needs.</p>
+                                                                                                                <a href="https://www.w3.org/get-involved/">Find ways to get involved</a>
+                                                                    </div>
+                            </div>
+                                                            <ul>
+                                                                            <li >
+                                            <a href="https://www.w3.org/ecosystems/">Browse our work by industry</a>
+                                        </li>
+                                                                            <li >
+                                            <a href="https://www.w3.org/membership/">Become a Member</a>
+                                        </li>
+                                                                            <li >
+                                            <a href="https://www.w3.org/Member/">Member Home (restricted)</a>
+                                        </li>
+                                                                            <li >
+                                            <a href="https://www.w3.org/email/">Mailing lists</a>
+                                        </li>
+                                                                            <li >
+                                            <a href="https://www.w3.org/donate/">Make a donation</a>
+                                        </li>
+                                                                            <li >
+                                            <a href="https://www.w3.org/sponsor/">Sponsor an event</a>
+                                        </li>
+                                                                    </ul>
+                                                    </div>
+                    </div>
+                </li>
+                            <li class="top-nav-item has-children">
+                    <a href="https://www.w3.org/resources/" class="nav-link">Resources</a>
+                    <div class="nav__submenu" data-nav="submenu" style="display: none;">
+                        <div class="l-center">
+                            <div class="nav__submenu__intro">
+                                <h2 class="nav__submenu__intro__heading">Resources</h2>
+                                <div class="nav__submenu__intro__text">
+                                                                            <p>Master Web fundamentals, use our developer tools, or contribute code.</p>
+                                                                                                                <a href="https://www.w3.org/resources/">Learn from W3C resources</a>
+                                                                    </div>
+                            </div>
+                                                            <ul>
+                                                                            <li >
+                                            <a href="https://www.w3.org/developers/">Developers</a>
+                                        </li>
+                                                                            <li >
+                                            <a href="https://www.w3.org/developers/tools/">Validators &amp; tools</a>
+                                        </li>
+                                                                            <li >
+                                            <a href="https://www.w3.org/WAI/fundamentals/">Accessibility fundamentals</a>
+                                        </li>
+                                                                            <li >
+                                            <a href="https://www.w3.org/International/i18n-drafts/nav/about">Internationalization</a>
+                                        </li>
+                                                                            <li >
+                                            <a href="https://www.w3.org/translations/">Translations of W3C standards and drafts</a>
+                                        </li>
+                                                                            <li >
+                                            <a href="https://www.w3.org/policies/code-of-conduct/">Code of conduct</a>
+                                        </li>
+                                                                            <li >
+                                            <a href="https://www.w3.org/reports/">Reports</a>
+                                        </li>
+                                                                    </ul>
+                                                    </div>
+                    </div>
+                </li>
+                            <li class="top-nav-item has-children">
+                    <a href="https://www.w3.org/news-events/" class="nav-link">News &amp; events</a>
+                    <div class="nav__submenu" data-nav="submenu" style="display: none;">
+                        <div class="l-center">
+                            <div class="nav__submenu__intro">
+                                <h2 class="nav__submenu__intro__heading">News &amp; events</h2>
+                                <div class="nav__submenu__intro__text">
+                                                                            <p>Recent content across news, blogs, press releases, media; upcoming events.</p>
+                                                                                                                <a href="https://www.w3.org/news-events/">Follow news &amp; events</a>
+                                                                    </div>
+                            </div>
+                                                            <ul>
+                                                                            <li >
+                                            <a href="https://www.w3.org/news/">News</a>
+                                        </li>
+                                                                            <li >
+                                            <a href="https://www.w3.org/blog/">Blog</a>
+                                        </li>
+                                                                            <li class="break-after">
+                                            <a href="https://www.w3.org/press-releases/">Press releases</a>
+                                        </li>
+                                                                            <li >
+                                            <a href="https://www.w3.org/about/press-media/">Press &amp; media</a>
+                                        </li>
+                                                                            <li >
+                                            <a href="https://www.w3.org/events/">Events</a>
+                                        </li>
+                                                                            <li >
+                                            <a href="https://www.w3.org/news-events/w3c-tpac/">Annual W3C Conference (TPAC)</a>
+                                        </li>
+                                                                            <li >
+                                            <a href="https://www.w3.org/policies/code-of-conduct/">Code of conduct</a>
+                                        </li>
+                                                                    </ul>
+                                                    </div>
+                    </div>
+                </li>
+                            <li class="top-nav-item has-children">
+                    <a href="https://www.w3.org/about/" class="nav-link">About</a>
+                    <div class="nav__submenu" data-nav="submenu" style="display: none;">
+                        <div class="l-center">
+                            <div class="nav__submenu__intro">
+                                <h2 class="nav__submenu__intro__heading">About</h2>
+                                <div class="nav__submenu__intro__text">
+                                                                            <p>Understand our values and principles, learn our history, look into our policies, meet our people.</p>
+                                                                                                                <a href="https://www.w3.org/about/">Find out more about us</a>
+                                                                    </div>
+                            </div>
+                                                            <ul>
+                                                                            <li >
+                                            <a href="https://www.w3.org/mission/">Our mission</a>
+                                        </li>
+                                                                            <li >
+                                            <a href="https://www.w3.org/about/leadership/">Leadership</a>
+                                        </li>
+                                                                            <li >
+                                            <a href="https://www.w3.org/staff/">Staff</a>
+                                        </li>
+                                                                            <li >
+                                            <a href="https://www.w3.org/evangelists/">Evangelists</a>
+                                        </li>
+                                                                            <li class="break-after">
+                                            <a href="https://www.w3.org/careers/">Careers</a>
+                                        </li>
+                                                                            <li >
+                                            <a href="https://www.w3.org/about/diversity/">Diversity</a>
+                                        </li>
+                                                                            <li >
+                                            <a href="https://www.w3.org/about/corporation/">Corporation</a>
+                                        </li>
+                                                                            <li >
+                                            <a href="https://www.w3.org/sponsor/">Sponsoring W3C</a>
+                                        </li>
+                                                                            <li >
+                                            <a href="https://www.w3.org/about/press-media/">Media kit</a>
+                                        </li>
+                                                                            <li >
+                                            <a href="https://www.w3.org/contact/">Contact</a>
+                                        </li>
+                                                                            <li >
+                                            <a href="https://www.w3.org/policies/">Policies &amp; legal information</a>
+                                        </li>
+                                                                            <li >
+                                            <a href="https://www.w3.org/help/">Help</a>
+                                        </li>
+                                                                    </ul>
+                                                    </div>
+                    </div>
+                </li>
+                        <li class="top-nav-item">
+                <a hreflang="en" href="https://www.w3.org/help/search/" class="nav-link icon-link">
+                    <img class="icon" src="https://www.w3.org/assets/website-2021/svg/search.svg" width="24" height="24" alt aria-hidden="true"><span class="hide-at-max-width">Search</span>
+                </a>
+            </li>
+            <li class="top-nav-item">
+                <a hreflang="en" href="https://www.w3.org/users/myprofile/" id="account-login-link" class="account-login icon-link with-icon--after">
+                    My account <span class="avatar avatar--small icon">
+                        <img src="https://www.w3.org/assets/website-2021/svg/avatar.svg" width="24" height="24" alt aria-hidden="true"/>
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+   
+
+ </header>
+                        
+<nav id="breadcrumb" aria-label="Breadcrumb">
+    <div class="l-center">
+        <div class="l-cluster">
+            <ol class="breadcrumbs clean-list" role="list">
+              <li><a href="/">Home</a></li>
+              <li><a href="https://www.w3.org/2002/09/wbs/" aria-current="page">WBS Home</a></li>
+            </ol>
+        
+        </div>
+    </div>
+</nav>
+
+<main id="main">
+  <div class="content">
+
+    <article>
+
+    <h1>Compact view of the results of Questionnaire WBS question types</h1>
+    <div>
+<div class='field-group'>
+<p>The <a href='results'>results of this questionnaire</a> are available only to the participants of the group (and the W3C Team)</p><p>This questionnaire is open from 2014-11-21 to 2016-12-31.</p>
+<p><strong>2</strong> answers have been received.</p>
+</div>
+
+<h2>Details</h2>
+<button class="zoomIn" href="#">Maximise this table</button>
+<div class="question results">
+<div class="scroll scrolly">
+<table id="mainTable" class="summary data">
+<thead>
+<tr>
+<th scope="col" rowspan="2">Family</th><th scope="col" rowspan="2">Given</th><th scope="col" rowspan="2">Organization</th>
+<th rowspan="2" scope="col" class="meta">Rationale</th><th rowspan="2" scope="col" class="meta">Comments</th><th scope="col" rowspan="2">Single selection required Yes/No</th><th rowspan="2" scope="col" class="meta">Rationale</th><th rowspan="2" scope="col" class="meta">Comments</th><th scope="col" rowspan="2">Single selection required Yes/No/Concur/Abstain</th><th rowspan="2" scope="col" class="meta">Rationale</th><th rowspan="2" scope="col" class="meta">Comments</th><th scope="col" rowspan="2">Select one among many (drop-down list)</th><th rowspan="2" scope="col" class="meta">Rationale</th><th rowspan="2" scope="col" class="meta">Comments</th><th scope="col" rowspan="2">Select one among many (radio buttons)</th><th rowspan="2" scope="col" class="meta">Rationale</th><th rowspan="2" scope="col" class="meta">Comments</th><th rowspan="2" scope="col" class="meta">Open comments</th><th rowspan="2" scope="col" class="meta">Rationale</th><th rowspan="2" scope="col" class="meta">Rationale</th><th rowspan="2" scope="col" class="meta">Comments</th><th scope="col" rowspan="2">Select multiple items (checkboxes)</th><th rowspan="2" scope="col" class="meta">Rationale</th><th rowspan="2" scope="col" class="meta">Comments</th><th scope="col" colspan="6">Survey type</th>
+<th scope="col" colspan="5">Straw-poll</th>
+<th scope="col" colspan="5">Rank-ordering</th>
+<th scope="col" colspan="5"> Pick a time for a teleconf</th>
+<th scope="col" colspan="6">Cumulative vote</th>
+<th scope="col" colspan="5"> Importance survey</th>
+<th scope="col" colspan="5"> Importance and Satisfaction survey</th>
+<th scope="col" colspan="22">Monday, 27 October All Group Meetings Attendance </th>
+</tr>
+<tr><th scope="col" rowspan="1">c1</th><th scope="col" rowspan="1">c2</th><th scope="col" rowspan="1">c3</th><th scope="col" rowspan="1">c4</th><th rowspan="2" scope="col" class="meta">Rationale</th><th rowspan="2" scope="col" class="meta">Comments</th><th scope="col" rowspan="1">c1</th><th scope="col" rowspan="1">c2</th><th scope="col" rowspan="1">c3</th><th rowspan="2" scope="col" class="meta">Rationale</th><th rowspan="2" scope="col" class="meta">Comments</th><th scope="col" rowspan="1">c1</th><th scope="col" rowspan="1">c2</th><th scope="col" rowspan="1">c3</th><th rowspan="2" scope="col" class="meta">Rationale</th><th rowspan="2" scope="col" class="meta">Comments</th><th scope="col" rowspan="1">Monday0</th><th scope="col" rowspan="1">Monday1</th><th scope="col" rowspan="1">Monday2</th><th rowspan="2" scope="col" class="meta">Rationale</th><th rowspan="2" scope="col" class="meta">Comments</th><th scope="col" rowspan="1">c1</th><th scope="col" rowspan="1">c2</th><th scope="col" rowspan="1">c3</th><th scope="col" rowspan="1">c4</th><th rowspan="2" scope="col" class="meta">Rationale</th><th rowspan="2" scope="col" class="meta">Comments</th><th scope="col" rowspan="1">c1</th><th scope="col" rowspan="1">c2</th><th scope="col" rowspan="1">c3</th><th rowspan="2" scope="col" class="meta">Rationale</th><th rowspan="2" scope="col" class="meta">Comments</th><th scope="col" rowspan="1">c1</th><th scope="col" rowspan="1">c2</th><th scope="col" rowspan="1">c3</th><th rowspan="2" scope="col" class="meta">Rationale</th><th rowspan="2" scope="col" class="meta">Comments</th><th scope="col" rowspan="1">na</th><th scope="col" rowspan="1">obs</th><th scope="col" rowspan="1">Audio</th><th scope="col" rowspan="1">CSS</th><th scope="col" rowspan="1">CSV</th><th scope="col" rowspan="1">EdandOut</th><th scope="col" rowspan="1">EffXML</th><th scope="col" rowspan="1">Geo</th><th scope="col" rowspan="1">Indie</th><th scope="col" rowspan="1">SW</th><th scope="col" rowspan="1">TAG</th><th scope="col" rowspan="1">TT</th><th scope="col" rowspan="1">UAG</th><th scope="col" rowspan="1">WebTV</th><th scope="col" rowspan="1">Webapps</th><th scope="col" rowspan="1">WAS</th><th scope="col" rowspan="1">WCAG</th><th scope="col" rowspan="1">WebPay</th><th scope="col" rowspan="1">XMLQ</th><th scope="col" rowspan="1">XMLP</th><th scope="col" rowspan="1">other</th><th rowspan="2" scope="col" class="meta"></th></tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row"><span title="Member-visible">✪ </span><a href="https://www.w3.org/users/search/advanced?w3c_accountsbundle_advancedusersearchtype[value]=lcarcone" title="Detailed information on Laurent Carcone">Carcone</a> (<a href="./?voterid=lcarcone">impersonate</a>)</th><td>Laurent</td><td>W3C</td><td class="meta">rationale</td><td class="meta">comments</td><td>yes</td>
+<td class="meta"></td><td class="meta"></td><td>no</td>
+<td class="meta"></td><td class="meta">comment</td><td>c2</td>
+<td class="meta"></td><td class="meta"></td><td>c1</td>
+<td class="meta"></td><td class="meta"></td><td class="meta"></td><td class="meta">open comment</td><td class="meta"></td><td class="meta"></td><!-- MutExcStates --> <td><ul><li>choice 1</li>
+<li>choice 3</li>
+</ul></td>
+<td class="meta"></td><td class="meta"></td><!-- MutExcStates --> <td title="choice 1: 1">1</td>
+<td title="choice 2: 3">3</td>
+<td title="choice 3: 5">5</td>
+<td title="choice 4: No opinion">No opinion</td>
+<td class="meta"></td><td class="meta"></td><!-- MutExcStates --> <td title="choice1: Yes, and prefer">Yes, and prefer</td>
+<td title="choice2: No">No</td>
+<td title="choice3: Yes, but prefer not">Yes, but prefer not</td>
+<td class="meta"></td><td class="meta"></td><!-- MutExcStates --> <td title="choix 1: Ranked 1">Ranked 1</td>
+<td title="choix2: Ranked 2">Ranked 2</td>
+<td title="choix3: Don’t mind">Don’t mind</td>
+<td class="meta"></td><td class="meta"></td><!-- MutExcStates --> <td title="Monday, 0 UTC: No">No</td>
+<td title="Monday, 1 UTC: Yes">Yes</td>
+<td title="Monday, 2 UTC: No">No</td>
+<td class="meta"></td><td class="meta"></td><!-- MutExcStates --> <td title="choice 1: 50">50</td>
+<td title="choice 2: 10">10</td>
+<td title="choice 3: 14">14</td>
+<td title="choice 4: 26">26</td>
+<td class="meta"></td><td class="meta"></td><!-- MutExcStates --> <td title="choice1: 1">1</td>
+<td title="choice2: 5">5</td>
+<td title="choice3: Not applicable">Not applicable</td>
+<td class="meta"></td><td class="meta"></td><!-- MutExcStates --> <td title="choice1: 1 / 1 / ">1 / 1 / </td>
+<td title="choice2: 3 / 3 / ">3 / 3 / </td>
+<td title="choice3: 7 / Didn't know / ">7 / Didn't know / </td>
+<td class="meta"></td><td class="meta"></td><!-- MutExcStates --> <td title="Not attending that day: "></td>
+<td title="Requesting observer status: "></td>
+<td title="Audio Working Group: Audio participant">Audio participant</td>
+<td title="Cascading Style Sheets (CSS) Working Group: CSS obs">CSS obs</td>
+<td title="CSV Working Group: "></td>
+<td title="Education and Outreach Working Group: "></td>
+<td title="Efficient XML Interchange Working Group: "></td>
+<td title="Geolocation Working Group: "></td>
+<td title="Indie UI Working Group: "></td>
+<td title="Social Web Working Group: "></td>
+<td title="TAG: "></td>
+<td title="Timed Text Working: "></td>
+<td title="User Agent Accessibility Guidelines Working Group: "></td>
+<td title="Web and TV Interest Group: "></td>
+<td title="Web Applications Working Group: "></td>
+<td title="Web Application Security Working Group: "></td>
+<td title="Web Content Accessibility Guidelines Working Group: "></td>
+<td title="Web Payments Interest Group: "></td>
+<td title="XML Query Working Group: "></td>
+<td title="XML Processing Model Working Group: "></td>
+<td title="Other (Please specify below): "></td>
+<td class="meta"></td></tr>
+<tr>
+<th scope="row"><span title="Member-visible">✪ </span><a href="https://www.w3.org/users/search/advanced?w3c_accountsbundle_advancedusersearchtype[value]=" title="Detailed information on Laurent+wbs Carcone">Carcone</a> (<a href="./?email=laurent+wbs@w3.org">impersonate</a>)</th><td>Laurent+wbs</td><td>w3c</td>
+<td class="meta"></td><td class="meta"></td><td></td>
+<td class="meta"></td><td class="meta"></td><td></td>
+<td class="meta"></td><td class="meta"></td><td>c1</td>
+<td class="meta"></td><td class="meta"></td><td></td>
+<td class="meta"></td><td class="meta"></td><td class="meta"></td><td class="meta"></td><td class="meta"></td><td class="meta"></td><!-- MutExcStates --> <td></td>
+<td class="meta"></td><td class="meta"></td><!-- MutExcStates --> <td title="choice 1: No opinion">No opinion</td>
+<td title="choice 2: No opinion">No opinion</td>
+<td title="choice 3: No opinion">No opinion</td>
+<td title="choice 4: No opinion">No opinion</td>
+<td class="meta"></td><td class="meta"></td><!-- MutExcStates --> <td title="choice1: Yes">Yes</td>
+<td title="choice2: Yes">Yes</td>
+<td title="choice3: Yes">Yes</td>
+<td class="meta"></td><td class="meta"></td><!-- MutExcStates --> <td title="choix 1: Don’t mind">Don’t mind</td>
+<td title="choix2: Don’t mind">Don’t mind</td>
+<td title="choix3: Don’t mind">Don’t mind</td>
+<td class="meta"></td><td class="meta"></td><!-- MutExcStates --> <td title="Monday, 0 UTC: No">No</td>
+<td title="Monday, 1 UTC: No">No</td>
+<td title="Monday, 2 UTC: No">No</td>
+<td class="meta"></td><td class="meta"></td><!-- MutExcStates --> <td title="choice 1: 0">0</td>
+<td title="choice 2: 0">0</td>
+<td title="choice 3: 0">0</td>
+<td title="choice 4: 0">0</td>
+<td class="meta"></td><td class="meta"></td><!-- MutExcStates --> <td title="choice1: No opinion">No opinion</td>
+<td title="choice2: No opinion">No opinion</td>
+<td title="choice3: No opinion">No opinion</td>
+<td class="meta"></td><td class="meta"></td><!-- MutExcStates --> <td title="choice1: No opinion / No opinion / ">No opinion / No opinion / </td>
+<td title="choice2: No opinion / No opinion / ">No opinion / No opinion / </td>
+<td title="choice3: No opinion / No opinion / ">No opinion / No opinion / </td>
+<td class="meta"></td><td class="meta"></td><!-- MutExcStates --> <td title="Not attending that day: "></td>
+<td title="Requesting observer status: obs participant">obs participant</td>
+<td title="Audio Working Group: "></td>
+<td title="Cascading Style Sheets (CSS) Working Group: "></td>
+<td title="CSV Working Group: "></td>
+<td title="Education and Outreach Working Group: "></td>
+<td title="Efficient XML Interchange Working Group: "></td>
+<td title="Geolocation Working Group: "></td>
+<td title="Indie UI Working Group: "></td>
+<td title="Social Web Working Group: "></td>
+<td title="TAG: "></td>
+<td title="Timed Text Working: "></td>
+<td title="User Agent Accessibility Guidelines Working Group: "></td>
+<td title="Web and TV Interest Group: "></td>
+<td title="Web Applications Working Group: "></td>
+<td title="Web Application Security Working Group: "></td>
+<td title="Web Content Accessibility Guidelines Working Group: "></td>
+<td title="Web Payments Interest Group: "></td>
+<td title="XML Query Working Group: "></td>
+<td title="XML Processing Model Working Group: "></td>
+<td title="Other (Please specify below): "></td>
+<td class="meta"></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<hr>
+<form action="" method="get">
+<div>
+<p>You can visualize the results as they were at the following date:<br>
+<label for="date"><input id="date" name="date" type="text" maxlength="10" size="10" value=""> (date formated as <code><var title="4 digits year">YYYY</var>-<var title="Double digit month">MM</var>-<var title="double digit day of the month">DD</var></code>)</label>
+<br>
+<input type="submit">
+</p>
+</div>
+</form>
+
+<form action="" method="get">
+<div>
+<p>You can visualize the results as they were between two dates:<br>
+<label for="datebeg"><input id="datebeg" name="datebeg" type="text" maxlength="10" size="10" value=""> Date beginning (formated as <code><var title="4 digits year">YYYY</var>-<var title="Double digit month">MM</var>-<var title="double digit day of the month">DD</var></code>)</label>
+<span> &nbsp; - &nbsp; </span>
+<label for="dateend"><input id="dateend" name="dateend" type="text" maxlength="10" size="10" value=""> Date end (formated as <code><var title="4 digits year">YYYY</var>-<var title="Double digit month">MM</var>-<var title="double digit day of the month">DD</var></code>)</label>
+<br>
+<input type="submit">
+</p>
+</div>
+</form>
+
+<hr />
+<p><a href="results">Detailed view of the results</a> / <a href="email-list">list of email addresses of the responders</a></p>
+<p>
+<a href="../../showwb">WBS home</a> /
+<a href="../../showq">Questionnaires</a>
+/ <a href='../'>WG questionnaires</a>
+/ <a href='./'>Answer this questionnaire</a>
+</p>
+
+<style>
+
+  button.zoomIn {
+    margin: 1em 2em;
+  }
+
+  .explodeOverlay, .explodeClon, .explodeZoomOut {
+    visibility: hidden;
+    position: fixed;
+  }
+
+  .explodeOverlay, .explodeZoomOut {
+    opacity: 0;
+    transition: opacity .5s ease-out;
+    will-change: opacity;
+  }
+
+  .explodeOverlay {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #808080;
+  }
+
+  .explodeClon {
+    overflow-x: auto;
+    overflow-y: auto;
+    background-color: transparent;
+    transition-property: top, left, width, height;
+    transition-duration: .5s;
+    transition-timing-function: ease-out;
+    will-change: top, left, width, height;
+  }
+
+  .explodeZoomOut {
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .explodeOverlay.visible, .explodeClon.visible, .explodeZoomOut.visible {
+    visibility: visible;
+  }
+
+</style>
+
+<script type="text/javascript" async="" defer="" src="https://www.w3.org/analytics/piwik/matomo.js"></script><script>
+
+  {
+    'use strict';
+
+    /**
+     * https://davidwalsh.name/javascript-debounce-function
+     */
+
+    const DEBOUNCE = function(func, wait, immediate) {
+      var timeout;
+      return function() {
+        var context = this, args = arguments;
+        var later = function() {
+          timeout = null;
+          if (!immediate) func.apply(context, args);
+        };
+        var callNow = immediate && !timeout;
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+        if (callNow) func.apply(context, args);
+      };
+    };
+
+    const CLONE_ELEMENT = function() {
+      const DUPLICATE = element.cloneNode(true);
+      overlay = document.createElement('div');
+      overlay.classList.add('explodeOverlay');
+      overlay.addEventListener('click', ZOOM_OUT);
+      document.body.appendChild(overlay);
+      clon = document.createElement('div');
+      clon.classList.add('explodeClon');
+      PLACE_CLON();
+      DUPLICATE.removeAttribute('id');
+      DUPLICATE.style.width = '100%';
+      DUPLICATE.style.height = '100%';
+      clon.appendChild(DUPLICATE);
+      document.body.appendChild(clon);
+      zoomOut = document.createElement('button');
+      zoomOut.classList.add('explodeZoomOut');
+      zoomOut.innerText = 'Restore';
+      zoomOut.addEventListener('click', ZOOM_OUT);
+      document.body.appendChild(zoomOut);
+    };
+
+    const RESET_SCROLLS = function() {
+      element.parentElement.scrollTop = 0;
+      element.parentElement.scrollLeft = 0;
+      clon.scrollTop = 0;
+      clon.scrollLeft = 0;
+    };
+
+    const PLACE_CLON = function() {
+      const BOUNDS = element.parentElement.getBoundingClientRect(),
+        SCROLL_TOP = 0,
+        SCROLL_LEFT = 0;
+      clon.style.top = parseInt(BOUNDS.top + SCROLL_TOP) + 'px';
+      clon.style.left = parseInt(BOUNDS.left + SCROLL_LEFT) + 'px';
+      clon.style.width = parseInt(BOUNDS.width) + 'px';
+      clon.style.height = parseInt(BOUNDS.height) + 'px';
+    };
+
+    const SHOW = function(e) {
+      if ('left' === e.propertyName) {
+        clon.removeEventListener('transitionend', SHOW);
+        zoomed = true;
+        zooming = false;
+      }
+    };
+
+    const ZOOM_IN = function() {
+      if (!zoomed && !zooming) {
+        const BUTTON_HEIGHT = parseInt(zoomOut.clientHeight) + 'px';
+        zooming = true;
+        RESET_SCROLLS();
+        clon.style.transitionDuration = '0s';
+        PLACE_CLON();
+        setTimeout(function() {
+          clon.addEventListener('transitionend', SHOW);
+          clon.style.transitionDuration = '.5s';
+          clon.style.top = 'calc(2rem + ' + BUTTON_HEIGHT + ')';
+          clon.style.left = '1rem';
+          clon.style.width = 'calc(100% - 2rem)';
+          clon.style.height = 'calc(100% - 3rem - ' + BUTTON_HEIGHT + ')';
+          overlay.classList.add('visible');
+          clon.classList.add('visible');
+          zoomOut.classList.add('visible');
+          overlay.style.opacity = .75;
+          zoomOut.style.opacity = 1;
+        }, 100);
+      }
+    };
+
+    const HIDE = function(e) {
+      if ('left' === e.propertyName) {
+        clon.removeEventListener('transitionend', HIDE);
+        overlay.classList.remove('visible');
+        clon.classList.remove('visible');
+        zoomOut.classList.remove('visible');
+        zoomed = false;
+        zooming = false;
+      }
+    };
+
+    const ZOOM_OUT = function() {
+      if (zoomed && !zooming) {
+        zooming = true;
+        RESET_SCROLLS();
+        clon.addEventListener('transitionend', HIDE);
+        PLACE_CLON();
+        overlay.style.opacity = 0;
+        zoomOut.style.opacity = 0;
+      }
+    };
+
+    const HANDLE_KEY = function(e) {
+      if (zoomed && e && 'Escape' === e.key || 'Esc' === e.key) {
+        if (e.cancelable)
+          e.preventDefault();
+        ZOOM_OUT();
+      }
+    };
+
+    const INIT = function() {
+      const LINKS = document.getElementsByClassName('zoomIn');
+      window.removeEventListener('load', INIT);
+      element = document.getElementById('mainTable');
+      CLONE_ELEMENT();
+      document.addEventListener('keydown', HANDLE_KEY);
+      document.addEventListener('scroll', DEBOUNCE(ZOOM_OUT, 100));
+      for (let i = 0; i < LINKS.length; i ++)
+        LINKS.item(i).addEventListener('click', ZOOM_IN);
+    };
+
+    let zoomed = false,
+      zooming = false,
+      element,
+      overlay,
+      clon,
+      zoomOut;
+
+    window.addEventListener('load', INIT);
+  }
+
+</script>
+
+
+<div class="maintainer">
+  Report issues
+  <a href="https://github.com/w3c/wbs-design/issues/new?title=Bug%20/%20Feature%20request:%20[SHORT%20DESCRIPTION]&body=[DETAILED%20EXPLANATION]&labels=user-feedback">on
+    GitHub project <code>w3c/wbs-design</code></a> (preferred) or
+    <a href="mailto:sysreq@w3.org?subject=WBS%20[bug%20/%20feature%20request]:%20[SHORT%20DESCRIPTION]&body=[DETAILED%20EXPLANATION]%0A%0A">by
+      mail to <code>sysreq</code></a>.
+</div>
+</div>
+
+   </article>
+
+   </div>
+</main>
+</div>
+
+<footer class="global-footer">
+    <div class="l-center">
+        <div class="global-footer__links">
+            <div class="l-cluster">
+                <ul class="clean-list" role="list">
+                                            <li>
+                            <a href="https://www.w3.org/" hreflang="en">
+                                <span lang="en" dir="ltr">Home</span>
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="https://www.w3.org/contact/" hreflang="en">
+                                <span lang="en" dir="ltr">Contact</span>
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="https://www.w3.org/help/" hreflang="en">
+                                <span lang="en" dir="ltr">Help</span>
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="https://www.w3.org/donate/" hreflang="en">
+                                <span lang="en" dir="ltr">Donate</span>
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="https://www.w3.org/policies/" hreflang="en">
+                                <span lang="en" dir="ltr">Legal &amp; Policies</span>
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="https://www.w3.org/about/corporation/" hreflang="en">
+                                <span lang="en" dir="ltr">Corporation</span>
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="https://status.w3.org/" hreflang="en">
+                                <span lang="en" dir="ltr">System Status</span>
+                            </a>
+                        </li>
+                                    </ul>
+            </div>
+            <ul class="clean-list" role="list">
+                <li><a class="with-icon--larger" href="https://w3c.social/@w3c" hreflang="en">
+                        <img class="icon icon--larger" src="https://www.w3.org/assets/website-2021/svg/mastodon.svg" width="20"
+                             height="20" alt aria-hidden="true" loading="lazy"/>
+                        <span class="visuallyhidden"><span lang="en" dir="ltr">W3C on Mastodon</span></span></a>
+                </li>
+                <li><a class="with-icon--larger" href="https://github.com/w3c/" hreflang="en">
+                        <img class="icon icon--larger" src="https://www.w3.org/assets/website-2021/svg/github.svg" width="20"
+                             height="20" alt aria-hidden="true" loading="lazy"/>
+                        <span class="visuallyhidden"><span lang="en" dir="ltr">W3C on GitHub</span></span></a>
+                </li>
+            </ul>
+        </div>
+        <p class="copyright"><span lang="en" dir="ltr">Copyright &copy; 2024 <a href="https://www.w3.org/">World Wide Web Consortium</a>.<br> <abbr title="World Wide Web Consortium">W3C</abbr><sup>&reg;</sup> <a href="https://www.w3.org/policies/#disclaimers">liability</a>, <a href="https://www.w3.org/policies/#trademarks">trademark</a> and <a rel="license" href="https://www.w3.org/copyright/document-license/" title="W3C Document License">permissive license</a> rules apply.</span></p>
+    </div>
+</footer>
+    </div>
+
+    <script src="https://www.w3.org/assets/website-2021/js/translations-sorting.js"></script>
+</body>
+
+</html>
