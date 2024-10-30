@@ -373,18 +373,33 @@
 
 <h1>WBS - Create a new questionnaire for survey name</h1>
 
-<p class="doc">Use this form to create a new questionnaire for the <strong>Sysadmin Access</strong> - by default, only participants to this group will be allowed to answer it.<br>
-If you would like to allow additional groups or users to answer, edit and/or see the results of this questionnaire, then after the creation of this form <a href="mailto:sysreq@w3.org?subject=[WBS] Set additional rights for a questionnaire of the group Sysadmin Access (109)&amp;body=Please, add the following rights(s) for the WBS questionnaire:%0A%0A Questionnaire Identifier: ........%0ARight(s) (*) / User(s) or Group(s): ........ / ........%0A%0A%0AThank you%0A%0A(*) possible rights: see a questionnaire, vote, edit a questionnaire, see the results"> send a sysreq request with the list of groups/users to authorize.</a></p>
+ <div class="l-box note note--info" role="status">
+      <h2 class="txt-saturn">Information</h2>
+      <ul class="clean-list" role="list">
+	<li>Use this form to create a new questionnaire for the <strong>Sysadmin Access</strong> - by default, only participants to this group will be allowed to answer it.</li>
+	<li>If you would like to allow additional groups or users to answer, edit and/or see the results of this questionnaire, then after the creation of this form <a href="mailto:sysreq@w3.org?subject=[WBS] Set additional rights for a questionnaire of the group Sysadmin Access (109)&amp;body=Please, add the following rights(s) for the WBS questionnaire:%0A%0A Questionnaire Identifier: ........%0ARight(s) (*) / User(s) or Group(s): ........ / ........%0A%0A%0AThank you%0A%0A(*) possible rights: see a questionnaire, vote, edit a questionnaire, see the results"> send a sysreq request with the list of groups/users to authorize.</a></li>
+      </ul>
+ </div>
 
-<h3>Create a questionnaire from a template</h3>
-<div class="create">
-<ul>
+  <nav class="toc" aria-labelledby="toc-label">
+	<ul>
+		<li><a href="#template">Create a questionnaire from a template</a></li>
+		<li><a href="#copy">Copy an existing questionnaire</a></li>
+		<li><a href="#create">Create a questionnaire from scratch</a></li>
+	</ul>
+ </nav>
+<div class="field-group">
+<h3 id="template">Create a questionnaire from a template</h3>
+<div>  
+<ul class="clean-list">
 <li><a href="registrationFactory">F2F meeting registration</a></li>
 <li><a href="teleconfFactory">Teleconference scheduling</a></li>
 </ul>
     <p>(send more templates suggestions to <a href="mailto:w3t-sys@w3.org?Subject=WBS%20Templates%20suggestions">w3t-sys@w3.org</a>).</p>
 </div>
-<h3>Copy an existing questionnaire</h3>
+
+<h3 id="copy">Copy an existing questionnaire</h3>
+<div class="l-box field-group" id="questionnaire">  
 <form action="factory" method="post">
 <div class="create">
 <ul>
@@ -431,12 +446,15 @@ If you would like to allow additional groups or users to answer, edit and/or see
 </ul>
 
 </div>
-<br><input type="submit" class="submit_button" value="Copy and create">
+</div>
+<input type="submit" class="submit_button" value="Copy and create">
 </form>
 
-<h3>Create a questionnaire from scratch</h3>
+<h3 id="create">Create a questionnaire from scratch</h3>
+<div class="l-box field-group" id="questionnaire">  
+
 <form method="post" action="factory">
-      <div class="create">
+  <div class="create">
     <ul class="edit">
   <li>
 <label>Questionnaire identifier: <input required="required" maxlength="40" size="15" name="qaireno" type="text" value=""></label> (any number and letters OK, up to 40 characters, must be unique among the group's questionnaires)
@@ -488,13 +506,12 @@ available for questionnaires open for less than 7 days</em></span>
 
 </ul>
 </div>
-<br>
+</div>
 <input type="submit" class="submit_button" name="action" value="Create
 a new questionnaire">
 </form>
-   
-</form>
-   
+
+</div>
 </article>
 	
  <div class="related">
