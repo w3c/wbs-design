@@ -389,29 +389,42 @@
 	</ul>
  </nav>
 <div class="field-group">
-<h3 id="template">Create a questionnaire from a template</h3>
+<h2 class="txt-mars" id="template">Create a questionnaire from a template</h2>
 <div>  
 <ul class="clean-list">
 <li><a href="registrationFactory">F2F meeting registration</a></li>
 <li><a href="teleconfFactory">Teleconference scheduling</a></li>
 </ul>
-    <p>(send more templates suggestions to <a href="mailto:w3t-sys@w3.org?Subject=WBS%20Templates%20suggestions">w3t-sys@w3.org</a>).</p>
+     <p>(send more templates suggestions to <a href="mailto:w3t-sys@w3.org?Subject=WBS%20Templates%20suggestions">w3t-sys@w3.org</a>).</p>
 </div>
 
-<h3 id="copy">Copy an existing questionnaire</h3>
-<div class="l-box field-group" id="questionnaire">  
+<h2 class="txt-mars" id="copy">Copy an existing questionnaire</h2>
+<div class="l-box field-group">  
 <form action="factory" method="post">
-<div class="create">
-<ul>
-<li><label class="required" title="(any number and letters OK, up to 40 characters, must be unique among the group's questionnaires)"><strong>Identifier for the new questionnaire</strong>: <input maxlength="40" size="15" name="qaireno" type="text" required="required" value="" accesskey="c"></label> <span class="required">(*)</span></li>
-        <li><label for="uri_select">Questionnaire to copy</label>: <select name="uri_select" id="uri_select">
-        <option value="">None of the ones below</option>
+
+<div class="field">
+  <label for="qaireno">
+    <span class="field-label">Identifier for the new questionnaire:<span class="required"> (Required)</span></span>
+  </label>
+  <div class="field-hint">Any number and letters OK, up to 40 characters, must be unique among the group's questionnaires</div>
+  <input id="qaireno" name="qaireno" type="text" required="required" value="">
+</div>		
+
+<p>Choose a questionnaire from the list of proposed questionnaires
+below or give the URI of the questionnaire you want to copy</p>
+<p>Be sure that the option 'The responses are collected for ...' of the copied questionnaire is the one that you want for the new questionnaire, otherwise you'll have to change it by editing the new questionnaire before opening it.</p>
+
+<div class="field">
+		<label for="uri_select">
+			<span class="field-label">Proposed questionnaires:</span>
+                </label>
+                <select name=""uri_select" id=""uri_select">
+<option value="">None of the ones below</option>
         <optgroup label="Recently edited questionnaires">
 <option value="https://www.w3.org/2002/09/wbs/109/Test-wbs-rfe/" title="Test for WBS RFE">Test for WBS RFE</option>
 <option value="https://www.w3.org/2002/09/wbs/99999/wbs-types-orig/" title="WBS question types">WBS question types</option>
 <option value="https://www.w3.org/2002/09/wbs/99999/test-copy-choice-4/" title="Test copy 4">Test copy 4</option>
 <option value="https://www.w3.org/2002/09/wbs/99999/test-copy-choices/" title="Test copy choices">Test copy choices</option>
-<option value="https://www.w3.org/2002/09/wbs/99999/test-copy-choice-3/" title="Test copy choices">Test copy choices</option>
 <option value="https://www.w3.org/2002/09/wbs/99999/test-copy-choices-2/" title="Test copy choices">Test copy choices</option>
 <option value="https://www.w3.org/2002/09/wbs/1/CGS-TPAC2024/" title="Community Groups - Will your group meet at TPAC2024?">Community Groups - Will your group meet at TPAC2024?</option>
 <option value="https://www.w3.org/2002/09/wbs/102172/2024-joint-meetings-time-preference/" title="Time preference for the Joint ACT meetings">Time preference for the Joint ACT meetings</option>
@@ -420,57 +433,77 @@
 </optgroup>
         <optgroup label="Closed questionnaires for this group">
 <option value="https://www.w3.org/2002/09/wbs/109/test-randomize/" title="Test Randomize feature">Test Randomize feature</option>
-<option value="https://www.w3.org/2002/09/wbs/109/test-creation-2/" title="Survey with sentive questions">Survey with sentive questions</option>
-<option value="https://www.w3.org/2002/09/wbs/109/test-creation-1/" title="Test creation questionnaire">Test creation questionnaire</option>
-<option value="https://www.w3.org/2002/09/wbs/109/test-registration-f2f/" title="Registration for the F2F meeting of the Sysadmin Access (2021-02-15/2021-02-15 in Sophia)">Registration for the F2F meeting of the Sysadmin Access (2021-02-15/2021-02-15 in Sophia)</option>
 <option value="https://www.w3.org/2002/09/wbs/109/test-create-1/" title="Test creation without redirect to cgi">Test creation without redirect to cgi</option>
-<option value="https://www.w3.org/2002/09/wbs/109/test-copy-questionnaire/" title="Test option VoterBehalf">Test option VoterBehalf</option>
-<option value="https://www.w3.org/2002/09/wbs/109/test-f2f-6/" title="Registration for the F2F meeting of the Sysadmin Access (2021-02-18/2021-02-19 in Ercim - Sophia Antipolis )">Registration for the F2F meeting of the Sysadmin Access (2021-02-18/2021-02-19 in Ercim - Sophia Antipolis )</option>
 <option value="https://www.w3.org/2002/09/wbs/109/test-f2f-7/" title="Registration for the F2F meeting of the Sysadmin Access (2021-02-16/2021-02-19 in Ercim - Sophia Antipolis)">Registration for the F2F meeting of the Sysadmin Access (2021-02-16/2021-02-19 in Ercim - Sophia Antipolis)</option>
 <option value="https://www.w3.org/2002/09/wbs/109/may2009-f2f-dates/" title="Dates for Sysweb Geek Week in 2009">Dates for Sysweb Geek Week in 2009</option>
 <option value="https://www.w3.org/2002/09/wbs/109/200711f2fproj/" title="Proposed Projects for Geeking Session">Proposed Projects for Geeking Session</option>
 <option value="https://www.w3.org/2002/09/wbs/109/200706f2ftravel/" title="Travel Schedules to Coordinate Ground Transportation">Travel Schedules to Coordinate Ground Transportation</option>
 <option value="https://www.w3.org/2002/09/wbs/109/sysweb2007calls/" title="Sysweb Call Meeting Dates">Sysweb Call Meeting Dates</option>
-<option value="https://www.w3.org/2002/09/wbs/109/200705sysconfs/" title="May 2007 Conferences">May 2007 Conferences</option>
 <option value="https://www.w3.org/2002/09/wbs/109/SyswebNovF2F/" title="Sysweb November F2F Date preferences">Sysweb November F2F Date preferences</option>
 <option value="https://www.w3.org/2002/09/wbs/109/maychoice/" title="Sysweb May FTF preferences">Sysweb May FTF preferences</option>
-<option value="https://www.w3.org/2002/09/wbs/109/ftf200605/" title="Preferences for Sysweb FTF Spring 2006">Preferences for Sysweb FTF Spring 2006</option>
 <option value="https://www.w3.org/2002/09/wbs/109/sysftf200502/" title="Sysweb FTF Meeting and Dinner">Sysweb FTF Meeting and Dinner</option>
 <option value="https://www.w3.org/2002/09/wbs/109/f2f-pizzas/" title="Deciding what pizzas to order for Friday's lunch">Deciding what pizzas to order for Friday's lunch</option>
 <option value="https://www.w3.org/2002/09/wbs/109/mayftf/" title="May FTF Scheduling preference">May FTF Scheduling preference</option>
 <option value="https://www.w3.org/2002/09/wbs/109/OpenIDSys/" title=""></option>
 </optgroup>
-</select></li>
-<li><label for="uri_copy">OR URI of the questionnaire you want to copy: <input name="uri" id="uri_copy" type="uri" value=""></label><br>
-<em>(Be sure that the option 'The responses are collected for ...' of the copied questionnaire is the one that you want for the new questionnaire, otherwise you'll have to change it by editing the new questionnaire before opening it)</em></li>
-</ul>
+                </select>
+</div>		
 
+<div class="field">
+    <label for="uri_copy">
+      <span class="field-label">URI of the questionnaire you want to copy:</span>
+    </label>
+    <input type="text" id="uri_copy" name="uri" value="">
 </div>
+  
 </div>
-<input type="submit" class="submit_button" value="Copy and create">
+<button class="button" type="submit" name="action" value="Copy and create">Copy and create</button>
 </form>
 
-<h3 id="create">Create a questionnaire from scratch</h3>
-<div class="l-box field-group" id="questionnaire">  
+<h2 class="txt-mars" id="create">Create a questionnaire from scratch</h2>
+<div class="l-box field-group">  
 
 <form method="post" action="factory">
-  <div class="create">
-    <ul class="edit">
-  <li>
-<label>Questionnaire identifier: <input required="required" maxlength="40" size="15" name="qaireno" type="text" value=""></label> (any number and letters OK, up to 40 characters, must be unique among the group's questionnaires)
-<input name="wgid" type="hidden" value="109">
-<input name="qairedupd" type="hidden" value="2024-10-29"> <span class="required">(*)</span>
-</li><li><label>Questionnaire’s starting date:
-<input id="startdate" name="startdate" type="date" required="required" size="10" value="2024-10-29"></label> (starts at 0:00 Eastern time)
-</li><li><label>Questionnaire's closing date:
-<input id="closedate" required="required" name="closedate" type="date" size="10" value="2024-10-28"></label> (ends at midnight Eastern time)
-</li>
 
-<li><label>Title of the questionnaire<br>
-<input name="shortdesc" required="required" type="text" size="80" value="">
-</label></li>
+<div class="field">
+  <label for="qaireno-scratch">
+    <span class="field-label">Questionnaire identifier:<span class="required"> (Required)</span></span>
+  </label>
+  <div class="field-hint">Any number and letters OK, up to 40 characters, must be unique among the group's questionnaires</div>
+  <input id="qaireno-scratch" name="qaireno" type="text" required="required" value="">
+</div>
+
+<div class="component--fifty-fifty">
+  <div class="component--fifty-fifty__text">
+	<div class="field">
+		<label for="startdate">
+			<span class="field-label">Questionnaire’s starting date <span class="required">(Required)</span></span>
+		</label>
+		<div class="field-hint" id="hint-startdate">starts at 0:00 Eastern time</div>
+		<input id="startdate" name="startdate" type="date" required="required" size="10" class="w8em format-y-m-d divider-dash highlight-days-67  no-transparency input-width-10" value="2014-11-21">
+	</div>
+  </div>
+	 
+  <div class="component--fifty-fifty__text">
+    <div class="field">
+		<label for="closedate">
+			<span class="field-label">Questionnaire's closing date <span class="required">(Required)</span></span>
+		</label>
+		<div class="field-hint" id="hint-closedate">ends at midnight Eastern time</div>
+                <input required="required" name="closedate" type="date" size="10" id="closedate" class="w8em format-y-m-d divider-dash highlight-days-67  no-transparency input-width-10" value="2016-12-31" />
+      </div>
+    </div>
+  </div>
+  
+<div class="field">
+  <label for="shortdesc-scratch">
+    <span class="field-label">Title of the questionnaire:<span class="required"> (Required)</span></span>
+  </label>
+  <input id="shortdesc-scratch" name="shortdesc" type="text" required="required" value="">
+</div>
+
+
 <li><strong>The responses are collected 'per individual' for this group</strong>.<input type="hidden" value="individual" name="voterBehalf"><br>&nbsp;</li>
-
 <li><label for="allowed">Who is allowed to see the results? </label><select id="allowed" name="resultsACL">
 <option value="group">only the participants of the Sysadmin Access</option>
 <option value="team">only the Team</option>
@@ -479,7 +512,6 @@
 <option value="public">anybody</option>
 </select>
 </li>
-
 
 <li>
 <label>
@@ -499,16 +531,35 @@ available for questionnaires open for less than 7 days</em></span>
 </li>
 
 
-<li><label><input type="checkbox" name="allowNonW3CUsers"> Allow to answer the questionnaire without a W3C account</label></li>
-<li><label>Send all the responses to the following email address(es): <input type="email" name="emailNotif" maxlength="255" value="" multiple=""></label> (optional, comma-separated list for several addresses)</li>
-<li><label>E-mail address(es) to which the responders can choose to copy their responses (e.g. w3c-archive@w3.org): <input type="email" name="params[emailCC]" maxlength="255" value="" multiple=""></label>  (optional, comma-separated list for several addresses)</li>
+<div class="field">
+  <label for="emailNotif">
+    <span class="field-label">Send all the responses to the following email address(es):<span class="required"></span></span>
+  </label>
+  <div class="field-hint" id="hint-emailNotif">optional, comma-separated list for several addresses</div>
+  <input id="emailNotif" name="emailNotif" type="email" multiple="multiple" maxlength="255" value="">
+</div>		
 
+<div class="field">
+  <label for="emailCC">
+    <span class="field-label">E-mail address(es) to which the responders can choose to copy his/her responses (e.g. w3c-archive@w3.org)<span class="required"></span></span>
+  </label>
+  <div class="field-hint" id="hint-emailCC">optional, comma-separated list for several addresses</div>
+  <input id="emailCC" name="params[emailCC]" type="email" multiple="multiple" maxlength="255" value="">
+</div>		
 
-</ul>
+<fieldset>
+<div class="checkbox-item">
+  <input type="checkbox" name="allowNonW3CUsers" id="allowNonW3CUsers" appearance="base" title="allowNonW3CUsers">
+  <label for="allowNonW3CUsers">
+    <span class="faux-label">Allow to answer the questionnaire without a W3C account</span>
+  </label>
 </div>
+</fieldset>
+
+<input name="wgid" type="hidden" value="109">
+<input name="qairedupd" type="hidden" value="2024-10-29">
 </div>
-<input type="submit" class="submit_button" name="action" value="Create
-a new questionnaire">
+<button class="button" type="submit" name="action" value="Create a new questionnaire">Create a new questionnaire</button>
 </form>
 
 </div>
