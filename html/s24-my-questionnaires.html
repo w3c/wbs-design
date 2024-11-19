@@ -71,17 +71,22 @@
  -->  
 
 <style>
-.survey-list > * {
-  padding-top: 1em;
-  padding-bottom: 1.75em;
-  border-bottom: solid 1px #bdbdbd;
-}
 .related__inner > * + h2 {
    margin-top: 2.5rem;  
 }
+span.enddate {
+  width: 56% !important;
+}
+article h2 {
+  margin-top: 2em;
+}
+article h3 {
+  margin-top: 1.75em;
+  margin-bottom: 0.25em;
+}
 </style>
 
-    </head>
+</head>
 
 <body class="default">
 <a class="skip-link" href="#main">Skip to content</a>
@@ -371,44 +376,118 @@
  <div class="content">
    <article>
    <h1>my questionnaires</h1>
-   <p>This page shows my questionnaires for my groups.</p>
 
-<h3>1 unanswered questionnaires</h3>
-<div class='create'>
-<p>The following questionnaires are open for answers for one of the groups you belong to. Please take the time to submit your answers (they are sorted by order of priority)<br/>
-<strong>To remove one of these questionnaires from this list (e.g. if you don’t want to answer it), you can tick the corresponding checkbox and hit the Ignore button after the list </strong>. It will appear in your list as if you had answered it.</p>
-<form id='needAnswer' action='myQuestionnaires' method='post'><ul class='questionnaireList'>
-<li><span class='qaire votable'><a href='35125/tpac202409/'>Feedback on TPAC 2024 Hybrid meeting</a>: open until 31 October 2024</span><span class='qaireTools'>&nbsp; <label title='Check to add &quot;Feedback on TPAC 2024 Hybrid meeting&quot; to the ignore list'><input type='checkbox' name='ignore[35125_tpac202409]' /><img src='/2002/09/wbs/icons/rd-close.png' alt='Ignore' /> </label>&nbsp; | &nbsp; <a class='icon' href='35125/tpac202409/handler' title='Edit &quot;Feedback on TPAC 2024 Hybrid meeting&quot;'><img src='/2002/09/wbs/icons/rd-edit.png' alt='Edit' /></a> &nbsp; <a class='icon' href='35125/tpac202409/results' title='Results of &quot;Feedback on TPAC 2024 Hybrid meeting&quot;'><img src='/2002/09/wbs/icons/rd-list.png' alt='List' /></a> </span><br /></li>
-</ul>
-<p><input type='submit' value='Ignore' /></p>
+  <div class="l-box note note--info" role="status">
+      <ul class="clean-list" role="list">
+	<li>This page shows my questionnaires for my groups.</li>
+      </ul>
+  </div>
+
+<h2 class="txt-mars">1 unanswered questionnaire(s)</h2>
+<div class='l-box'>
+<p>The following questionnaires are open for answers for one of the groups you belong to. Please take the time to submit your answers (they are sorted by order of priority)</p>
+<p><strong>To remove one of these questionnaires from this list
+  </strong> (e.g. if you don’t want to answer it), <strong>you can tick the corresponding checkbox and hit the Ignore button after the list </strong>. <br> It will appear in your list as if you had answered it.</p>
+
+<h3 class="txt-saturn"><a href='35125/tpac202409/'>Feedback on TPAC 2024 Hybrid meeting</a></h3>
+<div class="l-cluster l-cluster--vertical-align">
+	<div>
+	<span class="enddate">open until 31 Octobe 2024</span>
+	<a class="button" href="35125/tpac202409/handler" title='Edit &quot;Feedback on TPAC 2024 Hybrid meeting&quot;'><span class="far fa-edit" aria-hidden="true"></a>
+        <a class="button" href="35125/tpac202409/results" title="Results of &quot;Feedback on TPAC 2024 Hybrid meeting"><span class="far fa-list-check" aria-hidden="true"></a>
+        <div class="checkbox-item">
+		<input type="checkbox" name="ignore[102_geekweek2024-feedback]" id="ignore_102_geekweek2024-feedback" appearance="base">
+		<label for="ignore_102_geekweek2024-feedback">
+		<span class="faux-label">Ignore</span>
+		</label>
+	</div>
+	</div>
+</div>
+<br>
+<button class="button" type="submit" value="Ignore">Ignore</button>
 </form>
 </div>
-<h3>On-going questionnaires you have answered or explicitly ignored</h3>
-<div class='create'>
+
+<h2 class="txt-mars">On-going questionnaires you have answered or explicitly ignored</h2>
+<div class='l-box'>
 <p>You have already answered the following questionnaires, but you can modify your answers until they pass their closing date.</p>
-<ul class='questionnaireList'>
-<li><span class='qaire votable'><a href='109/Test-wbs-rfe/'>Test for WBS RFE</a>: open until 30 October 2024</span><span class='qaireTools'>&nbsp; <a class='icon' href='109/Test-wbs-rfe/handler' title='Edit &quot;Test for WBS RFE&quot;'><img src='/2002/09/wbs/icons/rd-edit.png' alt='Edit' /></a> &nbsp; <a class='icon' href='109/Test-wbs-rfe/results' title='Results of &quot;Test for WBS RFE&quot;'><img src='/2002/09/wbs/icons/rd-list.png' alt='List' /></a> </span><br /></li>
-<li><span class='qaire votable'><a href='102/scribe-global-2016/'>Scribes and back-up chairs for Global</a>: open until 17 August 2025</span><span class='qaireTools'>&nbsp; <a class='icon' href='102/scribe-global-2016/handler' title='Edit &quot;Scribes and back-up chairs for Global&quot;'><img src='/2002/09/wbs/icons/rd-edit.png' alt='Edit' /></a> &nbsp; <a class='icon' href='102/scribe-global-2016/results' title='Results of &quot;Scribes and back-up chairs for Global&quot;'><img src='/2002/09/wbs/icons/rd-list.png' alt='List' /></a> </span><br /></li>
-</ul>
+<h3 class="txt-saturn"><a href='109/Test-wbs-rfe/'>Test for WBS RFE</a></h3>
+<div class="l-cluster l-cluster--vertical-align">
+	<div>
+	<span class="enddate">open until 30 October 2024</span>
+	<a class="button" href="109/Test-wbs-rfe/handler" title="Edit &quot;Test for WBS RFE&quot;"><span class="far fa-edit" aria-hidden="true"></a>
+        <a class="button" href="109/Test-wbs-rfe/results" title="Results of &quot;Test for WBS RFE&quot;"><span class="far fa-list-check" aria-hidden="true"></a>
+	</div>
 </div>
-<h3>Previously Answered Questionnaires</h3>
-<div class='create'>
+
+<h3 class="txt-saturn"><a href="102/scribe-global-2016/">Scribes and back-up chairs for Global</a></h3>
+<div class="l-cluster l-cluster--vertical-align">
+	<div>
+	<span class="enddate">open until 17 August 2025</span>
+	<a class="button" href="102/scribe-global-2016/handler" title="Edit &quot;Scribes and back-up chairs for Global&quot;"><span class="far fa-edit" aria-hidden="true"></a>
+        <a class="button" href="102/scribe-global-2016/results" title="Results of &quot;Scribes and back-up chairs for Global&quot;"><span class="far fa-list-check" aria-hidden="true"></a>
+	</div>
+</div>
+</div>
+
+<h2 class="txt-mars">Previously Answered Questionnaires</h2>
+<div class='l-box'>
 <p>The following questionnaires are now closed, but you can still consult the answers you submitted for them.</p>
-<ul class='questionnaireList'>
-<li><span class='qaire'><a href='102/TD2024_shirt/'>Team Day 2024 shirt - please answer ASAP!</a>: open from 10 September 2024 to 12 September 2024</span><span class='qaireTools'>&nbsp; <a class='icon' href='102/TD2024_shirt/handler' title='Edit &quot;Team Day 2024 shirt - please answer ASAP!&quot;'><img src='/2002/09/wbs/icons/rd-edit.png' alt='Edit' /></a> &nbsp; <a class='icon' href='102/TD2024_shirt/results' title='Results of &quot;Team Day 2024 shirt - please answer ASAP!&quot;'><img src='/2002/09/wbs/icons/rd-list.png' alt='List' /></a> </span><br /></li>
-<li><span class='qaire'><a href='102/TD2024/'>Team Day 2024</a>: open from 05 September 2024 to 13 September 2024</span><span class='qaireTools'>&nbsp; <a class='icon' href='102/TD2024/handler' title='Edit &quot;Team Day 2024&quot;'><img src='/2002/09/wbs/icons/rd-edit.png' alt='Edit' /></a> &nbsp; <a class='icon' href='102/TD2024/results' title='Results of &quot;Team Day 2024&quot;'><img src='/2002/09/wbs/icons/rd-list.png' alt='List' /></a> </span><br /></li>
-<li><span class='qaire'><a href='109/test-randomize/'>Test Randomize feature</a>: open from 15 November 2023 to 31 May 2024</span><span class='qaireTools'>&nbsp; <a class='icon' href='109/test-randomize/handler' title='Edit &quot;Test Randomize feature&quot;'><img src='/2002/09/wbs/icons/rd-edit.png' alt='Edit' /></a> &nbsp; <a class='icon' href='109/test-randomize/results' title='Results of &quot;Test Randomize feature&quot;'><img src='/2002/09/wbs/icons/rd-list.png' alt='List' /></a> </span><br /></li>
-<li>[...] <a href='myQuestionnaires?more&amp;voterid=lcarcone'>view older questionnaires</a></li></ul>
+
+<h3 class="txt-saturn"><a href='102/TD2024_shirt/'>Team Day 2024 shirt - please answer ASAP!</a></h3>
+<div class="l-cluster l-cluster--vertical-align">
+	<div>
+	<span class="enddate">open from 10 September 2024 to 12 September 2024</span>
+	<a class="button" href="102/TD2024_shirt/handler" title="Edit &quot;Team Day 2024 shirt - please answer ASAP!&quot;"><span class="far fa-edit" aria-hidden="true"></a>
+        <a class="button" href="102/TD2024_shirt/results" title="Results of &quot;Team Day 2024 shirt - please answer ASAP!&quot;"><span class="far fa-list-check" aria-hidden="true"></a>
+	</div>
 </div>
-<h3>Questionnaires open to the public</h3>
-<div class='create'>
+
+<h3 class="txt-saturn"><a href='102/TD2024/'>Team Day 2024</a></h3>
+<div class="l-cluster l-cluster--vertical-align">
+	<div>
+	<span class="enddate">open from 05 September 2024 to 13 September 2024</span>
+	<a class="button" href="102/TD2024/handler" title="Edit &quot;Team Day 2024&quot;"><span class="far fa-edit" aria-hidden="true"></a>
+        <a class="button" href="102/TD2024/results" title="Results of &quot;Team Day 2024&quot;"><span class="far fa-list-check" aria-hidden="true"></a>
+	</div>
+</div>
+
+<h3 class="txt-saturn"><a href='109/test-randomize/'>Test Randomize feature</a></h3>
+<div class="l-cluster l-cluster--vertical-align">
+	<div>
+	<span class="enddate">open from 15 November 2023 to 31 May 2024</span>
+	<a class="button" href="109/test-randomize/handler" title="Edit &quot;Test Randomize feature&quot;"><span class="far fa-edit" aria-hidden="true"></a>
+        <a class="button" href="109/test-randomize/results" title="Results of &quot;Test Randomize feature&quot;"><span class="far fa-list-check" aria-hidden="true"></a>
+	</div>
+</div>
+
+<h3 class="txt-saturn">[...] <a href='myQuestionnaires?more&amp;voterid=lcarcone'>view older questionnaires</a></h3>
+</div>
+
+<h2 class="txt-mars">Questionnaires open to the public</h2>
+<div class='l-box'>
 <p>The following questionnaires are open to everyone ; some may deserve your attention.</p>
-<ul class='questionnaireList'>
-<li><span class='qaire votable'><a href='1/W3C30/'>Feedback on W3C@30</a>: open until 31 October 2024</span><span class='qaireTools'>&nbsp; <a class='icon' href='1/W3C30/handler' title='Edit &quot;Feedback on W3C@30&quot;'><img src='/2002/09/wbs/icons/rd-edit.png' alt='Edit' /></a> &nbsp; <a class='icon' href='1/W3C30/results' title='Results of &quot;Feedback on W3C@30&quot;'><img src='/2002/09/wbs/icons/rd-list.png' alt='List' /></a> </span><br /></li>
-<li><span class='qaire votable'><a href='1/tagnom-202410/'>TAG Nominee Commitment Form (2024 Election)</a>: open until 05 November 2024</span><span class='qaireTools'>&nbsp; <a class='icon' href='1/tagnom-202410/handler' title='Edit &quot;TAG Nominee Commitment Form (2024 Election)&quot;'><img src='/2002/09/wbs/icons/rd-edit.png' alt='Edit' /></a> &nbsp; <a class='icon' href='1/tagnom-202410/results' title='Results of &quot;TAG Nominee Commitment Form (2024 Election)&quot;'><img src='/2002/09/wbs/icons/rd-list.png' alt='List' /></a> </span><br /></li>
-</ul>
+
+<h3 class="txt-saturn"><a href='1/W3C30/'>Feedback on W3C@30</a></h3>
+<div class="l-cluster l-cluster--vertical-align">
+	<div>
+	<span class="enddate">open until 31 October 2024</span>
+	<a class="button" href="1/W3C30/handler" title="Edit &quot;Feedback on W3C@30&quot;"><span class="far fa-edit" aria-hidden="true"></a>
+        <a class="button" href="1/W3C30/results" title="Results of &quot;Feedback on W3C@30&quot;"><span class="far fa-list-check" aria-hidden="true"></a>
+	</div>
 </div>
-<p class='doc'>An experimental <a href='micalendar'>iCalendar version of this list</a> is available, with ToDo items for questionnaires to be completed, and days of meetings for which you registered.</p>
+
+<h3 class="txt-saturn"><a href='1/tagnom-202410/'>TAG Nominee Commitment Form (2024 Election)</a></h3>
+<div class="l-cluster l-cluster--vertical-align">
+	<div>
+	<span class="enddate">open until 05 November 2024</span>
+	<a class="button" href="1/tagnom-202410/handler" title="Edit &quot;TAG Nominee Commitment Form (2024 Election)&quot;"><span class="far fa-edit" aria-hidden="true"></a>
+        <a class="button" href="1/tagnom-202410/results" title="Results of &quot;TAG Nominee Commitment Form (2024 Election)&quot;"><span class="far fa-list-check" aria-hidden="true"></a>
+	</div>
+</div>
+</div>
+
+<p>An experimental <a href='micalendar'>iCalendar version of this list</a> is available, with ToDo items for questionnaires to be completed, and days of meetings for which you registered.</p>
 
 </article>
 	
