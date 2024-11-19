@@ -1,7 +1,7 @@
 <!doctype html>
 <html dir="ltr" lang="en" class="no-js">
 <head>
-    <title>Add a question WBS question types - Web-Based Straw-poll and Balloting System</title>
+    <title>Edit question Select multiple items in Test for WBS RFE - Web-Based Straw-poll and Balloting System</title>
 
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -66,6 +66,13 @@
 <!-- custom css for wbs
   <link rel="stylesheet" type="text/css" href="../css/site-wbs-style.css" title="default" />
  -->  
+
+<style>
+table.choices td
+{
+  vertical-align: top !important;
+}
+</style>
 
 </head>
 
@@ -638,83 +645,314 @@
 <main id="main">
   <div class="content">
     <article>
-    <h1>Edit question Survey in WBS question types</h1>
+    <h1>Select multiple items in Test for WBS RFE</h1>
 
-<p class="doc"><em>This question was created on 2016-06-28 by Laurent Carcone.<br> It was last updated on 2016-06-28
- by Laurent Carcone.</em></p>
+  <div class="l-box note note--info" role="status">
+      <h2 class="txt-saturn">Questionnaire information</h2>
+      <ul class="clean-list" role="list">
+	<li>This question was created on 2014-09-24.</li>
+	<li>It was last updated on 2019-07-16 by Laurent Carcone.</li>
+      </ul>
+   </div>
 
-<form action="./" method="post">
+<div class='l-box field-group'>
+
 <form method="post" action="./">
-<ul class="edit questions">
-<li>
-<label title="must be unique among the questions in this questionnaire">Question identifier: <input required="required" maxlength="8" size="8" name="qno" type="text" value="q17"></label> (any non-null number and letters OK but <em>no space or punctuation</em>, up to 8 characters)</li>
-<li>Question type: 
-<span class="tooltip" title="This control allows to ask to select one (and only one) item in a list of choices that you define. This version uses a dropdown list which is usually more adapted for long list of choices (also available as radio buttons)">Select one among many (drop-down list)<input type="hidden" name="type" value="select"></span></li>
 
-<li><label>Title of the question <br>
-<input name="shortdesc" type="text" size="80" value="one-line description of question"></label></li>
+<p><strong>Question identifier</strong>: q2</p>
+<p><strong>Question type</strong>: <span title='This control proposes a list of checkboxes that allows the responders to choose zero, one or as many items in the list of choices you define. The number of checkable items can be limited. '>Select multiple items (checkboxes)
+<input type='hidden' name='type' value='multi' /></span></p>
 
-<li><label>Text of the question<br>
-<textarea name="question" id="question" cols="70" rows="15">&lt;p&gt;Full statement of question.&lt;/p&gt;
-</textarea></label>
+<div class="field">
+    <label for="shortdesc">
+      <span class="field-label">Title of the question <span class="required">(Required)</span></span>
+    </label>
+    <input type="text" id="shortdesc" name="shortdesc" required="required" value="Select multiple items">
+</div>
+
+<div class="field">
+<label for="question">
+<span class="field-label">Text of the question</span>
+</label>
+<textarea id="question" name="question" rows="3"></textarea>
 <!-- <script type='text/javascript' src='/2002/09/wbs/toggleButtonQuestion.js'></script> -->
-</li>
-<li><label>Answering this question is <select name="optionality">
-<option value="1" selected="selected">optional</option>
-<option value="0">required</option>
-</select></label> </li>
+</div>
 
+<div class="field">
+	<fieldset role="group">
+		<legend class="group-legend">Answering this question is</legend>
+		<div class="radio-item">
+			<input type="radio" id="optionality-optional" name="optionality" value="1" checked="checked">
+			<label for="optionality-optional">
+				<span class="faux-label">Optional</span>
+			</label>
+		</div>
+		<div class="radio-item">
+			<input type="radio" id="optionality-required" name="optionality" value="0" aria-describedby="hint-optionality-required">
+			<label for="optionality-required">
+				<span class="faux-label">Required</span>
+			</label>
+			<div class="field-hint" id="hint_optionality_required">Note: If selecting 'required', the user will have to express an opinion on each choice <br> 'no opinion' responses will be refused.</div>
+		</div>
+	</fieldset>
+</div>
 
-<li><label><input type="checkbox" name="sensitiveData"> This question is considered as sensitive</label>: answers to this question will be automatically removed 90 days after the closing date of this questionnaire.</li>
-<li class="optional"><br>
-You can optionally add to your question<ul>
-<li><label><input type="checkbox" name="allowComment"> a Comment field </label>(for questions where a complement of information is possibly needed)</li>
-<li><label><input type="checkbox" name="allowRationale"> a Rationale field </label> (for questions where answers can be justified)</li>
-</ul></li>
-<p><input type="submit" class="submit_button" value="Submit"></p>
-</ul>
+<div class="field">
+    <label for="max">
+      <span class="field-label">Maximum number of items that can be selected</span>
+    </label>
+    <div class="field-hint" id="hint-max">leave empty if no limit</div>
+    <input type="text" id="max" name="max" class="input-width-3" value="0">
+</div>
 
-<p class="doc">This type of question proposes a set of options for the responder to pick; please enter below the options you want to offer to the responders. If you need more than the number of fields offered below, you'll be offered more fields after submitting the form.</p>
-<div class="choices">
-<table id="choices">
-<colgroup><col valign="top" align="left">
-<col valign="top" align="left">
-</colgroup><thead><tr><th>Id</th><th>Description</th></tr>
-</thead><tbody>
-<tr><td>
-<label title="Identifier for choice number 1"><input name="choiceid[1]" type="text" maxlength="16" size="10" value="c1"></label>
-<input name="choicedadd[1]" type="hidden" value="">
-</td><td>
-<textarea name="choicegloss[1]" rows="3" cols="70"></textarea>
-<input name="choicepos[1]" type="hidden" value="10"></td>
+<div class="field">
+	<fieldset role="group">
+		<legend class="group-legend">Randomize order</legend>
+		<div class="checkbox-item">
+			<input type="checkbox" name="randomizeOrder" id="randomizeOrder" appearance="base">
+			<label for="randomizeOrder">
+			<span class="faux-label">randomize display order of options. This is useful, for example, for elections to avoid potential artifacts related to option position in the list.</span>
+			</label>
+		</div>
+	</fieldset>
+</div>
+
+<div class="field">
+	<fieldset role="group">
+		<legend class="group-legend">This question is considered as sensitive</legend>
+		<div class="checkbox-item">
+			<input type="checkbox" name="sensitiveData" id="sensitiveData" appearance="base">
+			<label for="sensitiveData">
+			<span class="faux-label">answers to this question will be automatically removed 90 days after the closing date of this questionnaire.</span>
+			</label>
+		</div>
+	</fieldset>
+</div>
+
+<div class="field">
+	<fieldset role="group" aria-describedby="hint-things-you-like">
+		<legend class="group-legend">You can optionally add to your question</legend>
+		<div class="checkbox-item">
+			<input type="checkbox" name="allowComment" id="allowComment" appearance="base">
+			<label for="allowComment">
+				<span class="faux-label">a Comment field</span>
+			</label>
+		<div class="field-hint" id="hint-allowComment">for questions where a complement of information is possibly needed</div>
+		</div>
+
+		<div class="checkbox-item">
+			<input type="checkbox" name="allowRationale" id="allowRationale" appearance="base" aria-describedby="hint-chips">
+			<label for="allowRationale">
+				<span class="faux-label">a Rationale field</span>
+			</label>
+		<div class="field-hint" id="hint-allowRationale">for questions where answers can be justified</div>
+		</div>
+	</fieldset>
+</div>
+
+<button class="button" type="submit" name="action" value="Submit">Submit</button>
+</div>
+
+<div class="l-box field-group note note--info" role="status">
+      <ul class="clean-list" role="list">
+	<li>This type of question proposes a set of options for the responder to pick; please enter below the options you want to offer to the responders. If you need more than the number of fields offered below, you'll be offered more fields after submitting the form.</li>
+	<li>(NB: you can use XHTML markup in the choices description.)</li>
+      </ul>
+</div>
+
+<div class='l-box field-group'>
+
+<table id="choices" class="choices">
+
+<thead>
+    <tr><th>Id</th><th>Description</th><th>Position</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td>
+  <div class="field">
+  <label for="choiceid[1]" title='Identifier for choice number 1'>
+      <span class="field-label"></span>
+  </label>
+  <input type="text" id="choiceid[1]" name="choiceid[1]" class="input-width-3" value="c1">
+  <input name="choicedadd[1]" type="hidden" value="0000-00-00 00:00:00" />
+  </div>
+  <td>
+  <div class="field">
+  <label for="choicegloss[1]">
+  <span class="field-label"></span>
+  </label>
+  <textarea id="choicegloss[1]" name="choicegloss[1]" id ="choicegloss[1]" rows="3">AA</textarea>
+  </div>
+ </td>
+ <td>
+ <div class="field">
+ <label for="choicepos[1]"  title='Index of position in the question'>
+     <span class="field-label"></span>
+ </label>
+ <input type="number" id="choicepos[1]" name="choicepos[1]" class="input-width-4"  min="0" max="1000" step="1" value="10">
+ </div>
+ </td>
 </tr>
-<tr><td>
-<label title="Identifier for choice number 2"><input name="choiceid[2]" type="text" maxlength="16" size="10" value="c2"></label>
-<input name="choicedadd[2]" type="hidden" value="">
-</td><td>
-<textarea name="choicegloss[2]" rows="3" cols="70"></textarea>
-<input name="choicepos[2]" type="hidden" value="20"></td>
+ <tr>
+  <td>
+  <div class="field">
+  <label for="choiceid[2]" title='Identifier for choice number 2'>
+      <span class="field-label"></span>
+  </label>
+  <input type="text" id="choiceid[2]" name="choiceid[2]" class="input-width-3" value="c2">
+  <input name="choicedadd[2]" type="hidden" value="0000-00-00 00:00:00" />
+  </div>
+  <td>
+  <div class="field">
+  <label for="choicegloss[2]">
+  <span class="field-label"></span>
+  </label>
+  <textarea id="choicegloss[2]" name="choicegloss[2]" id ="choicegloss[2]" rows="3">BB</textarea>
+  </div>
+ </td>
+ <td>
+ <div class="field">
+ <label for="choicepos[2]"  title='Index of position in the question'>
+     <span class="field-label"></span>
+ </label>
+ <input type="number" id="choicepos[2]" name="choicepos[2]" class="input-width-4"  min="0" max="1000" step="1" value="20">
+ </div>
+</td>
 </tr>
-<tr><td>
-<label title="Identifier for choice number 3"><input name="choiceid[3]" type="text" maxlength="16" size="10" value="c3"></label>
-<input name="choicedadd[3]" type="hidden" value="">
-</td><td>
-<textarea name="choicegloss[3]" rows="3" cols="70"></textarea>
-<input name="choicepos[3]" type="hidden" value="30"></td>
+
+<tr>
+  <td>
+  <div class="field">
+  <label for="choiceid[3]" title='Identifier for choice number 3'>
+      <span class="field-label"></span>
+  </label>
+  <input type="text" id="choiceid[3]" name="choiceid[3]" class="input-width-3" value="c3">
+  <input name="choicedadd[3]" type="hidden" value="0000-00-00 00:00:00" />
+  </div>
+  <td>
+  <div class="field">
+  <label for="choicegloss[3]">
+  <span class="field-label"></span>
+  </label>
+  <textarea id="choicegloss[3]" name="choicegloss[3]" id ="choicegloss[3]" rows="3">CC</textarea>
+  </div>
+ </td>
+ <td>
+ <div class="field">
+ <label for="choicepos[3]"  title='Index of position in the question'>
+     <span class="field-label"></span>
+ </label>
+ <input type="number" id="choicepos[3]" name="choicepos[3]" class="input-width-4"  min="0" max="1000" step="1" value="30">
+ </div>
+ </td>
+</tr>
+ 
+<tr>
+  <td>
+  <div class="field">
+  <label for="choiceid[4]" title='Identifier for choice number 4'>
+      <span class="field-label"></span>
+  </label>
+  <input type="text" id="choiceid[4]" name="choiceid[4]" class="input-width-3" value="c4">
+  <input name="choicedadd[4]" type="hidden" value="0000-00-00 00:00:00" />
+  </div>
+  <td>
+  <div class="field">
+  <label for="choicegloss[4]">
+  <span class="field-label"></span>
+  </label>
+  <textarea id="choicegloss[4]" name="choicegloss[4]" id ="choicegloss[4]" rows="4">DD</textarea>
+  </div>
+ </td>
+ <td>
+ <div class="field">
+ <label for="choicepos[4]"  title='Index of position in the question'>
+     <span class="field-label"></span>
+ </label>
+ <input type="number" id="choicepos[4]" name="choicepos[4]" class="input-width-4"  min="0" max="1000" step="1" value="40">
+ </div>
+ </td>
+</tr>
+
+<tr>
+  <td>
+  <div class="field">
+  <label for="choiceid[5]" title='Identifier for choice number 5'>
+      <span class="field-label"></span>
+  </label>
+  <input type="text" id="choiceid[5]" name="choiceid[5]" class="input-width-3" value="c5">
+  <input name="choicedadd[5]" type="hidden" value="0000-00-00 00:00:00" />
+  </div>
+  <td>
+  <div class="field">
+  <label for="choicegloss[5]">
+  <span class="field-label"></span>
+  </label>
+  <textarea id="choicegloss[5]" name="choicegloss[5]" id ="choicegloss[5]" rows="3"></textarea>
+  </div>
+ </td>
+ <td>
+ <div class="field">
+ <label for="choicepos[5]"  title='Index of position in the question'>
+     <span class="field-label"></span>
+ </label>
+ <input type="number" id="choicepos[5]" name="choicepos[3]" class="input-width-4"  min="0" max="1000" step="1" value="40">
+ </div>
+ </td>
+</tr>
+
+<tr>
+  <td>
+  <div class="field">
+  <label for="choiceid[6]" title='Identifier for choice number 6'>
+      <span class="field-label"></span>
+  </label>
+  <input type="text" id="choiceid[6]" name="choiceid[6]" class="input-width-3" value="c6">
+  <input name="choicedadd[6]" type="hidden" value="0000-00-00 00:00:00" />
+  </div>
+  <td>
+  <div class="field">
+  <label for="choicegloss[6]">
+  <span class="field-label"></span>
+  </label>
+  <textarea id="choicegloss[6]" name="choicegloss[6]" id ="choicegloss[6]" rows="3"></textarea>
+  </div>
+ </td>
+ <td>
+ <div class="field">
+ <label for="choicepos[6]"  title='Index of position in the question'>
+     <span class="field-label"></span>
+ </label>
+ <input type="number" id="choicepos[6]" name="choicepos[6]" class="input-width-4"  min="0" max="1000" step="1" value="60">
+ </div>
+ </td>
 </tr>
 </tbody>
 </table>
-<p><input type="submit" class="submit_button" value="Submit"></p></div>
 
-</form>
+<button class="button" type="submit" name="action" value="Submit">Submit</button>
 
-<form action="/2002/09/wbs/99999/wbs-types-orig/q/" method="post">
-<div class="choices">
-<p>You can also decide to delete completely this question. Note that <strong>this is not reversible</strong>.</p>
-   <p><label><input type="checkbox" name="confirm"> &nbsp;I confirm I want to delete this question</label></p>
-<p><input type="hidden" name="qno" value="q9"><input type="submit" name="action" value="Delete" class="irreversible"></p>
+<script type='text/javascript' src='/2002/09/wbs/questionOrdering.js'></script>
 </div>
+
 </form>
+
+<div class='l-box field-group'>
+<form action="/2002/09/wbs/109/Test-wbs-rfe/q/" method="post">
+<fieldset role="group">
+	<legend class="group-legend">You can also decide to delete completely this question. Note that <strong>this is not reversible</strong></legend>
+	<div class="checkbox-item">
+		<input type="checkbox" name="randomizeOrder" id="randomizeOrder" appearance="base">
+		<label for="randomizeOrder">
+		<span class="faux-label">I confirm I want to delete this question</span>
+		</label>
+	</div>
+</fieldset>
+<button class="button button--alt u-bg-error" type="submit" name="action" value="Delete">Delete</button>
+	
+</form>
+</div>
 
 </article>
       
