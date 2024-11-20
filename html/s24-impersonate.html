@@ -373,14 +373,25 @@
 
    <h1>WBS - Select a user to impersonate for survey name</h1>
 
-<p class="doc">First, <a href="/users/search">search the login of the user you want to impersonate</a>, enter it in the text field below, and hit submit. You'll be directed to the questionnaire form where you'll be able to submit answers in the name of the selected user.</p>
+  <div class="l-box note note--info" role="status">
+      <h2 class="txt-saturn">Information</h2>
+      <ul class="clean-list" role="list">
+	<li>First, <a href="/users/search">search the login of the user you want to impersonate</a>, enter it in the text field below, and hit Select.</li>
+	<li>You'll be directed to the questionnaire form where you'll be able to submit answers in the name of the selected user.</li>
+      </ul>
+  </div>
+
 <form action="./" method="get">
-<div>
-<p>
-<label>Username: <input type="text" name="voterid"></label>
-<input type="submit" value="Select">
-</p>
+
+<div class="field">
+    <label for="voterid">
+      <span class="field-label">Username</span>
+    </label>
+    <input type="text" id="voterid" name="voterid" required="required" value="" class="input-width-20">
 </div>
+
+<button class="button" type="submit" value="Select">Select</button>
+
 </form>
    
 </article>
