@@ -1,7 +1,7 @@
 <!doctype html>
 <html dir="ltr" lang="en" class="no-js">
 <head>
-    <title>WBS - Create a registration form</title>
+    <title>Create a registration form - Web-Based Straw-poll and Balloting System</title>
 
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -70,18 +70,7 @@
   <link rel="stylesheet" type="text/css" href="../css/site-wbs-style.css" title="default" />
  -->  
 
-<style>
-.survey-list > * {
-  padding-top: 1em;
-  padding-bottom: 1.75em;
-  border-bottom: solid 1px #bdbdbd;
-}
-.related__inner > * + h2 {
-   margin-top: 2.5rem;  
-}
-</style>
-
-    </head>
+</head>
 
 <body class="default">
 <a class="skip-link" href="#main">Skip to content</a>
@@ -372,34 +361,104 @@
    <article>
 
    <h1>Create a registration form</h1>
-   <p>This forms allow you to create a registration form for the F2F meetings of your groups. It creates a set of basic questions that you can freely update or complete once the form is created using <a href="https://www.w3.org/2002/09/wbs/99999/">WBS interface</a>.</p>
-   <p class="message">Don’t forget to contact <a href="mailto:calreq@w3.org">calreq@w3.org</a> about F2F meetings.</p>
+  <div class="l-box note note--info" role="status">
+      <h2 class="txt-saturn">Template information</h2>
+      <ul class="clean-list" role="list">
+	<li>This forms allow you to create a registration form for the F2F meetings of your groups.</li>
+	<li>It creates a set of basic questions that you can freely update or complete once the form is created using <a href="https://www.w3.org/2002/09/wbs/99999/">WBS interface</a>.</li>
+	<li>Don’t forget to contact <a href="mailto:calreq@w3.org">calreq@w3.org</a> about F2F meetings.</li>
+      </ul>
+  </div>
 
-   <form action="https://www.w3.org/2002/09/wbs/99999/factory?fromTemplate" method="post">
-<div class="create">
-<p>
+<div class='l-box field-group'>
+<form action="https://www.w3.org/2002/09/wbs/99999/factory?fromTemplate" method="post">
+
 <input type="hidden" name="startdate" value="2024-10-29" />
 <input type="hidden" name="resultsACL" value="group" />
 <input type="hidden" name="voterBehalf" value="individual" />
 <input type="hidden" name="wgid" value="99999" />
 <input type="hidden" name="type" value="registration" />
 
-<ul class='alignedlabels edit'>
-<li><label for="meeting">A machine identifier for this meeting:</label> <input type="text" name="qaireno" id ="meeting" maxlength="40" size="15" />&nbsp; (any number and letters OK, up to 40 characters)</li>
-<li><label for="Location">Location:</label> <input type="text" name="params[location]" id ="Location" /></li>
-<li><label for="start">Meeting start date:</label> <input type="date" size="10" id="start" name="params[start]" value="YYYY-MM-DD" /></li>
-<li><label for="end">Meeting end date:</label> <input type="date" size="10" id="end" name="params[end]" value="YYYY-MM-DD" /></li>
-<li><label for="closedate">Registration cut-off date:</label> <input type="date" size="10" id="closedate" name="closedate" value="YYYY-MM-DD" /></li>
-<li><label for="Logistics">Logistics page (URI):</label> <input type="text" name="params[logistics]" id ="Logistics" />&nbsp; (leave empty if none)</li>
-<li><label for="Agenda">Agenda (URI):</label> <input type="text" name="params[agenda]" id ="Agenda" />&nbsp; (leave empty if none)</li>
-<li><label for="food">Propose food preferences:</label> <input type="checkbox" name="params[food]" id ="food" /></li>
-<li><label for="accomodations">Propose accessibility accomodations (Sign Language Interpreting, Assistive Listening Devices and Alternative Formats):</label> <input type="checkbox" name="params[accessibility]" id ="accomodations" /></li>
-</ul></p>
-<p>
-<input type="submit" class="submit_button" />
-</p>
+<div class="field">
+    <label for="meeting">
+      <span class="field-label">A machine identifier for this
+    meeting<span class="required"> (Required)</span></span>
+    </label>
+    <div class="field-hint" id="hint-closedate">Any number and letters OK, up to 40 characters</div>
+    <input type="text" id="meeting" name="qaireno" required="required" value="">
 </div>
+
+<div class="field">
+    <label for="Location">
+      <span class="field-label">Location<span class="required"> (Required)</span></span>
+    </label>
+    <input type="text" id="Location" name="params[location]" required="required" value="">
+</div>
+
+<div class="component--fifty-fifty">
+  <div class="component--fifty-fifty__text">
+	<div class="field">
+		<label for="startdate">
+			<span class="field-label">Meeting start date <span class="required">(Required)</span></span>
+		</label>
+		<input id="start" name="params[start]" type="date" required="required" size="10" class="w8em format-y-m-d divider-dash highlight-days-67  no-transparency input-width-10" value="YYYY-MM-DD">
+	</div>
+  </div>
+	 
+  <div class="component--fifty-fifty__text">
+    <div class="field">
+		<label for="closedate">
+			<span class="field-label">Meeting end date <span class="required">(Required)</span></span>
+		</label>
+                <input id="end" name="params[end]" type="date" required="required" size="10" class="w8em format-y-m-d divider-dash highlight-days-67  no-transparency input-width-10" value="YYYY-MM-DD">
+      </div>
+    </div>
+</div>
+
+<div class="field">
+	<label for="closedate">
+		<span class="field-label">Registration cut-off date <span class="required">(Required)</span></span>
+	</label>
+        <input id="closedate" name="closedate" type="date" size="10" required="required" class="w8em format-y-m-d divider-dash highlight-days-67  no-transparency input-width-10" value="YYYY-MM-DD" />
+</div> 
+
+<div class="field">
+	<label for="Logistics">
+ 	  <span class="field-label">Logistics page (URI)</span>
+	</label>
+	<div class="field-hint" id="hint-Logistics">Leave empty if none</div>
+        <input required="required" type="text" id="Logistics" name="params[logistics]" value="" />
+</div>
+
+<div class="field">
+	<label for="Agenda">
+ 	  <span class="field-label">Agenda (URI)<span class="required"></span></span>
+	</label>
+	<div class="field-hint" id="hint-Agenda">Leave empty if none</div>
+        <input required="required" type="text" id="Agenda" name="params[agenda]" value="" />
+</div>
+
+<div class="field">
+	<fieldset role="group">
+		<legend class="group-legend">Options</legend>
+		<div class="checkbox-item">
+			<input type="checkbox" name="params[food]" id="food" title="Propose food preferences" appearance="base">
+			<label for="food">Propose food preferences</label>
+		</div>
+
+		<div class="checkbox-item">
+			<input type="checkbox" name="params[accessibility]" id="accomodations" title="reminder date option" appearance="base">
+			<label for="accomodations">Propose accessibility accomodations</label>
+		        <div class="field-hint" id="hint-accomodations">Sign Language Interpreting, Assistive Listening Devices and Alternative Formats</div>
+		</div>
+	</fieldset>
+</div>
+	
+
+<button class="button" type="button" name="action" value="Submit">Submit</button>
+
 </form>
+</div>
 
 </article>
 	
