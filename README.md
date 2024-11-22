@@ -37,7 +37,7 @@ It contains the snapshots of some of the HTML pages of the application and its e
 * [WBS Template meeting registration using new Design System](https://w3c.github.io/wbs-design/html/s24-template-meeting.html)  (Draft)
 * [WBS Teleconference scheduling using new Design System](https://w3c.github.io/wbs-design/html/s24-template-teleconf.html)  (Draft)
 * [WBS Template CfR for Proposed Recommendation using new Design System](https://w3c.github.io/wbs-design/html/s24-template-pr.html)
-* [WBS Template CfR Group Charter using new Design System](https://w3c.github.io/wbs-design/html/s24-template-charter.html)  (Draft)
+* [WBS Template CfR Group Charter using new Design System](https://w3c.github.io/wbs-design/html/s24-template-charter.html) 
 
 
 
