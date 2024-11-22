@@ -1,7 +1,7 @@
 <!doctype html>
 <html dir="ltr" lang="en" class="no-js">
 <head>
-    <title>WBS - Create a regular teleconference scheduling form</title>
+    <title>Create a regular teleconference scheduling form - Web-Based Straw-poll and Balloting System<</title>
 
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -69,19 +69,12 @@
 <!-- custom css for wbs
   <link rel="stylesheet" type="text/css" href="../css/site-wbs-style.css" title="default" />
  -->  
-
 <style>
-.survey-list > * {
-  padding-top: 1em;
-  padding-bottom: 1.75em;
-  border-bottom: solid 1px #bdbdbd;
-}
-.related__inner > * + h2 {
-   margin-top: 2.5rem;  
+.input-width-15 {
+  max-width: 31ex;
 }
 </style>
-
-    </head>
+</head>
 
 <body class="default">
 <a class="skip-link" href="#main">Skip to content</a>
@@ -372,51 +365,111 @@
    <article>
 
    <h1>Create a regular teleconference scheduling form</h1>
-   <p>This forms allow you to create a questionnaire to pick a regular timeslot for having teleconferences.</p>
+   <div class="l-box note note--info" role="status">
+      <h2 class="txt-saturn">Template information</h2>
+      <ul class="clean-list" role="list">
+	<li>This forms allow you to create a questionnaire to pick a regular timeslot for having teleconferences.</li>
+      </ul>
+    </div>
 
+<div class='l-box field-group'>
 <form action="https://www.w3.org/2002/09/wbs/99999/factory" method="post">
-<div class="create">
-<p>
+
 <input type="hidden" name="startdate" value="2024-10-29" />
 <input type="hidden" name="resultsACL" value="group" />
 <input type="hidden" name="voterBehalf" value="individual" />
 <input type="hidden" name="type" value="scheduling" />
-<ul class='alignedlabels edit'>
-<li><label for='qaireno'>A machine identifier for the form (any number and letters OK, up to 40 characters):</label> <input type="text" id='qaireno' name="qaireno" maxlength="40" size="15" /></li>
-<li><label for='name'>Name of the teleconf:</label> <input type="text" name="params[name]" id='name' /></li>
-<li><label for='time'>Acceptable time range in which the teleconf can start:</label><fieldset> <label>Between:</label><select id="time" name="params[low]">
-<option value="0">12am</option>
-<option value="1">1am</option><option value="2">2am</option><option value="3">3am</option>
-<option value="4">4am</option><option value="5">5am</option><option value="6">6am</option>
-<option value="7">7am</option><option value="8">8am</option><option value="9">9am</option>
-<option value="10">10am</option><option value="11">11am</option><option value="12">12pm</option>
-<option value="13">1pm</option><option value="14">2pm</option><option value="15">3pm</option>
-<option value="16">4pm</option><option value="17">5pm</option><option value="18">6pm</option>
-<option value="19">7pm</option><option value="20">8pm</option><option value="21">9pm</option>
-<option value="22">10pm</option><option value="23">11pm</option>
-</select> <label>and</label> <select name="params[high]">
-<option value="1">1am</option><option value="2">2am</option><option value="3">3am</option>
-<option value="4">4am</option><option value="5">5am</option><option value="6">6am</option>
-<option value="7">7am</option><option value="8">8am</option><option value="9">9am</option>
-<option value="10">10am</option><option value="11">11am</option><option value="12">12pm</option>
-<option value="13">1pm</option><option value="14">2pm</option><option value="15">3pm</option>
-<option value="16">4pm</option><option value="17">5pm</option><option value="18">6pm</option>
-<option value="19">7pm</option><option value="20">8pm</option><option value="21">9pm</option>
-<option value="22">10pm</option><option value="23">11pm</option><option value="24">12am</option>
-</select> <label title='Timezone'> in </label><select name='params[tz]'>
-<option value='UTC'>UTC</option>
-<option value='ET'>US Eastern Time (Boston)</option>
-<option value='CET'>Central European Time (Paris)</option>
-<option value='JT'>Japan Time (Tokyo)</option>
-</select><!--  with 
-<label>increment of <select name='params[increment]'><option value='60'>1 hour</option>
-<option value='30'>30 minutes</option></select></label> --></fieldset></li>
-<li><label for='days'>Acceptable days:</label><fieldset> 
-<label>Monday <input type="checkbox" name="params[days][]" value='0' /></label> |
-<label>Tuesday <input type="checkbox" name="params[days][]" value='1' /></label> |
-<label>Wednesday <input type="checkbox" name="params[days][]" value='2' /></label> |
-<label>Thursday <input type="checkbox" name="params[days][]" value='3' /></label> |
-<label>Friday <input type="checkbox" name="params[days][]" value='4' /></label></fieldset></li>
+
+<div class="field">
+    <label for="qaireno">
+      <span class="field-label">A machine identifier for the teleconference<span class="required"> (Required)</span></span>
+    </label>
+    <div class="field-hint" id="hint-closedate">Any number and letters OK, up to 40 characters</div>
+    <input type="text" id="qaireno" name="qaireno" required="required" value="">
+</div>
+
+<div class="field">
+    <label for="name">
+      <span class="field-label">Name of the teleconference<span class="required"> (Required)</span></span>
+    </label>
+    <input type="text" id="name" name="params[name]" required="required" value="">
+</div>
+
+<div class="field">
+	<label for="time">
+		<span class="field-label">Acceptable time range in which the teleconf can start</span>
+	</label>
+</div>
+
+<div class="l-cluster l-cluster--vertical-align">
+	<div>
+	<label>Between</label>
+	<select id="time" name="params[low]" class="input-width-5">
+	<option value="0">12am</option>
+	<option value="1">1am</option><option value="2">2am</option><option value="3">3am</option>
+	<option value="4">4am</option><option value="5">5am</option><option value="6">6am</option>
+	<option value="7">7am</option><option value="8">8am</option><option value="9">9am</option>
+	<option value="10">10am</option><option value="11">11am</option><option value="12">12pm</option>
+	<option value="13">1pm</option><option value="14">2pm</option><option value="15">3pm</option>
+	<option value="16">4pm</option><option value="17">5pm</option><option value="18">6pm</option>
+	<option value="19">7pm</option><option value="20">8pm</option><option value="21">9pm</option>
+	<option value="22">10pm</option><option value="23">11pm</option>
+	</select>
+	<label>and</label>
+	<select name="params[high]" class="input-width-5" >
+	<option value="1">1am</option><option value="2">2am</option><option value="3">3am</option>
+	<option value="4">4am</option><option value="5">5am</option><option value="6">6am</option>
+	<option value="7">7am</option><option value="8">8am</option><option value="9">9am</option>
+	<option value="10">10am</option><option value="11">11am</option><option value="12">12pm</option>
+	<option value="13">1pm</option><option value="14">2pm</option><option value="15">3pm</option>
+	<option value="16">4pm</option><option value="17">5pm</option><option value="18">6pm</option>
+	<option value="19">7pm</option><option value="20">8pm</option><option value="21">9pm</option>
+	<option value="22">10pm</option><option value="23">11pm</option><option value="24">12am</option>
+	</select>
+	<label>in</label>
+	<select name='params[tz]' class="input-width-15" >
+	<option value='UTC'>UTC</option>
+	<option value='ET'>US Eastern Time (Boston)</option>
+	<option value='CET'>Central European Time (Paris)</option>
+	<option value='JT'>Japan Time (Tokyo)</option>
+	</select>
+
+<!--  with <label>increment of <select name='params[increment]'><option value='60'>1 hour</option>
+<option value='30'>30 minutes</option></select></label> -->
+</div>
+</div>
+
+<div class="field">
+		<fieldset role="group" aria-describedby="hint-days">
+			<legend class="group-legend">Acceptable days</legend>
+			<div class="checkbox-item">
+				<input type="checkbox" name="params[days][]"  value="0" id="day-0" appearance="base">
+				<label for="chocolate day-0"><span class="faux-label">Monday</span>
+				</label>
+			</div>
+			<div class="checkbox-item">
+				<input type="checkbox" name="params[days][]"  value="1" id="day-1" appearance="base">
+				<label for="chocolate day-1"><span class="faux-label">Tuesday</span>
+				</label>
+			</div>
+			<div class="checkbox-item">
+				<input type="checkbox" name="params[days][]"  value="2" id="day-2" appearance="base">
+				<label for="chocolate day-2"><span class="faux-label">Wednesday</span>
+				</label>
+			</div>
+			<div class="checkbox-item">
+				<input type="checkbox" name="params[days][]"  value="3" id="day-3" appearance="base">
+				<label for="chocolate day-3"><span class="faux-label">Thursday</span>
+				</label>
+			</div>
+			<div class="checkbox-item">
+				<input type="checkbox" name="params[days][]"  value="4" id="day-4" appearance="base">
+				<label for="chocolate day-4"><span class="faux-label">Friday</span>
+				</label>
+			</div>
+		</fieldset>
+</div>
+
 <!--<li><label>Show times in the following timezones:</label>
 <fieldset><label>UTC <input type="checkbox" name="timezone[UTC]" /></label> |
 <label>San Francisco (Pacific time, UTC-7/8) <input type="checkbox" name="timezone[PT]" /></label> |
@@ -426,11 +479,18 @@
 <label>Tokyo (Japan Time, UTC+9) <input type="checkbox" name="timezone[JT]" /></label> |
 <label>Sidney (UTC+11/10) <input type="checkbox" name="timezone[AU]" /></label></fieldset>
 </li>-->
-<li><label for='closedate'>Date of questionnaire closure:</label> <input type="date" size="10" id='closedate' name="closedate" value="2024-11-05" /></li>
-</ul></p>
-<p><input type="submit" value="Create" class="submit_button" /></p>
+
+<div class="field">
+	<label for="closedate">
+		<span class="field-label">Date of questionnaire closure<span class="required"> (Required)</span></span>
+	</label>
+        <input id="closedate" name="closedate" type="date" size="10" required="required" class="w8em format-y-m-d divider-dash highlight-days-67  no-transparency input-width-10" value="YYYY-MM-DD" />
 </div>
+
+<button class="button" type="button" name="action" value="Create">Create</button>
+
 </form>
+</div>
 
 </article>
 	
