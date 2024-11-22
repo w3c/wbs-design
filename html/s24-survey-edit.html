@@ -395,7 +395,7 @@ If you would like to allow additional groups or users to answer, edit and/or see
 		<label for="startdate">
 			<span class="field-label">Questionnaire’s starting date <span class="required">(Required)</span></span>
 		</label>
-		<div class="field-hint" id="hint-startdate">starts at 0:00 Eastern time</div>
+		<div class="field-hint" id="hint-startdate">Starts at 0:00 Eastern time</div>
 		<input id="startdate" name="startdate" type="date" required="required" size="10" class="w8em format-y-m-d divider-dash highlight-days-67  no-transparency input-width-10" value="2014-11-21">
 	 </div>
   </div>
@@ -405,7 +405,7 @@ If you would like to allow additional groups or users to answer, edit and/or see
 		<label for="closedate">
 			<span class="field-label">Questionnaire's closing date <span class="required">(Required)</span></span>
 		</label>
-		<div class="field-hint" id="hint-closedate">ends at midnight Eastern time</div>
+		<div class="field-hint" id="hint-closedate">Ends at midnight Eastern time</div>
                 <input required="required" name="closedate" type="date" size="10" id="closedate" class="w8em format-y-m-d divider-dash highlight-days-67  no-transparency input-width-10" value="2016-12-31" />
     </div>
   </div>
@@ -442,63 +442,64 @@ If you would like to allow additional groups or users to answer, edit and/or see
   <h2 class="txt-mars">Options</h2>
 </div>
 
+
 <div class='l-box field-group' id='options'>
-<fieldset>
-<div class="checkbox-item">
-  <input type="checkbox" name="reminderoption" id="reminderoption" appearance="base  title="reminder option">
-  <label for="reminderoption">
-    <span class="faux-label">Enable reminder</span> <span class="elem_hide" id="reminderalert"> <em>This option is not available for questionnaires open for less than 7 days</em></span>
-  </label>
+
+<div class="field">
+	<fieldset role="group">
+	  <legend class="group-legend">Enable reminder</legend>
+		<div class="checkbox-item">
+		  <input type="checkbox" name="reminderoption" id="reminderoption" title="reminder option" appearance="base">
+		  <label for="reminderoption">
+	  	  <span class="faux-label"><span class="elem_hide" id="reminderalert"> <em>This option is not available for questionnaires open for less than 7 days</em></span></span>
+		  </label>
+		</div>
+	</fieldset>
 </div>
-</fieldset>
-    
-<fieldset>
-    <div class="field">
+
+<div id="remindervalue" class="field-group">
+<div class="field">
 	<label for="reminderdate">
 	  <span class="field-label">Reminder date<span class="required"></span></span>
 	</label>
         <input id="reminderdate" name="reminderdate" type="date" required="required" class="w8em format-y-m-d divider-dash highlight-days-67  no-transparency input-width-10" value="">
-    </div>
-</fieldset>
+</div>
     
-<fieldset>
-    <div class="field">
+<div class="field">
 	<label for="reminderlist">
  	  <span class="field-label">Reminder mailing list<span class="required"></span></span>
 	</label>
-	<div class="field-hint" id="hint-reminderlist">enter one email address, if empty an email will be sent to each non-responder participant of the Test Group</div>
+	<div class="field-hint" id="hint-reminderlist">Enter one email address, if empty an email will be sent to each non-responder participant of the Test Group</div>
         <input required="required" type="text" id="reminderlist" name="reminderlist" value="" />
     </div>
-</fieldset>
-
-<fieldset>
-<div class="checkbox-item">
-<input type="checkbox" name="allowNonW3CUsers" id="allowNonW3CUsers" appearance="base title="allowNonW3CUsers">
-<label for="allowNonW3CUsers">
-<span class="faux-label">Allow to answer the questionnaire without a W3C account</span>
-</label>
 </div>
-</fieldset>
+
+<div class="field">
+	<fieldset role="group">
+	  <legend class="group-legend">Allow to answer the questionnaire without a W3C account</legend>
+		<div class="checkbox-item">
+		  <input type="checkbox" name="allowNonW3CUsers" id="allowNonW3CUsers" title="allowNonW3CUsers" appearance="base">
+		  <label for="allowNonW3CUsers">
+		  </label>
+		</div>
+	</fieldset>
+</div>
    
-<fieldset>
    <div class="field">
 	<label for="emailNotif">
 	  <span class="field-label">Send all the responses to the following email address(es)<span class="required"></span></span>
 	</label>
-	<div class="field-hint" id="hint-emailNotif">optional, comma-separated list for several addresses</div>
+	<div class="field-hint" id="hint-emailNotif">Optional, comma-separated list for several addresses</div>
 	<input id="emailNotif" name="emailNotif" type="email" multiple="multiple" maxlength="255" value="">
    </div>		
-</fieldset>
    
-<fieldset>
    <div class="field">
 	<label for="emailCC">
 	  <span class="field-label">E-mail address(es) to which the responders can choose to copy his/her responses (e.g. w3c-archive@w3.org)<span class="required"></span></span>
 	</label>
-	<div class="field-hint" id="hint-emailCC">optional, comma-separated list for several addresses</div>
+	<div class="field-hint" id="hint-emailCC">Optional, comma-separated list for several addresses</div>
 	<input id="emailCC" name="params[emailCC]" type="email" multiple="multiple" maxlength="255" value="">
    </div>		
-</fieldset>
 </div>
 
 <div>
@@ -506,7 +507,6 @@ If you would like to allow additional groups or users to answer, edit and/or see
 </div>
 <div class='l-box l-box--no-padding' id='order'>
 
-  <fieldset>
   <ol>
     <li>
 <div class="component--fifty-fifty">
@@ -653,7 +653,6 @@ If you would like to allow additional groups or users to answer, edit and/or see
   </div>
   </li>
 </ol>
-  </fieldset>
 
 </div>
 

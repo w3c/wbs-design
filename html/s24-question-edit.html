@@ -68,9 +68,11 @@
  -->  
 
 <style>
-table.choices td
-{
+table.choices td {
   vertical-align: top !important;
+}
+table.choices textarea {
+  height: 5em !important;
 }
 </style>
 
@@ -648,7 +650,7 @@ table.choices td
     <h1>Select multiple items in Test for WBS RFE</h1>
 
   <div class="l-box note note--info" role="status">
-      <h2 class="txt-saturn">Questionnaire information</h2>
+      <h2 class="txt-saturn">Question information</h2>
       <ul class="clean-list" role="list">
 	<li>This question was created on 2014-09-24.</li>
 	<li>It was last updated on 2019-07-16 by Laurent Carcone.</li>
@@ -735,17 +737,17 @@ table.choices td
 		<div class="checkbox-item">
 			<input type="checkbox" name="allowComment" id="allowComment" appearance="base">
 			<label for="allowComment">
-				<span class="faux-label">a Comment field</span>
+				<span class="faux-label">A Comment field</span>
 			</label>
-		<div class="field-hint" id="hint-allowComment">for questions where a complement of information is possibly needed</div>
+		<div class="field-hint" id="hint-allowComment">For questions where a complement of information is possibly needed</div>
 		</div>
 
 		<div class="checkbox-item">
 			<input type="checkbox" name="allowRationale" id="allowRationale" appearance="base" aria-describedby="hint-chips">
 			<label for="allowRationale">
-				<span class="faux-label">a Rationale field</span>
+				<span class="faux-label">A Rationale field</span>
 			</label>
-		<div class="field-hint" id="hint-allowRationale">for questions where answers can be justified</div>
+		<div class="field-hint" id="hint-allowRationale">For questions where answers can be justified</div>
 		</div>
 	</fieldset>
 </div>
