@@ -71,19 +71,31 @@
  -->  
 
 <style>
-.survey-list > * {
-  padding-top: 1em;
-  padding-bottom: 1.75em;
-  border-bottom: solid 1px #bdbdbd;
+table.rights th.groups {
+  width:50% !important;
 }
-.related__inner > * + h2 {
-   margin-top: 2.5rem;  
+table.rights thead tr th {
+  vertical-align:top !important;
 }
+table.rights td, table.rights th {
+  border-right: solid 1px #bdbdbd;
+}
+table.rights td.access_no {
+    /* background-image: url('../icons/x-mark-red.png'); */
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 14px 14px;
+}
+table.rights td.access_yes {
+    background-image: url('../icons/check-mark-green.png');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
 </style>
 
     </head>
 
-<body class="basic">
+<body class="default">
 <a class="skip-link" href="#main">Skip to content</a>
 <div class="grid-wrap">
     <div class="wrap">
@@ -372,24 +384,28 @@
    <article>
 
    <h1>WBS - Access rights on survey name</h1>
-  <p class="doc">This page details the access rights on the questionnaire <cite>Test for WBS RFE</cite>, and offers to look up whether a particular individual has access to it.</p>
+  <div class="l-box note note--info" role="status">
+      <h2 class="txt-saturn">Questionnaire information</h2>
+      <ul class="clean-list" role="list">
+	<li>This page details the access rights on the questionnaire <cite>Test for WBS RFE</cite>, and offers to look up whether a particular individual has access to it.</li>
+      </ul>
+  </div>
 
-<div>
-<p><strong>Access rights related to the group Sysadmin Access</strong></p>
-<p>
-  <table class="results data access" summary="Access rights per group/individual">
+<div class="field-group">
+<h2 class="txt-mars">Access rights related to the group Sysadmin Access</h2>
+
+  <table class="rights" summary="Access rights per group/individual">
   <thead>
   <tr>
-  <th scope="col">Groups/Individuals</th>
-  <th scope="col">Vote</th>
-  <th scope="col">See (once open)</th>
-     <th scope='col'>See the results
-     <br/>(specific to that questionnaire)     </th>
-  <th scope="col">Modify (and see before opening date)</th>
+  <th class='groups'Groups/Individuals</th>
+  <th>Vote</th>
+  <th>See (once open)</th>
+  <th>See the results<br/>(specific to that questionnaire)</th>
+  <th>Modify (and see before opening date)</th>
   </tr>
   </thead>
-  <tbody>
-     
+
+<tbody>
 <tr>
 <th scope='row'><a href='/admin/groups/109/show'>Sysadmin Access</a>- includes <a href='/admin/groups/122803/show'>Systems</a></th>
 <td class='access_yes' title='Access'></td>
@@ -420,25 +436,22 @@
 </tr>
 </tbody>
 </table>
-</p>
-</div>
 
-<div>
-<p><strong>Additional rights specific to the questionnaire Test for WBS RFE. <br>The resulting rights are the union of both rights.</strong></p>
-<p>
-  <table class="results data access" summary="Access rights per group/individual">
+<h2 class="txt-mars">Additional rights specific to the questionnaire Test for WBS RFE</h2>
+<span><strong>The resulting rights are the union of both rights.</strong></span>
+
+  <table class="rights" summary="Access rights per group/individual">
   <thead>
   <tr>
-  <th scope="col">Groups/Individuals</th>
-  <th scope="col">Vote</th>
-  <th scope="col">See (once open)</th>
-     <th scope='col'>See the results
-          </th>
-  <th scope="col">Modify (and see before opening date)</th>
+  <th class="groups">Groups/Individuals</th>
+  <th>Vote</th>
+  <th>See (once open)</th>
+  <th>See the results </th>    
+  <th>Modify (and see before opening date)</th>
   </tr>
   </thead>
-  <tbody>
-     
+
+<tbody>     
 <tr>
 <th scope='row'>Laurent-Test Carcone</th>
 <td class='access_yes' title='Access'></td>
@@ -448,12 +461,28 @@
 </tr>
 </tbody>
 </table>
-</p>
+
 </div>
 
-
 </article>
- 
+ 	
+ <div class="related">
+   <nav class="related__inner" aria-labelledby="related-label">
+   <h2 class="txt-jupiter">This Group</h2>
+     <ul role="list">
+          <li><a href="/2002/09/wbs/109/" title="Current questionnaires for this group">Open questionnaires for this group</a></li>
+          <li><a href="/2002/09/wbs/109/factory" title="Create a questionnaire for this group">Create a new questionnaire for this group</a></li>
+     </ul>
+     <h2 class="txt-jupiter">WBS Home</h2>
+     <ul role="list">
+          <li><a href="/2002/09/wbs/" title="WBS Home">WBS Home</a></li>
+          <li><a href="/2002/09/wbs/showq" title="Current questionnaires for all the groups">All open questionnaires</a></li>
+          <li><a href="href='/2002/09/wbs/myQuestionnaires" title="List of questionnaires you are supposed to answer">My questionnaires</a></li>
+          <li><a href="/groups/">W3C Groups</a></li>
+     </ul>
+   </nav>
+   </div>
+   
   </div>
   </main>
   </div>

@@ -32,7 +32,7 @@ It contains the snapshots of some of the HTML pages of the application and its e
 * [WBS Surveys list using new Design System](https://w3c.github.io/wbs-design/html/s24-list-surveys.html)
 * [WBS My questionnaires using new Design System](https://w3c.github.io/wbs-design/html/s24-my-questionnaires.html)
 * [WBS All current questionnaires using new Design System](https://w3c.github.io/wbs-design/html/s24-current-questionnaires.html)  (Draft)
-* [WBS Access rights using new Design System](https://w3c.github.io/wbs-design/html/s24-access.html)  (Draft)
+* [WBS Access rights using new Design System](https://w3c.github.io/wbs-design/html/s24-access.html)
 * [WBS Impersonate a user using new Design System](https://w3c.github.io/wbs-design/html/s24-impersonate.html)
 * [WBS Template meeting registration using new Design System](https://w3c.github.io/wbs-design/html/s24-template-meeting.html)
 * [WBS Teleconference scheduling using new Design System](https://w3c.github.io/wbs-design/html/s24-template-teleconf.html)
