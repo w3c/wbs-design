@@ -404,23 +404,19 @@ Answers received after that time may not be counted.
 </ul>
 <p>We thank the nominees, and the persons who nominated them, for their support.</p>
 
-<fieldset>
 <div class="field">
 <label for="xq1:rationale">
 <span class="field-label">Rationale</span>
 </label>
 <textarea id ='xq1:rationale' name='xq1:rationale' rows='3'></textarea>
 </div>
-</fieldset>
 
-<fieldset>
 <div class="field">
 <label for="xq1:comment">
 <span class="field-label">Comments</span>
 </label>
 <textarea id ='xq1:comment' name='xq1:comment' rows='3'></textarea>
 </div>
-</fieldset>
 
 </div>
 
@@ -435,38 +431,36 @@ Answers received after that time may not be counted.
   
 <input type='hidden' name='q2:format' value='0' /><input type='hidden' name='q2:dim' value='1' />
 
-<fieldset>
-<div class="radio-item">
-	<label for="xq2:d1_yes_">
-		<span class="faux-label">Yes</span>
-	</label>
-	<input type="radio" id="xq2:d1_yes_" name="q2:d1[]" value="yes">
+<div class="field">
+	<fieldset role="group">
+		<div class="radio-item">
+			<label for="xq2:d1_yes_">
+				<span class="faux-label">Yes</span>
+			</label>
+			<input type="radio" id="xq2:d1_yes_" name="q2:d1[]" value="yes">
+		</div>
+		<div class="radio-item">
+			<label for="xq2:d1_no_">
+				<span class="faux-label">No</span>
+			</label>
+			<input type="radio" id="xq2:d1_no_" name="q2:d1[]" value="no">
+		</div>
+	</fieldset>
 </div>
 
-<div class="radio-item">
-	<label for="xq2:d1_no_">
-		<span class="faux-label">No</span>
-	</label>
-	<input type="radio" id="xq2:d1_no_" name="q2:d1[]" value="no">
-</fieldset>
-
-<fieldset>
 <div class="field">
 <label for="xq2:rationale">
 <span class="field-label">Rationale</span>
 </label>
 <textarea id ='xq2:rationale' name='q2:rationale' class='rationale' rows='3'></textarea>
 </div>
-</fieldset>
 
-<fieldset>
 <div class="field">
 <label for="xq2:comment">
 <span class="field-label">Comments</span>
 </label>
 <textarea id ='xq2:comment' name='q2:comment' rows='3'></textarea>
 </div>
-</fieldset>
 
 </div>
 
@@ -480,32 +474,34 @@ Answers received after that time may not be counted.
 <!-- Please indicate which option matches your choice: -->
 <input type='hidden' name='q3:format' value='0' /><input type='hidden' name='q3:dim' value='1' />
 
-<fieldset>
-<div class="radio-item">
-	<input type="radio" id="xq3:d1_yes_" name="q3:d1[]" value="yes">
-	<label for="xq3:d1_yes_">
-		<span class="faux-label">Yes</span>
-	</label>
+<div class="field">
+	<fieldset role="group">
+		<div class="radio-item">
+			<label for="xq3:d1_yes_">
+				<span class="faux-label">Yes</span>
+			</label>
+			<input type="radio" id="xq3:d1_yes_" name="q3:d1[]" value="yes">
+		</div>
+		<div class="radio-item">
+			<label for="xq3:d1_no_">
+				<span class="faux-label">No</span>
+			</label>
+			<input type="radio" id="xq3:d1_no_" name="q3:d1[]" value="no">
+		</div>
+		<div class="radio-item">
+			<label for="xq3:d1_concur_">
+				<span class="faux-label">Concur (cast vote with the majority)</span>
+			</label>
+			<input type="radio" id="xq3:d1_concur_" name="q3:d1[]" value="concur">
+		</div>
+		<div class="radio-item">
+			<label for="xq3:d1_abstain_">
+				<span class="faux-label">Blank vote</span>
+			</label>
+			<input type="radio" id="xq3:d1_abstain_" name="q3:d1[]" value="abstain">
+		</div>
+	</fieldset>
 </div>
-<div class="radio-item">
-	<input type="radio" id="xq3:d1_no_" name="q3:d1[]" value="no">
-	<label for="xq3:d1_no_">
-		<span class="faux-label">No</span>
-	</label>
-</div>
-<div class="radio-item">
-	<input type="radio" id="xq3:d1_concur_" name="q3:d1[]" value="concur">
-	<label for="xq3:d1_concur_">
-		<span class="faux-label">Concur (cast vote with the majority)</span>
-	</label>
-</div>
-<div class="radio-item">
-	<input type="radio" id="xq3:d1_abstain_" name="q3:d1[]" value="abstain">
-	<label for="xq3:d1_abstain_">
-		<span class="faux-label">Blank vote</span>
-	</label>
-</div>
-</fieldset>
 
 </div>
 
@@ -520,7 +516,6 @@ Answers received after that time may not be counted.
 <input type='hidden' name='q4:format' value='0' />
 <input type='hidden' name='q4:dim' value='1' />
 
-<fieldset>
 <div class="field">
 <label for="q4:d1">
 <span class="field-label"></span>
@@ -532,7 +527,6 @@ Answers received after that time may not be counted.
 <option value="c3">Burgundy blackcurrant sorbet</option>
 </select>
 </div>
-</fieldset>
 </div>
 
 <div class='l-box field-group' id='wbsq5'>
@@ -544,27 +538,28 @@ Answers received after that time may not be counted.
 
 <!--<p>Please indicate which option matches your choice:</p>-->
 <input type='hidden' name='q5:format' value='0' /><input type='hidden' name='q5:dim' value='1' />
-
-<fieldset>
-<div class="radio-item">
-	<input type="radio" id="xq5:d1_c1_" name="q5:d1[]" value="c1">
-	<label for="xq5:d1_c1_">
-		<span class="faux-label">Vanilla</span>
-	</label>
+<div class="field">
+	<fieldset role="group">
+		<div class="radio-item">
+			<label for="xq5:d1_c1_">
+				<span class="faux-label">Vanilla</span>
+			</label>
+			<input type="radio" id="xq5:d1_c1_" name="q5:d1[]" value="c1">
+		</div>
+		<div class="radio-item">
+			<label for="xq5:d1_c2_">
+				<span class="faux-label">Chocolate</span>
+			</label>
+			<input type="radio" id="xq5:d1_c2__" name="q5:d1[]" value="c2">
+		</div>
+		<div class="radio-item">
+			<label for="xq5:d1_c3_">
+				<span class="faux-label">Burgundy blackcurrant sorbet</span>
+			</label>
+			<input type="radio" id="xq5:d1_c3_" name="q5:d1[]" value="c3">
+		</div>
+	</fieldset>
 </div>
-<div class="radio-item">
-	<input type="radio" id="xq5:d1_c2_" name="q5:d1[]" value="c2">
-	<label for="xq5:d1_c2_">
-		<span class="faux-label">Chocolate</span>
-	</label>
-</div>
-<div class="radio-item">
-	<input type="radio" id="xq5:d1_c3_" name="q5:d1[]" value="c3">
-	<label for="xq5:d1_c3_">
-		<span class="faux-label">Burgundy blackcurrant sorbet</span>
-	</label>
-</div>
-</fieldset>
 </div>
 
 <div class='l-box field-group' id='wbsq6'>
@@ -574,15 +569,12 @@ Answers received after that time may not be counted.
 
   <p>You may add any comments you wish to record, including rationale for dismissals.</p>
 
-<fieldset>
 <div class="field">
   <label for="'xq6:comment">
 	<span class="field-label"></span>
   </label>
   <textarea id="'xq6:comment" name="'xq6:comment"></textarea>
-</div>
-</fieldset>
-  
+</div>  
 </div>
 
 <div class='l-box field-group' id='wbsq7'>
@@ -595,33 +587,26 @@ Answers received after that time may not be counted.
 <input type="hidden" name="nominee:format" value="2">
 <input type="hidden" name="nominee:dim" value="1">
 
-<fieldset>
 <div class="field">
 <label for="xnominee:1">
 <span class="field-label">Name</span>
 </label>
 <input type="text" class="input-width-30" id="xnominee:1" name="xnominee:1" value="">
 </div>
-</fieldset>
 
-<fieldset>
 <div class="field">
 <label for="xnominee:2">
 <span class="field-label">Affiliation</span>
 </label>
 <input type="text" class="input-width-30" id="xnominee:2" name="xnominee:2" value="">
 </div>
-</fieldset>
 
-<fieldset>
 <div class="field">
 <label for="xnominee:3">
 <span class="field-label">Email</span>
 </label>
 <input type="text" class="input-width-30" id="xnominee:3" name="xnominee:3" value="">
 </div>
-</fieldset>
-
 </div>
 
 <div class='l-box field-group' id='wbsq8'>
@@ -633,54 +618,47 @@ Answers received after that time may not be counted.
 
 <input type='hidden' name='q8:format' value='0' />
 <input type='hidden' name='q8:dim' value='1' />
-
-<fieldset>
-<div class="checkbox-item">
-<input type="checkbox" name="q8:d1[]" id="xq8:d1_c1_" appearance="base">
-<label for="xq8:d1_c1_">
-<span class="faux-label">Vanilla</span>
-</label>
+<div class="field">
+	<fieldset role="group" >
+		<div class="checkbox-item">
+			<input type="checkbox" name="q8:d1[]" id="xq8:d1_c1_" appearance="base">
+			<label for="xq8:d1_c1_">
+				<span class="faux-label">Vanilla</span>
+			</label>
+		</div>
+		<div class="checkbox-item">
+			<input type="checkbox" name="q8:d1[]" id="xq8:d1_c2_" appearance="base">
+			<label for="xq8:d1_c2_">
+				<span class="faux-label">Strawberry</span>
+			</label>
+		</div>
+		<div class="checkbox-item">
+			<input type="checkbox" name="q8:d1[]" id="xq8:d1_c3_" appearance="base">
+			<label for="xq8:d1_c3_">
+				<span class="faux-label">Lemon sorbet</span>
+			</label>
+		</div>
+		<div class="checkbox-item">
+			<input type="checkbox" name="q8:d1[]" id="xq8:d1_c4_" appearance="base">
+			<label for="xq8:d1_c4_">
+				<span class="faux-label">Burgundy blackcurrant sorbet</span>
+			</label>
+		</div>
+		<div class="checkbox-item">
+			<input type="checkbox" name="q8:d1[]" id="xq8:d1_c5_" appearance="base">
+			<label for="xq8:d1_c5_">
+				<span class="faux-label">Mango / Passion</span>
+			</label>
+		</div>
+	</fieldset>
 </div>
 
-<div class="checkbox-item">
-<input type="checkbox" name="q8:d1[]" id="xq8:d1_c2_" appearance="base">
-<label for="xq8:d1_c2_">
-<span class="faux-label">Strawberry</span>
-</label>
-</div>
-
-<div class="checkbox-item">
-<input type="checkbox" name="q8:d1[]" id="xq8:d1_c3_" appearance="base">
-<label for="xq8:d1_c3_">
-<span class="faux-label">Lemon sorbet</span>
-</label>
-</div>
-
-<div class="checkbox-item">
-<input type="checkbox" name="q8:d1[]" id="xq8:d1_c4_" appearance="base">
-<label for="xq8:d1_c4_">
-<span class="faux-label">Burgundy blackcurrant sorbet</span>
-</label>
-</div>
-
-<div class="checkbox-item">
-<input type="checkbox" name="q8:d1[]" id="xq8:d1_c5_" appearance="base">
-<label for="xq8:d1_c5_">
-<span class="faux-label">Mango / Passion</span>
-</label>
-</div>
-
-</fieldset>
-
-<fieldset>
 <div class="field">
 <label for="xq8:comment">
 <span class="field-label">Comments</span>
 </label>
 <textarea id ='xq8:comment' name='q8:comment' rows='3'></textarea>
 </div>
-</fieldset>
-
 </div>
 
 <div class='l-box field-group' id='wbsq9'>
@@ -728,7 +706,6 @@ Answers received after that time may not be counted.
   </div>
   </div> 
 </fieldset>
-
 
 <fieldset>
   <div class="component--fifty-fifty">
