@@ -79,9 +79,7 @@
 .related__inner > * + h2 {
    margin-top: 2.5rem;  
 }
-.note--info {
-   border-color: darkblue !important;
-}</style>
+</style>
 
     </head>
 
@@ -373,29 +371,25 @@
  <div class="content">
    <article>
 
-   <h1>WBS - Select a user to impersonate for survey name</h1>
+<h1>WBS - Select a user to impersonate for survey name</h1>
 
-  <div class="l-box note note--info" role="status">
-      <h2 class="txt-saturn">Information</h2>
-      <ul class="clean-list" role="list">
-	<li>First, <a href="/users/search">search the login of the user you want to impersonate</a>, enter it in the text field below, and hit Select.</li>
-	<li>You'll be directed to the questionnaire form where you'll be able to submit answers in the name of the selected user.</li>
-      </ul>
-  </div>
-
+<div class='l-box field-group'>
 <form action="./" method="get">
 
 <div class="field">
+    <div class="field-hint" id="hint-closedate">Enter the username of the
+    user you want to impersonate and hit Impersonate</div>
     <label for="voterid">
       <span class="field-label">Username</span>
     </label>
     <input type="text" id="voterid" name="voterid" required="required" value="" class="input-width-20">
 </div>
 
-<button class="button" type="submit" value="Select">Select</button>
+<button class="button" type="submit" value="Impersonate">Impersonate</button>
 
 </form>
-   
+</div>
+
 </article>
 	
  <div class="related">
