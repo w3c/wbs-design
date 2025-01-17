@@ -1,4 +1,4 @@
-# wbs-design
+dog-design
 
 Prettify WBS UI
 
