@@ -1,6 +1,12 @@
-# wbs-design
+# wd-40
 
-Prettify WBS UI
+[] Prettier One UI
+
+(Who)
+Epics<epics>
+
+
+
 
 The goal of this repository is to collaborate on modernizing the WBS UI.
 It contains the snapshots of some of the HTML pages of the application and its external resources (CSS, JS, icons).
