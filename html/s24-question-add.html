@@ -361,9 +361,11 @@
 </nav>
 
 <main id="main">
-  <div class="content">
-  <article>
-  <h1>Add a question to 'WBS question types'</h1>
+<div class="content">
+<article>
+<div  class="component component--text">
+
+<h1>Add a question to 'WBS question types'</h1>
 
   <nav class="toc" aria-labelledby="toc-label">
 	<ul>
@@ -372,30 +374,27 @@
 	</ul>
   </nav>
 
-    <form method="get" action="./">
-    <div> </div>
-    <div> </div>
-    <h2 name="create" id="create">Create a question from scratch</h2>
-    <p>You need to first <strong>choose a type of question</strong> to create in the list below - you'll be prompted for further data once you submit the form.</p>
-    <div class='l-box'>
+<h2 name="create" id="create">Create a question from scratch</h2>
+<p>You need to first <strong>choose a type of question</strong> to create in the list below - you'll be prompted for further data once you submit the form.</p>
 
-    <div class="field">
+  <form method="get" action="./">
+
+     <div class="card__text">
+     <h3 class="card__heading">No input</h3>
       <fieldset role="group">
-                <legend class="group-legend">No input</legend>
-		<div class="radio-item">
-			<input type="radio" id="type-text" name="type" value="text">
-			<label for="type-text">
-				<span class="faux-label">Simple Text</span>
-		        </label>
-		  <div class="field-hint">This control doesn’t take any input; it is useful if you want to add a text section in the questionnaire (introductory statement, for instance)</div>
-		</div>
+	  <div class="radio-item">
+		<input type="radio" id="type-text" name="type" value="text">
+		<label for="type-text">
+			<span class="faux-label">Simple Text</span>
+	        </label>
+	  <div class="field-hint">This control doesn’t take any input; it is useful if you want to add a text section in the questionnaire (introductory statement, for instance)</div>
+	  </div>
       </fieldset>
      </div>
 
-    <div class="field">
+     <div class="card__text">
+      <h3 class="card__heading">Single selection required</h3>
       <fieldset role="group">
-		<legend class="group-legend family-grouping">Single selection required</legend>
-
 		<div class="radio-item">
 			<input type="radio" id="type-yn" name="type" value="yn">
 			<label for="type-yn">
@@ -428,11 +427,11 @@
 		        <div class="field-hint">This control allows to ask to select one (and only one) item in a list of choices that you define. This version uses radio buttons, more adapated for a short list or for items with long labels</div>
 		</div>
       </fieldset>
-    </div>
+     </div>
 
-    <div class="field">
+     <div class="card__text">
+     <h3 class="card__heading">Multiple selections permitted</h3>
       <fieldset role="group">
-		<legend class="group-legend family-grouping">Multiple selections permitted</legend>
 		<div class="radio-item">
 			<input type="radio" id="type-multi" name="type" value="multi">
 			<label for="type-multi">
@@ -481,11 +480,11 @@
 		  <div class="field-hint">This control proposes to use cumulative vote on a set of options</div>
 		</div>
       </fieldset>
-    </div>
+     </div>
 
-    <div class="field">
+     <div class="card__text">
+     <h3 class="card__heading">Free text input</h3>
       <fieldset role="group">
-		<legend class="group-legend family-grouping">Free text input</legend>
 		<div class="radio-item">
 			<input type="radio" id="type-open" name="type" value="open">
 			<label for="type-open">
@@ -502,19 +501,19 @@
 			<div class="field-hint">This control proposes as many text entries as you create choices for it, where responders are free to put any text strings (of less than 256 characters)</div>
 		</div>
       </fieldset>
-    </div>
-</div>
+     </div>
 
 <button class="button" type="submit" name="action" value="Submit">Submit</button>
+
 </form>
+
+<h2 name="copy" id="copy">Copy an existing question</h2>
+<p>You can start from an existing question by giving:</p>
 
 <form class="field-group" action="./" method="post">
 <input name="wgid" type="hidden" value="109" />
 <input name="qaireno" type="hidden" value="Test-wbs-rfe" />
-<h2 name="copy" id="copy">Copy an existing question</h2>
-<p>You can start from an existing question by giving:</p>
 
-<div class='l-box field-group'>
 <fieldset>
   <div class="field">
     <label for="qno">
@@ -528,7 +527,7 @@
 <fieldset>
   <div class="field">
     <label for="uri_select">
-      <span class="field-label">Question to copy</span>
+      <span class="field-label">The question to copy</span>
     </label>
     <select name='uri_select' id='uri_select'>
         <option disabled="disabled">Questions in this questionnaire</option>
@@ -541,7 +540,7 @@
   </div>
 </fieldset>
 
-<p><strong>OR</strong></p>
+<p><strong>-- OR --</strong></p>
 
 <fieldset>
   <div class="field">
@@ -552,10 +551,9 @@
 </div>
 </fieldset>
 
-</div>
 <button class="button" type="submit" name="action" value="Copy and create">Copy and create</button>
 </form>
-
+</div>
 </article>
 	
  <div class="related">
