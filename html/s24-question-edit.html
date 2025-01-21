@@ -645,9 +645,12 @@ table.choices textarea {
 </nav>
 
 <main id="main">
-  <div class="content">
-    <article>
-    <h1>Select multiple items in Test for WBS RFE</h1>
+<div class="content">
+
+<article>
+<div  class="component component--text">
+
+<h1>Select multiple items in Test for WBS RFE</h1>
 
   <div class="l-box note note--info" role="status">
       <h2 class="txt-saturn">Question information</h2>
@@ -657,9 +660,9 @@ table.choices textarea {
       </ul>
    </div>
 
-
-
 <form method="post" action="./">
+
+<h2>Question settings</h2>
 
 <p><strong>Question identifier</strong>: q2</p>
 <p><strong>Question type</strong>: <span title='This control proposes a list of checkboxes that allows the responders to choose zero, one or as many items in the list of choices you define. The number of checkable items can be limited. '>Select multiple items (checkboxes)
@@ -703,7 +706,7 @@ table.choices textarea {
     <label for="max">
       <span class="field-label">Maximum number of items that can be selected</span>
     </label>
-    <div class="field-hint" id="hint-max">leave empty if no limit</div>
+    <div class="field-hint" id="hint-max">Leave empty if no limit</div>
     <input type="text" id="max" name="max" class="input-width-3" value="0">
 </div>
 
@@ -754,16 +757,10 @@ table.choices textarea {
 
 <button class="button" type="submit" name="action" value="Submit">Submit</button>
 
+<div><h2>Question options</h2></div>
+<p>This type of question proposes a set of options for the responder to pick. Please enter below the options you want to offer to the responders.</p><p>If you need more than the number of fields offered below, you'll be offered more fields after submitting the form.<br>(NB: you can use XHTML markup in the choices description.)</p>
 
-<div class="l-box note note--info" role="status">
-      <ul class="clean-list" role="list">
-	<li>This type of question proposes a set of options for the responder to pick; please enter below the options you want to offer to the responders. If you need more than the number of fields offered below, you'll be offered more fields after submitting the form.</li>
-	<li>(NB: you can use XHTML markup in the choices description.)</li>
-      </ul>
-</div>
-
-
-<table id="choices" class="choices">
+<div><table id="choices" class="choices">
 
 <thead>
     <tr><th>Id</th><th>Description</th><th>Position</th></tr>
@@ -931,27 +928,31 @@ table.choices textarea {
 </tr>
 </tbody>
 </table>
-
+</div>
 <button class="button" type="submit" name="action" value="Submit">Submit</button>
 
 </form>
 
-<p>&nbsp;</p>
-<div class="l-box  note note--warning" role="status">
+<h2>Delete question</h2>
 <form action="/2002/09/wbs/109/Test-wbs-rfe/q/" method="post">
+<div class="l-box  note note--warning" role="status">
 <fieldset role="group">
-	<legend class="group-legend">You can also decide to delete completely this question. Note that <strong>this is not reversible</strong></legend>
-	<div class="checkbox-item">
+  <legend class="group-legend">You can also decide to delete completely this question. Note that <strong>this is not reversible</strong></legend>
+  <div class="l-cluster l-cluster--vertical-align">
+    <div>
+        <div class="checkbox-item">
 		<input type="checkbox" name="randomizeOrder" id="randomizeOrder" appearance="base">
 		<label for="randomizeOrder">
 		<span class="faux-label">I confirm I want to delete this question</span>
 		</label>
 	</div>
+        <button class="button button--alt u-bg-error" type="submit" name="action" value="Delete">Delete</button>
+    </div>
+  </div>
 </fieldset>
-<button class="button button--alt u-bg-error" type="submit" name="action" value="Delete">Delete</button>
+</div>
 	
 </form>
-</div>
 
 </article>
       
