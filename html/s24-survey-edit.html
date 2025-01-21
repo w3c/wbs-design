@@ -362,8 +362,11 @@
 <main id="main">
 
   <div class="content">
-    <article>
-    <h1>Edit the questionnaire WBS question types</h1>
+
+  <article>
+
+  <h1>Edit the questionnaire WBS question types</h1>
+
   <div>
 
   <div class="l-box note note--info" role="status">
@@ -379,15 +382,14 @@
 If you would like to allow additional groups or users to answer, edit and/or see the results of this questionnaire, then after the modification of this form <a href="mailto:sysreq@w3.org?subject=[WBS] Set additional rights for the questionnaire wbs-types-orig of the group Test Group (99999)&amp;body=Please, add the following rights(s) for the WBS questionnaire: https://www.w3.org/2002/09/wbs/99999/wbs-types-orig/%0A%0ARight(s) (*) / User(s) or Group(s): ........ / ........%0A%0A%0AThank you%0A%0A(*) possible rights: see a questionnaire, vote, edit a questionnaire, see the results"> send a sysreq request with the list of groups/users to authorize.</a></p>
     
 <form method="post" action="handler">
-  <input name="wgid" type="hidden" value="99999" />
-  <input name="qairedupd" type="hidden" value="2016-07-07 11:38:16" />
-      
-<div>
-<h2 class="txt-mars">Questionnaire</h2>
-  <p>Questionnaire identifier: <code><strong>wbs-types-test</strong></code></p>
-</div>
+<div  class="component component--text">
+<input name="wgid" type="hidden" value="99999" />
+<input name="qairedupd" type="hidden" value="2016-07-07 11:38:16" />
+
+<h2>Questionnaire</h2>
+<p>Questionnaire identifier: <code><strong>wbs-types-test</strong></code></p>
   
-<div class="l-box field-group" id="questionnaire">  
+<div class="field-group" id="questionnaire">  
 <fieldset>
 <div class="component--fifty-fifty">
   <div class="component--fifty-fifty__text">
@@ -437,13 +439,9 @@ If you would like to allow additional groups or users to answer, edit and/or see
    </div>		
 </fieldset>
 </div>
-     
-<div>
-  <h2 class="txt-mars">Options</h2>
-</div>
 
-
-<div class='l-box field-group' id='options'>
+<h2>Options</h2>
+<div class='field-group' id='options'>
 
 <div class="field">
 	<fieldset role="group">
@@ -502,11 +500,9 @@ If you would like to allow additional groups or users to answer, edit and/or see
    </div>		
 </div>
 
-<div>
-  <h2 class="txt-mars">Order of the existing questions. Use input area to change order</h2>
-</div>
-<div class='l-box l-box--no-padding' id='order'>
-
+<h2>Order of the existing questions</h2>
+<p><strong>Use input area to change order.</strong></p>
+<div id='order'>
   <ol>
     <li>
 <div class="component--fifty-fifty">
@@ -658,10 +654,8 @@ If you would like to allow additional groups or users to answer, edit and/or see
 
 <button class="button" type="submit" name="action" value="Update questionnaire data">Update questionnaire data</button>
 
+<h2>Add/Edit questions</h2>
 <div>
-  <h2 class="txt-mars">Add/Edit questions</h2>
-</div>
-<div class='l-box' id='questions'>
 <ul class="clean-list">
 <li><a href="q/">Add a question to this questionnaire</a></li>
 <li><a href='q/q1/'>Edit question "Simple text question"</a></li><li><a href='q/q2/'>Edit question "Single selection required Yes/No"</a></li><li><a href='q/q3/'>Edit question "Single selection required Yes/No/Concur/Abstain"</a></li><li><a href='q/q4/'>Edit question "Select one among many (drop-down list)"</a></li><li><a href='q/q5/'>Edit question "Select one among many (radio buttons)"</a></li><li><a href='q/q6/'>Edit question "Open comments"</a></li><li><a href='q/q7/'>Edit question "Text entries"</a></li><li><a href='q/q8/'>Edit question "Select multiple items (checkboxes)"</a></li><li><a href='q/q9/'>Edit question "Survey type"</a></li><li><a href='q/q10/'>Edit question "Straw-poll"</a></li><li><a href='q/q11/'>Edit question "Rank-ordering"</a></li><li><a href='q/q12/'>Edit question " Pick a time for a teleconf"</a></li><li><a href='q/q13/'>Edit question "Cumulative vote"</a></li><li><a href='q/q14/'>Edit question " Importance survey"</a></li><li><a href='q/q15/'>Edit question " Importance and Satisfaction survey"</a></li><li><a href='q/tpac/'>Edit question "Monday, 27 October All Group Meetings Attendance "</a></li></ul>
@@ -677,6 +671,7 @@ If you would like to allow additional groups or users to answer, edit and/or see
   </div>
 </div>
  -->
+</div>
 </form>
 
 <script type='text/javascript' src='/2002/09/wbs/reminderEvents.js'></script>
