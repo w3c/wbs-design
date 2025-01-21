@@ -396,6 +396,8 @@
 <h2 id="copy">Copy an existing questionnaire</h2>
 <form action="factory" method="post">
 
+<p>Be sure that the option 'The responses are collected for ...' of the copied questionnaire is the one that you want for the new questionnaire, otherwise you'll have to change it by editing the new questionnaire before opening it.</p>
+
 <div class="field">
   <label for="qaireno">
     <span class="field-label">Identifier for the new questionnaire:<span class="required"> (Required)</span></span>
@@ -448,8 +450,6 @@ below or give the URI of the questionnaire you want to copy</strong></div>
     </label>
     <input type="text" id="uri_copy" name="uri" value="">
 </div>
-
-<p>Be sure that the option 'The responses are collected for ...' of the copied questionnaire is the one that you want for the new questionnaire, otherwise you'll have to change it by editing the new questionnaire before opening it.</p>
 
 <button class="button" type="submit" name="action" value="Copy and create">Copy and create</button>
 </form>
