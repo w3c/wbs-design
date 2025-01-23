@@ -66,10 +66,13 @@
 td, th {
   border-right: solid 1px #bdbdbd;
 }
+.related__inner > * + h2 {
+  margin-top: 2.5rem;
 </style>
+
 </head>
 
-<body class="landing">
+<body class="default">
 <a class="skip-link" href="#main">Skip to content</a>
 <div class="grid-wrap">
  <div class="wrap">
@@ -360,18 +363,16 @@ td, th {
 
     <article>
 
-    <h1>Compact view of the results of Questionnaire WBS question types</h1>
-    <div>
-<div class='field-group'>
+<h1>Compact view of the results of Questionnaire WBS question types</h1>
+<div class="component component--text">
+
 <p>The <a href='results'>results of this questionnaire</a> are available only to the participants of the group (and the W3C Team)</p><p>This questionnaire is open from 2014-11-21 to 2016-12-31.</p>
 <p><strong>2</strong> answers have been received.</p>
-</div>
 
 <h2>Details</h2>
-<button class="zoomIn" href="#">Maximise this table</button>
-<div class="question results">
-<div class="scroll scrolly">
-<table id="mainTable" class="summary data">
+
+<div class="table-wrap" role="region" aria-labelledby="mainTable" tabindex="0">
+<table id="mainTable">
 <thead>
 <tr>
 <th scope="col" rowspan="2">Family</th><th scope="col" rowspan="2">Given</th><th scope="col" rowspan="2">Organization</th>
@@ -495,42 +496,147 @@ td, th {
 </tbody>
 </table>
 </div>
+<button class="zoomIn" href="#">Maximise this table</button>
+
+<h2>View selection</h2>
+<form action="" method="get">
+    
+<div class="field">
+	<label for="date">
+	  <span class="field-label">You can visualize the results as they were at the following date:</span>
+	</label>
+	<div class="field-hint" id="hint-reminderlist">Date formated as <code><var title="4 digits year">YYYY</var>-<var title="Double digit month">MM</var>-<var title="double digit day of the month">DD</var></code></div>
+        <input id="date" name="date" type="date" class="w8em format-y-m-d divider-dash highlight-days-67 no-transparency input-width-10" value="">
 </div>
 
-<hr>
-<form action="" method="get">
-<div>
-<p>You can visualize the results as they were at the following date:<br>
-<label for="date"><input id="date" name="date" type="text" maxlength="10" size="10" value=""> (date formated as <code><var title="4 digits year">YYYY</var>-<var title="Double digit month">MM</var>-<var title="double digit day of the month">DD</var></code>)</label>
-<br>
-<input type="submit">
-</p>
+<fieldset>
+<p><strong>You can visualize the results as they were between two dates:</strong></p>
+<div class="component--fifty-fifty">
+  <div class="component--fifty-fifty__text">
+	<div class="field">
+		<label for="datebeg">
+			<span class="field-label"></span>
+		</label>
+		<div class="field-hint" id="hint-startdate">Date beginning formated as <code><var title="4 digits year">YYYY</var>-<var title="Double digit month">MM</var>-<var title="double digit day of the month">DD</var></code></div>
+		<input id="datebeg" name="datebeg" type="date" size="10" class="w8em format-y-m-d divider-dash highlight-days-67  no-transparency input-width-10" value="">
+	</div>
+  </div>
+	 
+  <div class="component--fifty-fifty__text">
+    <div class="field">
+		<label for="dateend">
+			<span class="field-label"></span>
+		</label>
+		<div class="field-hint" id="hint-closedate">Date end formated as <code><var title="4 digits year">YYYY</var>-<var title="Double digit month">MM</var>-<var title="double digit day of the month">DD</var></code></div>
+                <input name="closedate" type="date" size="10" id="closedate dateend" class="w8em format-y-m-d divider-dash highlight-days-67  no-transparency input-width-10" value="" />
+      </div>
+    </div>
 </div>
+</fieldset>
+
+<button class="button" type="submit" name="action" value="Submit">Submit</button>
 </form>
 
-<form action="" method="get">
-<div>
-<p>You can visualize the results as they were between two dates:<br>
-<label for="datebeg"><input id="datebeg" name="datebeg" type="text" maxlength="10" size="10" value=""> Date beginning (formated as <code><var title="4 digits year">YYYY</var>-<var title="Double digit month">MM</var>-<var title="double digit day of the month">DD</var></code>)</label>
-<span> &nbsp; - &nbsp; </span>
-<label for="dateend"><input id="dateend" name="dateend" type="text" maxlength="10" size="10" value=""> Date end (formated as <code><var title="4 digits year">YYYY</var>-<var title="Double digit month">MM</var>-<var title="double digit day of the month">DD</var></code>)</label>
-<br>
-<input type="submit">
-</p>
-</div>
-</form>
-
-<hr />
 <p><a href="results">Detailed view of the results</a> / <a href="email-list">list of email addresses of the responders</a></p>
-<p>
-<a href="../../showwb">WBS home</a> /
-<a href="../../showq">Questionnaires</a>
-/ <a href='../'>WG questionnaires</a>
-/ <a href='./'>Answer this questionnaire</a>
-</p>
+
+</div>
+
+</article>
+	
+ <div class="related">
+   <nav class="related__inner" aria-labelledby="related-label">
+     <h2 class="txt-jupiter">This Questionnaire</h2>
+     <ul role="list">
+          <li><a href="/2002/09/wbs/109/Test-wbs-rfe/">Answer</a></li>
+          <li><a href="/2002/09/wbs/109/Test-wbs-rfe/results">Results</a></li>
+          <li><a href="/2002/09/wbs/109/Test-wbs-rfe/handler" title="Edit this questionnaire">Edit</a></li>
+          <li><a href="/2002/09/wbs/109/Test-wbs-rfe/q/" title="Add a question to this questionnaire">Add a question</a></li>
+          <li><a href="/2002/09/wbs/109/Test-wbs-rfe/handler#questions" title="Edit an existing question of this questionnaire'">Edit a question</a></li>
+          <li><a href="/2002/09/wbs/109/Test-wbs-rfe/impersonate" title="Impersonate a user for this questionnaires">Impersonate</a></li>
+     </ul>
+     <h2 class="txt-jupiter">This Group</h2>
+     <ul role="list">
+          <li><a href="/2002/09/wbs/109/" title="Current questionnaires for this group">Open questionnaires for this group</a></li>
+          <li><a href="/2002/09/wbs/109/factory" title="Create a questionnaire for this group">Create a new questionnaire for this group</a></li>
+     </ul>
+     <h2 class="txt-jupiter">WBS Home</h2>
+     <ul role="list">
+          <li><a href="/2002/09/wbs/" title="WBS Home">WBS Home</a></li>
+          <li><a href="/2002/09/wbs/showq" title="Current questionnaires for all the groups">All open questionnaires</a></li>
+          <li><a href="href='/2002/09/wbs/myQuestionnaires" title="List of questionnaires you are supposed to answer">My questionnaires</a></li>
+          <li><a href="/groups/">W3C Groups</a></li>
+     </ul>
+   </nav>
+ </div>
+   
+   </div>
+</main>
+</div>
+
+<footer class="global-footer">
+    <div class="l-center">
+        <div class="global-footer__links">
+            <div class="l-cluster">
+                <ul class="clean-list" role="list">
+                                            <li>
+                            <a href="https://www.w3.org/" hreflang="en">
+                                <span lang="en" dir="ltr">Home</span>
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="https://www.w3.org/contact/" hreflang="en">
+                                <span lang="en" dir="ltr">Contact</span>
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="https://www.w3.org/help/" hreflang="en">
+                                <span lang="en" dir="ltr">Help</span>
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="https://www.w3.org/donate/" hreflang="en">
+                                <span lang="en" dir="ltr">Donate</span>
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="https://www.w3.org/policies/" hreflang="en">
+                                <span lang="en" dir="ltr">Legal &amp; Policies</span>
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="https://www.w3.org/about/corporation/" hreflang="en">
+                                <span lang="en" dir="ltr">Corporation</span>
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="https://status.w3.org/" hreflang="en">
+                                <span lang="en" dir="ltr">System Status</span>
+                            </a>
+                        </li>
+                                    </ul>
+            </div>
+            <ul class="clean-list" role="list">
+                <li><a class="with-icon--larger" href="https://w3c.social/@w3c" hreflang="en">
+                        <img class="icon icon--larger" src="https://www.w3.org/assets/website-2021/svg/mastodon.svg" width="20"
+                             height="20" alt aria-hidden="true" loading="lazy"/>
+                        <span class="visuallyhidden"><span lang="en" dir="ltr">W3C on Mastodon</span></span></a>
+                </li>
+                <li><a class="with-icon--larger" href="https://github.com/w3c/" hreflang="en">
+                        <img class="icon icon--larger" src="https://www.w3.org/assets/website-2021/svg/github.svg" width="20"
+                             height="20" alt aria-hidden="true" loading="lazy"/>
+                        <span class="visuallyhidden"><span lang="en" dir="ltr">W3C on GitHub</span></span></a>
+                </li>
+            </ul>
+        </div>
+        <p class="copyright"><span lang="en" dir="ltr">Copyright &copy; 2024 <a href="https://www.w3.org/">World Wide Web Consortium</a>.<br> <abbr title="World Wide Web Consortium">W3C</abbr><sup>&reg;</sup> <a href="https://www.w3.org/policies/#disclaimers">liability</a>, <a href="https://www.w3.org/policies/#trademarks">trademark</a> and <a rel="license" href="https://www.w3.org/copyright/document-license/" title="W3C Document License">permissive license</a> rules apply.</span></p>
+    </div>
+</footer>
+    </div>
+
+    <script="https://www.w3.org/assets/website-2021/js/translations-sorting.js"></script>
+
 
 <style>
-
   button.zoomIn {
     margin: 1em 2em;
   }
@@ -721,83 +827,6 @@ td, th {
 
 </script>
 
-
-<div class="maintainer">
-  Report issues
-  <a href="https://github.com/w3c/wbs-design/issues/new?title=Bug%20/%20Feature%20request:%20[SHORT%20DESCRIPTION]&body=[DETAILED%20EXPLANATION]&labels=user-feedback">on
-    GitHub project <code>w3c/wbs-design</code></a> (preferred) or
-    <a href="mailto:sysreq@w3.org?subject=WBS%20[bug%20/%20feature%20request]:%20[SHORT%20DESCRIPTION]&body=[DETAILED%20EXPLANATION]%0A%0A">by
-      mail to <code>sysreq</code></a>.
-</div>
-</div>
-
-   </article>
-
-   </div>
-</main>
-</div>
-
-<footer class="global-footer">
-    <div class="l-center">
-        <div class="global-footer__links">
-            <div class="l-cluster">
-                <ul class="clean-list" role="list">
-                                            <li>
-                            <a href="https://www.w3.org/" hreflang="en">
-                                <span lang="en" dir="ltr">Home</span>
-                            </a>
-                        </li>
-                                            <li>
-                            <a href="https://www.w3.org/contact/" hreflang="en">
-                                <span lang="en" dir="ltr">Contact</span>
-                            </a>
-                        </li>
-                                            <li>
-                            <a href="https://www.w3.org/help/" hreflang="en">
-                                <span lang="en" dir="ltr">Help</span>
-                            </a>
-                        </li>
-                                            <li>
-                            <a href="https://www.w3.org/donate/" hreflang="en">
-                                <span lang="en" dir="ltr">Donate</span>
-                            </a>
-                        </li>
-                                            <li>
-                            <a href="https://www.w3.org/policies/" hreflang="en">
-                                <span lang="en" dir="ltr">Legal &amp; Policies</span>
-                            </a>
-                        </li>
-                                            <li>
-                            <a href="https://www.w3.org/about/corporation/" hreflang="en">
-                                <span lang="en" dir="ltr">Corporation</span>
-                            </a>
-                        </li>
-                                            <li>
-                            <a href="https://status.w3.org/" hreflang="en">
-                                <span lang="en" dir="ltr">System Status</span>
-                            </a>
-                        </li>
-                                    </ul>
-            </div>
-            <ul class="clean-list" role="list">
-                <li><a class="with-icon--larger" href="https://w3c.social/@w3c" hreflang="en">
-                        <img class="icon icon--larger" src="https://www.w3.org/assets/website-2021/svg/mastodon.svg" width="20"
-                             height="20" alt aria-hidden="true" loading="lazy"/>
-                        <span class="visuallyhidden"><span lang="en" dir="ltr">W3C on Mastodon</span></span></a>
-                </li>
-                <li><a class="with-icon--larger" href="https://github.com/w3c/" hreflang="en">
-                        <img class="icon icon--larger" src="https://www.w3.org/assets/website-2021/svg/github.svg" width="20"
-                             height="20" alt aria-hidden="true" loading="lazy"/>
-                        <span class="visuallyhidden"><span lang="en" dir="ltr">W3C on GitHub</span></span></a>
-                </li>
-            </ul>
-        </div>
-        <p class="copyright"><span lang="en" dir="ltr">Copyright &copy; 2024 <a href="https://www.w3.org/">World Wide Web Consortium</a>.<br> <abbr title="World Wide Web Consortium">W3C</abbr><sup>&reg;</sup> <a href="https://www.w3.org/policies/#disclaimers">liability</a>, <a href="https://www.w3.org/policies/#trademarks">trademark</a> and <a rel="license" href="https://www.w3.org/copyright/document-license/" title="W3C Document License">permissive license</a> rules apply.</span></p>
-    </div>
-</footer>
-    </div>
-
-    <script src="https://www.w3.org/assets/website-2021/js/translations-sorting.js"></script>
 </body>
 
 </html>
