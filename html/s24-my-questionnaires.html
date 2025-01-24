@@ -379,11 +379,11 @@ article h3 {
 
 <h1>My questionnaires</h1>
 
-<div class="l-box note note--info" role="status">
+<div class="component component--text">
+<div>
 <p>This page shows my questionnaires for my groups.</p>
 <p>An experimental <a href='micalendar'>iCalendar version of this list</a> is available, with ToDo items for questionnaires to be completed, and days of meetings for which you registered.</p>
 </div>
-
 
 <div>
 <h2>Unanswered questionnaires</h2>
@@ -392,18 +392,18 @@ article h3 {
  </strong> (e.g. if you don’t want to answer it), <strong>you can tick the corresponding checkbox and hit the Ignore button after the list </strong>. It will appear in your list as if you had answered it.</p>
 
 <form>
+
 <div class="card">
 <div class="card__text">
 
 <fieldset>
 <div class="checkbox-item">
-		<input type="checkbox" title="Ignore" name="ignore[102_geekweek2024-feedback]" id="ignore_102_geekweek2024-feedback" appearance="base">
-		<label for="ignore_102_geekweek2024-feedback">
-		<span hidden>Ignore</span><span class="faux-label"><a href='35125/tpac202409/'>Feedback on TPAC 2024 Hybrid meeting</a></span>
-  </label>
+	<input type="checkbox" title="Ignore" name="ignore[35125_tpac202409]" id="ignore_35125_tpac202409" appearance="base">
+	<label for="ignore_35125_tpac202409">
+	  <span hidden>Ignore</span><span class="faux-label"><a href='35125/tpac202409/'>Feedback on TPAC 2024 Hybrid meeting</a></span>
+        </label>
 </div>
 </fieldset>
-
 <div class="l-cluster l-cluster--vertical-align">
 	<div>
 	<span class="enddate">open until 31 Octobe 2024</span>
@@ -411,10 +411,26 @@ article h3 {
         <span hidden>Results</span><a class="button" href="35125/tpac202409/results" title="Results of &quot;Feedback on TPAC 2024 Hybrid meeting"><span class="far fa-list-check" aria-hidden="true"></a>
         </div>
 </div>
-<p><button class="button" type="submit" value="Ignore">Ignore</button></p>
-  
+
+<fieldset>
+<div class="checkbox-item">
+	<input type="checkbox" title="Ignore" name="ignore[102_TD2025]" id="ignore_102_TD2025" appearance="base">
+	<label for="ignore_102_TD2025">
+	  <span hidden>Ignore</span><span class="faux-label"><a href='102/TD2025/'>Team Day 2025</a></span>
+        </label>
+</div>
+</fieldset>
+<div class="l-cluster l-cluster--vertical-align">
+	<div>
+	<span class="enddate">open until 05 Novembre 2025</span>
+	<span hidden>Edit</span><a class="button" href="102/TD2025/handler" title='Edit &quot;Team Day 2025&quot;'><span class="far fa-edit" aria-hidden="true"></a>
+        <span hidden>Results</span><a class="button" href="102/TD2025/results" title="Results of &quot;Team Day 202"><span class="far fa-list-check" aria-hidden="true"></a>
 </div>
 </div>
+
+</div>
+</div>
+<button class="button" type="submit" value="Ignore">Ignore</button>
 </form>
 
 <h2>On-going questionnaires you have answered or explicitly ignored</h2>
@@ -522,6 +538,7 @@ article h3 {
 
 </div>
 
+</div>
 </article>
 	
  <div class="related">
