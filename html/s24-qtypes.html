@@ -707,7 +707,7 @@ aria-hidden="true" alt="Edit"> </span></a></span></h2>
   
   <div class="component--fifty-fifty">
   <div class="component--fifty-fifty__text">
-  <label for="xq9:c5">In fact, there was another one, promised it's the last one</label>
+  <label for="xq9:c5">Actually there was another one, I promise it's the last one</label>
   </div>
   <div class="component--fifty-fifty__text">
       <select id="xq9:c5" name="xq9:c5">
@@ -781,7 +781,7 @@ aria-hidden="true" alt="Edit"> </span></a></span></h2>
 
   <div class="component--fifty-fifty">
 	<div class="component--fifty-fifty__text">
-		<label for="xq11:c1">An apple pie:</label>
+		<label for="xq11:c1">An apple pie and a second apple pie and another apple pie then a last apple pie:</label>
 	</div>
 	<div class="component--fifty-fifty__text">
 		<select id="xq11:c1" name="q11:c1">
@@ -888,7 +888,7 @@ aria-hidden="true" alt="Edit"> </span></a></span></h2>
 
 <div class="component--fifty-fifty">
   <div class="component--fifty-fifty__text">
-	<p><label for="xq13:c1">Choice 1:</label></p>
+	<label for="xq13:c1">Choice 1:</label>
   </div>
   <div class="component--fifty-fifty__text">
 	<select class="input-width-3" name="q13:c1" id="xq13:c1">
@@ -899,7 +899,7 @@ aria-hidden="true" alt="Edit"> </span></a></span></h2>
 
 <div class="component--fifty-fifty">
   <div class="component--fifty-fifty__text">
-	<p><label for="xq13:c2">Choice number 2:</label></p>
+	<label for="xq13:c2">Choice number 2 Choice number 2 Choice number 2:</label>
   </div>
   <div class="component--fifty-fifty__text">
 	<select class="input-width-3" name="q13:c2" id="xq13:c2">
@@ -910,7 +910,7 @@ aria-hidden="true" alt="Edit"> </span></a></span></h2>
 
 <div class="component--fifty-fifty">
   <div class="component--fifty-fifty__text">
-	<p><label for="xq13:c3">This is the third choice:</label></p>
+	<label for="xq13:c3">This is the third choice This is the third choice This is the third choice This is the third choice:</label>
   </div>
   <div class="component--fifty-fifty__text">
 	<select class="input-width-3" name="q13:c3" id="xq13:c3">
@@ -965,20 +965,34 @@ aria-hidden="true" alt="Edit"> </span></a></span></h2>
 question &quot; Importance and Satisfaction survey &quot;"> <span class="far fa-edit field-legend"
 aria-hidden="true" alt="Edit"> </span></a></span></h2>
 
-<p>This type of question is no longer proposed in the UI but needs to be adapted to display old surveys containing it.</p>
+<p><em>Note: This type of question is no longer proposed in the UI but needs to be adapted to display old surveys containing it.</em></p>
 
   <input type='hidden' name='q15:format' value='1' />
   <input type='hidden' name='q15:dim' value='19' />
+
+<div class="component--fifty-fifty">
+  <div class="component--fifty-fifty__text">
+    <div class="field">
+		<label><span class="field-label u-text-center">Importance</span></label>
+    </div>
+  </div>
+	 
+  <div class="component--fifty-fifty__text">
+    <div class="field">
+		<label><span class="field-label u-text-center">Satisfaction</span></label>
+    </div>
+  </div>
+</div>
+
 <fieldset>
-<div>
-  <table>
-    <thead>
-      <tr><th>Rated item</th><th>Importance</th><th>Satisfaction</th></tr>
-    </thead>
-    <tbody>
-      <tr class='even'>
-	<th scope='row'>choice 1</th><td><label
-  for='xq15:c1'><select  title='Importance of choice1' name='q15:c1[]'
+<span>Choice 1:<span>
+<div class="component--fifty-fifty">
+  <div class="component--fifty-fifty__text">
+	<div class="field">
+		<label for="xq15:c1">
+			<span class="field-label"></span>
+		</label>
+     <select  title='Importance of choice1' name='q15:c1[]'
     id='xq15:c1'><option value='0'>1 + (lowest)</option><option
       value='1'>2 ++</option><option value='2'>3 +++</option><option
 	value='3'>4 ++++</option><option value='4'>5
@@ -986,8 +1000,16 @@ aria-hidden="true" alt="Edit"> </span></a></span></h2>
 	    value='6'>7  +++++++ (highest)</option><option
 	      value='7'>Not applicable</option><option value='8'
 		selected='selected'>No
-		opinion</option></select></label></td><td><label><select
-		  title='Satisfaction on choice1'
+		opinion</option></select>
+	</div>
+  </div>
+	 
+  <div class="component--fifty-fifty__text">
+    <div class="field">
+		<label for="xq15:c1">
+			<span class="field-label"></span>
+		</label>
+                <select	title='Satisfaction on choice1'
 		  name='q15:c1[]'><option value='9'>1 +
 		    (lowest)</option><option value='10'>2
 		      ++</option><option value='11'>3
@@ -1001,73 +1023,97 @@ aria-hidden="true" alt="Edit"> </span></a></span></h2>
 				    applicable</option><option
 				      value='18'
 				      selected='selected'>No
-				      opinion</option></select></label></td>
-				    </tr>
-				    <tr	class='odd'><th scope='row'>choice 2</th>
-				    <td><label for='xq15:c2'>
-				      <select title='Importance of choice2' name='q15:c2[]' id='xq15:c2'>
-					<option
-						value='0'>1 +
-						(lowest)</option><option
-						  value='1'>2
-						  ++</option><option
-						    value='2'>3
-						    +++</option><option
-						      value='3'>4
-						      ++++</option><option
-							value='4'>5
-							+++++</option><option
-							  value='5'>6
-							  ++++++</option><option
-							    value='6'>7
-							    +++++++
-							    (highest)</option><option
-							      value='7'>Not
-							      applicable</option><option
-								value='8'
-								selected='selected'>No
-								opinion</option></select>
-								</label>
-							      </td>
-							      <td>
-								<label>
-								<select
-								  title='Satisfaction
-								  on
-								  choice2'
-								  name='q15:c2[]'><option
-								    value='9'>1
-								    +
-								    (lowest)</option><option
-								      value='10'>2
-								      ++</option><option
-									value='11'>3
-									+++</option><option
-									  value='12'>4
-									  ++++</option><option
-									    value='13'>5
-									    +++++</option><option
-									      value='14'>6
-									      ++++++</option><option
-										value='15'>7
-										+++++++
-										(highest)</option><option
-										  value='16'>Didn&#039;t
-										  know</option><option
-										    value='17'>Not
-										    applicable</option><option
-										      value='18'
-										      selected='selected'>No
-										      opinion</option></select></label></td>
-										    </tr>
-										    <tr
-										      class='even'>
-										      <th
-											  scope='row'>choice
-											3
-										      </th>
-											<td><label
-											    for='xq15:c3'><select  title='Importance of choice3' name='q15:c3[]' id='xq15:c3'><option value='0'>1 + (lowest)</option><option value='1'>2 ++</option><option value='2'>3 +++</option><option value='3'>4 ++++</option><option value='4'>5 +++++</option><option value='5'>6 ++++++</option><option value='6'>7  +++++++ (highest)</option><option value='7'>Not applicable</option><option value='8' selected='selected'>No opinion</option></select></label></td><td><label><select title='Satisfaction on choice3' name='q15:c3[]'><option value='9'>1 + (lowest)</option><option value='10'>2 ++</option><option value='11'>3 +++</option><option value='12'>4 ++++</option><option value='13'>5 +++++</option><option value='14'>6 ++++++</option><option value='15'>7  +++++++ (highest)</option><option value='16'>Didn&#039;t know</option><option value='17'>Not applicable</option><option value='18' selected='selected'>No opinion</option></select></label></td></tr></tbody></table></div>
+				      opinion</option></select>
+    </div>
+</div>
+</fieldset>
+
+<fieldset>
+<span>Choice 2:<span>
+<div class="component--fifty-fifty">
+  <div class="component--fifty-fifty__text">
+	<div class="field">
+		<label for="xq15:c2">
+			<span class="field-label"></span>
+		</label>
+     <select  title='Importance of choice1' name='q15:c2[]'
+    id='xq15:c2'><option value='0'>1 + (lowest)</option><option
+      value='1'>2 ++</option><option value='2'>3 +++</option><option
+	value='3'>4 ++++</option><option value='4'>5
+	  +++++</option><option value='5'>6 ++++++</option><option
+	    value='6'>7  +++++++ (highest)</option><option
+	      value='7'>Not applicable</option><option value='8'
+		selected='selected'>No
+		opinion</option></select>
+	</div>
+  </div>
+	 
+  <div class="component--fifty-fifty__text">
+    <div class="field">
+		<label for="xq15:c2">
+			<span class="field-label"></span>
+		</label>
+                <select	title='Satisfaction on choice1'
+		  name='q15:c2[]'><option value='9'>1 +
+		    (lowest)</option><option value='10'>2
+		      ++</option><option value='11'>3
+			+++</option><option value='12'>4
+			  ++++</option><option value='13'>5
+			    +++++</option><option value='14'>6
+			      ++++++</option><option value='15'>7
+				+++++++ (highest)</option><option
+				  value='16'>Didn&#039;t
+				  know</option><option value='17'>Not
+				    applicable</option><option
+				      value='18'
+				      selected='selected'>No
+				      opinion</option></select>
+    </div>
+</div>
+</fieldset>
+
+<fieldset>
+<span>Choice 3:<span>
+<div class="component--fifty-fifty">
+  <div class="component--fifty-fifty__text">
+	<div class="field">
+		<label for="xq15:c3">
+			<span class="field-label"></span>
+		</label>
+     <select  title='Importance of choice1' name='q15:c3[]'
+    id='xq15:c3'><option value='0'>1 + (lowest)</option><option
+      value='1'>2 ++</option><option value='2'>3 +++</option><option
+	value='3'>4 ++++</option><option value='4'>5
+	  +++++</option><option value='5'>6 ++++++</option><option
+	    value='6'>7  +++++++ (highest)</option><option
+	      value='7'>Not applicable</option><option value='8'
+		selected='selected'>No
+		opinion</option></select>
+	</div>
+  </div>
+	 
+  <div class="component--fifty-fifty__text">
+    <div class="field">
+		<label for="xq15:c3">
+			<span class="field-label"></span>
+		</label>
+                <select	title='Satisfaction on choice1'
+		  name='q15:c3[]'><option value='9'>1 +
+		    (lowest)</option><option value='10'>2
+		      ++</option><option value='11'>3
+			+++</option><option value='12'>4
+			  ++++</option><option value='13'>5
+			    +++++</option><option value='14'>6
+			      ++++++</option><option value='15'>7
+				+++++++ (highest)</option><option
+				  value='16'>Didn&#039;t
+				  know</option><option value='17'>Not
+				    applicable</option><option
+				      value='18'
+				      selected='selected'>No
+				      opinion</option></select>
+    </div>
+</div>
 </fieldset>
 
 <h2 id='wbstp'>16. Technical Plenary widget <span><a href="q/q16/" title="Edit text of
@@ -1125,7 +1171,7 @@ observer only (check at least one of the appropriate requests below  in the 'Obs
 <h2 id='wbsq17'>17. Employees list<span><a href="q/q17/" title="Edit text of
 question &quot; Employees list &quot;"> <span class="far fa-edit field-legend"
 aria-hidden="true" alt="Edit"> </span></a></span></h2>
-<p>This type of question is no longer proposed in the UI but needs to be adapted to display old surveys containing it.</p>
+<p><em>Note: This type of question is no longer proposed in the UI but needs to be adapted to display old surveys containing it.</em></p>
 <p>Please select up to three participants for this Interest Group.</p>
 <p>If the participant's name does not appear in the list below, you can add them using the AC Rep tool (clicking the <q>Add User</q> button).</p>
 
@@ -1133,28 +1179,28 @@ aria-hidden="true" alt="Edit"> </span></a></span></h2>
   <input type='hidden' name='q16:dim' value='3' />
 
 <fieldset>
-<label for="q16:d1">
-  <span class="field-label" for="q16:d1"></span>
+<label for="q17:d1">
+  <span class="field-label" for="q17:d1"></span>
 </label>
-<select id="q16:d1" name="q16:d1[]">
+<select id="q17:d1" name="q17:d1[]">
   <option  value='0' >Nobody</option>
 </select>
 </fieldset>
 
 <fieldset>
-<label for="q16:d12">
-<span class="field-label" for="q16:d2"></span>
+<label for="q17:d12">
+<span class="field-label" for="q17:d2"></span>
 </label>
-<select id="q16:d2" name="q16:d2[]">
+<select id="q17:d2" name="q17:d2[]">
   <option  value='0' >Nobody</option>
 </select>
 </fieldset>
 
 <fieldset>
-<label for="q16:d3">
-<span class="field-label" for="q16:d3"></span>
+<label for="q17:d3">
+<span class="field-label" for="q17:d3"></span>
 </label>
-<select id="q16:d3" name="q16:d3[]">
+<select id="q17:d3" name="q17:d3[]">
   <option  value='0' >Nobody</option>
 </select>
 </fieldset>
